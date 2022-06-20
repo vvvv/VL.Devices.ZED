@@ -247,7 +247,7 @@
                     <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
                     <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
-                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="2117, 80, 1523, 1118">
+                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="2047, 78, 1523, 1118">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -444,6 +444,51 @@
             <Pin Id="E8oc0BHfAMNMjKUTU57tqS" Name="World" Kind="InputPin" />
             <Pin Id="IdXogaC0p3RLD03hP9sDSI" Name="Resolution" Kind="InputPin" />
           </Node>
+          <Node Bounds="659,1015,180,19" Id="HQRtbtWITNRNqVxv2LwM5l">
+            <p:NodeReference LastCategoryFullName="VL.ZED" LastSymbolSource="VL.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Recorder" />
+              <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="LloqkkDaetCOBlGwv0LDp9" Name="Input" Kind="InputPin" />
+            <Pin Id="COu7WUekVLQLRP4MzkBJYA" Name="Path" Kind="InputPin" DefaultValue="..\test.svo" />
+            <Pin Id="IppkIC7n6NGOTR46OVZe18" Name="Compression Mode" Kind="InputPin" />
+            <Pin Id="AmHDknUnRaUP7ESvQKLvHb" Name="Bitrate" Kind="InputPin" />
+            <Pin Id="S1bkgahkbAxNxChspghPr8" Name="Target FPS" Kind="InputPin" DefaultValue="30" />
+            <Pin Id="UpbkHOomji0N9lU3qRgDx4" Name="Transcode" Kind="InputPin" />
+            <Pin Id="BAkWV9yG8wlOId33t4DsaW" Name="Start Recording" Kind="InputPin" />
+            <Pin Id="QAKWsKkK2b6OpKh37VQbuY" Name="Stop Recording" Kind="InputPin" />
+            <Pin Id="CB0LSEt1fpzMFJGTscOrNx" Name="Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RPMKIrmtj6XOcV88IKR8tj" Comment="Path" Bounds="703,864,140,15" ShowValueBox="true" isIOBox="true" Value="..\test.svo">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NaaWggRSaJuP4rmT3aOk5N" Comment="Record" Bounds="883,945,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Nl3pqoNEYViM1uXZHU2oVt" Comment="Error" Bounds="664,1104,257,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GtXhMgpWwyRMgEQ24PSfBq" Comment="Target FPS" Bounds="775,897,35,15" ShowValueBox="true" isIOBox="true" Value="30">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L1d8UA0BJYaNbHHqMK2T2U" Comment="Stop Recording" Bounds="1068,951,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -465,8 +510,6 @@
         <Link Id="Ln9VizytQ4YPm6UixNgb9U" Ids="GPDMXzahRlOLBZunsODg0x,LmC7OMTiOvTLnVCTAkn9kg" />
         <Link Id="RbR5yD71aZqM8b3FrpNjNF" Ids="GPDMXzahRlOLBZunsODg0x,Ax6EcFEwlz1NTG7eUnKCA9" />
         <Link Id="GfNvBPj5J1DPHkOil05JWP" Ids="MLgiJMjOFf3PXyEdApgmF2,FetzhtOd6eHLIPQ69IIBPM" />
-        <Link Id="D0njcctArHVO8NgN9HL1UZ" Ids="OCopLXplHzHNBSx7L7SAP2,Sq6pu4FnMQaON5eOL8APrD" />
-        <Link Id="O1wpGjPfVFhL6FkDO2FJea" Ids="OCopLXplHzHNBSx7L7SAP2,E05AepawYefPKGPibaqz96" />
         <Link Id="BTHPqnSg2NONWchplyr9Pq" Ids="PPoSyPk82SZLkEy1CfSErZ,GPDMXzahRlOLBZunsODg0x" />
         <Link Id="ENcrU4L6IsiMbpPN4yIgVI" Ids="Lr3631Mz5IqLZjXaEfB4So,EHWQsf5JPChNdP7FGACrrQ" />
         <Link Id="Vn68AtOsw8hPsSQOAVWHIa" Ids="VZKebrVXMVGP2TvYAVmSN1,E8MkOfE06Q8Ps55pNACUAW" />
@@ -474,6 +517,14 @@
         <Link Id="S6vFHdBPAlVPzlxbFFFVL6" Ids="VJqvypjIDvQNsYOsVCrgf4,E8oc0BHfAMNMjKUTU57tqS" />
         <Link Id="IbKpQSOQeuMOVTKDzLHhaJ" Ids="ImCWdJKfskeMBofp5Bo2gQ,IdXogaC0p3RLD03hP9sDSI" />
         <Link Id="G9KZdv7IVr3ODF6KfGL1jA" Ids="PXpDAjvwshNMeYMK8DDh8p,LtP9sMoNIAJQW6qcZKXgfS" />
+        <Link Id="UKszBFeDgHqNqHDqAeZUBi" Ids="RPMKIrmtj6XOcV88IKR8tj,COu7WUekVLQLRP4MzkBJYA" />
+        <Link Id="PffmHJ3WE5HMkiBGgr2mkL" Ids="NaaWggRSaJuP4rmT3aOk5N,BAkWV9yG8wlOId33t4DsaW" />
+        <Link Id="NGp1QCT81o4NQIzmIvIGRS" Ids="OCopLXplHzHNBSx7L7SAP2,LloqkkDaetCOBlGwv0LDp9" />
+        <Link Id="Nj1odcxFyDbPQugWfcywbQ" Ids="GtXhMgpWwyRMgEQ24PSfBq,S1bkgahkbAxNxChspghPr8" />
+        <Link Id="U2hDfN9tcsgOQUVAIazKHO" Ids="CB0LSEt1fpzMFJGTscOrNx,Nl3pqoNEYViM1uXZHU2oVt" />
+        <Link Id="KYZfO18XNr6LsPptYLTZi3" Ids="L1d8UA0BJYaNbHHqMK2T2U,QAKWsKkK2b6OpKh37VQbuY" />
+        <Link Id="Uej9WMJC0KNMc1hJbUsWRT" Ids="OCopLXplHzHNBSx7L7SAP2,E05AepawYefPKGPibaqz96" />
+        <Link Id="M8Ficsf3XAwMoctktX1aIg" Ids="OCopLXplHzHNBSx7L7SAP2,Sq6pu4FnMQaON5eOL8APrD" />
       </Patch>
     </Node>
   </Patch>
