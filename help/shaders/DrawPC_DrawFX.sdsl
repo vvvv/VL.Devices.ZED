@@ -1,0 +1,37 @@
+shader DrawPC_DrawFX : VS_PS_Base, Texturing
+{
+    [Color]
+    float4 Color = float4(1, 0, 0, 1);
+
+    int Width = 1920;
+
+    stream float4 color ;
+
+    override stage void VSMain()
+    {
+        int id = (int)streams.InstanceID;
+
+        int x = id % Width;        
+        int y;
+        
+        modf( (float)id / (float)Width, y);
+
+        float4 xyzc = Texture0.Load(int3(x, y, 0) );
+        float4 p = streams.Position + float4(xyzc.xyz, 1);
+
+        uint  c = asuint(xyzc.w);
+	    float r = ((c & 0x000000FF )       )/256.0f ;
+	    float g = ((c & 0x0000FF00 ) >> 8  )/256.0f ;
+	    float b = ((c & 0x00FF0000 ) >> 16 )/256.0f ;
+	    float a = ((c & 0xFF000000 ) >> 24 )/256.0f ;
+        
+        streams.ShadingPosition = mul(p, WorldViewProjection);
+        streams.color =float4(r,g,b,a);
+    }
+
+    override stage void PSMain() 
+    {
+        streams.Depth = 1;
+        streams.ColorTarget = Color * streams.color;
+    }
+};
