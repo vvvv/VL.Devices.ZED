@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2021.4.10.999" Version="0.128">
+  <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
+    <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OlbrpIuULEpOyIctHdVyGf">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TcdacUwtXonNGyPwpWjZTe">
+        <Canvas Id="IpqJ0tMO8dfM7zR8vb0sUE" CanvasType="Group">
+          <Node Bounds="170,127,405,19" Id="S0aj9FVzSIxMDGgLFraZ0S">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastSymbolSource="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Camera" />
+            </p:NodeReference>
+            <Pin Id="OYaBJSxxa5EMDRha0CmMCX" Name="Device ID" Kind="InputPin" />
+            <Pin Id="KhZSqQF8MuIPTZhheWf6v8" Name="Resolution" Kind="InputPin" />
+            <Pin Id="FdHBFHoAtZiNxoGLKY3YhT" Name="FPS" Kind="InputPin" />
+            <Pin Id="KN9RHtDwAECPtsTLruQdQ1" Name="Depth Mode" Kind="InputPin" />
+            <Pin Id="Ic7TqVB4UqVQQHtb3HDAZq" Name="Depth Minimum Distance" Kind="InputPin" />
+            <Pin Id="DkmUB261QXFM4wq0FcfipI" Name="Depth Maximum Distance" Kind="InputPin" />
+            <Pin Id="TJ0N1JyaeHsO5etHdunxqS" Name="Depth Stabilization Enabled" Kind="InputPin" />
+            <Pin Id="VP73qiT0cWtQQ4V5QBIOmS" Name="Image Enhancement Enabled" Kind="InputPin" />
+            <Pin Id="E8ACK3Mx77yOZ7N2bTZLVS" Name="Coordinates Units" Kind="InputPin" />
+            <Pin Id="RJPyrhdgmJVO14qsl6QvBb" Name="Coordinates System" Kind="InputPin" />
+            <Pin Id="ClgwnZZPlMZMekfdD8MLRa" Name="Sensing mode" Kind="InputPin" />
+            <Pin Id="Pqobiku4d2aQJLdMcMxWf9" Name="Right Side Measure Enabled" Kind="InputPin" />
+            <Pin Id="Frfj93WOAzcPh5zjZmSkvr" Name="Reference frame" Kind="InputPin" />
+            <Pin Id="Mw7jozhzpALPffH1pBoa5G" Name="Camera Image Flip Enabled" Kind="InputPin" />
+            <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
+            <Pin Id="R8ryL6shUb3LdcdIp56Huj" Name="Confidence Threshold" Kind="InputPin" />
+            <Pin Id="Idq8jq8sEmpMubsFbJqwh4" Name="Texture Confidence Threshold" Kind="InputPin" />
+            <Pin Id="Aooi7rT06zZOgv6bMYRWKo" Name="Remove Saturated Areas" Kind="InputPin" />
+            <Pin Id="SXenvrfxDk4LyjB2Gj6FCz" Name="Open" Kind="InputPin" />
+            <Pin Id="E8MkOfE06Q8Ps55pNACUAW" Name="Close" Kind="InputPin" />
+            <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Openig Error Code" Kind="OutputPin" />
+            <Pin Id="Th6NTqRDmwRLORh3nIGYwN" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="ImCWdJKfskeMBofp5Bo2gQ" Name="ImageResolution" Kind="OutputPin" />
+            <Pin Id="Lr3631Mz5IqLZjXaEfB4So" Name="FPS" Kind="OutputPin" />
+            <Pin Id="QVgu9OZJx4nOsO1Wowpjjw" Name="IsOpen" Kind="OutputPin" />
+          </Node>
+          <Pad Id="IotKSGvLeeuQIHJp8NdIBs" Comment="In Progress" Bounds="329,193,39,43" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PuZHVRehjA9P2xpwJHLFtq" Comment="IsOpen" Bounds="664,208,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MMAiGZaiVlQMcqkIrE6jhA" Comment="ImageResolution" Bounds="413,242,44,29" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="169,506,-17,19" Id="BH4ggMswtP3PSbknFImGJd">
+            <p:NodeReference LastCategoryFullName="VL.ZEDCamera" LastSymbolSource="VL.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RetriveImage" />
+            </p:NodeReference>
+            <Pin Id="E05AepawYefPKGPibaqz96" Name="Camera" Kind="InputPin" />
+            <Pin Id="OMXBLPPeMj8OomtldpNi5Y" Name="View" Kind="InputPin" />
+            <Pin Id="PbXxOyNmTCjL9gJxTbmRpM" Name="Path" Kind="InputPin" />
+            <Pin Id="UIXfkHLGrasP5WVCCVC9dW" Name="Write" Kind="InputPin" />
+            <Pin Id="PXpDAjvwshNMeYMK8DDh8p" Name="Texture" Kind="OutputPin" />
+            <Pin Id="IPCjoy9raM7MuJjvhkvTFs" Name="On Data" Kind="OutputPin" />
+            <Pin Id="K29EZu8Jxa7QQ76ERG61Ib" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="149,563,185,19" Id="L6K7vOPOas5PqvUf199QKH">
+            <p:NodeReference LastCategoryFullName="Stride.Textures" LastSymbolSource="VL.Stride.Engine.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
+            </p:NodeReference>
+            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="1442.667, 70, 669.3333, 368" />
+            <Pin Id="LtP9sMoNIAJQW6qcZKXgfS" Name="Input" Kind="InputPin" />
+            <Pin Id="FlcbDLXEyRzOBYymX3jEni" Name="Title" Kind="InputPin" DefaultValue="Live ZED Camera" />
+            <Pin Id="LB26NDBK5woPvOuOhNMhjE" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="PPSe9avByGfLBb0wRlEaLk" Name="Clear" Kind="InputPin" />
+            <Pin Id="KWSualbNXHTOIx4XVipIph" Name="Is Premultiplied Alpha" Kind="InputPin" />
+            <Pin Id="MMzcy8gWo3MMN4sVitmres" Name="Scaling Mode" Kind="InputPin" />
+            <Pin Id="TinT3kQCpQMNrq0864pd3p" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="BQv1Pfm83vsPkfh6xZuQRq" Name="Enabled" Kind="InputPin" />
+            <Pin Id="M6754c2t5m7MRu9xjIquer" Name="Show Info String" Kind="InputPin" />
+            <Pin Id="F2ybQkUIoG1N9B8slpgKpt" Name="Output" Kind="OutputPin" />
+            <Pin Id="D3KOjo3tUZjONkO6K9Jyia" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="VtvYKyzTNRlLx9DxwLYzlD" Name="Input Source" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1133,455,-62,19" Id="KWgZZajtqy5NzRCPtSASOY">
+            <p:NodeReference LastCategoryFullName="VL.ZEDCamera" LastSymbolSource="VL.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RetriveMeasure" />
+            </p:NodeReference>
+            <Pin Id="Sq6pu4FnMQaON5eOL8APrD" Name="Camera" Kind="InputPin" />
+            <Pin Id="HsM2IfUU1sIP4DAJfHBAz0" Name="Measure" Kind="InputPin" />
+            <Pin Id="HNfMHlMhmT5MBI3QXyBFAp" Name="Path" Kind="InputPin" />
+            <Pin Id="JDOSmiDqQYaMvmCqjVbqfc" Name="Write" Kind="InputPin" />
+            <Pin Id="VJqvypjIDvQNsYOsVCrgf4" Name="Texture" Kind="OutputPin" />
+            <Pin Id="U44dfoRmL1tM4gb4n9taLv" Name="On Data" Kind="OutputPin" />
+            <Pin Id="OCN9R3woTu0O3TEznnCj8t" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EHWQsf5JPChNdP7FGACrrQ" Comment="FPS" Bounds="495,185,35,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="1133,647,-25,19" Id="IpdD4F8aTRPNcII73t0SiS">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="tester.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="CameraMesh" />
+            </p:NodeReference>
+            <Pin Id="E8oc0BHfAMNMjKUTU57tqS" Name="World" Kind="InputPin" />
+            <Pin Id="IdXogaC0p3RLD03hP9sDSI" Name="Resolution" Kind="InputPin" />
+            <Pin Id="PwYFHzxi2a9N4TtxVyDH6q" Name="Transformation" Kind="InputPin" />
+            <Pin Id="Gg7q6pbAkTLOD4sPjvXan5" Name="Quad Size" Kind="InputPin" />
+            <Pin Id="ScSdm6gvd8JQRWDgG5ARFd" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="378,562,180,19" Id="HQRtbtWITNRNqVxv2LwM5l">
+            <p:NodeReference LastCategoryFullName="VL.ZED" LastSymbolSource="VL.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Recorder" />
+              <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="LloqkkDaetCOBlGwv0LDp9" Name="Input" Kind="InputPin" />
+            <Pin Id="COu7WUekVLQLRP4MzkBJYA" Name="Path" Kind="InputPin" DefaultValue="..\test.svo" />
+            <Pin Id="IppkIC7n6NGOTR46OVZe18" Name="Compression Mode" Kind="InputPin" />
+            <Pin Id="AmHDknUnRaUP7ESvQKLvHb" Name="Bitrate" Kind="InputPin" />
+            <Pin Id="S1bkgahkbAxNxChspghPr8" Name="Target FPS" Kind="InputPin" DefaultValue="30" />
+            <Pin Id="UpbkHOomji0N9lU3qRgDx4" Name="Transcode" Kind="InputPin" />
+            <Pin Id="BAkWV9yG8wlOId33t4DsaW" Name="Start Recording" Kind="InputPin" />
+            <Pin Id="QAKWsKkK2b6OpKh37VQbuY" Name="Stop Recording" Kind="InputPin" />
+            <Pin Id="CB0LSEt1fpzMFJGTscOrNx" Name="Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RPMKIrmtj6XOcV88IKR8tj" Comment="Path" Bounds="825,130,196,18" ShowValueBox="true" isIOBox="true" Value="..\..\..\Users\MLF\Desktop\ciccio.svo">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="NaaWggRSaJuP4rmT3aOk5N" Comment="Record" Bounds="530,485,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Nl3pqoNEYViM1uXZHU2oVt" Comment="Error" Bounds="379,626,257,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GtXhMgpWwyRMgEQ24PSfBq" Comment="Target FPS" Bounds="482,461,35,15" ShowValueBox="true" isIOBox="true" Value="30">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="L1d8UA0BJYaNbHHqMK2T2U" Comment="Stop Recording" Bounds="595,514,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <!--
+
+    ************************ CameraMesh ************************
+
+-->
+          <Node Name="CameraMesh" Bounds="1400,672" Id="R96w3q2ePZUO8CMgrzgu7s">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+              <Choice Kind="ContainerDefinition" Name="Process" />
+            </p:NodeReference>
+            <Patch Id="Co7dFWcehg5LjPHu2qXHHN">
+              <Canvas Id="IAeoCzhG4enPBKw8f8Azze" CanvasType="Group">
+                <ControlPoint Id="RsSslPfGdC1PLIptL7w4U7" Bounds="446,83" />
+                <Node Bounds="453,487,215,19" Id="Pb65Q0eGx9INal9fJk8320">
+                  <p:NodeReference LastCategoryFullName="Stride.Rendering" LastSymbolSource="VL.Stride.Rendering.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="MeshRenderer" />
+                  </p:NodeReference>
+                  <Pin Id="K1oDtMQqSxrOaxBhYqoLHO" Name="Effect Instance" Kind="InputPin" />
+                  <Pin Id="AqsDKX1B2xiNNFjn6b18e8" Name="Blend State" Kind="InputPin" />
+                  <Pin Id="S4DkrR5slHwM0dyTUPSqwg" Name="Rasterizer State" Kind="InputPin" />
+                  <Pin Id="SOAPubKZ8L6MgPXE0hZaxa" Name="Depth Stencil State" Kind="InputPin" />
+                  <Pin Id="Dv3dq7YzcRxLwewbYDE8Xr" Name="Mesh" Kind="InputPin" />
+                  <Pin Id="Vj33d26OgTFMlkicAovZa6" Name="Instance Count" Kind="InputPin" DefaultValue="2073600" />
+                  <Pin Id="UMxRz2pfqWyO6kM51tEBHI" Name="Profiling Name" Kind="InputPin" />
+                  <Pin Id="C3apPkLr8mQQYmuG8IAH4X" Name="Topology" Kind="InputPin" />
+                  <Pin Id="VsUQNLCmQZkPBa48z7Mw0K" Name="Draw Count" Kind="InputPin" />
+                  <Pin Id="R3PMSIgmVbeMWhBtvPYDNk" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="433,540,165,19" Id="TFW0TRbTDaxMMgKZCK2fhT">
+                  <p:NodeReference LastCategoryFullName="Stride.Rendering" LastSymbolSource="VL.Stride.Engine.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessAppFlag" Name="RenderEntity" />
+                  </p:NodeReference>
+                  <Pin Id="IVOVR0p1DQsQTY79dWovQu" Name="Transformation" Kind="InputPin" />
+                  <Pin Id="F0r9ofQYbUgM0kfOaJiKig" Name="Input" Kind="InputPin" />
+                  <Pin Id="N6dKQkPSdQXMkGZseLJ0as" Name="Render Stage" Kind="InputPin" DefaultValue="AfterScene" />
+                  <Pin Id="NG77UfufaijOiNjIrfDBg4" Name="Single Call Per Frame" Kind="InputPin" />
+                  <Pin Id="QsXnxg0CbIBQJuv6ecL9xX" Name="Render Group" Kind="InputPin" />
+                  <Pin Id="CC29RLEMGMNMwbc7BsWWKb" Name="Components" Kind="InputPin" />
+                  <Pin Id="TsBByU4y2pOLZ5F9y4sepM" Name="Children" Kind="InputPin" />
+                  <Pin Id="U6kSEBd5bUeNLv56U72Ahn" Name="Name" Kind="InputPin" />
+                  <Pin Id="FJthTQa8F2bOAEGY9eApS5" Name="Enabled" Kind="InputPin" />
+                  <Pin Id="K2FuCU6LqJuO8dK1MQB5KE" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="446,214,85,19" Id="MF6PmTEPgaSPYH4S2ScH1M">
+                  <p:NodeReference LastCategoryFullName="Stride.Rendering.DrawShaders" LastSymbolSource="VL.Stride.Rendering.EffectShaderNodes">
+                    <Choice Kind="ProcessNode" Name="DrawPCShader" />
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  </p:NodeReference>
+                  <Pin Id="H5o14D4kkRgNI7vR3IN4tb" Name="Texture 0" Kind="InputPin" />
+                  <Pin Id="N4N7zYT3qcbNI7cfw9Ccoe" Name="Color" Kind="InputPin" />
+                  <Pin Id="GBpO6l5oPHsMvWJcAkZfJW" Name="Width" Kind="InputPin" />
+                  <Pin Id="KHg2x5zBZbOOnoJu27yZjF" Name="World" Kind="InputPin" />
+                  <Pin Id="V7VW876iDZCM4PwgNSB2nG" Name="Parameter Setter" Kind="InputPin" />
+                  <Pin Id="U9mpI1bsbwFNJBHGLRPPYz" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Pad Id="NmPb8HyovlPOMZ4RXValVl" Comment="Color" Bounds="468,119,136,15" ShowValueBox="true" isIOBox="true" Value="1, 1, 1, 1">
+                  <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="TypeFlag" Name="RGBA" />
+                  </p:TypeAnnotation>
+                </Pad>
+                <ControlPoint Id="VAwclmxscsCM1l5uFtUcUl" Bounds="624,149" />
+                <Node Bounds="622,173,34,19" Id="CbwAUJAOPfbQP3fvdlPxH5">
+                  <p:NodeReference LastCategoryFullName="Primitive.Int2" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="RecordType" Name="Int2" />
+                    <Choice Kind="OperationCallFlag" Name="Int2 (Split)" />
+                  </p:NodeReference>
+                  <Pin Id="CHRFCGXIbWePoiygbILzSP" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="HgfdsSyY3sjPjE6QSdsPLb" Name="X" Kind="OutputPin" />
+                  <Pin Id="CoLppW6jBwgLNtH8BcnUW1" Name="Y" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="622,207,25,19" Id="ACOyuUIk0ZDMbhFwqqbzWR">
+                  <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="*" />
+                  </p:NodeReference>
+                  <Pin Id="QNiw7pyCXNVPLT56elQvnr" Name="Input" Kind="InputPin" />
+                  <Pin Id="CwzQRCt4ZkaLLT5U6UTqm6" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="R25lkglmViVM4CLvhUODKN" Name="Output" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="556,409" Id="NBGz4PCjspHLdpSrMLgW6h">
+                  <p:NodeReference LastCategoryFullName="Stride.Models.Meshes" LastSymbolSource="VL.Stride.Rendering.Nodes">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="ProcessNode" Name="PlaneMesh" />
+                  </p:NodeReference>
+                  <Pin Id="GsdejXlj47MMv8F9sem8cE" Name="Size" Kind="InputPin" />
+                  <Pin Id="US8YvcTqbkAQaOngmqaZkF" Name="Tessellation" Kind="InputPin" />
+                  <Pin Id="UVEcQqqVGzXNFLReF5WpQT" Name="Normal" Kind="InputPin" DefaultValue="UpZ" />
+                  <Pin Id="AbCJEimfBryQTKroQn682a" Name="Generate Back Face" Kind="InputPin" />
+                  <Pin Id="TzjxtSegEHtOiMZGiCD95K" Name="Scale" Kind="InputPin" />
+                  <Pin Id="QtaazOSuAz4P12JiNUHXBE" Name="Uv Scale" Kind="InputPin" />
+                  <Pin Id="QmKbUYzYwXFNkgXrj4NBPX" Name="Local Offset" Kind="InputPin" />
+                  <Pin Id="DpnlEA0twVUNzxsMnP6hYn" Name="Number Of Texture Coordinates" Kind="InputPin" />
+                  <Pin Id="Aw2NttlIseiMeuQkARyiM4" Name="Output" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="TgN4FYunSEgL6vQyfMMOSN" Bounds="434,597" />
+                <Node Bounds="556,376,46,19" Id="Qz8P642to0WPpqRX8Sa7H2">
+                  <p:NodeReference LastCategoryFullName="2D.Vector2" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                    <CategoryReference Kind="Vector2Type" Name="Vector2" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="JtzAgzi9cxmOLy9dNGtNOl" Name="X" Kind="InputPin" />
+                  <Pin Id="SRYR500SsCsLpLkUOfOWXA" Name="Y" Kind="InputPin" />
+                  <Pin Id="RxL1Ln2qytsLWfDmjvZHMS" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <ControlPoint Id="Bz3ygxPKbWFPsjTcrJApje" Bounds="558,345" />
+                <ControlPoint Id="KrRypEaopznOWM48EBGSi0" Bounds="306,372" />
+              </Canvas>
+              <ProcessDefinition Id="IgtvEX23qmjO77ezCKdzEd">
+                <Fragment Id="NsBY79DR8rsOO58puPwBi1" Patch="FSGV9fL8PuxL3WcrvVtATO" Enabled="true" />
+                <Fragment Id="RmXa74VPed0NC0y2cHqrzC" Patch="PN55smhcbo1QGmCbGNWrEy" Enabled="true" />
+              </ProcessDefinition>
+              <Link Id="O5eTe84r6kGM9VQcWHsKjh" Ids="RTXjUvrRv0zMS49wQ1rWgf,RsSslPfGdC1PLIptL7w4U7" IsHidden="true" />
+              <Link Id="KTRT2pqWWRFNR7UpjovfdS" Ids="RsSslPfGdC1PLIptL7w4U7,H5o14D4kkRgNI7vR3IN4tb" />
+              <Link Id="JSjqIqat0KaL3qyIsx7fml" Ids="U9mpI1bsbwFNJBHGLRPPYz,K1oDtMQqSxrOaxBhYqoLHO" />
+              <Link Id="UPmUv1mWDrIPBMDgaqRNYG" Ids="R3PMSIgmVbeMWhBtvPYDNk,F0r9ofQYbUgM0kfOaJiKig" />
+              <Link Id="Ilp4bhHOPzRM6FEdQSKcQh" Ids="NmPb8HyovlPOMZ4RXValVl,N4N7zYT3qcbNI7cfw9Ccoe" />
+              <Link Id="TLUdvJe6JcyQD8SMBkkjOg" Ids="KTz1egvfz31QJLgwGG9JCt,VAwclmxscsCM1l5uFtUcUl" IsHidden="true" />
+              <Link Id="VAQFfwJ0B6NPvxSEUqfTcU" Ids="VAwclmxscsCM1l5uFtUcUl,CHRFCGXIbWePoiygbILzSP" />
+              <Link Id="HxINR6oKr1ONUJQi4QgoBn" Ids="HgfdsSyY3sjPjE6QSdsPLb,QNiw7pyCXNVPLT56elQvnr" />
+              <Link Id="IXkAxB77PxvOYfZi7Xrzak" Ids="CoLppW6jBwgLNtH8BcnUW1,CwzQRCt4ZkaLLT5U6UTqm6" />
+              <Link Id="McPEoZzDThFLxHdGYhn8uw" Ids="R25lkglmViVM4CLvhUODKN,Vj33d26OgTFMlkicAovZa6" />
+              <Link Id="TUgY45TDSc5QNtlt0UfFek" Ids="HgfdsSyY3sjPjE6QSdsPLb,GBpO6l5oPHsMvWJcAkZfJW" />
+              <Link Id="Q7FuVyiEQthNYAkAhbR0fC" Ids="Aw2NttlIseiMeuQkARyiM4,Dv3dq7YzcRxLwewbYDE8Xr" />
+              <Link Id="NL32RdRBddsPa5oKDWjmzN" Ids="K2FuCU6LqJuO8dK1MQB5KE,TgN4FYunSEgL6vQyfMMOSN" />
+              <Link Id="RrTFGONzMfeMqRSlFt53j5" Ids="TgN4FYunSEgL6vQyfMMOSN,Njbyd41lp2iONRujqqnbnY" IsHidden="true" />
+              <Link Id="LUKoWBQ8WOLNld5C2vAWS1" Ids="Bz3ygxPKbWFPsjTcrJApje,JtzAgzi9cxmOLy9dNGtNOl" />
+              <Link Id="UW4DZyhzP2DPSUeLr3j83m" Ids="EKYixeQeUmyLRe9sj3rR8U,Bz3ygxPKbWFPsjTcrJApje" IsHidden="true" />
+              <Link Id="CLU8jHbabVELRTmbBwkOjF" Ids="Bz3ygxPKbWFPsjTcrJApje,SRYR500SsCsLpLkUOfOWXA" />
+              <Link Id="U2QO45u3D6lNoCbOxLNTTy" Ids="RxL1Ln2qytsLWfDmjvZHMS,GsdejXlj47MMv8F9sem8cE" />
+              <Link Id="L7ezBx0sFXhPwAMyvNCPPb" Ids="FQcfKbkYx7aMf35q5sKSSq,KrRypEaopznOWM48EBGSi0" IsHidden="true" />
+              <Patch Id="FSGV9fL8PuxL3WcrvVtATO" Name="Create" />
+              <Patch Id="PN55smhcbo1QGmCbGNWrEy" Name="Update" ManuallySortedPins="true">
+                <Pin Id="RTXjUvrRv0zMS49wQ1rWgf" Name="World" Kind="InputPin" Bounds="244,165" />
+                <Pin Id="KTz1egvfz31QJLgwGG9JCt" Name="Resolution" Kind="InputPin" Bounds="487,182">
+                  <p:TypeAnnotation>
+                    <Choice Kind="TypeFlag" Name="Int2" />
+                  </p:TypeAnnotation>
+                </Pin>
+                <Pin Id="FQcfKbkYx7aMf35q5sKSSq" Name="Transformation" Kind="InputPin" Bounds="363,461" />
+                <Pin Id="EKYixeQeUmyLRe9sj3rR8U" Name="Quad Size" Kind="InputPin" Bounds="695,322" DefaultValue="0.002" />
+                <Pin Id="Njbyd41lp2iONRujqqnbnY" Name="Output" Kind="OutputPin" Bounds="445,595" />
+              </Patch>
+              <Link Id="CGqEjDxPYcsPcOsfLwMpyW" Ids="KrRypEaopznOWM48EBGSi0,IVOVR0p1DQsQTY79dWovQu" />
+            </Patch>
+          </Node>
+          <Node Bounds="1133,701,63,19" Id="C6pIjUIqLn3M72x1eKG8E7">
+            <p:NodeReference LastCategoryFullName="Stride" LastSymbolSource="VL.Stride.Engine.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RootScene" />
+            </p:NodeReference>
+            <Pin Id="GteSuZehvqhOwDGC3eAOdN" Name="Child" Kind="InputPin" />
+            <Pin Id="NYVdbJdMhdvL5DeW140iZU" Name="Enabled" Kind="InputPin" />
+            <Pin Id="PdqywhNXG2mLOdE1CAEF7o" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="1116,791,205,19" Id="OVgNu1iheBfNBY2lmFoSy7">
+            <p:NodeReference LastCategoryFullName="Stride" LastSymbolSource="VL.Stride.Engine.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
+            </p:NodeReference>
+            <Pin Id="VQvsdeTPyRmPHJPsPZXKwX" Name="Bounds" Kind="InputPin" DefaultValue="1969.333, 825.3333, 554.6667, 386.6667" />
+            <Pin Id="Q7fwWQzH0ITMQcW1U6bl2g" Name="Input" Kind="InputPin" />
+            <Pin Id="Tap19vJes2GMbcET1kPIY7" Name="Camera" Kind="InputPin" />
+            <Pin Id="RXDgxacPsuzPuYZyZhO2GU" Name="Enable Default Camera" Kind="InputPin" />
+            <Pin Id="JnO2u9bNv7WQH3nn4jqQtt" Name="Title" Kind="InputPin" DefaultValue="Recorded Pointcloud" />
+            <Pin Id="JlINhgZbH0XNW7uQx43Zh3" Name="Clear Color" Kind="InputPin" DefaultValue="0.1652941, 0.1652941, 0.1652941, 1" />
+            <Pin Id="LNcGD02TBRkPeWghtjAA8X" Name="Clear" Kind="InputPin" />
+            <Pin Id="HriOZ05KBZyOqPtzV3Vu4Y" Name="Post Effects" Kind="InputPin" />
+            <Pin Id="SnKcB18z4O5MaHDo3PB6hX" Name="Enable Default Post Effects" Kind="InputPin" />
+            <Pin Id="CNwfShYuHFFMwkMUvSlTE5" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="N0mutc45x13PKR8qmw0Bd3" Name="Enabled" Kind="InputPin" />
+            <Pin Id="SQFOTraVXGeNgIcZFoTnNe" Name="Output" Kind="OutputPin" />
+            <Pin Id="SFGRd8DZTV5O3bPA3left5" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="DriReXeXA51OPGwoHTFyfN" Name="Input Source" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="949,474,-17,19" Id="OHobRgtKjnHMsG3J2QvOca">
+            <p:NodeReference LastCategoryFullName="VL.ZEDCamera" LastSymbolSource="VL.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="RetriveImage" />
+            </p:NodeReference>
+            <Pin Id="UgyEtHfI7utQUtn3vG7e0d" Name="Camera" Kind="InputPin" />
+            <Pin Id="QHcknKE8HaBNOuJksXom0a" Name="View" Kind="InputPin" />
+            <Pin Id="CjWDqGD2Kq1OwCqlDQ5VAl" Name="Path" Kind="InputPin" />
+            <Pin Id="SiJ8fMICm91QKoGwTFK5bo" Name="Write" Kind="InputPin" />
+            <Pin Id="AztcxA0MH56Me7euG0Lqfp" Name="Texture" Kind="OutputPin" />
+            <Pin Id="Uw0gyfQqejIQYfcaPY9GPv" Name="On Data" Kind="OutputPin" />
+            <Pin Id="BScd8ZN736AP9OkGSmhUQL" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="929,531,185,19" Id="GDVONbkQtk3QLlDH3xDeoo">
+            <p:NodeReference LastCategoryFullName="Stride.Textures" LastSymbolSource="VL.Stride.Engine.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
+            </p:NodeReference>
+            <Pin Id="NTVTVzr95d1LFY6aVGelQG" Name="Bounds" Kind="InputPin" DefaultValue="1366.667, 825.3333, 590.6667, 382.6667" />
+            <Pin Id="Jm1VBJGvnyOM8gycIGlv2q" Name="Input" Kind="InputPin" />
+            <Pin Id="M3IsJyBvA8jNylSySN6TgO" Name="Title" Kind="InputPin" DefaultValue="Recorded Texture" />
+            <Pin Id="CMbRImwq7tFLY6zvv51Q50" Name="Clear Color" Kind="InputPin" />
+            <Pin Id="SKoIQ2bFGvGLHd3gw36Dag" Name="Clear" Kind="InputPin" />
+            <Pin Id="FEiTvnBEL9HO90By1SfyEd" Name="Is Premultiplied Alpha" Kind="InputPin" />
+            <Pin Id="RyyhP8GbqifMtsrSXM4BMs" Name="Scaling Mode" Kind="InputPin" />
+            <Pin Id="M1VeZAT8YBfNcqp8iIXmOr" Name="Enable Keyboard Shortcuts" Kind="InputPin" />
+            <Pin Id="JyRw5y8mVWPO2K0H0vmqpP" Name="Enabled" Kind="InputPin" />
+            <Pin Id="E29jSuZQPsQMCpR79NB847" Name="Show Info String" Kind="InputPin" />
+            <Pin Id="TQsuJGd6lRcOiJ1cEr1g0s" Name="Output" Kind="OutputPin" />
+            <Pin Id="HlM9loBlwDhQaLxyI4YiFG" Name="Client Bounds" Kind="OutputPin" />
+            <Pin Id="ISWY37fvSyOLmxs2AInaZn" Name="Input Source" Kind="OutputPin" />
+          </Node>
+          <Pad Id="P6PRW4xqkcsOq8CxtUzb8y" Comment="Depth Mode" Bounds="235,92,96,15" ShowValueBox="true" isIOBox="true" Value="NEURAL">
+            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastSymbolSource="VL.Devices.ZED.vl">
+              <Choice Kind="TypeFlag" Name="DEPTH_MODE" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="865,219" Id="RnLF3GixSHzPN0pCkqCGWb">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastSymbolSource="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="Player" />
+            </p:NodeReference>
+            <Pin Id="Q8urX9MdoJDOKsEhF1SLE7" Name="SVO File Path" Kind="InputPin" />
+            <Pin Id="HNsoe2K6MSuQHsXBltSYJs" Name="SVO Realtime Mode Enable" Kind="InputPin" />
+            <Pin Id="PbBcQcikkE7MmHw0TD8NnM" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Jqs6VWFd6aqLYsILmCinnA" Comment="SVO Realtime Mode Enable" Bounds="905,172,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
+        <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
+        <ProcessDefinition Id="AEncDOJB0UYQPbVyyK7muK">
+          <Fragment Id="CVNyvxz2BdkOeqNI7Enq1P" Patch="H2cbU4Kptj7OH6q1NrcwYL" Enabled="true" />
+          <Fragment Id="JLLGwQTtZ6JPrWL5bJAyxj" Patch="ArnguBeYaipOFcqabD0uBX" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="GEm0jtvhyeyLAMcG6r59Ej" Ids="Th6NTqRDmwRLORh3nIGYwN,IotKSGvLeeuQIHJp8NdIBs" />
+        <Link Id="TTRciblexMhMgSsXaUezEG" Ids="QVgu9OZJx4nOsO1Wowpjjw,PuZHVRehjA9P2xpwJHLFtq" />
+        <Link Id="GHkmauOk3gmLcR9bZcp8gu" Ids="ImCWdJKfskeMBofp5Bo2gQ,MMAiGZaiVlQMcqkIrE6jhA" />
+        <Link Id="ENcrU4L6IsiMbpPN4yIgVI" Ids="Lr3631Mz5IqLZjXaEfB4So,EHWQsf5JPChNdP7FGACrrQ" />
+        <Link Id="S6vFHdBPAlVPzlxbFFFVL6" Ids="VJqvypjIDvQNsYOsVCrgf4,E8oc0BHfAMNMjKUTU57tqS" />
+        <Link Id="IbKpQSOQeuMOVTKDzLHhaJ" Ids="ImCWdJKfskeMBofp5Bo2gQ,IdXogaC0p3RLD03hP9sDSI" />
+        <Link Id="G9KZdv7IVr3ODF6KfGL1jA" Ids="PXpDAjvwshNMeYMK8DDh8p,LtP9sMoNIAJQW6qcZKXgfS" />
+        <Link Id="UKszBFeDgHqNqHDqAeZUBi" Ids="RPMKIrmtj6XOcV88IKR8tj,COu7WUekVLQLRP4MzkBJYA" />
+        <Link Id="PffmHJ3WE5HMkiBGgr2mkL" Ids="NaaWggRSaJuP4rmT3aOk5N,BAkWV9yG8wlOId33t4DsaW" />
+        <Link Id="NGp1QCT81o4NQIzmIvIGRS" Ids="OCopLXplHzHNBSx7L7SAP2,LloqkkDaetCOBlGwv0LDp9" />
+        <Link Id="Nj1odcxFyDbPQugWfcywbQ" Ids="GtXhMgpWwyRMgEQ24PSfBq,S1bkgahkbAxNxChspghPr8" />
+        <Link Id="U2hDfN9tcsgOQUVAIazKHO" Ids="CB0LSEt1fpzMFJGTscOrNx,Nl3pqoNEYViM1uXZHU2oVt" />
+        <Link Id="KYZfO18XNr6LsPptYLTZi3" Ids="L1d8UA0BJYaNbHHqMK2T2U,QAKWsKkK2b6OpKh37VQbuY" />
+        <Link Id="Uej9WMJC0KNMc1hJbUsWRT" Ids="OCopLXplHzHNBSx7L7SAP2,E05AepawYefPKGPibaqz96" />
+        <Link Id="F1MFtPseU65OTWpnh5RhYU" Ids="ScSdm6gvd8JQRWDgG5ARFd,GteSuZehvqhOwDGC3eAOdN" />
+        <Link Id="JNOVcTZw0VsL7csIAmo8Jp" Ids="PdqywhNXG2mLOdE1CAEF7o,Q7fwWQzH0ITMQcW1U6bl2g" />
+        <Link Id="K5NJhg1TvQ0OcBT4HWBXcj" Ids="AztcxA0MH56Me7euG0Lqfp,Jm1VBJGvnyOM8gycIGlv2q" />
+        <Link Id="RMAeQRf5KEgP7hBawnrHli" Ids="P6PRW4xqkcsOq8CxtUzb8y,KN9RHtDwAECPtsTLruQdQ1" />
+        <Link Id="NW655CvmiOYOMAAGSso81Y" Ids="RPMKIrmtj6XOcV88IKR8tj,Q8urX9MdoJDOKsEhF1SLE7" />
+        <Link Id="ICw8hQbNp2NNngfThspXdZ" Ids="Jqs6VWFd6aqLYsILmCinnA,HNsoe2K6MSuQHsXBltSYJs" />
+        <Link Id="HwJC1BYI0hcPYienM2lOU7" Ids="PbBcQcikkE7MmHw0TD8NnM,UgyEtHfI7utQUtn3vG7e0d" />
+        <Link Id="VRnqHdtgRMmPFX0mgu1NZ7" Ids="PbBcQcikkE7MmHw0TD8NnM,Sq6pu4FnMQaON5eOL8APrD" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2021.4.10-0999-g230257a30b" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2021.4.10-0999-g230257a30b" />
+  <NugetDependency Id="S1tpGFnxG1WOb7EZoYvZow" Location="VL.Fuse" Version="0.2.0" />
+  <DocumentDependency Id="FDClhiZdNQGOCFmek1QftG" Location="../VL.Devices.ZED.vl" />
+</Document>
