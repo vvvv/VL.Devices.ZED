@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VL.Devices.ZED", "VL.Devices.ZED.csproj", "{7A6BB21C-3958-48DD-943B-D904B6473128}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A6BB21C-3958-48DD-943B-D904B6473128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A6BB21C-3958-48DD-943B-D904B6473128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A6BB21C-3958-48DD-943B-D904B6473128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A6BB21C-3958-48DD-943B-D904B6473128}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {435E7E21-087A-47C4-93A0-CDDF0B6FF748}
+	EndGlobalSection
+EndGlobal

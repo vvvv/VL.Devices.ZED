@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  	<OutputPath>..\lib</OutputPath>
+    <PackageOutputPath>..</PackageOutputPath>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    
+    <!-- Package properties -->
+    <Version>0.0.1-pre</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Stereolabs.zed" Version="3.7.11" ExcludeAssets="build" GeneratePathProperty="true" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="$(PkgStereolabs_zed)\runtimes\windows10-x64\*" 
+          LinkBase="..\..\runtimes\win10-x64\native" 
+          PackagePath="runtimes\win10-x64\native" 
+          CopyToOutputDirectory="PreserveNewest"
+          Pack="true" />
+  </ItemGroup>
+ 
+
+  <ItemGroup>
+    <None Include="..\*.vl" PackagePath="." Pack="true" />
+  </ItemGroup>
+
+</Project>
