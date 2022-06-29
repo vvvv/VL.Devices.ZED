@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2021.4.10.1007" Version="0.128">
+<Document xmlns:p="property" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2021.4.10.1014" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -383,8 +383,9 @@
             <Pin Id="QafSAw91KYuQcIHDy2iCwJ" Name="Grab Play" Kind="InputPin" />
             <Pin Id="F4gku7fVSS0QJx5IspGrvg" Name="Stop" Kind="InputPin" />
             <Pin Id="F7r4wMUhFrNPGuryrdIxm2" Name="Grab Stop" Kind="InputPin" />
-            <Pin Id="RGr5gnd0exnP6tHY79NA4R" Name="Seek Frame" Kind="InputPin" />
             <Pin Id="SHAaw7BbbMgORqsMqAiDim" Name="Seek" Kind="InputPin" />
+            <Pin Id="RSXWpqCt2bzMwanxyAFdHu" Name="Grab" Kind="InputPin" />
+            <Pin Id="RGr5gnd0exnP6tHY79NA4R" Name="Seek Frame" Kind="InputPin" />
             <Pin Id="PbBcQcikkE7MmHw0TD8NnM" Name="Output" Kind="OutputPin" />
             <Pin Id="JJsLPyMJJnyPGZaDf7GRBv" Name="Camera" Kind="OutputPin" />
             <Pin Id="GkNEM6fbkUDOh0su3z3UFa" Name="Current Frame" Kind="OutputPin" />
@@ -555,8 +556,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2021.4.10-1007-g66c84f8e50" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2021.4.10-1007-g66c84f8e50" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2021.4.10-1014-gedb3112d37" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2021.4.10-1014-gedb3112d37" />
   <NugetDependency Id="S1tpGFnxG1WOb7EZoYvZow" Location="VL.Fuse" Version="0.2.0" />
   <DocumentDependency Id="FDClhiZdNQGOCFmek1QftG" Location="../VL.Devices.ZED.vl" />
 </Document>
