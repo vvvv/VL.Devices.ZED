@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.Devices.ZED</id>
+    <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
+    <version>0.0.1-alpha</version>
+    <title>VL.Devices.ZED</title>
+    <authors>Alexander Shaliapin, vvvv group, m-box</authors>
+    <owners>vvvv group</owners>
+    <projectUrl>https://github.com/vvvv/VL.Devices.ZED</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>this libruary providing access to Stereolubs ZED cameras in vvvv gamma</summary>
+    <descriptionthe>this libruary providing access to Stereolubs ZED cameras in vvvv gamma</description>
+    <tags>nuget</tags>
+	  <license type="expression">MIT</license>
+	  <!-- <icon>icon\nugeticon.png</icon> -->
+    <dependencies>
+      <dependency id="Stereolabs.zed" version="3.8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+    <file src="..\shaders\**" target="shaders\" exclude="" />
+	  <!-- <file src="nugeticon.png" target="icon\" /> -->
+  </files>
+</package>
