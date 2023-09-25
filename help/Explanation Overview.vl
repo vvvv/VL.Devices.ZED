@@ -28,12 +28,12 @@
             <Pin Id="LNFFXelfUQ6QU8T98LNuCf" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="H44i2iAHmPNLhNv8hJZiNv" Name="Image Flip" Kind="InputPin" DefaultValue="AUTO" />
             <Pin Id="SXenvrfxDk4LyjB2Gj6FCz" Name="Open" Kind="InputPin" />
-            <Pin Id="ClgwnZZPlMZMekfdD8MLRa" Name="Smode" Kind="InputPin" DefaultValue="STANDARD" />
             <Pin Id="Frfj93WOAzcPh5zjZmSkvr" Name="Reframe" Kind="InputPin" DefaultValue="CAMERA" />
             <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" DefaultValue="True" />
             <Pin Id="R8ryL6shUb3LdcdIp56Huj" Name="Cnf_threshold" Kind="InputPin" DefaultValue="50" />
             <Pin Id="Idq8jq8sEmpMubsFbJqwh4" Name="Txt_cnf_threshold" Kind="InputPin" DefaultValue="99" />
             <Pin Id="Aooi7rT06zZOgv6bMYRWKo" Name="Remove Saturated Areas_" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="EzzYZs0fA2yPkqjHOEMeP8" Name="P Enable Fill Mode" Kind="InputPin" />
             <Pin Id="E8MkOfE06Q8Ps55pNACUAW" Name="Close" Kind="InputPin" />
             <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Openig Error Code" Kind="OutputPin" />
@@ -153,7 +153,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="GetSkeleton (2D)" />
                 </p:NodeReference>
-                <Pin Id="LmC7OMTiOvTLnVCTAkn9kg" Name="ObjectDataSDK" Kind="InputPin" />
+                <Pin Id="LmC7OMTiOvTLnVCTAkn9kg" Name="BodyData" Kind="InputPin" />
                 <Pin Id="Sp9F6HqsrmCNpmNE8GQ5Ww" Name="All Body Parts" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="BIrMb9gl7igQdf9xXA6wrI" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="Qkg1KrngXYPPJIvgKdygoY" Name="Skeleton Joint Position 2D" Kind="OutputPin" />
@@ -165,7 +165,7 @@
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="GetSkeleton (3D)" />
                 </p:NodeReference>
-                <Pin Id="Ax6EcFEwlz1NTG7eUnKCA9" Name="ObjectDataSDK" Kind="InputPin" />
+                <Pin Id="Ax6EcFEwlz1NTG7eUnKCA9" Name="BodyData" Kind="InputPin" />
                 <Pin Id="N59CWUU1T7ZK9whorvbNiM" Name="All Body Parts" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="KrSXIW0y45oLoon17HHIJ8" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="VWdkJIZHlZJLZPJv9JsgK8" Name="Root World Position" Kind="OutputPin" />
@@ -183,19 +183,20 @@
               <Choice Kind="TypeFlag" Name="DEPTH_MODE" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="621,1102,125,19" Id="UDxeetzHzGsPowIjZ8u5mk">
+          <Node Bounds="621,1102,165,19" Id="UDxeetzHzGsPowIjZ8u5mk">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RetriveObjects" />
+              <Choice Kind="ProcessAppFlag" Name="RetriveBodies" />
             </p:NodeReference>
             <Pin Id="J7pm92lVCdNLEZvHMS7q5K" Name="Camera" Kind="InputPin" />
             <Pin Id="MleEnjCfRvaLKm2DVWJRmg" Name="Cofidence Threshold" Kind="InputPin" />
-            <Pin Id="Pwg1dHZAJ0YPuXZqtfq3G8" Name="Detection Model" Kind="InputPin" />
+            <Pin Id="RKFk4GTTPyZOpU4XxQkOpQ" Name="Skeleton Smoothing" Kind="InputPin" />
+            <Pin Id="DczlOQcabtKLcOBDmb4ySe" Name="Body Tracking Model" Kind="InputPin" />
+            <Pin Id="ToZeuqHU8uiN80SzCQhdOz" Name="Minimum Keypoints Threshold" Kind="InputPin" />
             <Pin Id="M7WYUDcsSxkPKZ39P5UTIk" Name="Object Tracking" Kind="InputPin" />
             <Pin Id="O68GkS3AGlENZjCLRwrEhB" Name="Body Fitting" Kind="InputPin" DefaultValue="True" />
             <Pin Id="SLVtD1v6mMMMiILkd35Q73" Name="Image Sync" Kind="InputPin" />
-            <Pin Id="D9U5FUcgoPLM0HYbWRTDZK" Name="Mask" Kind="InputPin" />
-            <Pin Id="PPoSyPk82SZLkEy1CfSErZ" Name="Detected Objects" Kind="OutputPin" />
+            <Pin Id="D1wZOtPHsWoNNviA7FRl98" Name="Detected Bodies" Kind="OutputPin" />
             <Pin Id="B0ZRyuEpNLuMcn83wugyq2" Name="Error Code" Kind="OutputPin" />
           </Node>
           <Pad Id="EHWQsf5JPChNdP7FGACrrQ" Comment="FPS" Bounds="1113,379,35,15" ShowValueBox="true" isIOBox="true" />
@@ -505,7 +506,7 @@
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <ControlPoint Id="O0ejg1T3u2mOCK7pG8jvC7" Bounds="1412,629" />
-          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="668,198,66,15" ShowValueBox="true" isIOBox="true" Value="HD1080">
+          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="668,198,67,15" ShowValueBox="true" isIOBox="true" Value="HD1080">
             <p:TypeAnnotation LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="RESOLUTION" />
             </p:TypeAnnotation>
@@ -561,7 +562,6 @@
         <Link Id="QFNpfcrX8K1N6Um80LDJcb" Ids="OCN9R3woTu0O3TEznnCj8t,S36nWG251fWLxYsutYyOK3" />
         <Link Id="Ln9VizytQ4YPm6UixNgb9U" Ids="GPDMXzahRlOLBZunsODg0x,LmC7OMTiOvTLnVCTAkn9kg" />
         <Link Id="RbR5yD71aZqM8b3FrpNjNF" Ids="GPDMXzahRlOLBZunsODg0x,Ax6EcFEwlz1NTG7eUnKCA9" />
-        <Link Id="BTHPqnSg2NONWchplyr9Pq" Ids="PPoSyPk82SZLkEy1CfSErZ,GPDMXzahRlOLBZunsODg0x" />
         <Link Id="ENcrU4L6IsiMbpPN4yIgVI" Ids="Lr3631Mz5IqLZjXaEfB4So,EHWQsf5JPChNdP7FGACrrQ" />
         <Link Id="Vn68AtOsw8hPsSQOAVWHIa" Ids="VZKebrVXMVGP2TvYAVmSN1,E8MkOfE06Q8Ps55pNACUAW" />
         <Link Id="HEj7pyxu6ueLgEgcdxiSVg" Ids="NhLDsJ349iCNwV9A3Nzhu5,SXenvrfxDk4LyjB2Gj6FCz" />
@@ -579,6 +579,7 @@
         <Link Id="AH22rpsoYkUN72dBt5QSQM" Ids="MLgiJMjOFf3PXyEdApgmF2,FetzhtOd6eHLIPQ69IIBPM" />
         <Link Id="VKCyjFCdHDZMHWWPNzZx62" Ids="ACfugAFFyN0MAGXpyplEsd,R37A4WjhHkNLkI4YjlYjWw" />
         <Link Id="Kl6AtU5JS1ePULNT6gfqy8" Ids="B0ZRyuEpNLuMcn83wugyq2,Ad5WfdCTmdILw76cgph4db" />
+        <Link Id="AsBc2XYBuB4M4XhqO2Uz0E" Ids="D1wZOtPHsWoNNviA7FRl98,GPDMXzahRlOLBZunsODg0x" />
       </Patch>
     </Node>
   </Patch>

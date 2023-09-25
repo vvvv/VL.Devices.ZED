@@ -296,6 +296,10 @@
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="Oe1ur5pOD3xNTNIjDsRTA3" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="BM60gef1beIPNgPablPWSE" Bounds="408,1226" Alignment="Top" />
+              <ControlPoint Id="QdwAawVjauGONqihF9DJug" Bounds="408,1432" Alignment="Bottom" />
+              <ControlPoint Id="PUgOOfQgsQdPGL7YU2V6F5" Bounds="209,1226" Alignment="Top" />
+              <ControlPoint Id="KIJ5oZfyUJCQY6VVqg9Fua" Bounds="209,1432" Alignment="Bottom" />
               <Patch Id="ADGdGp7g59TMVOqvB206r4" ManuallySortedPins="true">
                 <Node Bounds="207,1302,133,26" Id="O6zozScbYawM9ygaM79jBC">
                   <p:NodeReference LastCategoryFullName="sl.Camera" LastDependency="Stereolabs.zed.dll">
@@ -336,14 +340,12 @@
                     <Choice Kind="OperationCallFlag" Name="DisableObjectDetection" />
                   </p:NodeReference>
                   <Pin Id="D1Co3ZHUQ8XLBdN6MBD1O7" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Kag3pJ7REi2L6ojHUChl9b" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="J4Evnq9OpBDQM6ciQl0hCS" Name="Instance ID" Kind="InputPin" />
+                  <Pin Id="RwEV5aGrOvpMKBafqqbckR" Name="Disable All Instance" Kind="InputPin" />
                   <Pin Id="SC07aExDPXJMWsZ7J8ggPc" Name="Apply" Kind="InputPin" />
+                  <Pin Id="Kag3pJ7REi2L6ojHUChl9b" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="BM60gef1beIPNgPablPWSE" Bounds="408,1226" Alignment="Top" />
-              <ControlPoint Id="QdwAawVjauGONqihF9DJug" Bounds="408,1432" Alignment="Bottom" />
-              <ControlPoint Id="PUgOOfQgsQdPGL7YU2V6F5" Bounds="209,1226" Alignment="Top" />
-              <ControlPoint Id="KIJ5oZfyUJCQY6VVqg9Fua" Bounds="209,1432" Alignment="Bottom" />
             </Node>
             <Node Bounds="194,1182,65,19" Id="PyNlE5YXIYuPMqvNrTkWfY">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -375,7 +377,7 @@
             <ControlPoint Id="I0mJmDUWw7RNu2EPxB20L9" Bounds="254,676" />
             <Pad Id="Je5ENhMTPgEPuZEXHoBdRT" SlotId="K7cFlCDtGciLV8trNezbMM" Bounds="1465,1166" />
             <ControlPoint Id="GnHQj19q11FQDJDInvqh3q" Bounds="1465,1230" />
-            <Node Bounds="1653,219,400,88" Id="Tj0Yjabiyq7O783nGqql8b">
+            <Node Bounds="1653,228,400,79" Id="Tj0Yjabiyq7O783nGqql8b">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -383,6 +385,13 @@
               <Pin Id="Jnj0fOws50oPdLaVin2PHO" Name="Force" Kind="InputPin" DefaultValue="False" />
               <Pin Id="O1h6dWaw9oIMhWeUPQI003" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
               <Pin Id="BF89OXtVkaeMHMMwn749DL" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="OQ8evVPMjIfN2XqLHN5dKD" Bounds="1668,234" Alignment="Top" />
+              <ControlPoint Id="ECZgrpmHXM5PRwT28cvV8w" Bounds="1743,234" Alignment="Top" />
+              <ControlPoint Id="QSOCjBuilJPPaCp2ITsS1I" Bounds="1817,234" Alignment="Top" />
+              <ControlPoint Id="Ar85FgNloRmM5SbMXJORtk" Bounds="1963,234" Alignment="Top" />
+              <ControlPoint Id="GgfkXWidf8SNUeXj2aKiX9" Bounds="1667,301" Alignment="Bottom" />
+              <ControlPoint Id="VvaAzktLjlTOKtnzpPXcG6" Bounds="1876,234" Alignment="Top" />
+              <ControlPoint Id="T9nPC0gIKH1M5EdWy6TjWo" Bounds="2037,234" Alignment="Top" />
               <Patch Id="IgdkgOA2BPSPFL1y8FZE5m" ManuallySortedPins="true">
                 <Node Bounds="1665,251,376,26" Id="DMMT7xzQ30GNvnb59zITxx">
                   <p:NodeReference LastCategoryFullName="sl.RuntimeParameters" LastDependency="Stereolabs.zed.dll">
@@ -390,31 +399,23 @@
                     <CategoryReference Kind="AssemblyCategory" Name="RuntimeParameters" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
-                  <Pin Id="GZDgByr2WICLVYelgOKqmJ" Name="Smode" Kind="InputPin" />
                   <Pin Id="Vmsgb2mdwhOLjaLfWLre7R" Name="Reframe" Kind="InputPin" />
                   <Pin Id="VTyTXsPjXu2LiPlZ5XeoAe" Name="Depth" Kind="InputPin" />
                   <Pin Id="ReerA64ikQvLeHgU0NgcVR" Name="Cnf_threshold" Kind="InputPin" />
                   <Pin Id="BUaJLAALgQGMrSY3HlgRzG" Name="Txt_cnf_threshold" Kind="InputPin" />
                   <Pin Id="Ui7KeYT8DzSPU8R8gqjvfR" Name="Remove Saturated Areas_" Kind="InputPin" />
+                  <Pin Id="OobGhh6GzUVLu88l4iZg6l" Name="P Enable Fill Mode" Kind="InputPin" />
                   <Pin Id="IHgpKiDbFAeO2xKMkxkZbH" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Patch Id="QMAn56Tge2LLEh2hGAdt23" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="LvI4l2kmTelMPua5hQraX4" Name="Then" ManuallySortedPins="true" />
               </Patch>
-              <ControlPoint Id="NQRXd7USGM7NKUg15gp0Bz" Bounds="1667,225" Alignment="Top" />
-              <ControlPoint Id="OQ8evVPMjIfN2XqLHN5dKD" Bounds="1741,225" Alignment="Top" />
-              <ControlPoint Id="ECZgrpmHXM5PRwT28cvV8w" Bounds="1815,225" Alignment="Top" />
-              <ControlPoint Id="QSOCjBuilJPPaCp2ITsS1I" Bounds="1890,225" Alignment="Top" />
-              <ControlPoint Id="Ar85FgNloRmM5SbMXJORtk" Bounds="2038,225" Alignment="Top" />
-              <ControlPoint Id="GgfkXWidf8SNUeXj2aKiX9" Bounds="1667,301" Alignment="Bottom" />
-              <ControlPoint Id="VvaAzktLjlTOKtnzpPXcG6" Bounds="1964,225" Alignment="Top" />
             </Node>
-            <ControlPoint Id="Kicgno5CuFTLItHntekwVx" Bounds="1666,123" />
-            <ControlPoint Id="SzfWX5oYMoHMotC9CFCeT5" Bounds="1742,142" />
-            <ControlPoint Id="AI5xFNM0ZbdOBFSh8LFTS3" Bounds="1815,145" />
-            <ControlPoint Id="CI7C0relOTYMhzf1g48HIf" Bounds="1891,138" />
-            <ControlPoint Id="U9fynfKCBgXO0Jk5TCc8FO" Bounds="1963,170" />
-            <ControlPoint Id="Ca9NtJxDpdDObRtKxe5Cyg" Bounds="2038,193" />
+            <ControlPoint Id="SzfWX5oYMoHMotC9CFCeT5" Bounds="1669,142" />
+            <ControlPoint Id="AI5xFNM0ZbdOBFSh8LFTS3" Bounds="1743,146" />
+            <ControlPoint Id="CI7C0relOTYMhzf1g48HIf" Bounds="1818,136" />
+            <ControlPoint Id="U9fynfKCBgXO0Jk5TCc8FO" Bounds="1875,165" />
+            <ControlPoint Id="Ca9NtJxDpdDObRtKxe5Cyg" Bounds="1963,182" />
             <ControlPoint Id="JQXGGNUKjkyOHdGOz5IVZg" Bounds="957,151" />
             <ControlPoint Id="VZkpLLsQzq3MdGwZWXJwRh" Bounds="991,174" />
             <ControlPoint Id="O4wJtdGmf7qLBot75ZBgxL" Bounds="1014,198" />
@@ -814,6 +815,7 @@
             </Node>
             <Pad Id="LlTQ3MZfoT4MMSxyDirpmu" SlotId="QWpEBi44zwUMH3XZ5jdW5y" Bounds="579,1521" />
             <ControlPoint Id="BeVUNMk0WCZNxcbfVjQ7Aa" Bounds="579,1698" />
+            <ControlPoint Id="GwtVtNS9899Mm1NFL81RRf" Bounds="2036,205" />
           </Canvas>
           <Slot Id="Rv71TbAxVKpNSTycSYeFUA" Name="InitParamrters" />
           <Slot Id="Gjsurgv4LZbLasPzEPe8sZ" Name="zedCamera" />
@@ -865,9 +867,6 @@
           <Link Id="OvQuYB0x9PYOjgXjZuNNQt" Ids="K8FySDV4h2FMMXm54ZgZjk,Je5ENhMTPgEPuZEXHoBdRT" />
           <Link Id="RK7l5xJdpWOP6Rwxa8Gtnu" Ids="Je5ENhMTPgEPuZEXHoBdRT,GnHQj19q11FQDJDInvqh3q" />
           <Link Id="SZYUh3oqPzpPPsXGs2PxYb" Ids="GnHQj19q11FQDJDInvqh3q,QQOwzn67KayLkRLc9G3xWB" IsHidden="true" />
-          <Link Id="ENYJzGg2mLuOyMakJ8r3jp" Ids="NQRXd7USGM7NKUg15gp0Bz,GZDgByr2WICLVYelgOKqmJ" />
-          <Link Id="Ch3SBNAyD2cP0uy4q73js8" Ids="Kicgno5CuFTLItHntekwVx,NQRXd7USGM7NKUg15gp0Bz" />
-          <Link Id="N4YbDW4k8nMPmZM2nb0wy7" Ids="DuMxzwQaaOJQVG7DNaia71,Kicgno5CuFTLItHntekwVx" IsHidden="true" />
           <Link Id="ChAVfMQwvBTN3RpHfen7x9" Ids="OQ8evVPMjIfN2XqLHN5dKD,Vmsgb2mdwhOLjaLfWLre7R" />
           <Link Id="OUKduO7rIneLEoo6cJ7FEd" Ids="SzfWX5oYMoHMotC9CFCeT5,OQ8evVPMjIfN2XqLHN5dKD" />
           <Link Id="UygUntDHZoVMIJHSZfhRhe" Ids="FFBvKJ8CXinNSqrR5AMCT3,SzfWX5oYMoHMotC9CFCeT5" IsHidden="true" />
@@ -971,6 +970,51 @@
           <Link Id="KXEwCelFY9zOljXPlRftqe" Ids="QDIM8Dp1ZimNOUwkDdIp99,SC07aExDPXJMWsZ7J8ggPc" />
           <Link Id="LyZWMpfnSiuO7XKwd9xjY1" Ids="BCtXLfKCB25QKk3h6TUMcf,SOp4mXrqV5nP1hHl78d2jb" />
           <Link Id="DARNYvcgvdkMtRtA59AkOX" Ids="UQ16C7iCBtwO7EMcY8krpA,BCtXLfKCB25QKk3h6TUMcf" IsHidden="true" />
+          <Link Id="RHDEw9vdSCfLTU8enLtERc" Ids="BCtXLfKCB25QKk3h6TUMcf,Q5ryjl5TVcNQaT0KbWoekm" />
+          <Link Id="MXhHGqpSuLlOW8JvyW1gtO" Ids="CpuURjicu3dOAx42i5Jisy,VfqwHx6kE16N1HR6dM6umE" />
+          <Link Id="Ew8QU2VaC73LcBYS4MtQt1" Ids="Ure5oXahsFtL0yoHcGHHPx,De3DPL32OKCNTcSvnQO9Yh" IsFeedback="true" />
+          <Link Id="LhHuNiPzEUHMspZyTBfGPd" Ids="Jw3kYYepp53OO5pQPZvk3G,De3DPL32OKCNTcSvnQO9Yh" />
+          <Link Id="E3Jequzsx1ePEKgZpYIulC" Ids="De3DPL32OKCNTcSvnQO9Yh,S3j77Wesw8ANUl8cybSCx8" />
+          <Link Id="Cwg3BhdVixZM1nksYr5tTr" Ids="Oc5DpuRfHMqP8lJ04wIod1,HmwO9tVPc7PQNMYM943I7K" IsHidden="true" />
+          <Link Id="POPAkwB5minLl7CKhmZPV1" Ids="OwCJdQf8cQpPh0PWs7ELEn,Oc5DpuRfHMqP8lJ04wIod1" />
+          <Link Id="NOu9Iqoq2cwOBYhWjItcHG" Ids="RK0qVxgaX0KQN0GT3OgQnr,EkOHAdUfyJmOfJdWYySDAl" />
+          <Link Id="CRZN0rZLHHgM2dVPuwVdDZ" Ids="EkOHAdUfyJmOfJdWYySDAl,DgQ66o1IodXP0AZLIfX1a6" />
+          <Slot Id="SffosBYBGYNOxAEGkfohDA" Name="ptp" />
+          <Link Id="EphcIOE110FLxtz5nX6Uw1" Ids="OcIod6Z8yYALAP2zJM2GKo,AW3C6Gd2MqQMeMe78uBvHt" IsFeedback="true" />
+          <Link Id="Qc6cSL9aFMoNKfEFm69beD" Ids="Vs1rKrK7AghPbQNwYlMA7Q,OcIod6Z8yYALAP2zJM2GKo" />
+          <Link Id="Ov32Y3eFd5rPqic9Ufo3XJ" Ids="OcIod6Z8yYALAP2zJM2GKo,KXiraysNqa3MPPEniek5yz" />
+          <Link Id="EEK6EDSFQm7LIkpWOHHBEy" Ids="TyaoWIyDamdPzRCe3R9d1u,AW3C6Gd2MqQMeMe78uBvHt" />
+          <Link Id="HS8NOfjtkcIOSoeh4EP8b8" Ids="AW3C6Gd2MqQMeMe78uBvHt,PKl5hNWmnFiQYroMYCA0V7" />
+          <Link Id="LJJFQ0DwPeXLsREwGbXZet" Ids="S2phhZt3BjRPFXW7dLgrrs,CApPqVn1cXiO0dKlPMogbX" />
+          <Link Id="UdITFbIdx8IMoGBamTetMg" Ids="KK2ZDwT6GSuP2oOY7QGxh6,VXrXa0loZ28MET2h1rgJVm" />
+          <Link Id="DNd2VbbvgPUPWGCp9dyY9n" Ids="T9mbFzvDT0zLdwC1FwvrgK,TtSHkzb1KxcMIaSOFM2kjM" IsFeedback="true" />
+          <Link Id="NTYZw3ksN8NPC5nucKL7iA" Ids="E0nPtto4UptLKP2JMSEpHg,TtSHkzb1KxcMIaSOFM2kjM" />
+          <Link Id="AUmrVCMzmxlLbMmuAi2cS8" Ids="G4ZNVFqy4mINGTYtcRw06y,BBznaTnp5z6Prv4XsSq2mE" />
+          <Link Id="S5ZN0oQBqlxPHvzMaNgPvJ" Ids="Pm0b4w9g1htMjrF2OSeo82,DsG346eQvxPPpLLHGxEX8e" IsFeedback="true" />
+          <Link Id="MMrc4A6jLz5Nr9v4Z1KLnh" Ids="RHTR75ed27QL494UD0M8BR,DsG346eQvxPPpLLHGxEX8e" />
+          <Link Id="O11Xe7formVMl64PtS1ca4" Ids="H3UBWBF2emWPQSwB1VlRhj,MiSVbatZD2hMZdkAs0xifz" />
+          <Slot Id="QWpEBi44zwUMH3XZ5jdW5y" Name="FPS" />
+          <Link Id="G3VisaNrOcJOI0S3fzyC3Z" Ids="LlC9ZEhEmKUO00mVqLlkOl,LlTQ3MZfoT4MMSxyDirpmu" />
+          <Link Id="OjKTgmcfPCJPHYTmsL6fnr" Ids="LlTQ3MZfoT4MMSxyDirpmu,BeVUNMk0WCZNxcbfVjQ7Aa" />
+          <Link Id="KzrWJ54ZTIwOCW5Vd5yldv" Ids="BeVUNMk0WCZNxcbfVjQ7Aa,MbSTO3hkVDmMg8O7CaaFYT" IsHidden="true" />
+          <ProcessDefinition Id="UUqk9nHhgEKN4s36voMXYE" HasStateOut="true">
+            <Fragment Id="ALGp0vkIcRhPe9OFSXrNwa" Patch="HaDokwDGqnmQCwCLcwnhUY" Enabled="true" />
+            <Fragment Id="Mpr7XtewVtGLrtF3p6p4lk" Patch="KKqWBnvjcTCNviT9BZuGqw" />
+            <Fragment Id="SPa37WBVbYjO1fA1XIOfwR" Patch="P7CUClE6ry2Px4k9UJ5Rgj" Enabled="true" />
+            <Fragment Id="Qtp3DDdVCqSPoAp8oxY5qH" Patch="Ks0qxKkeVK7OXXAU8pc5WN" Enabled="true" />
+            <Fragment Id="TqkRMOCm4POOBC3Zcn8Dlq" Patch="IB7jXHE3Pt9OWUSr16lGu4" Enabled="true" />
+            <Fragment Id="Ozz9PbFJXUsPhg4y7MFFQO" Patch="O7DZOifQrKGO2SmINHbkGD" Enabled="true" />
+            <Fragment Id="NQFz0akjNLFPPP7TF0jUtc" Patch="KVqL4LxfqagPAzKcNr1aEr" Enabled="true" />
+            <Fragment Id="NSoipLEzhVoPXV55BPcvNj" Patch="RTPBwQpdkXDOVPgRiE34PU" Enabled="true" />
+            <Fragment Id="D346JRg7RbxPl7yqy1WpUj" Patch="JVpg80vaOSXQXtTPHgnc8i" Enabled="true" />
+            <Fragment Id="KE5NgyiylL2LoyCHMFr7vZ" Patch="JOrMpEg9a1sPH5EdYcNvk2" />
+            <Fragment Id="GhKJfPPtGymQIY2pRiaHTS" Patch="DBCkZwWmhFXN0TuOKsdMCl" />
+            <Fragment Id="ScU7yBhfTIZLJglqwVAHS7" Patch="GMGVjCDEHEfOaLLTL1wdX9" />
+          </ProcessDefinition>
+          <Link Id="IsEFJo4g56QOakrd2HlmUY" Ids="QUC8VH1AR29QYaTMEsPxW1,TAdzhGTBwq0NxY69b9Ssrl" />
+          <Link Id="BaYsIeqPFkRLkA4LRZQLmS" Ids="T9nPC0gIKH1M5EdWy6TjWo,OobGhh6GzUVLu88l4iZg6l" />
+          <Link Id="LXere1HwQHILcnBb4mQSCe" Ids="GwtVtNS9899Mm1NFL81RRf,T9nPC0gIKH1M5EdWy6TjWo" />
+          <Link Id="TCiKESVMSBWLTIgcL1202T" Ids="GonDsgSaAjCOoYnh2uXuJQ,GwtVtNS9899Mm1NFL81RRf" IsHidden="true" />
           <Patch Id="HaDokwDGqnmQCwCLcwnhUY" Name="Create" ParticipatingElements="HaJRvk40CTBOfac5Wqjvad,SPGeAfloQLmMyepuYK48Vb,NOu9Iqoq2cwOBYhWjItcHG">
             <Pin Id="UQ16C7iCBtwO7EMcY8krpA" Name="Id" Kind="InputPin" Visibility="Optional" />
           </Patch>
@@ -978,12 +1022,12 @@
           <Patch Id="T74cQUQVBeiPENDiP6aZKd" Name="Dispose" ParticipatingElements="PO0UM3FBxIkO5OTQGhV0ly" />
           <Patch Id="O7DZOifQrKGO2SmINHbkGD" Name="Close" ParticipatingElements="UqDjCb5kOxhM5agun2NX9N" />
           <Patch Id="IB7jXHE3Pt9OWUSr16lGu4" Name="Update">
-            <Pin Id="DuMxzwQaaOJQVG7DNaia71" Name="Smode" Kind="InputPin" Bounds="1115,423" />
             <Pin Id="FFBvKJ8CXinNSqrR5AMCT3" Name="Reframe" Kind="InputPin" Bounds="1186,426" DefaultValue="WORLD" />
             <Pin Id="Eb5a4KZFgflQCKGc66vqIj" Name="Depth" Kind="InputPin" Bounds="1262,439" DefaultValue="True" />
             <Pin Id="I4ZaqLFAmVlLJgXUkwDQQV" Name="Cnf_threshold" Kind="InputPin" Bounds="1336,435" DefaultValue="100" />
             <Pin Id="BvZZq5bV3OkM6Op1mgtO3n" Name="Txt_cnf_threshold" Kind="InputPin" Bounds="1411,455" DefaultValue="100" />
             <Pin Id="ABxESfB7H3INbdVc5sm56m" Name="Remove Saturated Areas_" Kind="InputPin" Bounds="1482,396" DefaultValue="True" />
+            <Pin Id="GonDsgSaAjCOoYnh2uXuJQ" Name="P Enable Fill Mode" Kind="InputPin" />
             <Pin Id="StX2IMPGDQcMXiZWAVpdxY" Name="Openig Error Code" Kind="OutputPin" Bounds="790,1274" />
             <Pin Id="McMbujUqeuWNvep0uHWsap" MergeId="321772" Name="In Progress" Kind="OutputPin" Bounds="912,2022" />
           </Patch>
@@ -1009,54 +1053,12 @@
           <Patch Id="JVpg80vaOSXQXtTPHgnc8i" Name="GetIsOpen">
             <Pin Id="JFdzSOvuyDAQQSXbWA7PkH" Name="IsOpen" Kind="OutputPin" />
           </Patch>
-          <Link Id="RHDEw9vdSCfLTU8enLtERc" Ids="BCtXLfKCB25QKk3h6TUMcf,Q5ryjl5TVcNQaT0KbWoekm" />
-          <Link Id="MXhHGqpSuLlOW8JvyW1gtO" Ids="CpuURjicu3dOAx42i5Jisy,VfqwHx6kE16N1HR6dM6umE" />
-          <Link Id="Ew8QU2VaC73LcBYS4MtQt1" Ids="Ure5oXahsFtL0yoHcGHHPx,De3DPL32OKCNTcSvnQO9Yh" IsFeedback="true" />
-          <Link Id="LhHuNiPzEUHMspZyTBfGPd" Ids="Jw3kYYepp53OO5pQPZvk3G,De3DPL32OKCNTcSvnQO9Yh" />
-          <Link Id="E3Jequzsx1ePEKgZpYIulC" Ids="De3DPL32OKCNTcSvnQO9Yh,S3j77Wesw8ANUl8cybSCx8" />
-          <Link Id="Cwg3BhdVixZM1nksYr5tTr" Ids="Oc5DpuRfHMqP8lJ04wIod1,HmwO9tVPc7PQNMYM943I7K" IsHidden="true" />
           <Patch Id="KVqL4LxfqagPAzKcNr1aEr" Name="GetResolution">
             <Pin Id="HmwO9tVPc7PQNMYM943I7K" Name="ImageResolution" Kind="OutputPin" />
           </Patch>
-          <Link Id="POPAkwB5minLl7CKhmZPV1" Ids="OwCJdQf8cQpPh0PWs7ELEn,Oc5DpuRfHMqP8lJ04wIod1" />
-          <Link Id="NOu9Iqoq2cwOBYhWjItcHG" Ids="RK0qVxgaX0KQN0GT3OgQnr,EkOHAdUfyJmOfJdWYySDAl" />
-          <Link Id="CRZN0rZLHHgM2dVPuwVdDZ" Ids="EkOHAdUfyJmOfJdWYySDAl,DgQ66o1IodXP0AZLIfX1a6" />
-          <Slot Id="SffosBYBGYNOxAEGkfohDA" Name="ptp" />
-          <Link Id="EphcIOE110FLxtz5nX6Uw1" Ids="OcIod6Z8yYALAP2zJM2GKo,AW3C6Gd2MqQMeMe78uBvHt" IsFeedback="true" />
-          <Link Id="Qc6cSL9aFMoNKfEFm69beD" Ids="Vs1rKrK7AghPbQNwYlMA7Q,OcIod6Z8yYALAP2zJM2GKo" />
-          <Link Id="Ov32Y3eFd5rPqic9Ufo3XJ" Ids="OcIod6Z8yYALAP2zJM2GKo,KXiraysNqa3MPPEniek5yz" />
-          <Link Id="EEK6EDSFQm7LIkpWOHHBEy" Ids="TyaoWIyDamdPzRCe3R9d1u,AW3C6Gd2MqQMeMe78uBvHt" />
-          <Link Id="HS8NOfjtkcIOSoeh4EP8b8" Ids="AW3C6Gd2MqQMeMe78uBvHt,PKl5hNWmnFiQYroMYCA0V7" />
-          <Link Id="LJJFQ0DwPeXLsREwGbXZet" Ids="S2phhZt3BjRPFXW7dLgrrs,CApPqVn1cXiO0dKlPMogbX" />
-          <Link Id="UdITFbIdx8IMoGBamTetMg" Ids="KK2ZDwT6GSuP2oOY7QGxh6,VXrXa0loZ28MET2h1rgJVm" />
-          <Link Id="DNd2VbbvgPUPWGCp9dyY9n" Ids="T9mbFzvDT0zLdwC1FwvrgK,TtSHkzb1KxcMIaSOFM2kjM" IsFeedback="true" />
-          <Link Id="NTYZw3ksN8NPC5nucKL7iA" Ids="E0nPtto4UptLKP2JMSEpHg,TtSHkzb1KxcMIaSOFM2kjM" />
-          <Link Id="AUmrVCMzmxlLbMmuAi2cS8" Ids="G4ZNVFqy4mINGTYtcRw06y,BBznaTnp5z6Prv4XsSq2mE" />
-          <Link Id="S5ZN0oQBqlxPHvzMaNgPvJ" Ids="Pm0b4w9g1htMjrF2OSeo82,DsG346eQvxPPpLLHGxEX8e" IsFeedback="true" />
-          <Link Id="MMrc4A6jLz5Nr9v4Z1KLnh" Ids="RHTR75ed27QL494UD0M8BR,DsG346eQvxPPpLLHGxEX8e" />
-          <Link Id="O11Xe7formVMl64PtS1ca4" Ids="H3UBWBF2emWPQSwB1VlRhj,MiSVbatZD2hMZdkAs0xifz" />
-          <Slot Id="QWpEBi44zwUMH3XZ5jdW5y" Name="FPS" />
-          <Link Id="G3VisaNrOcJOI0S3fzyC3Z" Ids="LlC9ZEhEmKUO00mVqLlkOl,LlTQ3MZfoT4MMSxyDirpmu" />
-          <Link Id="OjKTgmcfPCJPHYTmsL6fnr" Ids="LlTQ3MZfoT4MMSxyDirpmu,BeVUNMk0WCZNxcbfVjQ7Aa" />
-          <Link Id="KzrWJ54ZTIwOCW5Vd5yldv" Ids="BeVUNMk0WCZNxcbfVjQ7Aa,MbSTO3hkVDmMg8O7CaaFYT" IsHidden="true" />
           <Patch Id="RTPBwQpdkXDOVPgRiE34PU" Name="GetCameraFPS">
             <Pin Id="MbSTO3hkVDmMg8O7CaaFYT" Name="FPS" Kind="OutputPin" />
           </Patch>
-          <ProcessDefinition Id="UUqk9nHhgEKN4s36voMXYE" HasStateOut="true">
-            <Fragment Id="ALGp0vkIcRhPe9OFSXrNwa" Patch="HaDokwDGqnmQCwCLcwnhUY" Enabled="true" />
-            <Fragment Id="Mpr7XtewVtGLrtF3p6p4lk" Patch="KKqWBnvjcTCNviT9BZuGqw" />
-            <Fragment Id="SPa37WBVbYjO1fA1XIOfwR" Patch="P7CUClE6ry2Px4k9UJ5Rgj" Enabled="true" />
-            <Fragment Id="Qtp3DDdVCqSPoAp8oxY5qH" Patch="Ks0qxKkeVK7OXXAU8pc5WN" Enabled="true" />
-            <Fragment Id="TqkRMOCm4POOBC3Zcn8Dlq" Patch="IB7jXHE3Pt9OWUSr16lGu4" Enabled="true" />
-            <Fragment Id="Ozz9PbFJXUsPhg4y7MFFQO" Patch="O7DZOifQrKGO2SmINHbkGD" Enabled="true" />
-            <Fragment Id="NQFz0akjNLFPPP7TF0jUtc" Patch="KVqL4LxfqagPAzKcNr1aEr" Enabled="true" />
-            <Fragment Id="NSoipLEzhVoPXV55BPcvNj" Patch="RTPBwQpdkXDOVPgRiE34PU" Enabled="true" />
-            <Fragment Id="D346JRg7RbxPl7yqy1WpUj" Patch="JVpg80vaOSXQXtTPHgnc8i" Enabled="true" />
-            <Fragment Id="KE5NgyiylL2LoyCHMFr7vZ" Patch="JOrMpEg9a1sPH5EdYcNvk2" />
-            <Fragment Id="GhKJfPPtGymQIY2pRiaHTS" Patch="DBCkZwWmhFXN0TuOKsdMCl" />
-            <Fragment Id="ScU7yBhfTIZLJglqwVAHS7" Patch="GMGVjCDEHEfOaLLTL1wdX9" />
-          </ProcessDefinition>
-          <Link Id="IsEFJo4g56QOakrd2HlmUY" Ids="QUC8VH1AR29QYaTMEsPxW1,TAdzhGTBwq0NxY69b9Ssrl" />
         </Patch>
       </Node>
       <!--
@@ -2414,59 +2416,39 @@
         <Patch Id="Fn52CnbmpbBME2X4NsnHf0">
           <Canvas Id="RWJ73r7joNJMbkpHHGKqij" CanvasType="Group">
             <Node Bounds="367,254,70,26" Id="SrtqqiB5G0LQF9qGHFQw2c">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="confidence" />
               </p:NodeReference>
               <Pin Id="MmNHgZeV4LkNxgsWYKGtnF" Name="Input" Kind="StateInputPin" />
               <Pin Id="VX4LfsxmCbONvoyNzUCRMf" Name="Output" Kind="StateOutputPin" />
               <Pin Id="LQOPSj5vz0lLFyi0pxZaek" Name="Confidence" Kind="OutputPin" />
             </Node>
-            <Node Bounds="539,254,124,26" Id="AllTTG4gpTLL7qkDJ0DIky">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
-                <Choice Kind="OperationCallFlag" Name="keypoints2D" />
-              </p:NodeReference>
-              <Pin Id="BpaUsiUJXFBNRfdAQexR7f" Name="Input" Kind="StateInputPin" />
-              <Pin Id="FvgTaIFJMIdO43eSXjIBEt" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="HgbxPD438bhNiDVWiQrfu2" Name="Keypoints 2D" Kind="OutputPin" />
-            </Node>
             <Node Bounds="922,140,104,26" Id="O8OwKaeTE0SPid1I2C8eXz">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="boundingBox2D" />
               </p:NodeReference>
               <Pin Id="NVroY2sT9cjMMTyCNCEyfW" Name="Input" Kind="StateInputPin" />
               <Pin Id="NL0TlIgb0rnMZTLOvmPeKI" Name="Output" Kind="StateOutputPin" />
               <Pin Id="VDDHBIFEZIIOxOeGwX74dG" Name="Bounding Box 2D" Kind="OutputPin" />
             </Node>
-            <Node Bounds="729,269,110,26" Id="H7LX1f0HyrxNAmALuUPfLn">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
-                <Choice Kind="OperationCallFlag" Name="keypointConfidence" />
-              </p:NodeReference>
-              <Pin Id="HfEza4QCOpwMr5TRjXhogM" Name="Input" Kind="StateInputPin" />
-              <Pin Id="A9wBn5UzL29MtfXry6sSXN" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="M6ba05kMrULPjpiLPjZ137" Name="Keypoint Confidence" Kind="OutputPin" />
-            </Node>
             <ControlPoint Id="LmmEX8GUpTCLctx9OAj1Dg" Bounds="369,167" />
             <ControlPoint Id="GSEFc8ZIY8XPLIeaMf9yQB" Bounds="434,329" />
             <ControlPoint Id="HawFibmleD6OTAswjgYSqg" Bounds="661,634" />
-            <Node Bounds="595,352,271,230" Id="LEmVF7qfMAWPbUXrE6dy5O">
+            <Node Bounds="595,352,271,246" Id="LEmVF7qfMAWPbUXrE6dy5O">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="U9nldyKUIfsOpArEgdvmJi" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="EQ3ctDnI8JYOvGbJnmPUap" Bounds="661,576" Alignment="Bottom" />
-              <ControlPoint Id="Be0OeqSw3OuLE0IE4MTJO6" Bounds="620,359" Alignment="Top" />
-              <ControlPoint Id="DbWhNKvExE9NheCIycSroU" Bounds="837,576" Alignment="Bottom" />
-              <ControlPoint Id="NiKT16jo41iQJF1BIWFbqA" Bounds="806,359" Alignment="Top" />
+              <ControlPoint Id="EQ3ctDnI8JYOvGbJnmPUap" Bounds="661,592" Alignment="Bottom" />
+              <ControlPoint Id="Be0OeqSw3OuLE0IE4MTJO6" Bounds="620,358" Alignment="Top" />
+              <ControlPoint Id="DbWhNKvExE9NheCIycSroU" Bounds="837,592" Alignment="Bottom" />
+              <ControlPoint Id="NiKT16jo41iQJF1BIWFbqA" Bounds="806,358" Alignment="Top" />
               <Patch Id="SF3BrRj3B0MPBgtTAlrG0U" ManuallySortedPins="true">
                 <Patch Id="KPB3NVB7JgRMhvuC8huNWX" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="LhNvBhKQGF1QYcfQ31mmCq" Name="Then" ManuallySortedPins="true" />
@@ -2477,10 +2459,10 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="KldWVNoImwrOOQXkyQctGx" Name="Break" Kind="OutputPin" />
-                  <ControlPoint Id="BtmJaMtQetfPB1W4bXOtYM" Bounds="661,381" Alignment="Top" />
-                  <ControlPoint Id="OTUOj5sN6vJMz82CY9axTZ" Bounds="661,555" Alignment="Bottom" />
+                  <ControlPoint Id="BtmJaMtQetfPB1W4bXOtYM" Bounds="661,380" Alignment="Top" />
+                  <ControlPoint Id="OTUOj5sN6vJMz82CY9axTZ" Bounds="661,572" Alignment="Bottom" />
                   <ControlPoint Id="OPz7NlLMFLSP2ArlPNV8vF" Bounds="837,380" Alignment="Top" />
-                  <ControlPoint Id="K1y7FBZD9FBMQQeRLqa6cl" Bounds="837,556" Alignment="Bottom" />
+                  <ControlPoint Id="K1y7FBZD9FBMQQeRLqa6cl" Bounds="837,572" Alignment="Bottom" />
                   <Patch Id="T2Et0XpaU8ULUL1WWcAcQ6" ManuallySortedPins="true">
                     <Patch Id="G0kDEWfP6I1NonpW2iuIz3" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="MSFBWN4UnevNd1HPInYFVT" Name="Update" ManuallySortedPins="true">
@@ -2583,7 +2565,7 @@
             <ControlPoint Id="GtApNlZgJGGMSzTFFcAFLB" Bounds="692,97" />
             <ControlPoint Id="HzaLgqsc6Z2Og69MIhAMaX" Bounds="837,637" />
             <ControlPoint Id="C6L4qi3H19xNFhTir5ds1r" Bounds="1012,622" />
-            <Node Bounds="949,361,203,229" Id="P8flN6GcQphOQjQHuvErDE">
+            <Node Bounds="949,304,203,287" Id="P8flN6GcQphOQjQHuvErDE">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -2591,7 +2573,7 @@
               </p:NodeReference>
               <Pin Id="Fjcg3J2ShBPMzqT0P7gRFi" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="KNCyPWN05VWLcZZZUsUt78" Bounds="1014,585" Alignment="Bottom" />
-              <ControlPoint Id="Nue8CvaDt7iPcO2yqSUGGf" Bounds="1059,368" Alignment="Top" />
+              <ControlPoint Id="Nue8CvaDt7iPcO2yqSUGGf" Bounds="1059,310" Alignment="Top" />
               <Patch Id="EhAHZZvL2h6O1tB4gZM5ef" ManuallySortedPins="true">
                 <Patch Id="R6ciBT4IMg6PxNa8kqNvcJ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Nz9btw9BIO4OeA2rSSfzjx" Name="Then" ManuallySortedPins="true" />
@@ -2602,8 +2584,8 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="P3X6yYWc8BVLTHmDV5mDDy" Name="Break" Kind="OutputPin" />
-                  <ControlPoint Id="Fp41eARdmSxPafeuQhxo70" Bounds="1018,331" Alignment="Top" />
-                  <ControlPoint Id="Uno2mS6aekCOUEmd8O69ad" Bounds="1015,465" Alignment="Bottom" />
+                  <ControlPoint Id="Fp41eARdmSxPafeuQhxo70" Bounds="1018,330" Alignment="Top" />
+                  <ControlPoint Id="Uno2mS6aekCOUEmd8O69ad" Bounds="1015,467" Alignment="Bottom" />
                   <Patch Id="RpW8kcqO1XtL8voFrQOOUn" ManuallySortedPins="true">
                     <Patch Id="URlb4i8QOndOBNCfNAD7NP" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="F0mPasEH6wzO1HWRnn2SXu" Name="Update" ManuallySortedPins="true" />
@@ -2688,6 +2670,26 @@
               <Pin Id="Dt6gpw9eK99P3QNPtzuhX7" Name="Not Assigned" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="KmmqpFA2l81PnxKoTqXVFd" Bounds="714,134" />
+            <Node Bounds="597,256,73,26" Id="QtrSAFUFUCLO1Ml2TwmiU3">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="keypoints2D" />
+              </p:NodeReference>
+              <Pin Id="T9qLKUDFGwCPthOXXHfFRP" Name="Input" Kind="StateInputPin" />
+              <Pin Id="GekbpPbTgwwLNJPNmgYckZ" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Uxpsw34IfWVMu4m3k6VHGI" Name="Keypoints 2D" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="735,285,107,26" Id="GYG5jgSKZDcM7eAHbHP3Ab">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="keypointConfidence" />
+              </p:NodeReference>
+              <Pin Id="AygZoYnPTzoNmn9xvTM7iX" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PIKvM4mpgRONMfL7vNxzyB" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Ev6OqR4IoU3PxGUcvqmvOy" Name="Keypoint Confidence" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="HCH1ImEqAfWNpeNcRbkBSr">
             <Fragment Id="OLHjQi6tMfgPl0yZz70KZO" Patch="NcT3EzXqSLOOwkQx5FDzCP" Enabled="true" />
@@ -2695,9 +2697,6 @@
           </ProcessDefinition>
           <Link Id="Lwg4aPlSpNbQFGff3DGMaO" Ids="GL9IIqrIBZMNZH2xIORT4t,LmmEX8GUpTCLctx9OAj1Dg" IsHidden="true" />
           <Link Id="Fujyyi9AnjoP2TgHUPlaNm" Ids="LmmEX8GUpTCLctx9OAj1Dg,MmNHgZeV4LkNxgsWYKGtnF" />
-          <Link Id="KmSY2jOe2BgPrf8pVVAN8J" Ids="VX4LfsxmCbONvoyNzUCRMf,BpaUsiUJXFBNRfdAQexR7f" />
-          <Link Id="NLLOEBVNQh6MA1BPL3XmMV" Ids="FvgTaIFJMIdO43eSXjIBEt,HfEza4QCOpwMr5TRjXhogM" />
-          <Link Id="VhE5UHLtftFL6pXBOB1bWu" Ids="A9wBn5UzL29MtfXry6sSXN,NVroY2sT9cjMMTyCNCEyfW" />
           <Link Id="BHHaHG4Z4wLPR5BUAi5fWD" Ids="LQOPSj5vz0lLFyi0pxZaek,GSEFc8ZIY8XPLIeaMf9yQB" />
           <Link Id="Gy0jBCZtm11MIcEqOmCnGs" Ids="GSEFc8ZIY8XPLIeaMf9yQB,FqW8uux6ABJPFf31WcnlFW" IsHidden="true" />
           <Link Id="OJL46SKMopyMnnd2KHHxtP" Ids="HawFibmleD6OTAswjgYSqg,ViCKdsorc1cN5eNtj29EJj" IsHidden="true" />
@@ -2733,27 +2732,30 @@
           <Link Id="Vixonob9K4OMcx7zBC54Sl" Ids="Uno2mS6aekCOUEmd8O69ad,T5hl5RM4aNZK9ebEQ4T4ho" />
           <Link Id="HAUTa2SHJ9xODYVkWWthno" Ids="LETB21z4OueOicJvZv1971,VHC9GpIyxPPQdwviaDoZVC" />
           <Link Id="TaB3n3RwaMGPDT3V13deu5" Ids="DLmSYWAMu0RP10EcgTjJkj,KNCyPWN05VWLcZZZUsUt78" />
-          <Link Id="D7AQcQLUk4RLfjZ3RgZWf4" Ids="HgbxPD438bhNiDVWiQrfu2,Cxu0WpJ7dTlNPOXMcSimKh" />
-          <Link Id="RBR1ZDvzZyQMSHTQBigRnm" Ids="M6ba05kMrULPjpiLPjZ137,OPz7NlLMFLSP2ArlPNV8vF" />
           <Link Id="J90CjsG7XEmPanNbVY9Neo" Ids="VDDHBIFEZIIOxOeGwX74dG,FZkNR0oQmrNN6kdSp80wGX" />
           <Link Id="IgBku3D3lXKOm0Uv3ivfxT" Ids="VDDHBIFEZIIOxOeGwX74dG,Fp41eARdmSxPafeuQhxo70" />
-          <Link Id="ORHk0Ewtu3gODc1gTqw9Rm" Ids="HgbxPD438bhNiDVWiQrfu2,BtmJaMtQetfPB1W4bXOtYM" />
           <Link Id="S7xNWk0aD7EMLBIPTXPmIs" Ids="Fp41eARdmSxPafeuQhxo70,GUAZD7GKM2RNx9jy3dwLMT" />
           <Link Id="M3eeY9grDZnMqKHkO6SdYA" Ids="AExg1cEdOcuPUWihlLWkHA,U4rN5LckBmWPzEw21GgNIO" />
           <Link Id="L5kA6pZs65BLAoPPH0cj0R" Ids="BtmJaMtQetfPB1W4bXOtYM,Bs9RLP7fS1PLqZyCJByk3x" />
           <Link Id="CZbdUyAnNtqOCoDkHjM8jn" Ids="BC8xWuG82jvPOuPoWk7GUR,OTUOj5sN6vJMz82CY9axTZ" />
           <Link Id="SgNGTtTLOhVMa0y4jcTesw" Ids="KmmqpFA2l81PnxKoTqXVFd,HXZyMreVCWWNRpRQ505dCw" />
           <Link Id="HqQFo72iXOYQGg9do9YJ9d" Ids="M9EHmHKl4slQWzTVnjqBSA,KmmqpFA2l81PnxKoTqXVFd" IsHidden="true" />
+          <Link Id="LSZ8nq9eKgGMXWqcTXtU6K" Ids="VX4LfsxmCbONvoyNzUCRMf,T9qLKUDFGwCPthOXXHfFRP" />
+          <Link Id="OUuzw0B5R4lLtsbQfofOQr" Ids="Uxpsw34IfWVMu4m3k6VHGI,Cxu0WpJ7dTlNPOXMcSimKh" />
+          <Link Id="UQhdINme2I0PCMNInMlq6c" Ids="Uxpsw34IfWVMu4m3k6VHGI,BtmJaMtQetfPB1W4bXOtYM" />
+          <Link Id="JNB8ZIxFhS5QaPzah4Lp4q" Ids="Ev6OqR4IoU3PxGUcvqmvOy,OPz7NlLMFLSP2ArlPNV8vF" />
+          <Link Id="EXkND9hEC4fOYLiWkDztYf" Ids="GekbpPbTgwwLNJPNmgYckZ,AygZoYnPTzoNmn9xvTM7iX" />
+          <Link Id="NHMW00xbrL8L24c5zBTjfx" Ids="PIKvM4mpgRONMfL7vNxzyB,NVroY2sT9cjMMTyCNCEyfW" />
           <Patch Id="NcT3EzXqSLOOwkQx5FDzCP" Name="Create" />
           <Patch Id="QMjxA7F9hqULjl3rPmqRX6" Name="Update">
-            <Pin Id="GL9IIqrIBZMNZH2xIORT4t" Name="ObjectDataSDK" Kind="InputPin" Bounds="371,97" />
+            <Pin Id="GL9IIqrIBZMNZH2xIORT4t" Name="BodyData" Kind="InputPin" Bounds="371,97" />
             <Pin Id="RPXodguiG6YLaINRSyPmNO" Name="All Body Parts" Kind="InputPin" Bounds="623,74" />
             <Pin Id="M9EHmHKl4slQWzTVnjqBSA" Name="Body Parts" Kind="InputPin" Bounds="717,134" IsPinGroup="true">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
                   <TypeReference>
-                    <Choice Kind="TypeFlag" Name="BODY_PARTS_POSE_34" />
+                    <Choice Kind="TypeFlag" Name="BODY_34_PARTS" />
                   </TypeReference>
                 </p:TypeArguments>
               </p:TypeAnnotation>
@@ -2777,9 +2779,9 @@
         <Patch Id="Io8n1Aau6SbP5nVP9hKSY4">
           <Canvas Id="Px85jqFlHEPOHn6TddMx5h" CanvasType="Group">
             <Node Bounds="256,253,70,26" Id="L6VIp9SVbkPQCBOtE98s0B">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="confidence" />
               </p:NodeReference>
               <Pin Id="Sa90hoiVMFmLrw3VMHhYdl" Name="Input" Kind="StateInputPin" />
@@ -2787,9 +2789,9 @@
               <Pin Id="G6a83qrvj1rLUs4OeghtbP" Name="Confidence" Kind="OutputPin" />
             </Node>
             <Node Bounds="1408,260,98,26" Id="DT55uVNaDw7OX2oJdHTHQZ">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="headBoundingBox" />
               </p:NodeReference>
               <Pin Id="Omf1gS4fR6sOhvpSz5Jg7H" Name="Input" Kind="StateInputPin" />
@@ -2797,19 +2799,18 @@
               <Pin Id="HudwEmT9GCpPbZfZ0rQSrO" Name="Head Bounding Box" Kind="OutputPin" />
             </Node>
             <Node Bounds="1224,257,101,26" Id="QCimhAtPGCVLYfxln3EPLR">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="headPosition" />
               </p:NodeReference>
               <Pin Id="KWTmJy65pofLgP0mU6eQYM" Name="Input" Kind="StateInputPin" />
               <Pin Id="GcLuKQcZarAMJpk3mMGxTX" Name="Output" Kind="StateOutputPin" />
               <Pin Id="OsL9xibj2SAMQNTzbQVPcl" Name="Head Position" Kind="OutputPin" />
             </Node>
-            <Node Bounds="729,253,110,26" Id="O0LKEpuo8gXOqdHQT79MiY">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+            <Node Bounds="729,253,110,19" Id="O0LKEpuo8gXOqdHQT79MiY">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
                 <Choice Kind="OperationCallFlag" Name="keypointConfidence" />
               </p:NodeReference>
               <Pin Id="Oit8JsMObPjN5JVzFAiUSu" Name="Input" Kind="StateInputPin" />
@@ -2817,19 +2818,18 @@
               <Pin Id="LkfVXpv5Z4LOzjOGO2C6TG" Name="Keypoint Confidence" Kind="OutputPin" />
             </Node>
             <Node Bounds="412,253,97,26" Id="TT8C7HQo4HVNmcciTqgj45">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="position" />
               </p:NodeReference>
               <Pin Id="OLCEo1w36sNPic0ME7B1R8" Name="Input" Kind="StateInputPin" />
               <Pin Id="EMVxOJE3KThP2jQRW4eNOC" Name="Output" Kind="StateOutputPin" />
               <Pin Id="QufHqrbk2RgOWkxaHZpQjr" Name="Position" Kind="OutputPin" />
             </Node>
-            <Node Bounds="553,253,112,26" Id="V0qbO9pf1OUNfcmfe5AyBF">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+            <Node Bounds="553,253,112,19" Id="V0qbO9pf1OUNfcmfe5AyBF">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
                 <Choice Kind="OperationCallFlag" Name="keypoints" />
               </p:NodeReference>
               <Pin Id="Eb50fRafkzUNaw6TjKWIMt" Name="Input" Kind="StateInputPin" />
@@ -2837,9 +2837,9 @@
               <Pin Id="FNhsLHBWCc0NzwjnFB1g0K" Name="Keypoints" Kind="OutputPin" />
             </Node>
             <Node Bounds="1001,252,102,26" Id="Kwbih35o5wSQWWUke4nEMO">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="boundingBox" />
               </p:NodeReference>
               <Pin Id="R9OxbNISstjMdYa4MsIG4X" Name="Input" Kind="StateInputPin" />
@@ -2856,10 +2856,10 @@
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="UtOEXAU0ypuORZw9C6hXAm" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="UvQfhuNt5YtMNXjzvOSW48" Bounds="660,631" Alignment="Bottom" />
-              <ControlPoint Id="CtPqbWQOfZoPXNzXZdqi0z" Bounds="620,359" Alignment="Top" />
-              <ControlPoint Id="HCwSYo1sCqjPVgnlMsZ59l" Bounds="840,631" Alignment="Bottom" />
-              <ControlPoint Id="AhrSHdFhM8tMgrupG7QKsr" Bounds="806,359" Alignment="Top" />
+              <ControlPoint Id="UvQfhuNt5YtMNXjzvOSW48" Bounds="660,634" Alignment="Bottom" />
+              <ControlPoint Id="CtPqbWQOfZoPXNzXZdqi0z" Bounds="620,358" Alignment="Top" />
+              <ControlPoint Id="HCwSYo1sCqjPVgnlMsZ59l" Bounds="840,634" Alignment="Bottom" />
+              <ControlPoint Id="AhrSHdFhM8tMgrupG7QKsr" Bounds="806,358" Alignment="Top" />
               <Patch Id="LzDdbijZSjdMxlza8q2Iyn" ManuallySortedPins="true">
                 <Patch Id="IxEU0ps5d5xMKDe44rKbNA" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="BRbo0fPBo8WNQFsjd5QZTv" Name="Then" ManuallySortedPins="true" />
@@ -2870,10 +2870,10 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="EgELA2giIe7LYOmnIUFtxI" Name="Break" Kind="OutputPin" />
-                  <ControlPoint Id="MFdt8gaYIT1QGHd7G4kIGC" Bounds="661,381" Alignment="Top" />
-                  <ControlPoint Id="VEPeN2XYd4PPXGNzzCrhcC" Bounds="660,611" Alignment="Bottom" />
+                  <ControlPoint Id="MFdt8gaYIT1QGHd7G4kIGC" Bounds="661,380" Alignment="Top" />
+                  <ControlPoint Id="VEPeN2XYd4PPXGNzzCrhcC" Bounds="660,614" Alignment="Bottom" />
                   <ControlPoint Id="B2apYOsRtbWMbZXdQUYuz2" Bounds="837,380" Alignment="Top" />
-                  <ControlPoint Id="ADOQL36hequLh7OwBmf2kH" Bounds="840,611" Alignment="Bottom" />
+                  <ControlPoint Id="ADOQL36hequLh7OwBmf2kH" Bounds="840,614" Alignment="Bottom" />
                   <Patch Id="LBAuB687i07O4TH6rHqYuo" ManuallySortedPins="true">
                     <Patch Id="Mx1mPMpCTqTOTdfRjKJSCH" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="GiOsFQEwFRQL0gyLSaBgHG" Name="Update" ManuallySortedPins="true">
@@ -2980,9 +2980,9 @@
             <ControlPoint Id="SX1XyfxMIJlN09r7u18CcY" Bounds="1318,556" />
             <ControlPoint Id="VRcOkt35fPcOEpEwoIxWIu" Bounds="1499,552" />
             <Node Bounds="1590,257,70,26" Id="LfpLHNzR5x5L4VsFTOpLEF">
-              <p:NodeReference LastCategoryFullName="sl.ObjectData" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectData" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="id" />
               </p:NodeReference>
               <Pin Id="Oz4Aev5EdwiMT0HoTJ7UFo" Name="Input" Kind="StateInputPin" />
@@ -3004,14 +3004,14 @@
               <Pin Id="RlSEAq4JbgjMQfmOLK9byL" Name="Input" Kind="InputPin" />
               <Pin Id="HZTnjUbp1RwNYiVT3rJPJx" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1015,384,145,131" Id="NWhA49lBS3BMiJig2coRUN">
+            <Node Bounds="1015,384,145,132" Id="NWhA49lBS3BMiJig2coRUN">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="KfoSEdVaGy5MOTOado25LF" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="UrC6jzO75ACOug0u1PgVbn" Bounds="1090,510" Alignment="Bottom" />
-              <ControlPoint Id="JrZe4cTqRnxL3SOOYIhzLn" Bounds="1114,391" Alignment="Top" />
+              <ControlPoint Id="JrZe4cTqRnxL3SOOYIhzLn" Bounds="1114,390" Alignment="Top" />
               <Patch Id="EEK7j3FnDwcOGhbdOPIzyh" ManuallySortedPins="true">
                 <Patch Id="A0eh5avbCjxPIX2xhwXyf5" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="TZqwW2U4j7uMROPuLNr6ow" Name="Then" ManuallySortedPins="true" />
@@ -3080,14 +3080,14 @@
               <Patch Id="GpyKAdi6GWtNzCjvVTxM50" ManuallySortedPins="true">
                 <Patch Id="DNBUlS8ThS5MWxfi9PQFwY" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="JWS1fRF7jZUPPNxLYcUrrd" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1475,407,81,86" Id="CFX80zpXDDMOYjF7ybwy82">
+                <Node Bounds="1475,407,81,87" Id="CFX80zpXDDMOYjF7ybwy82">
                   <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="Phuhd95vEUlMBMxp1zvRuv" Name="Break" Kind="OutputPin" />
-                  <ControlPoint Id="Ukjc5zT6ha1LfVHtEHr3kl" Bounds="1490,414" Alignment="Top" />
+                  <ControlPoint Id="Ukjc5zT6ha1LfVHtEHr3kl" Bounds="1490,413" Alignment="Top" />
                   <ControlPoint Id="VwG55t1wxniPbUhzbhVxn6" Bounds="1493,488" Alignment="Bottom" />
                   <Patch Id="OMCHLZZO2RLQapS68sEdGC" ManuallySortedPins="true">
                     <Patch Id="I05yiKlnKwiO8UFuhDY2if" Name="Create" ManuallySortedPins="true" />
@@ -3195,14 +3195,14 @@
           <Link Id="Cn8TROOK79MO3S5vlMlAf2" Ids="IZX4pg85DY5L3KAzuaRVi2,VEPeN2XYd4PPXGNzzCrhcC" />
           <Patch Id="UfqCRZbeeD8L6mF31YEwJW" Name="Create" />
           <Patch Id="Uv1Qu7uqLWQPGOOSTB94td" Name="Update">
-            <Pin Id="JqnmObwk9NpLTI95rHAful" Name="ObjectDataSDK" Kind="InputPin" Bounds="371,97" />
+            <Pin Id="JqnmObwk9NpLTI95rHAful" Name="BodyData" Kind="InputPin" Bounds="371,97" />
             <Pin Id="M2CgV6tMBorN72yWzFjmBZ" Name="All Body Parts" Kind="InputPin" Bounds="623,74" />
             <Pin Id="FvRgpuyWxGfNSuzXjALEwk" Name="Body Parts" Kind="InputPin" Bounds="717,134" IsPinGroup="true">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
                   <TypeReference>
-                    <Choice Kind="TypeFlag" Name="BODY_PARTS_POSE_34" />
+                    <Choice Kind="TypeFlag" Name="BODY_34_PARTS" />
                   </TypeReference>
                 </p:TypeArguments>
               </p:TypeAnnotation>
@@ -3509,24 +3509,6 @@
       </Node>
       <!--
 
-    ************************ BODY_PARTS ************************
-
--->
-      <Node Name="BODY_PARTS" Bounds="285,650" Id="RPjDV2HZhMyLsyxSTDds2L">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
-          <Choice Kind="TypeFlag" Name="BODY_PARTS" />
-        </p:TypeAnnotation>
-        <Patch Id="DKAeHJz2srUNciRNYb8shx">
-          <Canvas Id="CWoYHAd8DvoMS9nkebzjTT" CanvasType="Group" />
-          <ProcessDefinition Id="IXBLYzErxvaMzBVfrByTG3" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
     ************************ REFERENCE_FRAME ************************
 
 -->
@@ -3563,24 +3545,6 @@
       </Node>
       <!--
 
-    ************************ SENSING_MODE ************************
-
--->
-      <Node Name="SENSING_MODE" Bounds="304,913" Id="A6DTPB91wFFND3AihFj8CX">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
-          <Choice Kind="TypeFlag" Name="SENSING_MODE" />
-        </p:TypeAnnotation>
-        <Patch Id="DYby4LTyweKPWBJreJP6ra">
-          <Canvas Id="Bf4pZkm46nQLUQAB6l3DVV" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="GOEH89BNmdpNoSwO9MGNX6" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
     ************************ DEPTH_MODE ************************
 
 -->
@@ -3599,45 +3563,27 @@
       </Node>
       <!--
 
-    ************************ BODY_PARTS_POSE_34 ************************
+    ************************ RetriveBodies ************************
 
 -->
-      <Node Name="BODY_PARTS_POSE_34" Bounds="284,699" Id="ICRWs2fv50UMMNBqdq8OnK">
-        <p:NodeReference>
-          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
-          <FullNameCategoryReference ID="Primitive" />
-        </p:NodeReference>
-        <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
-          <Choice Kind="TypeFlag" Name="BODY_PARTS_POSE_34" />
-        </p:TypeAnnotation>
-        <Patch Id="UrxVuDau3wALSTiUM05rG8">
-          <Canvas Id="AKxsB3Zj4jRNO4BBmGct4Z" BordersChecked="false" CanvasType="Group" />
-          <ProcessDefinition Id="FdVfgfBrTG2P6K4IzsJ8YA" IsHidden="true" />
-        </Patch>
-      </Node>
-      <!--
-
-    ************************ RetriveObjects ************************
-
--->
-      <Node Name="RetriveObjects" Bounds="294,422" Id="LE2gVQzdNWwLUdlTfjkFNk">
+      <Node Name="RetriveBodies" Bounds="294,422" Id="LE2gVQzdNWwLUdlTfjkFNk">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
         <Patch Id="EqcoCzfkM2UNrKjz3FX3TG">
           <Canvas Id="GZWe5VupefbOnmRzww3dpL" CanvasType="Group">
             <Node Bounds="64,1338,46,26" Id="PbkkW6d6XCrLAzWKcuKdMd">
-              <p:NodeReference LastCategoryFullName="sl.Objects" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.Bodies" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="AssemblyCategory" Name="sl" />
-                <CategoryReference Kind="AssemblyCategory" Name="Objects" />
+                <CategoryReference Kind="AssemblyCategory" Name="Bodies" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="isNew" />
               </p:NodeReference>
               <Pin Id="TsG49eFLkd3OlsomxUnvqr" Name="Input" Kind="StateInputPin" />
               <Pin Id="I6O4gq9dmQnPoU7snczizR" Name="Output" Kind="StateOutputPin" />
               <Pin Id="BSmB5R580doPL5s8MObHJV" Name="Is New" Kind="OutputPin" />
             </Node>
-            <Node Bounds="306,998,284,152" Id="Ur9oKhpmEOMNhHQWVtHKVw">
+            <Node Bounds="306,983,284,168" Id="Ur9oKhpmEOMNhHQWVtHKVw">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -3646,21 +3592,21 @@
               <Patch Id="FZafgp3vbWsNckaHS5piMt" ManuallySortedPins="true">
                 <Patch Id="CBG7UF4gH9JPUYjYf95ZsY" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="FpnEiPh3kDFMW7s52w0Jrk" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="320,1072,255,26" Id="ONLCIzcVH3mLS9cyWPgtlr">
+                <Node Bounds="319,1038,257,26" Id="O3CFzqoJUf2P3njuiO8QZR">
                   <p:NodeReference LastCategoryFullName="sl.Camera" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Camera" />
-                    <Choice Kind="OperationCallFlag" Name="EnableObjectDetection" />
+                    <Choice Kind="OperationCallFlag" Name="EnableBodyTracking" />
                   </p:NodeReference>
-                  <Pin Id="N4BOSjBEnOyO2yaXB299Pn" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="FVDe5NvvCdcOnPhukbymu1" Name="Od_params" Kind="InputPin" />
-                  <Pin Id="NLrjHYYm8X7Lai4nfYUHZR" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="BtKSncDHh8CLfSalKgtSKg" Name="Result" Kind="OutputPin" />
+                  <Pin Id="NxaFDRKN1EgNGu1bCjTrUz" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="E9bvC1kKzyOOZOIXsJkrLT" Name="Bt_params" Kind="InputPin" />
+                  <Pin Id="PDsmu3oKFaXNdJpULGnEIs" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="CeDQUPNjWEhMdGdnOtp3pA" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="OgEUbJ1rwcmNBpNNwSLFXE" Bounds="573,1145" Alignment="Bottom" />
-              <ControlPoint Id="DuLAVzAZXHoNukfAuVgB8c" Bounds="486,1005" Alignment="Top" />
-              <ControlPoint Id="TKezrxmmW0ILZoQ83ssnug" Bounds="320,1005" Alignment="Top" />
+              <ControlPoint Id="DuLAVzAZXHoNukfAuVgB8c" Bounds="486,989" Alignment="Top" />
+              <ControlPoint Id="TKezrxmmW0ILZoQ83ssnug" Bounds="320,989" Alignment="Top" />
               <ControlPoint Id="Isux5IuzwGNMxRHR9ZzWXJ" Bounds="322,1145" Alignment="Bottom" />
             </Node>
             <Pad Id="HHru9L0mZgxOyLWlgmaQHY" Comment="" Bounds="479,954,257,15" ShowValueBox="true" isIOBox="true" Value="ERROR_CODE_LAST">
@@ -3669,33 +3615,14 @@
               </p:TypeAnnotation>
             </Pad>
             <Node Bounds="64,1398,60,26" Id="Sz4LWAIu2vALsujPbTAe2c">
-              <p:NodeReference LastCategoryFullName="sl.Objects" LastDependency="Stereolabs.zed.dll">
+              <p:NodeReference LastCategoryFullName="sl.Bodies" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="Objects" />
+                <CategoryReference Kind="AssemblyCategory" Name="Bodies" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="isTracked" />
               </p:NodeReference>
               <Pin Id="BNi6NR9oo5kLGwB0QQdoXK" Name="Input" Kind="StateInputPin" />
               <Pin Id="KoouwSB4uCCLFpWRvqNN7m" Name="Output" Kind="StateOutputPin" />
               <Pin Id="PgYa1dTMUa8PbWdG0748xj" Name="Is Tracked" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="64,1515,119,26" Id="TwdvL63pmrXMMGPHgRRzen">
-              <p:NodeReference LastCategoryFullName="sl.Objects" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="Objects" />
-                <Choice Kind="OperationCallFlag" Name="objectData" />
-              </p:NodeReference>
-              <Pin Id="UzO5nqFcuyJNhvsLAcpDv7" Name="Input" Kind="StateInputPin" />
-              <Pin Id="CYZxUgqAG18OEqViulyHEy" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="VKjwBWCRuB4OaTP7heYQsy" Name="Object Data" Kind="OutputPin" />
-            </Node>
-            <Node Bounds="64,1456,152,26" Id="Hy7MMQbyTkpL0VeUKEOjhu">
-              <p:NodeReference LastCategoryFullName="sl.Objects" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="numObject" />
-              </p:NodeReference>
-              <Pin Id="SG3ZhqqhPD9MYWLCh7NrxZ" Name="Input" Kind="StateInputPin" />
-              <Pin Id="D5OlEHCnyUbNjWbdXbHeqS" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="Olhep1SEDCcMJUgUUQdFqg" Name="Num Object" Kind="OutputPin" />
             </Node>
             <Node Bounds="81,1633,65,19" Id="KxE93An5RlfMLMNGl6QAu9">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -3724,7 +3651,6 @@
               <Pin Id="NJ4mi4h8dI2LZuVe8HHiBo" Name="Input 2" Kind="InputPin" />
               <Pin Id="EjNC3cO5C1POSF1YLSIV4M" Name="Result" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="I5BRT66yHZSLxAv7eOXLf8" Bounds="674,101" />
             <ControlPoint Id="J1tmeJ5aa4oOyOoG6vSXUs" Bounds="99,2049" />
             <Node Bounds="131,1261,36,19" Id="Vh29VGmoZ4sPQ3RlV0WQix">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
@@ -3788,7 +3714,7 @@
               <Pin Id="DeyCcl2f4KwMYDAdq6f33C" Name="Output" Kind="StateOutputPin" />
               <Pin Id="ELlZtwbHJxPPaCV4PZWt3h" Name="IsOpen" Kind="OutputPin" />
             </Node>
-            <Node Bounds="411,222,400,434" Id="JPHCZIRMxrjLyYPQdYvW4V">
+            <Node Bounds="411,222,372,434" Id="JPHCZIRMxrjLyYPQdYvW4V">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -3797,13 +3723,17 @@
               <Pin Id="Jk9VgdC5Jo0PNr4hvcwAnN" Name="Force" Kind="InputPin" />
               <Pin Id="AZ6fzIAuwwdLmJMNMumk4m" Name="Dispose Cached Outputs" Kind="InputPin" />
               <Pin Id="P0Gu2cRQs96OmNkB6L7Xig" Name="Has Changed" Kind="OutputPin" />
+              <ControlPoint Id="K9RkYjdlrRwNXoUoHsh9Pu" Bounds="703,228" Alignment="Top" />
+              <ControlPoint Id="RJJERBxRWRuPhXckb01YIh" Bounds="738,228" Alignment="Top" />
+              <ControlPoint Id="AQjQ8NxLb43Ldup4T8tc3T" Bounds="766,228" Alignment="Top" />
+              <ControlPoint Id="GFjJKFVcVArQAbprNJa0Xf" Bounds="563,650" Alignment="Bottom" />
               <Patch Id="DJtYc5vHeE6PxdA2QyyVGK" ManuallySortedPins="true">
                 <Patch Id="Ue5va3Jj0UKNTu9jsjro04" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="TRD7tIeuuFlNmUg6jLbh0F" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="561,332,113,26" Id="KXB9N3D4KHhPzBj8iFB5hO">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
+                  <p:NodeReference LastCategoryFullName="sl.BodyTrackingParameters" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
+                    <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingParameters" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="SetdetectionModel" />
                   </p:NodeReference>
                   <Pin Id="UIdEQWljWrGL0r1TkTYyYE" Name="Input" Kind="StateInputPin" />
@@ -3811,9 +3741,9 @@
                   <Pin Id="PGVGWBkMyiDLG7Jauas53X" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="561,396,145,26" Id="F9qVsLWmkixPNjnyWCJw7N">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
+                  <p:NodeReference LastCategoryFullName="sl.BodyTrackingParameters" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
+                    <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingParameters" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="SetenableObjectTracking" />
                   </p:NodeReference>
                   <Pin Id="M4x6AWhFQ1DPhVS0fsKqf0" Name="Input" Kind="StateInputPin" />
@@ -3821,9 +3751,9 @@
                   <Pin Id="M1cw0bLgo3MMvAN1CqiPeS" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="561,484,210,26" Id="GUyaPlOHedGNjm0uqO2uJu">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
+                  <p:NodeReference LastCategoryFullName="sl.BodyTrackingParameters" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
+                    <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingParameters" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="SetimageSync" />
                   </p:NodeReference>
                   <Pin Id="NZKLLVoN40QO2eZ40Imtlh" Name="Input" Kind="StateInputPin" />
@@ -3831,39 +3761,28 @@
                   <Pin Id="A2mXtGU7gJ3Pl97JwnwmjA" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="561,607,129,26" Id="HyTJqGnEqEeOATUG1b2SbF">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
+                  <p:NodeReference LastCategoryFullName="sl.BodyTrackingParameters" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
                     <Choice Kind="OperationCallFlag" Name="SetbodyFormat" />
                   </p:NodeReference>
                   <Pin Id="CF6C7q3Ab5bPlZ4spJdfEa" Name="Input" Kind="StateInputPin" />
                   <Pin Id="P8smNYGdPeMMX1WMZhHwLs" Name="Value" Kind="InputPin" />
                   <Pin Id="NI7JjHX8VlLPIHm00ucayV" Name="Output" Kind="StateOutputPin" />
                 </Node>
-                <Pad Id="Ke1BVLLzGwWOibvt2hXGwj" Comment="" Bounds="619,582,67,15" ShowValueBox="true" isIOBox="true" Value="POSE_34">
+                <Pad Id="Ke1BVLLzGwWOibvt2hXGwj" Comment="" Bounds="651,563,70,15" ShowValueBox="true" isIOBox="true" Value="POSE_34">
                   <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
                   </p:TypeAnnotation>
                 </Pad>
                 <Node Bounds="561,441,180,26" Id="B7gR2acFhSKNqN6fFQN1kM">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
+                  <p:NodeReference LastCategoryFullName="sl.BodyTrackingParameters" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
+                    <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingParameters" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="SetenableBodyFitting" />
                   </p:NodeReference>
                   <Pin Id="NdMl4t3RrT7M6yzYjadORL" Name="Input" Kind="StateInputPin" />
                   <Pin Id="A6LyD9eynZnLieT9g2B0GO" Name="Value" Kind="InputPin" />
                   <Pin Id="BMv2mDjiI5gPSf9Fo6psEW" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Node Bounds="561,531,238,26" Id="ADumDLPEQokM0Qsc0nU4UO">
-                  <p:NodeReference LastCategoryFullName="sl.ObjectDetectionParameters" LastDependency="Stereolabs.zed.dll">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionParameters" />
-                    <Choice Kind="OperationCallFlag" Name="Setenable2DMask" />
-                  </p:NodeReference>
-                  <Pin Id="RNm5D5C9OXjPf1ZQjjW91O" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="UlsoAuPakeRM8GJP6bH28G" Name="Value" Kind="InputPin" />
-                  <Pin Id="Fnz3gVwOVvjLjPkriBe19U" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="423,419,123,26" Id="Rp2oFHlIbSULcmz7RCHSKc">
                   <p:NodeReference LastCategoryFullName="sl.Camera" LastDependency="Stereolabs.zed.dll">
@@ -3872,21 +3791,17 @@
                     <Choice Kind="OperationCallFlag" Name="DisableObjectDetection" />
                   </p:NodeReference>
                   <Pin Id="COUWmt4sZURLjxGvZe5cMG" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="MRMDKGoDKe3NXX5UzeXya4" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="QLnk0FCM1y6QTkt2rXf4Ob" Name="Instance ID" Kind="InputPin" />
+                  <Pin Id="FYiqU2MsdAuQSxmS5TZcVJ" Name="Disable All Instance" Kind="InputPin" />
                   <Pin Id="PHG85eXmV2bQVLN4g85tgH" Name="Apply" Kind="InputPin" DefaultValue="False" />
+                  <Pin Id="MRMDKGoDKe3NXX5UzeXya4" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="BrQuUlFyXkVNtDLmGK3hgv" Bounds="671,228" Alignment="Top" />
-              <ControlPoint Id="K9RkYjdlrRwNXoUoHsh9Pu" Bounds="703,228" Alignment="Top" />
-              <ControlPoint Id="RJJERBxRWRuPhXckb01YIh" Bounds="738,228" Alignment="Top" />
-              <ControlPoint Id="AQjQ8NxLb43Ldup4T8tc3T" Bounds="766,228" Alignment="Top" />
-              <ControlPoint Id="NGRfwTmL8qLMU8RV8pYvtb" Bounds="792,228" Alignment="Top" />
-              <ControlPoint Id="GFjJKFVcVArQAbprNJa0Xf" Bounds="563,650" Alignment="Bottom" />
+              <ControlPoint Id="RMgRZo945KjLjipZMHB9vW" Bounds="643,228" Alignment="Top" />
             </Node>
             <ControlPoint Id="FpIqoZtqZKaLOeM6sW5vdN" Bounds="706,119" />
-            <ControlPoint Id="V8CGTXtO02hLgMGkFGbuBW" Bounds="741,140" />
+            <ControlPoint Id="V8CGTXtO02hLgMGkFGbuBW" Bounds="737,142" />
             <ControlPoint Id="NPn6qwO56X8LP7pIgY8lOC" Bounds="768,166" />
-            <ControlPoint Id="QMI8pTRzwFBLEtkb3DPge0" Bounds="795,192" />
             <Pad Id="DOXRKGKsqIvMz8v1dPUO0P" SlotId="Q2PpM2879sKOTagNZ8NzeK" Bounds="565,740" />
             <Node Bounds="72,104,226,26" Id="LsiXwZKtsEEOJT09sVdBBT">
               <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
@@ -3898,39 +3813,31 @@
               <Pin Id="DcTMnnrmpmUNc6rpyWJKtk" Name="Output" Kind="StateOutputPin" />
               <Pin Id="PaQMQf4EDHHLt2rhirlM6e" Name="zedCamera" Kind="OutputPin" />
             </Node>
-            <Node Bounds="316,1436,140,78" Id="U7d6Sv2jt8fNZ7Ov4dnfl6">
+            <Node Bounds="287,1434,169,82" Id="U7d6Sv2jt8fNZ7Ov4dnfl6">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="EYLp91WwBBDOIgD403iS3a" Name="Condition" Kind="InputPin" DefaultValue="False" />
+              <ControlPoint Id="Lh3bYaaEiADNAi2skCoXuN" Bounds="413,1510" Alignment="Bottom" />
+              <ControlPoint Id="FPFOeiCaMOmMRaDbkRC9To" Bounds="439,1440" Alignment="Top" />
               <Patch Id="AXHDOt1AhIdL7aXDfSb1wg" ManuallySortedPins="true">
                 <Patch Id="MUw6TlyNbALM6efQwTF5Re" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="UxP8vt6hrUGMHEmtBKBUBS" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="328,1461,87,26" Id="RsjlVvVyW22NgB4L1dWXuJ">
+                <Node Bounds="299,1457,82,26" Id="A5r3f0nOsw4ORNTzULGIfK">
                   <p:NodeReference LastCategoryFullName="sl.Camera" LastDependency="Stereolabs.zed.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="RetrieveObjects" />
+                    <CategoryReference Kind="AssemblyCategory" Name="Camera" />
+                    <Choice Kind="OperationCallFlag" Name="RetrieveBodies" />
                   </p:NodeReference>
-                  <Pin Id="NTBd6GTjWneLedh3Ti9Wre" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="KL0hn8UdEAaLMgM4iRtrS7" Name="Objs" Kind="InputPin" />
-                  <Pin Id="IsvkANQoRxKLyl8YuBUtnB" Name="Od_params" Kind="InputPin" />
-                  <Pin Id="QXIHnL6tNIJQQaBM0FOQIL" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="JuLNVyG1wJbPzQgoxKecHz" Name="Result" Kind="OutputPin" />
+                  <Pin Id="DHgPcVtcrcJPVQQaTzgz6g" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Bx8YvYCHcl2LKHsW9kzWrG" Name="Objs" Kind="InputPin" />
+                  <Pin Id="O0L1WH84zR3QLVwNepa9tf" Name="Bt_params" Kind="InputPin" />
+                  <Pin Id="JF883wBT4l2Ptjq65EUaGp" Name="Instance ID" Kind="InputPin" />
+                  <Pin Id="BNLcLIvtGozLldjC4G3iYN" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Ld7dR5qD2ueNPBfXzTjefX" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="Lh3bYaaEiADNAi2skCoXuN" Bounds="413,1508" Alignment="Bottom" />
-              <ControlPoint Id="FPFOeiCaMOmMRaDbkRC9To" Bounds="439,1443" Alignment="Top" />
-            </Node>
-            <Node Bounds="406,1312,169,26" Id="Uw9SHz36EuMK95Xc0FYdAQ">
-              <p:NodeReference LastCategoryFullName="sl.ObjectDetectionRuntimeParameters" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="AssemblyCategory" Name="ObjectDetectionRuntimeParameters" />
-                <Choice Kind="OperationCallFlag" Name="SetdetectionConfidenceThreshold" />
-              </p:NodeReference>
-              <Pin Id="LH2pfXTeYFPNyiG3zxz2Fs" Name="Input" Kind="StateInputPin" />
-              <Pin Id="EcpiBmkD8wSQKxv3XHbP2n" Name="Value" Kind="InputPin" />
-              <Pin Id="CZ2JOzoJ8GOLDOHmwexkYI" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Pad Id="IF4zGT7dxdcOzgcswxH0aV" SlotId="PzuRBPheYxOOrliX3upo4K" Bounds="67,1124" />
             <Node Bounds="131,1301,25,19" Id="BimSkS3Rm51OB89lABrwHO">
@@ -3966,7 +3873,7 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="T7ZKqwI5aCpOZOTPVQMDO5" Bounds="574,1278" />
+            <ControlPoint Id="T7ZKqwI5aCpOZOTPVQMDO5" Bounds="570,1232" />
             <ControlPoint Id="AwoAZvFJ5INLbkfi4TKX54" Bounds="413,1571" />
             <Pad Id="HSNmyc8gU6yNe56PXXk6y0" Comment="" Bounds="438,1388,257,15" ShowValueBox="true" isIOBox="true" Value="ERROR_CODE_LAST">
               <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
@@ -4035,6 +3942,59 @@
               <Pin Id="K5g7Ro5r83HOI2d7nbKIwa" Name="Up Edge" Kind="OutputPin" />
               <Pin Id="QVOrULrlOOIMWRWcRenZY4" Name="Down Edge" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="ORi93sBTSsYM5qOrwdtAwR" Bounds="643,69" />
+            <Node Bounds="63,1535,63,26" Id="JTJjIu2VjiPLIxFxUxvcRe">
+              <p:NodeReference LastCategoryFullName="sl.Bodies" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Bodies" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="bodiesList" />
+              </p:NodeReference>
+              <Pin Id="RpD2vbaYBpZLwWQSAfWKvq" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FDWiUJf7bHsOe2RaS9gwdH" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="MpLDZ25KuV9QShFsBOzovb" Name="Bodies List" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="64,1444,63,26" Id="QLicVuenZ0eMhvDUqgUEnz">
+              <p:NodeReference LastCategoryFullName="sl.Bodies" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="Bodies" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="nbBodies" />
+              </p:NodeReference>
+              <Pin Id="UNASCd9yintMDaoZjMKnhI" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AlilMuATNcqQOxiF3RJY9S" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="Ls53KGg4BHTLgEGJUNZNZE" Name="Nb Bodies" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="356,1230,169,26" Id="BSb1Fuh3niQOwSifkXG0qS">
+              <p:NodeReference LastCategoryFullName="sl.BodyTrackingRuntimeParameters" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingRuntimeParameters" />
+                <Choice Kind="OperationCallFlag" Name="SetdetectionConfidenceThreshold" />
+              </p:NodeReference>
+              <Pin Id="FQAvihxqW29OrZ75uy0QXe" Name="Input" Kind="StateInputPin" />
+              <Pin Id="AkatxQxdq4uMfgqgWauqD8" Name="Value" Kind="InputPin" />
+              <Pin Id="H5dymERtwtAOTMeyauO7sq" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <Node Bounds="355,1288,169,26" Id="DUxtqqPUBJBMfX7V9MsNym">
+              <p:NodeReference LastCategoryFullName="sl.BodyTrackingRuntimeParameters" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingRuntimeParameters" />
+                <Choice Kind="OperationCallFlag" Name="SetskeletonSmoothing" />
+              </p:NodeReference>
+              <Pin Id="Fmn4SwwfEsPLREJcPZMhos" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QRHOUIr6Bq7QaGPJDcflOl" Name="Value" Kind="InputPin" />
+              <Pin Id="TbDQ3NQ0O4GOXkrvuyPVoH" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="SLHAG6CDvuZM1GMa8EGnT9" Bounds="628,1286" />
+            <Node Bounds="352,1341,169,26" Id="P099VJB4fDlMADNWOYHIXi">
+              <p:NodeReference LastCategoryFullName="sl.BodyTrackingRuntimeParameters" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyTrackingRuntimeParameters" />
+                <Choice Kind="OperationCallFlag" Name="SetminimumKeypointsThreshold" />
+              </p:NodeReference>
+              <Pin Id="Obj0Y1h2R2qNecqWOU1c2w" Name="Input" Kind="StateInputPin" />
+              <Pin Id="DsPSTwW8I5hPRWtzfmGdpr" Name="Value" Kind="InputPin" />
+              <Pin Id="STYFhLtBO5eMb7JeEdYf3l" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="Q9bNCudwBbkO0ZNoNuKsTf" Bounds="704,1325" />
           </Canvas>
           <ProcessDefinition Id="AlBujUBxW2NQFt0HsQCgOB">
             <Fragment Id="AYl3DU61NqxO0DaCo1wx9N" Patch="O31EVpfUJPPM8GLMzF1lHj" Enabled="true" />
@@ -4043,16 +4003,10 @@
           </ProcessDefinition>
           <Slot Id="Q2PpM2879sKOTagNZ8NzeK" Name="DetectionParams" />
           <Link Id="JRoeXHxDwPMPeTHnEpK2d2" Ids="DuLAVzAZXHoNukfAuVgB8c,OgEUbJ1rwcmNBpNNwSLFXE" IsFeedback="true" />
-          <Link Id="QyQRP25ciKcOdW8kcaxxis" Ids="BtKSncDHh8CLfSalKgtSKg,OgEUbJ1rwcmNBpNNwSLFXE" />
           <Link Id="J73H4JMvmYyOzZKacMdXgC" Ids="HHru9L0mZgxOyLWlgmaQHY,DuLAVzAZXHoNukfAuVgB8c" />
           <Link Id="FDhBj0mrSNNMQZCV7bl1ut" Ids="I6O4gq9dmQnPoU7snczizR,BNi6NR9oo5kLGwB0QQdoXK" />
-          <Link Id="JHsCrySXj49OMk67g6TZjO" Ids="KoouwSB4uCCLFpWRvqNN7m,SG3ZhqqhPD9MYWLCh7NrxZ" />
-          <Link Id="APSGps0cBVTPMfNiRxTJmU" Ids="D5OlEHCnyUbNjWbdXbHeqS,UzO5nqFcuyJNhvsLAcpDv7" />
-          <Link Id="CKNDT77vYkSMb8RQbWUG1O" Ids="VKjwBWCRuB4OaTP7heYQsy,HzIW4yLFsRxNXnIITZa2K7" />
           <Link Id="DCbIoJk1p2eNxCrXPmcWHJ" Ids="I5CSQC0r3TiL5GEuy5ij2T,OrEv9bJQnd0L9uWparJfld" />
-          <Link Id="Qkw7unSZ2gyNrmaX56GZkA" Ids="Olhep1SEDCcMJUgUUQdFqg,B49aVp5OqqvPNnouAJ30Fb" />
           <Link Id="HKhWFAPVSGBOS4QFdBtIIr" Ids="EjNC3cO5C1POSF1YLSIV4M,FxHgJ9VknLtLC9W4ZLwa8S" />
-          <Link Id="TzQtgDlh2EXOQleMLIBGhj" Ids="JFrZWJgrSrSLhggkcIy4Of,I5BRT66yHZSLxAv7eOXLf8" IsHidden="true" />
           <Link Id="Rdo32Kc1DFsPAjYP5qJf5q" Ids="J1tmeJ5aa4oOyOoG6vSXUs,FNBSvjQiE1XMre8cWkkUUv" IsHidden="true" />
           <Link Id="SXSo0uNQjVUOhTdWv2U7zq" Ids="OgEUbJ1rwcmNBpNNwSLFXE,GBcxlL1kPOWNU9D4wpP28x" />
           <Link Id="IquQPT8QguFQH9qHxX3S3S" Ids="OmiMLcEwOxrPB5HJvyvbbd,Ak7YiskHIVMQSrzrj76g6j" />
@@ -4064,8 +4018,6 @@
           <Link Id="KF2lbk3f0FHNl8UJtCwRU7" Ids="Ke1BVLLzGwWOibvt2hXGwj,P8smNYGdPeMMX1WMZhHwLs" />
           <Link Id="Le9KZqVnqKZL4hdZagZUut" Ids="M1cw0bLgo3MMvAN1CqiPeS,NdMl4t3RrT7M6yzYjadORL" />
           <Link Id="L11n1NFE0ZgLear4LUh4p0" Ids="BMv2mDjiI5gPSf9Fo6psEW,NZKLLVoN40QO2eZ40Imtlh" />
-          <Link Id="LXvxfwMVAtNLlZ6NbB04sE" Ids="I5BRT66yHZSLxAv7eOXLf8,BrQuUlFyXkVNtDLmGK3hgv" />
-          <Link Id="Vt7qy3fQV5QMCf8soDWSnh" Ids="BrQuUlFyXkVNtDLmGK3hgv,KPA8uq58FBNQcEmZa5U6P8" />
           <Link Id="T5ARXw68QAPOc6gXCesZ0T" Ids="PGVGWBkMyiDLG7Jauas53X,M4x6AWhFQ1DPhVS0fsKqf0" />
           <Link Id="HklLExekA2XOd8mjp7V9wO" Ids="K9RkYjdlrRwNXoUoHsh9Pu,JU4h7ApweWlLGavUPO1Goy" />
           <Link Id="IbRBtHL7CGUNYwrA6Pnsgf" Ids="FpIqoZtqZKaLOeM6sW5vdN,K9RkYjdlrRwNXoUoHsh9Pu" />
@@ -4076,33 +4028,20 @@
           <Link Id="NZ4iOP9FBUdLD2H90grsEQ" Ids="AQjQ8NxLb43Ldup4T8tc3T,BvxTS7W0ealNmaoSViajCe" />
           <Link Id="R7QNSc5eqnSPoDWvJU0PX7" Ids="NPn6qwO56X8LP7pIgY8lOC,AQjQ8NxLb43Ldup4T8tc3T" />
           <Link Id="Pgo5LRcHEGULF4t4S3yKKs" Ids="OSGcZgaWoSeLB5MpjPB7yA,NPn6qwO56X8LP7pIgY8lOC" IsHidden="true" />
-          <Link Id="Dp8OABndZjGQd6jvEsctkU" Ids="A2mXtGU7gJ3Pl97JwnwmjA,RNm5D5C9OXjPf1ZQjjW91O" />
-          <Link Id="NtRmLA0WriWLZN5EtsQC0P" Ids="Fnz3gVwOVvjLjPkriBe19U,CF6C7q3Ab5bPlZ4spJdfEa" />
-          <Link Id="EnfUyuzhur3POv6AYltnRo" Ids="NGRfwTmL8qLMU8RV8pYvtb,UlsoAuPakeRM8GJP6bH28G" />
-          <Link Id="HVeFwqBOMuTQT1qhL19EHB" Ids="QMI8pTRzwFBLEtkb3DPge0,NGRfwTmL8qLMU8RV8pYvtb" />
-          <Link Id="S9L2xhNY7EyQM28J6A0MLY" Ids="F1ag4rDp6DWP8xJHNJG0RA,QMI8pTRzwFBLEtkb3DPge0" IsHidden="true" />
           <Link Id="K7wHXgxXg2aOaSEGMyllH4" Ids="NI7JjHX8VlLPIHm00ucayV,GFjJKFVcVArQAbprNJa0Xf" />
           <Link Id="Ct0qAVN4iJlMTfg4u7otkc" Ids="GFjJKFVcVArQAbprNJa0Xf,DOXRKGKsqIvMz8v1dPUO0P" />
           <Link Id="OLnbJ8mP4d8QH1MXaWKdKX" Ids="P0Gu2cRQs96OmNkB6L7Xig,US5Ntpk7B61Lu1qxMoKsYG" />
           <Link Id="Q0i24gHNRtONZ7hWGjlFck" Ids="TKezrxmmW0ILZoQ83ssnug,Isux5IuzwGNMxRHR9ZzWXJ" IsFeedback="true" />
-          <Link Id="Jrf6o3etE4ROuUjyrtHEwB" Ids="NLrjHYYm8X7Lai4nfYUHZR,Isux5IuzwGNMxRHR9ZzWXJ" />
-          <Link Id="KywXMgC1atDPGOf1Pyinn4" Ids="Isux5IuzwGNMxRHR9ZzWXJ,NTBd6GTjWneLedh3Ti9Wre" />
-          <Link Id="IE6qlpqNXTBPogbOHzgbTs" Ids="CZ2JOzoJ8GOLDOHmwexkYI,IsvkANQoRxKLyl8YuBUtnB" />
           <Slot Id="PzuRBPheYxOOrliX3upo4K" Name="Objects" />
           <Link Id="StyAxP2v7ZCM1D7U2QgcRN" Ids="IF4zGT7dxdcOzgcswxH0aV,TsG49eFLkd3OlsomxUnvqr" />
-          <Link Id="TELzaevwESrN1170gCCE1R" Ids="IF4zGT7dxdcOzgcswxH0aV,KL0hn8UdEAaLMgM4iRtrS7" />
           <Link Id="S2fzcPxGIjwMU8c7iATR0o" Ids="NQy9eqtYK3DL5T5vsfJM2p,LRByPQjup2WMLSw57Ysrww" />
           <Link Id="AZaVuZ9HZF6PPOstPfB5xJ" Ids="Adjg6voqRqBPUnUSy8zjFB,G3i52QXDWS0PVoYCrEf7wP" />
-          <Link Id="CqnSTrilZKmPcH0VxcE4li" Ids="VKjwBWCRuB4OaTP7heYQsy,PmbuUAdpztHO6YphyfGTNu" />
-          <Link Id="VZRLn1yWhbqOZJscYH6GVZ" Ids="Olhep1SEDCcMJUgUUQdFqg,Qahd78pQOZ5LKGZ0Q1v5TV" />
           <Link Id="OIrRiBFOjlGNvKY0AoQsvh" Ids="I5CSQC0r3TiL5GEuy5ij2T,ULGQmCmNnzSQEq1gwsq2xj" />
           <Link Id="QgKZYJRYlpYOJbXLmqqDFf" Ids="NAUyTuWAuqJMz1AsDrVmHv,Oj0EAPaLxt5Li3l3bUMeH2" IsFeedback="true" />
           <Link Id="E3tnyCHg7hpPukiCSKwzGA" Ids="FkzmIuFtsrKNuw4aP6nLNH,Oj0EAPaLxt5Li3l3bUMeH2" />
           <Link Id="HH6pGcfjIX5LgVyw0eMOuL" Ids="Oj0EAPaLxt5Li3l3bUMeH2,QgXEKToGp6iNmT7za9jVDB" />
-          <Link Id="FfuvvWTeC78PBN80aaXmRp" Ids="T7ZKqwI5aCpOZOTPVQMDO5,EcpiBmkD8wSQKxv3XHbP2n" />
           <Link Id="EIgUVWzVmfoNpbJQEltdw5" Ids="V5rH2c9eIDSOYpDG1XLFbI,T7ZKqwI5aCpOZOTPVQMDO5" IsHidden="true" />
           <Link Id="JuuE6IVpjydNAQMC6PJTOZ" Ids="FPFOeiCaMOmMRaDbkRC9To,Lh3bYaaEiADNAi2skCoXuN" IsFeedback="true" />
-          <Link Id="G6mpxqcoWQPPJvFm4tjJC8" Ids="JuLNVyG1wJbPzQgoxKecHz,Lh3bYaaEiADNAi2skCoXuN" />
           <Link Id="JIEtP6XgMTTOEc2k66xeDr" Ids="Lh3bYaaEiADNAi2skCoXuN,AwoAZvFJ5INLbkfi4TKX54" />
           <Link Id="UUCNzegoDQgMVQLqIf8H3A" Ids="AwoAZvFJ5INLbkfi4TKX54,Vz5iIBXoTYfPpVD6Hu200g" IsHidden="true" />
           <Link Id="PXfEHUqruhHL9FAlMU8V1M" Ids="HSNmyc8gU6yNe56PXXk6y0,FPFOeiCaMOmMRaDbkRC9To" />
@@ -4113,24 +4052,6 @@
           <Link Id="LQv8I2S7Hn2PmPf6t7HaDc" Ids="DcTMnnrmpmUNc6rpyWJKtk,A5VzuDLOhouNboHdpdNBGk" />
           <Link Id="Tf1aNLwNDHRPV7B2SMTG6g" Ids="BMR8O4EGm6bL5zxi4t95yp,A7oGAIo3gtcOfuDtMcvIwo" />
           <Link Id="LLXK0mBxFnAQWHhWGFsARh" Ids="PaQMQf4EDHHLt2rhirlM6e,COUWmt4sZURLjxGvZe5cMG" />
-          <Link Id="ISsaQyZVBruN3NcJezvLD3" Ids="DOXRKGKsqIvMz8v1dPUO0P,FVDe5NvvCdcOnPhukbymu1" />
-          <Patch Id="O31EVpfUJPPM8GLMzF1lHj" Name="Create" />
-          <Patch Id="N40HgCeMv9EQcQpsWZhyQr" Name="Update">
-            <Pin Id="KcV8kWHzVkrMQubpWLIpGR" Name="Camera" Kind="InputPin" Bounds="330,135" />
-            <Pin Id="V5rH2c9eIDSOYpDG1XLFbI" Name="Cofidence Threshold" Kind="InputPin" Bounds="578,1496" DefaultValue="60" />
-            <Pin Id="JFrZWJgrSrSLhggkcIy4Of" Name="Detection Model" Kind="InputPin" DefaultValue="HUMAN_BODY_ACCURATE">
-              <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="TypeFlag" Name="DETECTION_MODEL" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="J3IqvOVfTGyNMlTsHU2uPq" Name="Object Tracking" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="MAmeNAt1MXWPrUHIqwjQOh" Name="Body Fitting" Kind="InputPin" Bounds="1572,74" DefaultValue="True" />
-            <Pin Id="OSGcZgaWoSeLB5MpjPB7yA" Name="Image Sync" Kind="InputPin" />
-            <Pin Id="F1ag4rDp6DWP8xJHNJG0RA" Name="Mask" Kind="InputPin" />
-            <Pin Id="FNBSvjQiE1XMre8cWkkUUv" Name="Detected Objects" Kind="OutputPin" />
-            <Pin Id="Vz5iIBXoTYfPpVD6Hu200g" Name="Error Code" Kind="OutputPin" Bounds="427,1742" />
-          </Patch>
-          <Patch Id="ESERP9KbN0SL3qVOnjP58n" Name="RetriveObjects" />
           <Link Id="OywVnDdqV8IOk9vgpTxksp" Ids="LRjfyVdvltTMHA06pjl8nm,VyJUg1TTaggMycawC3bvon" />
           <Link Id="TUfHyUqsptFNHZAhM4ZC7I" Ids="ELlZtwbHJxPPaCV4PZWt3h,Hfxgj5RpZaoN2FQK03AEBn" />
           <Link Id="EOcnolEQkImQCcQ4btLf3e" Ids="Pxq7I5f8rhvOwUE8f58zsF,Jb1c5VKnBVpO2D4eyLHjty" />
@@ -4141,8 +4062,50 @@
           <Link Id="HNvqCUlvFSBNdxQ8CE76Hv" Ids="HNVB7rjYIT5OD2YRHt7tWD,CtCk3j85cWsNLp1JxELaH0" />
           <Link Id="MDkMWN3i0AxLQfXVNqrDIu" Ids="HNVB7rjYIT5OD2YRHt7tWD,HS8uDoe0kwSNyXmUEdqcPJ" />
           <Link Id="C59SmF2fea9Pfz46e8XObQ" Ids="BMR8O4EGm6bL5zxi4t95yp,PHG85eXmV2bQVLN4g85tgH" />
-          <Link Id="DICR9imyOoVMtgTdiOV4Ux" Ids="TKezrxmmW0ILZoQ83ssnug,N4BOSjBEnOyO2yaXB299Pn" />
           <Link Id="CTO6EIeLJ8UP4dPYzjlxNo" Ids="QLVxRg0NMavNOQQu4cVicW,EYLp91WwBBDOIgD403iS3a" />
+          <Link Id="P7UA3ZEhCemPkuh7Jx9sqL" Ids="RMgRZo945KjLjipZMHB9vW,KPA8uq58FBNQcEmZa5U6P8" />
+          <Link Id="EOdxIKEXOVwOf1l0FX68LW" Ids="ORi93sBTSsYM5qOrwdtAwR,RMgRZo945KjLjipZMHB9vW" />
+          <Link Id="USW4PqBXMd9PNYF4PvPJ3P" Ids="JFrZWJgrSrSLhggkcIy4Of,ORi93sBTSsYM5qOrwdtAwR" IsHidden="true" />
+          <Link Id="V3sIaaj05XEQVnUfLJOwfr" Ids="A2mXtGU7gJ3Pl97JwnwmjA,CF6C7q3Ab5bPlZ4spJdfEa" />
+          <Link Id="BrAo8OWiGCrLP0r9MXLzCY" Ids="DOXRKGKsqIvMz8v1dPUO0P,E9bvC1kKzyOOZOIXsJkrLT" />
+          <Link Id="JmiG11zRTC1Oq4USAOrIL4" Ids="TKezrxmmW0ILZoQ83ssnug,NxaFDRKN1EgNGu1bCjTrUz" />
+          <Link Id="E5KTkgQaKWfO6eXW7YCP3O" Ids="PDsmu3oKFaXNdJpULGnEIs,Isux5IuzwGNMxRHR9ZzWXJ" />
+          <Link Id="HL5JFgI8FoeMTB1yLZloem" Ids="CeDQUPNjWEhMdGdnOtp3pA,OgEUbJ1rwcmNBpNNwSLFXE" />
+          <Link Id="Hu6ehAXPQwsMAMYcJchCjx" Ids="Isux5IuzwGNMxRHR9ZzWXJ,DHgPcVtcrcJPVQQaTzgz6g" />
+          <Link Id="CC4nybcfgvBNUzT09W7s61" Ids="Ld7dR5qD2ueNPBfXzTjefX,Lh3bYaaEiADNAi2skCoXuN" />
+          <Link Id="JFqZbTIb05bOySSjzImDya" Ids="KoouwSB4uCCLFpWRvqNN7m,UNASCd9yintMDaoZjMKnhI" />
+          <Link Id="NEmltPweooLPGJI4PzUDbj" Ids="AlilMuATNcqQOxiF3RJY9S,RpD2vbaYBpZLwWQSAfWKvq" />
+          <Link Id="NMubiZW16ocPOYK1HibOfm" Ids="Ls53KGg4BHTLgEGJUNZNZE,B49aVp5OqqvPNnouAJ30Fb" />
+          <Link Id="KWirvoWtZ8lL7KwXMGXo16" Ids="Ls53KGg4BHTLgEGJUNZNZE,Qahd78pQOZ5LKGZ0Q1v5TV" />
+          <Link Id="EJGNRUDVos4NuCh3kXWVgu" Ids="MpLDZ25KuV9QShFsBOzovb,HzIW4yLFsRxNXnIITZa2K7" />
+          <Link Id="ANmqo977WLJNyf81snwoH3" Ids="MpLDZ25KuV9QShFsBOzovb,PmbuUAdpztHO6YphyfGTNu" />
+          <Link Id="CnvYQjqxUqNPpEiay8d2sN" Ids="IF4zGT7dxdcOzgcswxH0aV,Bx8YvYCHcl2LKHsW9kzWrG" />
+          <Link Id="Mz161werBrWP3BWttLgu64" Ids="T7ZKqwI5aCpOZOTPVQMDO5,AkatxQxdq4uMfgqgWauqD8" />
+          <Link Id="U24oBuhQc9HOpzw1u1CZhT" Ids="H5dymERtwtAOTMeyauO7sq,Fmn4SwwfEsPLREJcPZMhos" />
+          <Link Id="JOOoolnl8XdM1XF4N13r7w" Ids="SLHAG6CDvuZM1GMa8EGnT9,QRHOUIr6Bq7QaGPJDcflOl" />
+          <Link Id="UyRccapSmMGOtz6Uu0p3DQ" Ids="JqKVAEfUtiDO1ox89PTXMK,SLHAG6CDvuZM1GMa8EGnT9" IsHidden="true" />
+          <Link Id="ML6E6YnyfaiLMsU3zTQpdQ" Ids="TbDQ3NQ0O4GOXkrvuyPVoH,Obj0Y1h2R2qNecqWOU1c2w" />
+          <Link Id="CmPhtv0NwYBLUZ56vMaipm" Ids="STYFhLtBO5eMb7JeEdYf3l,O0L1WH84zR3QLVwNepa9tf" />
+          <Link Id="VstLUqhhejNNqDYQFYyG03" Ids="Q9bNCudwBbkO0ZNoNuKsTf,DsPSTwW8I5hPRWtzfmGdpr" />
+          <Link Id="BpiqfxESZfRNMzS1j0AvXs" Ids="FioI5o8iFNfLzlCEsnSuNw,Q9bNCudwBbkO0ZNoNuKsTf" IsHidden="true" />
+          <Patch Id="O31EVpfUJPPM8GLMzF1lHj" Name="Create" />
+          <Patch Id="N40HgCeMv9EQcQpsWZhyQr" Name="Update">
+            <Pin Id="KcV8kWHzVkrMQubpWLIpGR" Name="Camera" Kind="InputPin" Bounds="330,135" />
+            <Pin Id="V5rH2c9eIDSOYpDG1XLFbI" Name="Cofidence Threshold" Kind="InputPin" Bounds="578,1496" DefaultValue="60" />
+            <Pin Id="JqKVAEfUtiDO1ox89PTXMK" Name="Skeleton Smoothing" Kind="InputPin" Bounds="628,1286" />
+            <Pin Id="JFrZWJgrSrSLhggkcIy4Of" Name="Body Tracking Model" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="TypeFlag" Name="BODY_TRACKING_MODEL" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="FioI5o8iFNfLzlCEsnSuNw" Name="Minimum Keypoints Threshold" Kind="InputPin" Bounds="704,1325" DefaultValue="1" />
+            <Pin Id="J3IqvOVfTGyNMlTsHU2uPq" Name="Object Tracking" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="MAmeNAt1MXWPrUHIqwjQOh" Name="Body Fitting" Kind="InputPin" Bounds="1572,74" DefaultValue="True" />
+            <Pin Id="OSGcZgaWoSeLB5MpjPB7yA" Name="Image Sync" Kind="InputPin" />
+            <Pin Id="FNBSvjQiE1XMre8cWkkUUv" Name="Detected Bodies" Kind="OutputPin" />
+            <Pin Id="Vz5iIBXoTYfPpVD6Hu200g" Name="Error Code" Kind="OutputPin" Bounds="427,1742" />
+          </Patch>
+          <Patch Id="ESERP9KbN0SL3qVOnjP58n" Name="RetriveObjects" />
         </Patch>
       </Node>
       <!--
@@ -4328,6 +4291,42 @@
           </Patch>
         </Patch>
       </Node>
+      <!--
+
+    ************************ BODY_18_PARTS ************************
+
+-->
+      <Node Name="BODY_18_PARTS" Bounds="283,614" Id="NDYR9NGb6HMOk7N9UoSwbq">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
+          <Choice Kind="TypeFlag" Name="BODY_18_PARTS" />
+        </p:TypeAnnotation>
+        <Patch Id="T2u0otSIUTdNJRwX5MyYcq">
+          <Canvas Id="LUygvYGTH4SNJMnVesh3Kf" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="SRq22ul1jmcNqQQaqWcIdZ" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ BODY_34_PARTS ************************
+
+-->
+      <Node Name="BODY_34_PARTS" Bounds="284,653" Id="PsIBji07cemNOvynM2zQ40">
+        <p:NodeReference>
+          <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
+          <Choice Kind="TypeFlag" Name="BODY_34_PARTS" />
+        </p:TypeAnnotation>
+        <Patch Id="RZUkZKTIRVEQPRUoByB2aJ">
+          <Canvas Id="CeZ6aBRb4odM0SqgrNylCL" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="A8vWhAQsQdbPWmkYnapDOQ" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -4351,7 +4350,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2023.5.3-0065-gbff0ac8e09" />
-  <NugetDependency Id="TQ2kyFQWn3jLOmQDaAL1cD" Location="Stereolabs.zed" Version="3.8.0" />
+  <NugetDependency Id="TQ2kyFQWn3jLOmQDaAL1cD" Location="Stereolabs.zed" Version="4.0.6.1" />
   <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2023.5.3-0065-gbff0ac8e09" />
   <PlatformDependency Id="FD10evV2YGsPrio8f931Wy" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.9-0971-g1d0a0c7789/lib/Stride.Graphics.dll" />
   <PlatformDependency Id="KvFylNqh9p1O3v1W6zKus0" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.9-0971-g1d0a0c7789/lib/Stride.dll" />
