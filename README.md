@@ -5,8 +5,7 @@ Try it with vvvv, the visual live-programming environment for .NET
 Download: http://visualprogramming.net
 
 ## Prerequisites
-- [CUDA 11.7](https://developer.nvidia.com/cuda-11-7-0-download-archive)
-- [ZED SDK 3.8.2](https://www.stereolabs.com/developers/release/3.8/)
+- [ZED SDK 4.0.7](https://www.stereolabs.com/developers/release/3.8/)
 - Stereolabs.zed nuget 
 
 ## Using the library
