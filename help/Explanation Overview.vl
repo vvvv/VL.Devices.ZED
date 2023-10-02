@@ -70,13 +70,11 @@
             </p:NodeReference>
             <Pin Id="E05AepawYefPKGPibaqz96" Name="Camera" Kind="InputPin" />
             <Pin Id="OMXBLPPeMj8OomtldpNi5Y" Name="View" Kind="InputPin" />
-            <Pin Id="PbXxOyNmTCjL9gJxTbmRpM" Name="Path" Kind="InputPin" />
-            <Pin Id="UIXfkHLGrasP5WVCCVC9dW" Name="Write" Kind="InputPin" />
             <Pin Id="PXpDAjvwshNMeYMK8DDh8p" Name="Texture" Kind="OutputPin" />
             <Pin Id="IPCjoy9raM7MuJjvhkvTFs" Name="On Data" Kind="OutputPin" />
             <Pin Id="K29EZu8Jxa7QQ76ERG61Ib" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="647,968,205,19" Id="L6K7vOPOas5PqvUf199QKH">
+          <Node Bounds="644,968,205,19" Id="L6K7vOPOas5PqvUf199QKH">
             <p:NodeReference LastCategoryFullName="Stride.Textures" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
@@ -96,47 +94,31 @@
             <Pin Id="D3KOjo3tUZjONkO6K9Jyia" Name="Client Bounds" Kind="OutputPin" />
             <Pin Id="VtvYKyzTNRlLx9DxwLYzlD" Name="Input Source" Kind="OutputPin" />
           </Node>
-          <Pad Id="NTEjH4hstO4LwBd7YpShBy" Comment="View" Bounds="710,642,149,15" ShowValueBox="true" isIOBox="true" Value="LEFT">
+          <Pad Id="NTEjH4hstO4LwBd7YpShBy" Comment="View" Bounds="696,712,149,15" ShowValueBox="true" isIOBox="true" Value="LEFT">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
               <Choice Kind="TypeFlag" Name="VIEW" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="AKTEElbld5WNyawMPddNQG" Comment="Last Error" Bounds="795,813,257,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HiRIhnctQuxO1ze3Dj7pq3" Comment="On Data" Bounds="731,841,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GdOhj8T7akSPBezfTH8nNO" Comment="Path" Bounds="754,671,140,15" ShowValueBox="true" isIOBox="true" Value="test4.jpeg">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="RjUfxzvcaSSQNlVXxbZ2rl" Comment="Write" Bounds="795,710,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="1251,733,219,19" Id="KWgZZajtqy5NzRCPtSASOY">
+          <Node Bounds="1251,733,77,19" Id="KWgZZajtqy5NzRCPtSASOY">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
             <Pin Id="Sq6pu4FnMQaON5eOL8APrD" Name="Camera" Kind="InputPin" />
             <Pin Id="HsM2IfUU1sIP4DAJfHBAz0" Name="Measure" Kind="InputPin" />
-            <Pin Id="HNfMHlMhmT5MBI3QXyBFAp" Name="Path" Kind="InputPin" />
-            <Pin Id="JDOSmiDqQYaMvmCqjVbqfc" Name="Write" Kind="InputPin" />
             <Pin Id="VJqvypjIDvQNsYOsVCrgf4" Name="Texture" Kind="OutputPin" />
             <Pin Id="U44dfoRmL1tM4gb4n9taLv" Name="On Data" Kind="OutputPin" />
             <Pin Id="OCN9R3woTu0O3TEznnCj8t" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="BksGxBkxN2lMDjmgqs5LLw" Comment="Measure" Bounds="1325,662,135,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
+          <Pad Id="BksGxBkxN2lMDjmgqs5LLw" Comment="Measure" Bounds="1249,681,135,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
               <Choice Kind="TypeFlag" Name="MEASURE" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="N1Xj20CNS01QOFXaonUDaG" Comment="On Data" Bounds="1360,812,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="S36nWG251fWLxYsutYyOK3" Comment="Last Error" Bounds="1467,812,257,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="N1Xj20CNS01QOFXaonUDaG" Comment="On Data" Bounds="1289,805,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="S36nWG251fWLxYsutYyOK3" Comment="Last Error" Bounds="1325,779,257,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="609,1167,265,86" Id="QlxpruKI5fEN7TVC3QFSiK">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
@@ -251,7 +233,7 @@
                     <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
                     <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
-                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1160, 503, 629, 347">
+                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1148, 495, 629, 347">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -544,7 +526,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="G5rZj1zFNKBQAbIBZNZiWh" Comment="Texture" Bounds="1062,844,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -558,8 +539,6 @@
         <Link Id="JBHidCUOlcUMglHNvzldDC" Ids="NTEjH4hstO4LwBd7YpShBy,OMXBLPPeMj8OomtldpNi5Y" />
         <Link Id="U4MzVo2S0MFNHl9xKyBFod" Ids="K29EZu8Jxa7QQ76ERG61Ib,AKTEElbld5WNyawMPddNQG" />
         <Link Id="Nmg6hWjuHH8QanuPrdZbaD" Ids="IPCjoy9raM7MuJjvhkvTFs,HiRIhnctQuxO1ze3Dj7pq3" />
-        <Link Id="B7zwfhOeuEAPDxY4JR58kW" Ids="GdOhj8T7akSPBezfTH8nNO,PbXxOyNmTCjL9gJxTbmRpM" />
-        <Link Id="NVeQ1XQE6p0P28O0jpTwWe" Ids="RjUfxzvcaSSQNlVXxbZ2rl,UIXfkHLGrasP5WVCCVC9dW" />
         <Link Id="PQLZQC6wITwMQ49EZMDDhE" Ids="BksGxBkxN2lMDjmgqs5LLw,HsM2IfUU1sIP4DAJfHBAz0" />
         <Link Id="FRvyfWJqxNhQJcdRBaoIJs" Ids="U44dfoRmL1tM4gb4n9taLv,N1Xj20CNS01QOFXaonUDaG" />
         <Link Id="QFNpfcrX8K1N6Um80LDJcb" Ids="OCN9R3woTu0O3TEznnCj8t,S36nWG251fWLxYsutYyOK3" />
@@ -583,7 +562,6 @@
         <Link Id="VKCyjFCdHDZMHWWPNzZx62" Ids="ACfugAFFyN0MAGXpyplEsd,R37A4WjhHkNLkI4YjlYjWw" />
         <Link Id="Kl6AtU5JS1ePULNT6gfqy8" Ids="B0ZRyuEpNLuMcn83wugyq2,Ad5WfdCTmdILw76cgph4db" />
         <Link Id="AsBc2XYBuB4M4XhqO2Uz0E" Ids="D1wZOtPHsWoNNviA7FRl98,GPDMXzahRlOLBZunsODg0x" />
-        <Link Id="DXYjGzTHklrQHWtoY7xscW" Ids="VJqvypjIDvQNsYOsVCrgf4,G5rZj1zFNKBQAbIBZNZiWh" />
       </Patch>
     </Node>
   </Patch>
