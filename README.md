@@ -5,8 +5,7 @@ Try it with vvvv, the visual live-programming environment for .NET
 Download: http://visualprogramming.net
 
 ## Prerequisites
-- [ZED SDK 4.0.7](https://www.stereolabs.com/developers/release/3.8/)
-- Stereolabs.zed nuget 
+- [ZED SDK 4.0.7](https://www.stereolabs.com/developers/release/)
 
 ## Using the library
 For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
