@@ -1,5 +1,5 @@
 # VL.Devices.ZED
-This library is providing access to [Stereolabs](https://www.stereolabs.com/) ZED cameras in VL.
+A package for using [Stereolabs'](https://www.stereolabs.com/) ZED depth cameras in VL.
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
