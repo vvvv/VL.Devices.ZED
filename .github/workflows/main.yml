@@ -1,0 +1,31 @@
+name: push_nuget
+
+# on push on main
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - deployment/VL.Devices.ZED.nuspec
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - name: Git Checkout
+      uses: actions/checkout@main
+      
+    - name: Setup Nuget.exe
+      uses: nuget/setup-nuget@v1
+
+    - name: Publish VL Nuget
+      uses: vvvv/PublishVLNuget@1.0.29
+      with:
+        nuspec: deployment\VL.Devices.ZED.nuspec
+
+        # Fill the Icon file
+        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
+        icon-dst: ./nugeticon.png
+        
+        # Provide the nuget key. See: https://thegraybook.vvvv.org/reference/extending/publishing.html#getting-a-nugetorg-api-key
+        nuget-key: ${{ secrets.NUGET_KEY }}
