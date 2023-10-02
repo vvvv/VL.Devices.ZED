@@ -13,7 +13,7 @@
     <description>This library provides access to Stereolabs ZED cameras in VL</description>
     <tags>nuget</tags>
 	<license type="expression">MIT</license>
-	<icon>icon\nugeticon.png</icon>
+	<icon>..\nugeticon.png</icon>
     <dependencies>
       <dependency id="Stereolabs.zed" version="4.0.7" />
     </dependencies>
