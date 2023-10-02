@@ -8,6 +8,6 @@ Download: http://visualprogramming.net
 - [ZED SDK 4.0.7](https://www.stereolabs.com/developers/release/)
 
 ## Using the library
-For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/libraries/dependencies.html#manage-nugets) in the VL documentation. As described there you go to the commandline and then type:
+For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) in the VL documentation. As described there you go to the commandline and then type:
 
     nuget install VL.Devices.ZED -pre
