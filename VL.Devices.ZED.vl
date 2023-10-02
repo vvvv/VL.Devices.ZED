@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2023.5.3-0065-gbff0ac8e09" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2023.5.2" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
-    <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="VL.Devices.ZED" CanvasType="FullCategory">
+    <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
 
-    ************************ Camera ************************
+    ************************ ZED ************************
 
 -->
-      <Node Name="Camera" Bounds="294,235" Id="ENbViRRa62nOICWGJkkuHg" Summary="Managers camera instance and settings. Implements Grab(ref RuntimeParamiters) in beckground loop.">
+      <Node Name="ZED" Bounds="294,235" Id="ENbViRRa62nOICWGJkkuHg" Summary="Manages camera instance and settings. Implements Grab (ref RuntimeParameters) in background loop.">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ClassDefinition" Name="Class" />
         </p:NodeReference>
@@ -123,10 +123,10 @@
               <Pin Id="QwcYIE1A2nmOvNBiDxfWM4" Name="Instance" Kind="OutputPin" />
             </Node>
             <Node Bounds="95,1317,58,26" Id="PO0UM3FBxIkO5OTQGhV0ly">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Close" />
-                <CategoryReference Kind="ClassType" Name="Camera" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="ZED" NeedsToBeDirectParent="true" />
               </p:NodeReference>
               <Pin Id="Ab67nw2GnNSMwUt2Gn04bb" Name="Input" Kind="StateInputPin" />
               <Pin Id="PKbme8oJyZ0OcwEBrk7Cii" Name="Output" Kind="StateOutputPin" />
@@ -491,9 +491,9 @@
                   <Pin Id="ONpkglJxzx1QSpTgNTrzz9" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="755,351,58,26" Id="TfGBwS0ZFjEMFJiPumS667">
-                  <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+                  <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="Camera" NeedsToBeDirectParent="true" />
+                    <CategoryReference Kind="ClassType" Name="ZED" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Close" />
                   </p:NodeReference>
                   <Pin Id="FgvGtUfTKtdP2g8e0ot38V" Name="Input" Kind="StateInputPin" />
@@ -552,9 +552,9 @@
               </Patch>
             </Node>
             <Node Bounds="656,873,92,26" Id="IvdMgz5Ri6SOLxUpl1AmbV">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Camera" NeedsToBeDirectParent="true" />
+                <CategoryReference Kind="ClassType" Name="ZED" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Open" />
               </p:NodeReference>
               <Pin Id="KZkYIlyOte5Qcs20TJN5bG" Name="Input" Kind="StateInputPin" />
@@ -705,9 +705,9 @@
               <Patch Id="Sk7QbW6jT3pLTgYwIz6Kmp">
                 <Pin Id="BbFnVPLPgfzMDRksJXVuzO" Name="Output" Kind="OutputPin" />
                 <Node Bounds="219,-100,58,26" Id="Ugvlc9CKWd8L2ZgxOdrHtY">
-                  <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+                  <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="Camera" />
+                    <CategoryReference Kind="ClassType" Name="ZED" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
                   </p:NodeReference>
                   <Pin Id="EAH08ioUb6oLTTOVdusxuc" Name="Id" Kind="InputPin" />
@@ -1063,10 +1063,10 @@
       </Node>
       <!--
 
-    ************************ RetriveImage ************************
+    ************************ ColorImage ************************
 
 -->
-      <Node Name="RetriveImage" Bounds="295,322" Id="NsVlNYIqqoGOG8K8VsxBbi">
+      <Node Name="ColorImage" Bounds="295,322" Id="NsVlNYIqqoGOG8K8VsxBbi">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1074,9 +1074,9 @@
           <Canvas Id="Ac0RvnrT6MHOj7iRfcjHC5" CanvasType="Group">
             <ControlPoint Id="KRzb0Vbvf8pLGIDIa2CeuT" Bounds="618,154,182,0" />
             <Node Bounds="616,191,80,26" Id="OJ3xl7FxbXgQbSDyxNQwM5">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Camera" />
+                <CategoryReference Kind="ClassType" Name="ZED" />
                 <Choice Kind="OperationCallFlag" Name="GetResolution" />
               </p:NodeReference>
               <Pin Id="NTtlKMnDQqBOmyEsze1Jqk" Name="Input" Kind="StateInputPin" />
@@ -1091,12 +1091,12 @@
               <Pin Id="TO8gOTcY0y8P6a0GZNsJrf" Name="Force" Kind="InputPin" />
               <Pin Id="UuVvV7dXNz7LvYnYJFe2dX" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
               <Pin Id="MpY7bZEDC9xMlTKUc9SS5O" Name="Has Changed" Kind="OutputPin" />
-              <ControlPoint Id="VfQOldhVbPtOuCzlyKFmrL" Bounds="620,500" Alignment="Top" />
-              <ControlPoint Id="CS4NN54U7P2PPiTIKL3wnq" Bounds="687,500" Alignment="Top" />
+              <ControlPoint Id="VfQOldhVbPtOuCzlyKFmrL" Bounds="620,482" Alignment="Top" />
+              <ControlPoint Id="CS4NN54U7P2PPiTIKL3wnq" Bounds="687,482" Alignment="Top" />
               <ControlPoint Id="T4iMzJYmFJcLP1SS7tfrP5" Bounds="620,676" Alignment="Bottom" />
               <ControlPoint Id="LceJLAAFx7gPlrk2MkCM3y" Bounds="86,676" Alignment="Bottom" />
-              <ControlPoint Id="Sif3S8DmjVgPq6OVKVTL1D" Bounds="309,500" Alignment="Top" />
-              <ControlPoint Id="QD2zd2LMZfUQL1Kx6nxHqR" Bounds="733,500" Alignment="Top" />
+              <ControlPoint Id="Sif3S8DmjVgPq6OVKVTL1D" Bounds="309,482" Alignment="Top" />
+              <ControlPoint Id="QD2zd2LMZfUQL1Kx6nxHqR" Bounds="733,482" Alignment="Top" />
               <ControlPoint Id="CK9XmlnMbrGOq4amVQixrc" Bounds="840,676" Alignment="Bottom" />
               <Patch Id="CIEFqG1ZfxqQHEYMu8oCey" ManuallySortedPins="true">
                 <Patch Id="FFGzhxMAwEwNMiEMRuylZN" Name="Create" ManuallySortedPins="true" />
@@ -1221,7 +1221,7 @@
               </p:NodeReference>
               <Pin Id="KbQr7oFNIEANDqJqyt9vYm" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="B5zPAcawfwRMJQ14YrKwCU" Bounds="657,1132" Alignment="Bottom" />
-              <ControlPoint Id="POPA1mQPu33OynYDzXi6Ek" Bounds="647,827" Alignment="Top" />
+              <ControlPoint Id="POPA1mQPu33OynYDzXi6Ek" Bounds="647,826" Alignment="Top" />
               <Patch Id="PPbSOPL9baqOFm2Fhnym9e" ManuallySortedPins="true">
                 <Patch Id="C0Wf66332g1QDgC34c4GWx" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="HCZg4EecUSbPAfGcKsFMNS" Name="Then" ManuallySortedPins="true" />
@@ -1374,7 +1374,7 @@
               <Pin Id="S9cTHfYXULgPV6y2CgxwjW" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="366,1259,93,26" Id="VBBwYVpyl7LOXuT1nPibVH">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ObservableGrab" />
               </p:NodeReference>
@@ -1421,7 +1421,7 @@
               <Pin Id="AKYmTEr8OAGMTwjtP6yGgL" Name="Input 2" Kind="InputPin" DefaultValue="False" />
               <Pin Id="SJpCfrxr1WIN3rrTpAKbpV" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="1240,708,55,19" Id="Hd1ajOVSnUaOINz9UOMvRg">
+            <Node Bounds="1240,708,55,26" Id="Hd1ajOVSnUaOINz9UOMvRg">
               <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Path" />
@@ -1742,10 +1742,10 @@
       </Node>
       <!--
 
-    ************************ RetriveMeasure ************************
+    ************************ DepthImage ************************
 
 -->
-      <Node Name="RetriveMeasure" Bounds="294,370" Id="AZdj6rdMBRaNSKUGZFQtQm">
+      <Node Name="DepthImage" Bounds="294,370" Id="AZdj6rdMBRaNSKUGZFQtQm">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -1753,9 +1753,9 @@
           <Canvas Id="LpI9RJhdOVvPhVKeIfhqa9" CanvasType="Group">
             <ControlPoint Id="M4vdjgGF1MMOjYQ6gJP5yW" Bounds="595,48,182,0" />
             <Node Bounds="593,85,80,26" Id="CJ7sPfiO5DeOxMy4NNSh4H">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Camera" />
+                <CategoryReference Kind="ClassType" Name="ZED" />
                 <Choice Kind="OperationCallFlag" Name="GetResolution" />
               </p:NodeReference>
               <Pin Id="LmUusyeZj1ROZOAVwm6MgI" Name="Input" Kind="StateInputPin" />
@@ -1770,12 +1770,12 @@
               <Pin Id="VY3jfuXX0RnOXWAag0dRM7" Name="Force" Kind="InputPin" />
               <Pin Id="UqACMqunpRhNMUghnmARUg" Name="Dispose Cached Outputs" Kind="InputPin" DefaultValue="True" />
               <Pin Id="Lbc05LE4Tz6O7BiSjR2rad" Name="Has Changed" Kind="OutputPin" />
-              <ControlPoint Id="ElSHxENFkPpLT6aJiTICAl" Bounds="620,500" Alignment="Top" />
-              <ControlPoint Id="CUG9Fkk18nKMlrZnK0iiqq" Bounds="687,500" Alignment="Top" />
+              <ControlPoint Id="ElSHxENFkPpLT6aJiTICAl" Bounds="620,482" Alignment="Top" />
+              <ControlPoint Id="CUG9Fkk18nKMlrZnK0iiqq" Bounds="687,482" Alignment="Top" />
               <ControlPoint Id="A0QTseD3XLOOmDvJHklGMU" Bounds="620,676" Alignment="Bottom" />
               <ControlPoint Id="I2UmKoCPFMrO4nhr3SdZKw" Bounds="86,676" Alignment="Bottom" />
-              <ControlPoint Id="VHbIR1MK4qlP8nQr7RpVLU" Bounds="309,500" Alignment="Top" />
-              <ControlPoint Id="L3AIqLHQANMPu57IN6Im0s" Bounds="733,500" Alignment="Top" />
+              <ControlPoint Id="VHbIR1MK4qlP8nQr7RpVLU" Bounds="309,482" Alignment="Top" />
+              <ControlPoint Id="L3AIqLHQANMPu57IN6Im0s" Bounds="733,482" Alignment="Top" />
               <ControlPoint Id="DlHVx5wYr0kPc6ORWB3yYy" Bounds="840,676" Alignment="Bottom" />
               <Patch Id="HNqcfNkNNheMqSsKWLDDQC" ManuallySortedPins="true">
                 <Patch Id="QnvtyH5Vbw0P6bQm7Y5JN1" Name="Create" ManuallySortedPins="true" />
@@ -1900,7 +1900,7 @@
               </p:NodeReference>
               <Pin Id="BrnSY8t659bNPuMi4JGKcs" Name="Condition" Kind="InputPin" />
               <ControlPoint Id="GJMjy1hx83kN49VXnGoRAY" Bounds="657,1132" Alignment="Bottom" />
-              <ControlPoint Id="FIf5i5sIhN9QHvUMp8e3EN" Bounds="647,827" Alignment="Top" />
+              <ControlPoint Id="FIf5i5sIhN9QHvUMp8e3EN" Bounds="647,826" Alignment="Top" />
               <Patch Id="KRXyDwSLYzEMkoh5fYidYh" ManuallySortedPins="true">
                 <Patch Id="OPBHT1IfweVNbzLioHEwBg" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="IMDfmSVCwCFMJqTGaXRmyN" Name="Then" ManuallySortedPins="true" />
@@ -2054,7 +2054,7 @@
               <Pin Id="JeobhV9GTucN76gtbr61Jw" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="366,1259,93,26" Id="Ong1oi5Zk8sLDXQ2lH6PuM">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ObservableGrab" />
               </p:NodeReference>
@@ -2102,7 +2102,7 @@
               <Pin Id="AjCIth4z1vDPMYdCl9zSjt" Name="Input 2" Kind="InputPin" DefaultValue="False" />
               <Pin Id="NusF1wF5PbzLPChJLb8X7d" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="1240,708,55,19" Id="FpAgDXYgOfpNYSL2pwVnJ2">
+            <Node Bounds="1240,708,55,26" Id="FpAgDXYgOfpNYSL2pwVnJ2">
               <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Path" />
@@ -2133,7 +2133,7 @@
               <Pin Id="IEG1cWVXe3kPRmaIWYCScs" Name="Input" Kind="StateInputPin" />
               <Pin Id="VxBwwMwZdx6N4087WCEzqG" Name="Result" Kind="OutputPin" />
             </Node>
-            <Pad Id="PHkm6FtaLFGMkaIossFKmh" Comment="" Bounds="-732,291,357,264" ShowValueBox="true" isIOBox="true">
+            <Pad Id="PHkm6FtaLFGMkaIossFKmh" Comment="" Bounds="-732,291,357,310" ShowValueBox="true" isIOBox="true">
               <p:ValueBoxSettings>
                 <p:maxvisibleentries p:Type="Int32">21</p:maxvisibleentries>
               </p:ValueBoxSettings>
@@ -2284,7 +2284,7 @@
               <Pin Id="QHv4cilP8oNQQBohIzKsMx" Name="Result" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="QaaMSQt4Ti3QT5B19q7LcE" Bounds="656,1304" />
-            <Pad Id="DuULUvvPMcxOu7HVubE01H" Comment="Measure" Bounds="-728,157,108,15" ShowValueBox="true" isIOBox="true" Value="DISPARITY">
+            <Pad Id="DuULUvvPMcxOu7HVubE01H" Comment="Measure" Bounds="-728,157,135,15" ShowValueBox="true" isIOBox="true" Value="DISPARITY">
               <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="TypeFlag" Name="MEASURE" />
               </p:TypeAnnotation>
@@ -2513,7 +2513,7 @@
                       <Pin Id="NCIBNnX2IfFM94Uh3OCSht" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="659,538,57,19" Id="AK643lONFCfM9t86HnYJhg">
-                      <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToVector" />
                         <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -2604,7 +2604,7 @@
                       <Pin Id="PMRBAajwqPMNjhID2qFivb" Name="Output" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1013,371,57,19" Id="ExvUd0DmU6qM2XTC7taTfW">
-                      <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToVector" />
                         <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -2750,7 +2750,7 @@
           <Patch Id="QMjxA7F9hqULjl3rPmqRX6" Name="Update">
             <Pin Id="GL9IIqrIBZMNZH2xIORT4t" Name="BodyData" Kind="InputPin" Bounds="371,97" />
             <Pin Id="RPXodguiG6YLaINRSyPmNO" Name="All Body Parts" Kind="InputPin" Bounds="623,74" />
-            <Pin Id="M9EHmHKl4slQWzTVnjqBSA" Name="Body Parts" Kind="InputPin" Bounds="717,134" IsPinGroup="true">
+            <Pin Id="M9EHmHKl4slQWzTVnjqBSA" Name="Body Parts" Kind="InputPin" Bounds="717,134">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
@@ -2808,7 +2808,7 @@
               <Pin Id="GcLuKQcZarAMJpk3mMGxTX" Name="Output" Kind="StateOutputPin" />
               <Pin Id="OsL9xibj2SAMQNTzbQVPcl" Name="Head Position" Kind="OutputPin" />
             </Node>
-            <Node Bounds="729,253,110,19" Id="O0LKEpuo8gXOqdHQT79MiY">
+            <Node Bounds="729,253,110,26" Id="O0LKEpuo8gXOqdHQT79MiY">
               <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="keypointConfidence" />
@@ -2827,7 +2827,7 @@
               <Pin Id="EMVxOJE3KThP2jQRW4eNOC" Name="Output" Kind="StateOutputPin" />
               <Pin Id="QufHqrbk2RgOWkxaHZpQjr" Name="Position" Kind="OutputPin" />
             </Node>
-            <Node Bounds="553,253,112,19" Id="V0qbO9pf1OUNfcmfe5AyBF">
+            <Node Bounds="553,253,112,26" Id="V0qbO9pf1OUNfcmfe5AyBF">
               <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="keypoints" />
@@ -2924,7 +2924,7 @@
                       <Pin Id="LDpBHdzqbqzPdZ8ZFZNVRe" Name="Output" Kind="StateOutputPin" />
                     </Node>
                     <Node Bounds="659,558,57,19" Id="DlCyQ5XvDWWOC2bWdTcBZH">
-                      <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToVector" />
                         <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -2991,7 +2991,7 @@
             </Node>
             <ControlPoint Id="T972fQIgHo3PZ3PgigYawJ" Bounds="1657,381" />
             <Node Bounds="428,303,57,19" Id="MRXmNSAvWWSPHGcZqqfkwN">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToVector" />
                 <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -3029,7 +3029,7 @@
                     <Patch Id="GGE1qGwbmeJQW6wiV43zVd" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="MBDfUt3KqTMMXixnom6VP1" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="1079,439,57,19" Id="OBzw5xEcDTkLonEtqfnuLh">
-                      <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToVector" />
                         <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -3056,7 +3056,7 @@
               <Pin Id="GvbSXKn8agONsdSuQEEnbY" Name="Not Assigned" Kind="OutputPin" />
             </Node>
             <Node Bounds="1317,426,57,19" Id="GZ4URiChu3rPGWjV1aIMwM">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ToVector" />
                 <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -3094,7 +3094,7 @@
                     <Patch Id="CPmEq1hHn5nLffme7LOv9J" Name="Update" ManuallySortedPins="true" />
                     <Patch Id="KLC3nMsirApLaJflKfahPT" Name="Dispose" ManuallySortedPins="true" />
                     <Node Bounds="1487,438,57,19" Id="QMP1htnVds8QD3pqNTLxGm">
-                      <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                      <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="ToVector" />
                         <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -3197,7 +3197,7 @@
           <Patch Id="Uv1Qu7uqLWQPGOOSTB94td" Name="Update">
             <Pin Id="JqnmObwk9NpLTI95rHAful" Name="BodyData" Kind="InputPin" Bounds="371,97" />
             <Pin Id="M2CgV6tMBorN72yWzFjmBZ" Name="All Body Parts" Kind="InputPin" Bounds="623,74" />
-            <Pin Id="FvRgpuyWxGfNSuzXjALEwk" Name="Body Parts" Kind="InputPin" Bounds="717,134" IsPinGroup="true">
+            <Pin Id="FvRgpuyWxGfNSuzXjALEwk" Name="Body Parts" Kind="InputPin" Bounds="717,134">
               <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Spread" />
                 <p:TypeArguments>
@@ -3563,10 +3563,10 @@
       </Node>
       <!--
 
-    ************************ RetriveBodies ************************
+    ************************ Bodies ************************
 
 -->
-      <Node Name="RetriveBodies" Bounds="294,422" Id="LE2gVQzdNWwLUdlTfjkFNk">
+      <Node Name="Bodies" Bounds="294,422" Id="LE2gVQzdNWwLUdlTfjkFNk">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -3705,9 +3705,9 @@
             </Node>
             <ControlPoint Id="PAnjLz3EmveNrk2v0l6hqL" Bounds="74,73,182,0" />
             <Node Bounds="74,410,96,26" Id="UI7wizeOtEQOOX0UN6Ns9l">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Camera" />
+                <CategoryReference Kind="ClassType" Name="ZED" />
                 <Choice Kind="OperationCallFlag" Name="GetIsOpen" />
               </p:NodeReference>
               <Pin Id="A5VzuDLOhouNboHdpdNBGk" Name="Input" Kind="StateInputPin" />
@@ -3804,9 +3804,9 @@
             <ControlPoint Id="NPn6qwO56X8LP7pIgY8lOC" Bounds="768,166" />
             <Pad Id="DOXRKGKsqIvMz8v1dPUO0P" SlotId="Q2PpM2879sKOTagNZ8NzeK" Bounds="565,740" />
             <Node Bounds="72,104,226,26" Id="LsiXwZKtsEEOJT09sVdBBT">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="ClassType" Name="Camera" />
+                <CategoryReference Kind="ClassType" Name="ZED" />
                 <Choice Kind="OperationCallFlag" Name="GetCamera" />
               </p:NodeReference>
               <Pin Id="UxvSib2K7uFPZHwVcpIrFX" Name="Input" Kind="StateInputPin" />
@@ -4110,10 +4110,10 @@
       </Node>
       <!--
 
-    ************************ Recorder ************************
+    ************************ ZEDRecorder ************************
 
 -->
-      <Node Name="Recorder" Bounds="515,311" Id="BJGtCy1C1zZN8PJ3baDiU0">
+      <Node Name="ZEDRecorder" Bounds="515,311" Id="BJGtCy1C1zZN8PJ3baDiU0">
         <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -4121,7 +4121,7 @@
           <Canvas Id="NzjrTP8kIAkNJypsI6X3UG" CanvasType="Group">
             <ControlPoint Id="EUMGWkwUSXMPdIosCeaAc9" Bounds="361,201" />
             <Node Bounds="359,276,66,26" Id="BxSwnp63bquMcIAPzJMrxG">
-              <p:NodeReference LastCategoryFullName="VL.Devices.ZED.Camera" LastDependency="VL.Devices.ZED.vl">
+              <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="GetCamera" />
               </p:NodeReference>
@@ -4170,7 +4170,7 @@
               <ControlPoint Id="Iitv7rB0fWgPaQ5Vinvhdg" Bounds="868,604" Alignment="Bottom" />
               <ControlPoint Id="ETTEV3Y0XoCPUK5oMUy41L" Bounds="611,534" Alignment="Top" />
             </Node>
-            <Node Bounds="536,423,55,19" Id="V04rmIxq1f3QCTaU5YuEzX">
+            <Node Bounds="536,423,55,26" Id="V04rmIxq1f3QCTaU5YuEzX">
               <p:NodeReference LastCategoryFullName="IO.Path" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="Path" />
@@ -4199,14 +4199,14 @@
               <Pin Id="C3rGSl90nKtOApGyubQgSq" Name="Output" Kind="StateOutputPin" />
             </Node>
             <ControlPoint Id="SqZJH9OLjS8L2R7F2hXMeY" Bounds="1055,379" />
-            <Node Bounds="490,736,355,83" Id="KztbTJXgcFUPtNiPk4s18I">
+            <Node Bounds="490,736,355,84" Id="KztbTJXgcFUPtNiPk4s18I">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:NodeReference>
               <Pin Id="FbiDWDEa4R4MPNnA1RFy5v" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="GIGYpD6bxkiPTDX0OmZkHg" Bounds="504,743" Alignment="Top" />
+              <ControlPoint Id="GIGYpD6bxkiPTDX0OmZkHg" Bounds="504,742" Alignment="Top" />
               <ControlPoint Id="MTtsPwDggwyNKCku1OvKEK" Bounds="504,814" Alignment="Bottom" />
               <Patch Id="OyD1qtDyREKMtaHQK8Lv9G" ManuallySortedPins="true">
                 <Patch Id="AC1KNDj6tePQdRxxZhECE1" Name="Create" ManuallySortedPins="true" />
@@ -4276,8 +4276,8 @@
           <Patch Id="LmW6ccyRk0NPpnxDmNutpW" Name="Create" />
           <Patch Id="Q0QlyZcNoKCPmA9OLurp6J" Name="Update">
             <Pin Id="PR2EuMYqrSSOS4CbxVQLaN" Name="Input" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-                <Choice Kind="TypeFlag" Name="Camera" />
+              <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+                <Choice Kind="TypeFlag" Name="ZED" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="HDnfgeArRO3Ne73Iyy9bRK" Name="Path" Kind="InputPin" Bounds="534,335" />
@@ -4349,10 +4349,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2023.5.3-0065-gbff0ac8e09" />
-  <NugetDependency Id="TQ2kyFQWn3jLOmQDaAL1cD" Location="Stereolabs.zed" Version="4.0.6.1" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2023.5.3-0065-gbff0ac8e09" />
-  <PlatformDependency Id="FD10evV2YGsPrio8f931Wy" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.9-0971-g1d0a0c7789/lib/Stride.Graphics.dll" />
-  <PlatformDependency Id="KvFylNqh9p1O3v1W6zKus0" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.9-0971-g1d0a0c7789/lib/Stride.dll" />
-  <PlatformDependency Id="JKWlMd3T1kJLgHfNOqCVZH" Location="System.Numerics.Vectors" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2023.5.2" />
+  <NugetDependency Id="TQ2kyFQWn3jLOmQDaAL1cD" Location="Stereolabs.zed" Version="4.0.7" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2023.5.2" />
+  <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
+  <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
+  <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
 </Document>

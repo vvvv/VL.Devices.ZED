@@ -9,19 +9,19 @@
     <owners>vvvv group</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.ZED</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>this libruary providing access to Stereolubs ZED cameras in vvvv gamma</summary>
-    <descriptionthe>this libruary providing access to Stereolubs ZED cameras in vvvv gamma</description>
+    <summary>This library provides access to Stereolabs ZED cameras in VL</summary>
+    <description>This library provides access to Stereolabs ZED cameras in VL</description>
     <tags>nuget</tags>
-	  <license type="expression">MIT</license>
-	  <!-- <icon>icon\nugeticon.png</icon> -->
+	<license type="expression">MIT</license>
+	<icon>icon\nugeticon.png</icon>
     <dependencies>
-      <dependency id="Stereolabs.zed" version="3.8.0" />
+      <dependency id="Stereolabs.zed" version="4.0.7" />
     </dependencies>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
     <file src="..\shaders\**" target="shaders\" exclude="" />
-	  <!-- <file src="nugeticon.png" target="icon\" /> -->
+	<file src="nugeticon.png" target="icon\" />
   </files>
 </package>

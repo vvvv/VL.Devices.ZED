@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2023.5.3-0065-gbff0ac8e09" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2023.5.2" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="VL.Devices.ZED" CanvasType="FullCategory" />
     <!--
@@ -17,7 +17,7 @@
           <Node Bounds="667,327,559,19" Id="S0aj9FVzSIxMDGgLFraZ0S">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Camera" />
+              <Choice Kind="ProcessAppFlag" Name="ZED" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
@@ -66,7 +66,7 @@
           <Node Bounds="666,768,132,19" Id="BH4ggMswtP3PSbknFImGJd">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RetriveImage" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
             <Pin Id="E05AepawYefPKGPibaqz96" Name="Camera" Kind="InputPin" />
             <Pin Id="OMXBLPPeMj8OomtldpNi5Y" Name="View" Kind="InputPin" />
@@ -81,7 +81,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
-            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="3, 33, 1598, 993" />
+            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="1142, 103, 597, 318" />
             <Pin Id="LtP9sMoNIAJQW6qcZKXgfS" Name="Input" Kind="InputPin" />
             <Pin Id="FlcbDLXEyRzOBYymX3jEni" Name="Title" Kind="InputPin" />
             <Pin Id="LB26NDBK5woPvOuOhNMhjE" Name="Clear Color" Kind="InputPin" />
@@ -120,7 +120,7 @@
           <Node Bounds="1251,733,219,19" Id="KWgZZajtqy5NzRCPtSASOY">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RetriveMeasure" />
+              <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
             <Pin Id="Sq6pu4FnMQaON5eOL8APrD" Name="Camera" Kind="InputPin" />
             <Pin Id="HsM2IfUU1sIP4DAJfHBAz0" Name="Measure" Kind="InputPin" />
@@ -155,6 +155,7 @@
                 </p:NodeReference>
                 <Pin Id="LmC7OMTiOvTLnVCTAkn9kg" Name="BodyData" Kind="InputPin" />
                 <Pin Id="Sp9F6HqsrmCNpmNE8GQ5Ww" Name="All Body Parts" Kind="InputPin" DefaultValue="True" />
+                <Pin Id="IxUqsdwFvuqNEfkP25gv4u" Name="Body Parts" Kind="InputPin" />
                 <Pin Id="BIrMb9gl7igQdf9xXA6wrI" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="Qkg1KrngXYPPJIvgKdygoY" Name="Skeleton Joint Position 2D" Kind="OutputPin" />
                 <Pin Id="G6MP4iFeWy1PB1sNMS5QJ7" Name="Keypoint Confidence" Kind="OutputPin" />
@@ -167,6 +168,7 @@
                 </p:NodeReference>
                 <Pin Id="Ax6EcFEwlz1NTG7eUnKCA9" Name="BodyData" Kind="InputPin" />
                 <Pin Id="N59CWUU1T7ZK9whorvbNiM" Name="All Body Parts" Kind="InputPin" DefaultValue="True" />
+                <Pin Id="Erl6LiB944pMo8VMieLGPD" Name="Body Parts" Kind="InputPin" />
                 <Pin Id="KrSXIW0y45oLoon17HHIJ8" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="VWdkJIZHlZJLZPJv9JsgK8" Name="Root World Position" Kind="OutputPin" />
                 <Pin Id="O3z38yfz6DNPLl6J7mYMci" Name="Skeleton Joint Positions" Kind="OutputPin" />
@@ -186,7 +188,7 @@
           <Node Bounds="621,1102,165,19" Id="UDxeetzHzGsPowIjZ8u5mk">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="RetriveBodies" />
+              <Choice Kind="ProcessAppFlag" Name="Bodies" />
             </p:NodeReference>
             <Pin Id="J7pm92lVCdNLEZvHMS7q5K" Name="Camera" Kind="InputPin" />
             <Pin Id="MleEnjCfRvaLKm2DVWJRmg" Name="Cofidence Threshold" Kind="InputPin" />
@@ -249,7 +251,7 @@
                     <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
                     <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
-                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="2047, 78, 1523, 1118">
+                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1160, 503, 629, 347">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -450,7 +452,7 @@
           <Node Bounds="1072,1259,180,19" Id="HQRtbtWITNRNqVxv2LwM5l">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Recorder" />
+              <Choice Kind="ProcessAppFlag" Name="ZEDRecorder" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="LloqkkDaetCOBlGwv0LDp9" Name="Input" Kind="InputPin" />
@@ -506,7 +508,7 @@
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <ControlPoint Id="O0ejg1T3u2mOCK7pG8jvC7" Bounds="1412,629" />
-          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="668,198,67,15" ShowValueBox="true" isIOBox="true" Value="HD1080">
+          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="668,198,67,15" ShowValueBox="true" isIOBox="true" Value="HD720">
             <p:TypeAnnotation LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="RESOLUTION" />
             </p:TypeAnnotation>
@@ -514,7 +516,7 @@
           <Overlay Id="NjGpF5Vl0blOrrhmBlWjXS" Name="Camera instance" Bounds="573,134,831,394">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Pad Id="DZvGG9h3PX8NpY4Hzrl0hg" Bounds="120,224,385,166" ShowValueBox="true" isIOBox="true" Value="Neural networks models are used in the detection module and  NEURAL Depth Mode. When any of those models are used for a first time the ZED SDK downloads and optimizes it for your PC. This process may take a few minutes, and the application will hang during the process.&#xD;&#xA;&#xD;&#xA;A change some of the camera settings requiters a camera restart - it will happen automatically when needed.">
+          <Pad Id="DZvGG9h3PX8NpY4Hzrl0hg" Bounds="120,224,383,106" ShowValueBox="true" isIOBox="true" Value="Neural networks models are used in the detection module and  NEURAL Depth Mode. When any of those models are used for the first time the ZED SDK downloads and optimizes them for your PC. This process may take a few minutes, and the application will hang during the process.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -524,7 +526,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Ad5WfdCTmdILw76cgph4db" Comment="Error Code" Bounds="643,1142,257,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="V2LUbjzfGCYQMbJK6mHktS" Bounds="121,80,70,19" ShowValueBox="true" isIOBox="true" Value="SDK 3.8.0">
+          <Pad Id="LJWQZ74SPmEM4ckgp0inam" Bounds="122,115,205,48" ShowValueBox="true" isIOBox="true" Value="Requirements: &#xD;&#xA;- ZED SDK 4.0.7">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -533,15 +535,16 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LJWQZ74SPmEM4ckgp0inam" Bounds="122,115,203,91" ShowValueBox="true" isIOBox="true" Value="Requirements: &#xD;&#xA;- ZED SDK 3.8.2&#xD;&#xA;- CUDA 11.7&#xD;&#xA;- Stereolubs.zed.3.8.0 nuget">
+          <Pad Id="AtjfcXah3uRMdxXH3WWZWP" Bounds="122,165,311,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/developers/release/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="G5rZj1zFNKBQAbIBZNZiWh" Comment="Texture" Bounds="1062,844,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -580,11 +583,11 @@
         <Link Id="VKCyjFCdHDZMHWWPNzZx62" Ids="ACfugAFFyN0MAGXpyplEsd,R37A4WjhHkNLkI4YjlYjWw" />
         <Link Id="Kl6AtU5JS1ePULNT6gfqy8" Ids="B0ZRyuEpNLuMcn83wugyq2,Ad5WfdCTmdILw76cgph4db" />
         <Link Id="AsBc2XYBuB4M4XhqO2Uz0E" Ids="D1wZOtPHsWoNNviA7FRl98,GPDMXzahRlOLBZunsODg0x" />
+        <Link Id="DXYjGzTHklrQHWtoY7xscW" Ids="VJqvypjIDvQNsYOsVCrgf4,G5rZj1zFNKBQAbIBZNZiWh" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2023.5.3-0065-gbff0ac8e09" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2023.5.3-0065-gbff0ac8e09" />
-  <NugetDependency Id="S1tpGFnxG1WOb7EZoYvZow" Location="VL.Fuse" Version="1.0.0-alpha08" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2023.5.2" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2023.5.2" />
   <DocumentDependency Id="Ci47wjHA9scPBbG8EGIrgP" Location="../VL.Devices.ZED.vl" />
 </Document>
