@@ -13,4 +13,4 @@ For information on how to use nugets with VL, see [Managing Nugets](https://theg
     nuget install VL.Devices.ZED -pre
 
 ## Credits
-Initial development by [m box](https://github.com/m-box-de)
+Initial development by [m box](https://github.com/m-box-de).
