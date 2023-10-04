@@ -11,3 +11,6 @@ Download: http://visualprogramming.net
 For information on how to use nugets with VL, see [Managing Nugets](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) in the VL documentation. As described there you go to the commandline and then type:
 
     nuget install VL.Devices.ZED -pre
+
+## Credits
+Initial development by [m box](https://github.com/m-box-de)
