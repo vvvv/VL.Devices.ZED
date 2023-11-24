@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2023.5.3-0306-gcace10c698" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HRK24Wqtg7GMxpDv8ORoTH" LanguageVersion="2023.5.3-0338-g7d8db7daf1" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="VL.Devices.ZED" CanvasType="FullCategory" />
     <!--
@@ -130,13 +130,13 @@
           </Pad>
           <Pad Id="N1Xj20CNS01QOFXaonUDaG" Comment="On Data" Bounds="1289,805,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="S36nWG251fWLxYsutYyOK3" Comment="Last Error" Bounds="1325,779,257,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="607,1165,366,86" Id="QlxpruKI5fEN7TVC3QFSiK">
+          <Node Bounds="577,1167,396,174" Id="QlxpruKI5fEN7TVC3QFSiK">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
             </p:NodeReference>
             <Pin Id="M45vvG3iiUAO7nmoaXTGWf" Name="Break" Kind="OutputPin" />
-            <ControlPoint Id="GPDMXzahRlOLBZunsODg0x" Bounds="621,1171" Alignment="Top" />
+            <ControlPoint Id="UBLmIRAPJb4NOKu8nazu5b" Bounds="621,1173" Alignment="Top" />
             <Patch Id="Uxeny0xkILLO0Qa8SS9t4R" ManuallySortedPins="true">
               <Patch Id="OvqOqkajeucOgXTK7j6lqC" Name="Create" ManuallySortedPins="true" />
               <Patch Id="NUqyRUOgnUtMv6fVuTBpBI" Name="Update" ManuallySortedPins="true" />
@@ -148,10 +148,6 @@
                 </p:NodeReference>
                 <Pin Id="KD3Il47buOXLzk3v9O8waj" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="LmC7OMTiOvTLnVCTAkn9kg" Name="BodyData" Kind="InputPin" />
-                <Pin Id="Sp9F6HqsrmCNpmNE8GQ5Ww" Name="All Body Parts" Kind="InputPin" />
-                <Pin Id="IxUqsdwFvuqNEfkP25gv4u" Name="Body Parts" Kind="InputPin">
-                  <p:DefaultValue />
-                </Pin>
                 <Pin Id="BIrMb9gl7igQdf9xXA6wrI" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="Qkg1KrngXYPPJIvgKdygoY" Name="Skeleton Joint Position 2D" Kind="OutputPin" />
                 <Pin Id="G6MP4iFeWy1PB1sNMS5QJ7" Name="Keypoint Confidence" Kind="OutputPin" />
@@ -164,8 +160,6 @@
                 </p:NodeReference>
                 <Pin Id="BzhzuBdHKfhMLYUeWUeCrF" Name="Node Context" Kind="InputPin" IsHidden="true" />
                 <Pin Id="Ax6EcFEwlz1NTG7eUnKCA9" Name="BodyData" Kind="InputPin" />
-                <Pin Id="N59CWUU1T7ZK9whorvbNiM" Name="All Body Parts" Kind="InputPin" />
-                <Pin Id="Erl6LiB944pMo8VMieLGPD" Name="Body Parts" Kind="InputPin" />
                 <Pin Id="J0Tye8v2hKbOrCW3Alzyol" Name="Id" Kind="OutputPin" />
                 <Pin Id="KrSXIW0y45oLoon17HHIJ8" Name="Confidence" Kind="OutputPin" />
                 <Pin Id="VWdkJIZHlZJLZPJv9JsgK8" Name="Root Position" Kind="OutputPin" />
@@ -180,6 +174,32 @@
                 <Pin Id="SKEhlzQdPvwPYPDhtplgaA" Name="Head Position" Kind="OutputPin" />
                 <Pin Id="I30tlo1UPryOM0klfNp2fn" Name="Head Bounding Box" Kind="OutputPin" />
               </Node>
+              <Node Bounds="629,1257,78,64" Id="JbtH21C8hZWPtVcI2sWbGU">
+                <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
+                  <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Primitive" />
+                  <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                </p:NodeReference>
+                <Pin Id="Rp3MiYaV390OgpkVu7yjtV" Name="Break" Kind="OutputPin" />
+                <Patch Id="HoSTp29oxtMNr0mB2wwkDw" ManuallySortedPins="true">
+                  <Patch Id="VEJ5fBalBwPLN76hJjNL0W" Name="Create" ManuallySortedPins="true" />
+                  <Patch Id="V23kwUCx5aAMc8r4ZJPDYg" Name="Update" ManuallySortedPins="true" />
+                  <Patch Id="L4NK7wA8W13O9qaKQDQXSZ" Name="Dispose" ManuallySortedPins="true" />
+                  <Node Bounds="641,1280,52,19" Id="AMquEsLdIxDPQ2531bMcHj">
+                    <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
+                      <Choice Kind="OperationCallFlag" Name="GetSlice" />
+                    </p:NodeReference>
+                    <Pin Id="JjhCAL966TkMXAX4Pafy4m" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QEqtynK8OhqNvBDdzhRArh" Name="Default Value" Kind="InputPin" />
+                    <Pin Id="MniTBJqRYlzOFT5JADozQO" Name="Index" Kind="InputPin" />
+                    <Pin Id="CHnN754exgWPNgNDbp5hZd" Name="Result" Kind="OutputPin" />
+                  </Node>
+                </Patch>
+                <ControlPoint Id="AXoFiiaoBhtNhOZPoERdSk" Bounds="690,1263" Alignment="Top" />
+                <ControlPoint Id="B8VVwX6BNgbN00IfG6VJpV" Bounds="644,1315" Alignment="Bottom" />
+              </Node>
             </Patch>
           </Node>
           <Pad Id="MLgiJMjOFf3PXyEdApgmF2" Comment="Depth mode" Bounds="708,252,96,15" ShowValueBox="true" isIOBox="true" Value="QUALITY">
@@ -187,19 +207,19 @@
               <Choice Kind="TypeFlag" Name="DEPTH_MODE" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="619,1102,245,19" Id="UDxeetzHzGsPowIjZ8u5mk">
+          <Node Bounds="619,1102,185,19" Id="UDxeetzHzGsPowIjZ8u5mk">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Bodies" />
             </p:NodeReference>
             <Pin Id="GNPyceSSb12Og3n4Tgea8B" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="J7pm92lVCdNLEZvHMS7q5K" Name="Camera" Kind="InputPin" />
+            <Pin Id="O274KOCgQExO2WsmWv65Hh" Name="Body Format" Kind="InputPin" />
             <Pin Id="DczlOQcabtKLcOBDmb4ySe" Name="Body Tracking Model" Kind="InputPin" />
             <Pin Id="M7WYUDcsSxkPKZ39P5UTIk" Name="Body Tracking" Kind="InputPin" />
             <Pin Id="O68GkS3AGlENZjCLRwrEhB" Name="Body Fitting" Kind="InputPin" />
             <Pin Id="SLVtD1v6mMMMiILkd35Q73" Name="Image Sync" Kind="InputPin" />
             <Pin Id="KcOpZT0e4wRN3hewfX71Fn" Name="Max Depth" Kind="InputPin" />
-            <Pin Id="O274KOCgQExO2WsmWv65Hh" Name="Body Format" Kind="InputPin" />
             <Pin Id="RYSJjTuk4b7NbPiSnEEqR2" Name="Compute Mask" Kind="InputPin" IsHidden="true" />
             <Pin Id="AGWptvCxCoZON5gLChU4MO" Name="Prediction Timeout" Kind="InputPin" IsHidden="true" />
             <Pin Id="GFGcM2PSrITL1m7Qxfqpo4" Name="Allow Reduced Precision Inference" Kind="InputPin" IsHidden="true" />
@@ -527,7 +547,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="CxSOW0tQq3FMBuBUtuzp2g" Comment="Openig Error Code" Bounds="778,479,257,15" ShowValueBox="true" isIOBox="true" />
-          <Overlay Id="CLhypGjcUI0OiF22jTJXIg" Name="Detection module" Bounds="562,1049,430,259">
+          <Overlay Id="CLhypGjcUI0OiF22jTJXIg" Name="Detection module" Bounds="523,1049,469,378">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Overlay Id="DXjNvev4Ea2O9P8UtEYVnP" Name="Record SVO" Bounds="1033,1051,452,343">
@@ -576,12 +596,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KQ6sHDNmPAELU7cWdjc5q4" Comment="Body Format" Bounds="781,1020,65,15" ShowValueBox="true" isIOBox="true" Value="BODY_34">
-            <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="JTXDqKDmMRzLqLMNLGk4gD" Comment="Body Parts" Bounds="424,1089,105,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="JTXDqKDmMRzLqLMNLGk4gD" Comment="Body Parts 18" Bounds="231,1089,105,95" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -597,32 +612,7 @@
               <Item>RIGHT_ANKLE</Item>
             </p:Value>
           </Pad>
-          <Node Bounds="394,1302,76,86" Id="JbtH21C8hZWPtVcI2sWbGU">
-            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
-              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-              <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
-            </p:NodeReference>
-            <Pin Id="Rp3MiYaV390OgpkVu7yjtV" Name="Break" Kind="OutputPin" />
-            <Patch Id="HoSTp29oxtMNr0mB2wwkDw" ManuallySortedPins="true">
-              <Patch Id="VEJ5fBalBwPLN76hJjNL0W" Name="Create" ManuallySortedPins="true" />
-              <Patch Id="V23kwUCx5aAMc8r4ZJPDYg" Name="Update" ManuallySortedPins="true" />
-              <Patch Id="L4NK7wA8W13O9qaKQDQXSZ" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="406,1348,52,19" Id="AMquEsLdIxDPQ2531bMcHj">
-                <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="4026531840" Name="Spread" NeedsToBeDirectParent="true" />
-                  <Choice Kind="OperationCallFlag" Name="GetSlice" />
-                </p:NodeReference>
-                <Pin Id="JjhCAL966TkMXAX4Pafy4m" Name="Input" Kind="StateInputPin" />
-                <Pin Id="QEqtynK8OhqNvBDdzhRArh" Name="Default Value" Kind="InputPin" />
-                <Pin Id="MniTBJqRYlzOFT5JADozQO" Name="Index" Kind="InputPin" />
-                <Pin Id="CHnN754exgWPNgNDbp5hZd" Name="Result" Kind="OutputPin" />
-              </Node>
-            </Patch>
-            <ControlPoint Id="AXoFiiaoBhtNhOZPoERdSk" Bounds="450,1308" Alignment="Top" />
-          </Node>
-          <Pad Id="Ih0S7NgR987OQTSvLbbsBQ" Comment="Reframe" Bounds="982,280,62,15" ShowValueBox="true" isIOBox="true" Value="CAMERA">
+          <Pad Id="Ih0S7NgR987OQTSvLbbsBQ" Comment="Reframe" Bounds="986,282,62,15" ShowValueBox="true" isIOBox="true" Value="CAMERA">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="REFERENCE_FRAME" />
             </p:TypeAnnotation>
@@ -643,8 +633,6 @@
         <Link Id="PQLZQC6wITwMQ49EZMDDhE" Ids="BksGxBkxN2lMDjmgqs5LLw,HsM2IfUU1sIP4DAJfHBAz0" />
         <Link Id="FRvyfWJqxNhQJcdRBaoIJs" Ids="U44dfoRmL1tM4gb4n9taLv,N1Xj20CNS01QOFXaonUDaG" />
         <Link Id="QFNpfcrX8K1N6Um80LDJcb" Ids="OCN9R3woTu0O3TEznnCj8t,S36nWG251fWLxYsutYyOK3" />
-        <Link Id="Ln9VizytQ4YPm6UixNgb9U" Ids="GPDMXzahRlOLBZunsODg0x,LmC7OMTiOvTLnVCTAkn9kg" />
-        <Link Id="RbR5yD71aZqM8b3FrpNjNF" Ids="GPDMXzahRlOLBZunsODg0x,Ax6EcFEwlz1NTG7eUnKCA9" />
         <Link Id="ENcrU4L6IsiMbpPN4yIgVI" Ids="Lr3631Mz5IqLZjXaEfB4So,EHWQsf5JPChNdP7FGACrrQ" />
         <Link Id="Vn68AtOsw8hPsSQOAVWHIa" Ids="VZKebrVXMVGP2TvYAVmSN1,E8MkOfE06Q8Ps55pNACUAW" />
         <Link Id="HEj7pyxu6ueLgEgcdxiSVg" Ids="NhLDsJ349iCNwV9A3Nzhu5,SXenvrfxDk4LyjB2Gj6FCz" />
@@ -662,16 +650,18 @@
         <Link Id="AH22rpsoYkUN72dBt5QSQM" Ids="MLgiJMjOFf3PXyEdApgmF2,FetzhtOd6eHLIPQ69IIBPM" />
         <Link Id="VKCyjFCdHDZMHWWPNzZx62" Ids="ACfugAFFyN0MAGXpyplEsd,R37A4WjhHkNLkI4YjlYjWw" />
         <Link Id="Kl6AtU5JS1ePULNT6gfqy8" Ids="B0ZRyuEpNLuMcn83wugyq2,Ad5WfdCTmdILw76cgph4db" />
-        <Link Id="AsBc2XYBuB4M4XhqO2Uz0E" Ids="D1wZOtPHsWoNNviA7FRl98,GPDMXzahRlOLBZunsODg0x" />
-        <Link Id="KS6Gfk2VKRDM7NKoRpEWgL" Ids="KQ6sHDNmPAELU7cWdjc5q4,O274KOCgQExO2WsmWv65Hh" />
-        <Link Id="IGZptmZnaGVLeDYG4fhHyS" Ids="JTXDqKDmMRzLqLMNLGk4gD,IxUqsdwFvuqNEfkP25gv4u" />
         <Link Id="Qcwv10UwZDmLOgPE75WrX5" Ids="JTXDqKDmMRzLqLMNLGk4gD,AXoFiiaoBhtNhOZPoERdSk" />
-        <Link Id="RAsqLoi99uzLjVovQqHZbV" Ids="AXoFiiaoBhtNhOZPoERdSk,MniTBJqRYlzOFT5JADozQO" />
         <Link Id="V54s6OroeK2MbSZ2AR9VkY" Ids="Ih0S7NgR987OQTSvLbbsBQ,Frfj93WOAzcPh5zjZmSkvr" />
+        <Link Id="T9Io4L9vRpjNrp415lfWtZ" Ids="D1wZOtPHsWoNNviA7FRl98,UBLmIRAPJb4NOKu8nazu5b" />
+        <Link Id="Nbo6G3Dw7ldQWiob3AIG1X" Ids="UBLmIRAPJb4NOKu8nazu5b,LmC7OMTiOvTLnVCTAkn9kg" />
+        <Link Id="GTJTnijCxJ5QQlOFl3y8K3" Ids="UBLmIRAPJb4NOKu8nazu5b,Ax6EcFEwlz1NTG7eUnKCA9" />
+        <Link Id="RAsqLoi99uzLjVovQqHZbV" Ids="AXoFiiaoBhtNhOZPoERdSk,MniTBJqRYlzOFT5JADozQO" />
+        <Link Id="HyO7sGDucqnNEi6rdvgOHa" Ids="Qkg1KrngXYPPJIvgKdygoY,JjhCAL966TkMXAX4Pafy4m" />
+        <Link Id="Dk74sV05zXXMAacbVislaO" Ids="CHnN754exgWPNgNDbp5hZd,B8VVwX6BNgbN00IfG6VJpV" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2023.5.3-0306-gcace10c698" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2023.5.3-0306-gcace10c698" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2023.5.3-0338-g7d8db7daf1" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2023.5.3-0338-g7d8db7daf1" />
   <DocumentDependency Id="Ci47wjHA9scPBbG8EGIrgP" Location="../VL.Devices.ZED.vl" />
 </Document>
