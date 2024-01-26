@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2023.5.3-0338-g7d8db7daf1" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.0-0045-g9ab3387bfc" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="VL.Devices.ZED" CanvasType="FullCategory" />
     <!--
@@ -23,9 +23,9 @@
             <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="HObrJvmeNLZQPrOZtQZ6Ax" Name="Id" Kind="InputPin" IsHidden="true" />
             <Pin Id="PCdxzigwxlKN3wqZ2yXaTR" Name="Input Type" Kind="InputPin" />
-            <Pin Id="Fkg5MJQObHyM1i2Y7jWXt5" Name="Devace ID" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HnQUnV7iLvAQGe3C7yGwOA" Name="Device ID" Kind="InputPin" />
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
-            <Pin Id="FetzhtOd6eHLIPQ69IIBPM" Name="Depth mode" Kind="InputPin" />
+            <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="F2b0Zy2tHVdOybJOmLg8rN" Name="Depth Stabilization" Kind="InputPin" />
             <Pin Id="KnMEMhEsRd2LkR1B2keui8" Name="Image Enhancement" Kind="InputPin" />
             <Pin Id="AZwT994qsmVMCdF8TwEeXF" Name="Units" Kind="InputPin" />
@@ -34,12 +34,12 @@
             <Pin Id="UwY9TuqAGtiPWWiXuBXvzh" Name="SVO Path" Kind="InputPin" />
             <Pin Id="A0Gv1NxHtv1ODiwpBjssJ7" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="SXenvrfxDk4LyjB2Gj6FCz" Name="Open" Kind="InputPin" />
-            <Pin Id="Frfj93WOAzcPh5zjZmSkvr" Name="Reframe" Kind="InputPin" />
+            <Pin Id="IzMOs6cg1IBNpiivicmW9A" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
-            <Pin Id="R8ryL6shUb3LdcdIp56Huj" Name="Cnf_threshold" Kind="InputPin" />
-            <Pin Id="Idq8jq8sEmpMubsFbJqwh4" Name="Txt_cnf_threshold" Kind="InputPin" />
-            <Pin Id="Aooi7rT06zZOgv6bMYRWKo" Name="Remove Saturated Areas_" Kind="InputPin" />
-            <Pin Id="EzzYZs0fA2yPkqjHOEMeP8" Name="P Enable Fill Mode" Kind="InputPin" />
+            <Pin Id="C1LoBBNpSiiQIYlLn2Wv2V" Name="Confidence Threshold" Kind="InputPin" />
+            <Pin Id="Mlla1b8XY5qMr9qZ3X4QAO" Name="Texture Confidence Threshold" Kind="InputPin" />
+            <Pin Id="TNbzIZDA01WP8Evwav80fx" Name="Remove Saturated Areas" Kind="InputPin" />
+            <Pin Id="Is9ixVd9ETcP3y0uktjv0a" Name="Enable Fill Mode" Kind="InputPin" />
             <Pin Id="E8MkOfE06Q8Ps55pNACUAW" Name="Close" Kind="InputPin" />
             <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Openig Error Code" Kind="OutputPin" />
@@ -87,7 +87,7 @@
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
             <Pin Id="K8MLRprigfJOlzkmYkt0cL" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="2212, 41, 1153, 686" />
+            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="1230, 74, 1153, 686" />
             <Pin Id="VES5TNegMrmNg1VwerDTpR" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="GTXCHEjkgWrMPfr1inJmYd" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="NADXWc5BRg8LLHi3QqqoTK" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
@@ -288,7 +288,7 @@
                     <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="Os0IVA3xFdHN8ubt8tO6YK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="2199, 773, 1385, 878">
+                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1403, 775, 1385, 863">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -656,6 +656,19 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Mk595daNk7SP4sXMbWTjkQ" Comment="Path" Bounds="899,110,140,15" ShowValueBox="true" isIOBox="true" Value="..\test.svo">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="PaR2PmHjRTSMJ7umIZZxts" Comment="SVO Realtime Mode" Bounds="920,136,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -686,11 +699,9 @@
         <Link Id="Uej9WMJC0KNMc1hJbUsWRT" Ids="OCopLXplHzHNBSx7L7SAP2,E05AepawYefPKGPibaqz96" />
         <Link Id="M8Ficsf3XAwMoctktX1aIg" Ids="OCopLXplHzHNBSx7L7SAP2,Sq6pu4FnMQaON5eOL8APrD" />
         <Link Id="KjbOJmE4XMJOYaxnkaChkQ" Ids="SwXuvQ3bpFcMN3pNPF9CKf,CxSOW0tQq3FMBuBUtuzp2g" />
-        <Link Id="AH22rpsoYkUN72dBt5QSQM" Ids="MLgiJMjOFf3PXyEdApgmF2,FetzhtOd6eHLIPQ69IIBPM" />
         <Link Id="VKCyjFCdHDZMHWWPNzZx62" Ids="ACfugAFFyN0MAGXpyplEsd,R37A4WjhHkNLkI4YjlYjWw" />
         <Link Id="Kl6AtU5JS1ePULNT6gfqy8" Ids="B0ZRyuEpNLuMcn83wugyq2,Ad5WfdCTmdILw76cgph4db" />
         <Link Id="Qcwv10UwZDmLOgPE75WrX5" Ids="JTXDqKDmMRzLqLMNLGk4gD,AXoFiiaoBhtNhOZPoERdSk" />
-        <Link Id="V54s6OroeK2MbSZ2AR9VkY" Ids="Ih0S7NgR987OQTSvLbbsBQ,Frfj93WOAzcPh5zjZmSkvr" />
         <Link Id="T9Io4L9vRpjNrp415lfWtZ" Ids="D1wZOtPHsWoNNviA7FRl98,UBLmIRAPJb4NOKu8nazu5b" />
         <Link Id="Nbo6G3Dw7ldQWiob3AIG1X" Ids="UBLmIRAPJb4NOKu8nazu5b,LmC7OMTiOvTLnVCTAkn9kg" />
         <Link Id="GTJTnijCxJ5QQlOFl3y8K3" Ids="UBLmIRAPJb4NOKu8nazu5b,Ax6EcFEwlz1NTG7eUnKCA9" />
@@ -700,12 +711,17 @@
         <Link Id="OXTRmw93c0pP6iYsj8MQDK" Ids="UlIefcNgbwtLpQX9dMcJIx,U3ifoeveU2hL91KR6a9isj" />
         <Link Id="EJuPCQJ57jaQDygT0q3KxN" Ids="La5LsLEjVXSMjXj8PSdQVU,JXPhmxKAOKhMMFVSh08XMr" />
         <Link Id="HpjZHVDJuY2Mw7ogHns6ac" Ids="OHJvVMf4Z3kOTrvuPh5nz9,VHKT1UPBLIJQIhLuxAopnb" />
-        <Link Id="HX2oDlhSppdLwy93D7zz9R" Ids="RcppEylLervPgTl9Z13DKW,As58ZMPuZPGNmI8qUCh25V" />
         <Link Id="ArfsZ3mmWu4PXmR5Bojnpb" Ids="AmFVGEO390TN0t6OXEwJBs,AAMOTWA82uuNmCK8cozFIJ" />
+        <Link Id="SXJqBQ9ZcbCMOco702wACz" Ids="Mk595daNk7SP4sXMbWTjkQ,UwY9TuqAGtiPWWiXuBXvzh" />
+        <Link Id="TSb5GhbidWFNc5YiUDyd1V" Ids="PaR2PmHjRTSMJ7umIZZxts,A0Gv1NxHtv1ODiwpBjssJ7" />
+        <Link Id="FFFgC2P7xPGO0gAsiklCO3" Ids="OCopLXplHzHNBSx7L7SAP2,C7OQYGBCChGQRFT6fgdfkq" />
+        <Link Id="UckqopcmrRHON7jz8r1BcK" Ids="MLgiJMjOFf3PXyEdApgmF2,Upr74hB74stNHkZB8vp2pf" />
+        <Link Id="EvUPKNBxJh8QRFXN2ZpoOz" Ids="Ih0S7NgR987OQTSvLbbsBQ,IzMOs6cg1IBNpiivicmW9A" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2023.5.3-0338-g7d8db7daf1" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2023.5.3-0338-g7d8db7daf1" />
-  <DocumentDependency Id="Ci47wjHA9scPBbG8EGIrgP" Location="../VL.Devices.ZED.vl" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.0-0045-g9ab3387bfc" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.0-0045-g9ab3387bfc" />
+  <NugetDependency Id="JGH47M1j5UNN2mTDaY42T2" Location="VL.Stride.TextureFX" Version="2024.6.0-0045-g9ab3387bfc" />
+  <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
