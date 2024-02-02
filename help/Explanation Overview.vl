@@ -69,7 +69,7 @@
               <Choice Kind="ProcessAppFlag" Name="TextureWindow" />
             </p:NodeReference>
             <Pin Id="K8MLRprigfJOlzkmYkt0cL" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="1230, 74, 1153, 686" />
+            <Pin Id="SRQT1PfL65gPoWsfciMfw7" Name="Bounds" Kind="InputPin" DefaultValue="1531, 117, 787, 475" />
             <Pin Id="VES5TNegMrmNg1VwerDTpR" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="GTXCHEjkgWrMPfr1inJmYd" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="NADXWc5BRg8LLHi3QqqoTK" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
@@ -270,7 +270,7 @@
                     <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
                   </p:NodeReference>
                   <Pin Id="Os0IVA3xFdHN8ubt8tO6YK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1403, 775, 1385, 863">
+                  <Pin Id="GiQ5kvn7W4hPsqJLK730r5" Name="Bounds" Kind="InputPin" DefaultValue="1534, 656, 795, 492">
                     <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="Rectangle" />
                     </p:TypeAnnotation>
@@ -546,7 +546,7 @@
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <ControlPoint Id="O0ejg1T3u2mOCK7pG8jvC7" Bounds="1412,629" />
-          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="728,216,83,17" ShowValueBox="true" isIOBox="true" Value="VGA">
+          <Pad Id="ACfugAFFyN0MAGXpyplEsd" Comment="Resolution" Bounds="728,216,83,17" ShowValueBox="true" isIOBox="true" Value="HD1080">
             <p:TypeAnnotation LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="RESOLUTION" />
             </p:TypeAnnotation>
