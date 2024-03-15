@@ -3,7 +3,7 @@
   <metadata>
     <id>VL.Devices.ZED</id>
     <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
-    <version>0.5.9-alpha</version>
+    <version>0.5.10-alpha</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv group, m-box</authors>
     <owners>vvvv group</owners>
@@ -14,9 +14,6 @@
     <tags>nuget</tags>
 	<license type="expression">MIT</license>
 	<icon>icon\nugeticon.png</icon>
-    <dependencies>
-      <dependency id="Stereolabs.zed" version="4.0.7" />
-    </dependencies>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
