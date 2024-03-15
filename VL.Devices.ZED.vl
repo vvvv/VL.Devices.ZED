@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.0-0084-g57c1aea893" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.0-0117-ga8f363a563" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
     <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
@@ -51,7 +51,7 @@
                 <Patch Id="LvI4l2kmTelMPua5hQraX4" Name="Then" ManuallySortedPins="true" />
               </Patch>
             </Node>
-            <ControlPoint Id="SzfWX5oYMoHMotC9CFCeT5" Bounds="2064,1807" />
+            <ControlPoint Id="SzfWX5oYMoHMotC9CFCeT5" Bounds="2062,1797" />
             <ControlPoint Id="AI5xFNM0ZbdOBFSh8LFTS3" Bounds="2137,1823" />
             <ControlPoint Id="CI7C0relOTYMhzf1g48HIf" Bounds="2212,1813" />
             <ControlPoint Id="U9fynfKCBgXO0Jk5TCc8FO" Bounds="2269,1842" />
@@ -178,7 +178,7 @@
                       <Pin Id="LmZptqmRenANfOUjJjbSrw" Name="Result" Kind="OutputPin" />
                       <Pin Id="HKjYu6ipqGPOxrLwLbXAGt" Name="Not Assigned" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="933,1429,53,19" Id="IIdvgGxPH1AOBqa8jiC5Z4">
+                    <Node Bounds="933,1429,53,26" Id="IIdvgGxPH1AOBqa8jiC5Z4">
                       <p:NodeReference LastCategoryFullName="Devices.ZED.ZED.Grabber" LastDependency="VL.Devices.ZED.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="ClassType" Name="Grabber" NeedsToBeDirectParent="true" />
@@ -1099,7 +1099,7 @@
           <Patch Id="T74cQUQVBeiPENDiP6aZKd" Name="Dispose" ParticipatingElements="Ll70HUV0mHRMZv7RmOHPdZ" />
           <Patch Id="IB7jXHE3Pt9OWUSr16lGu4" Name="Update" ParticipatingElements="SKboFiwBfYBLkqPA6S6iq8,Sq9USFTdaDFNpoHlEABwMl" ManuallySortedPins="true">
             <Pin Id="PbGnNgfsFs5QYktL1WAN5E" Name="Input Type" Kind="InputPin" DefaultValue="USB" Visibility="Optional" />
-            <Pin Id="VX4aBlHyCHNONppllrs3uL" Name="Device ID" Kind="InputPin" />
+            <Pin Id="VX4aBlHyCHNONppllrs3uL" Name="Device ID" Kind="InputPin" Visibility="Optional" />
             <Pin Id="LiYcRNb2mIbPz9FWqOnRsT" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
             <Pin Id="HBY1nkocEP6MtKLmxZkprL" Name="Depth Mode" Kind="InputPin" DefaultValue="QUALITY" />
             <Pin Id="LZ0SpRJfyoeMt26zvISjgb" Name="Depth Stabilization" Kind="InputPin" DefaultValue="True" />
@@ -1144,7 +1144,7 @@
             </Pin>
           </Patch>
           <Patch Id="KVqL4LxfqagPAzKcNr1aEr" Name="GetResolution">
-            <Pin Id="HmwO9tVPc7PQNMYM943I7K" Name="ImageResolution" Kind="OutputPin" />
+            <Pin Id="HmwO9tVPc7PQNMYM943I7K" Name="Image Resolution" Kind="OutputPin" />
           </Patch>
           <Patch Id="RTPBwQpdkXDOVPgRiE34PU" Name="GetCameraFPS">
             <Pin Id="MbSTO3hkVDmMg8O7CaaFYT" Name="FPS" Kind="OutputPin" />
@@ -1281,7 +1281,7 @@
               </p:NodeReference>
               <Pin Id="NTtlKMnDQqBOmyEsze1Jqk" Name="Input" Kind="StateInputPin" />
               <Pin Id="Gxt4lmIWrJlQZ2eFgn0dpL" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="L6CCklX3ibYNyzGxACl8Q2" Name="ImageResolution" Kind="OutputPin" />
+              <Pin Id="L6CCklX3ibYNyzGxACl8Q2" Name="Image Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="922,425,255,207" Id="GpZiaHIJ2fcL6t9XNNez9L">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -1988,7 +1988,7 @@
               </p:NodeReference>
               <Pin Id="ECfnmtaNsQaN8rTw1W6XNP" Name="Input" Kind="StateInputPin" />
               <Pin Id="GYdHlleC9BePFjUx2gE43h" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="JklK9DYI8d4ONwlvzf0DYC" Name="ImageResolution" Kind="OutputPin" />
+              <Pin Id="JklK9DYI8d4ONwlvzf0DYC" Name="Image Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="623,1687,75,19" Id="RB5BJPvI7wxMwmWLdHfrBy">
               <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
@@ -2326,7 +2326,7 @@
               </p:NodeReference>
               <Pin Id="LmUusyeZj1ROZOAVwm6MgI" Name="Input" Kind="StateInputPin" />
               <Pin Id="HTuqgkPNHRKOu6DkeEPngO" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="NERi50uIAo6NfTXsFemZBL" Name="ImageResolution" Kind="OutputPin" />
+              <Pin Id="NERi50uIAo6NfTXsFemZBL" Name="Image Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="606,476,255,206" Id="F3Smgx9pezMNmVB0UQQk3p">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -5319,7 +5319,7 @@
           <Patch Id="O31EVpfUJPPM8GLMzF1lHj" Name="Create" ParticipatingElements="IGdPGKldTP5PVBCNC94Y1x" />
           <Patch Id="N40HgCeMv9EQcQpsWZhyQr" Name="Update">
             <Pin Id="KcV8kWHzVkrMQubpWLIpGR" Name="Camera" Kind="InputPin" Bounds="330,135" />
-            <Pin Id="S9TCNRIUNInOhNKPkdHnAM" Name="Body Format" Kind="InputPin" Bounds="702,252" DefaultValue="BODY_18" Visibility="Optional">
+            <Pin Id="S9TCNRIUNInOhNKPkdHnAM" Name="Body Format" Kind="InputPin" Bounds="702,252" DefaultValue="BODY_18">
               <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
                 <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
               </p:TypeAnnotation>
@@ -5967,12 +5967,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.0-0084-g57c1aea893" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.0-0117-ga8f363a563" />
   <NugetDependency Id="TQ2kyFQWn3jLOmQDaAL1cD" Location="Stereolabs.zed" Version="4.0.7" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.0-0084-g57c1aea893" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.0-0117-ga8f363a563" />
   <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
-  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.0-0084-g57c1aea893" />
-  <PlatformDependency Id="Rhdf1Mbn9v9LexeyccN8q8" Location="../../../../../Program Files/vvvv/vvvv_gamma_6.0-0045-g9ab3387bfc/packs/VL.IO.OSCQuery/lib/net8.0/vrc-oscquery-lib.dll" />
+  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.0-0117-ga8f363a563" />
 </Document>
