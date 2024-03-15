@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.0-0117-ga8f363a563" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.0-0117-ga8f363a563" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.0-0270-g2caf264ef8" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.0-0270-g2caf264ef8" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -339,7 +339,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UOnB0D5OAENOEeaUpeISPP" Comment="Body Parts 18" Bounds="944,1008,124,34" ShowValueBox="true" isIOBox="true">
+          <Pad Id="UOnB0D5OAENOEeaUpeISPP" Comment="Body Parts 18" Bounds="944,1005,124,34" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -352,7 +352,7 @@
               <Item>NOSE</Item>
             </p:Value>
           </Pad>
-          <Pad Id="Sqm7uEFj0oMNh2yOuQNxIi" Comment="Body Parts 34" Bounds="1184,1006,124,34" ShowValueBox="true" isIOBox="true">
+          <Pad Id="Sqm7uEFj0oMNh2yOuQNxIi" Comment="Body Parts 34" Bounds="1184,1005,124,34" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -365,7 +365,7 @@
               <Item>PELVIS</Item>
             </p:Value>
           </Pad>
-          <Pad Id="MV54GoW8bolLq1brcmWvkz" Comment="Body Parts 34" Bounds="1420,1005,133,34" ShowValueBox="true" isIOBox="true">
+          <Pad Id="MV54GoW8bolLq1brcmWvkz" Comment="Body Parts 38" Bounds="1420,1005,133,34" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -378,7 +378,7 @@
               <Item>PELVIS</Item>
             </p:Value>
           </Pad>
-          <Pad Id="NCIz4qKFx45P5zUlSoWegz" Comment="Body Parts 18" Bounds="949,1107,90,284" ShowValueBox="true" isIOBox="true">
+          <Pad Id="NCIz4qKFx45P5zUlSoWegz" Comment="Body Parts 18" Bounds="944,1074,90,284" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_18_PARTS" />
             </p:TypeAnnotation>
@@ -386,7 +386,7 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QzoaSRvUAXJL58OkNg6yLd" Comment="Body Parts 34" Bounds="1177,1107,105,15" ShowValueBox="true" isIOBox="true">
+          <Pad Id="QzoaSRvUAXJL58OkNg6yLd" Comment="Body Parts 34" Bounds="1184,1074,90,525" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_34_PARTS" />
             </p:TypeAnnotation>
@@ -394,20 +394,49 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FfohCXS2yMPPvLsPWRo4FN" Bounds="1436,1544,96,526" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND">
-            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="BODY_34_PARTS" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="A89O35ep8AiOk4MP4yIdNA" Bounds="1608,1533,118,588" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND">
+          <Pad Id="A89O35ep8AiOk4MP4yIdNA" Comment="Body Parts 38" Bounds="1420,1074,118,572" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <ControlPoint Id="AF14GCPITMkN9xNyuzktgM" Bounds="880,1080" />
+          <Pad Id="KzRe0bko74tOwvEe1UpXsp" Bounds="825,302,61,41" ShowValueBox="true" isIOBox="true" Value="!!!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PqHckBU2eJ2Mhb2Qr0JC69" Bounds="875,932,61,41" ShowValueBox="true" isIOBox="true" Value="!!!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">20</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RAAg8znrbhgLZ28nfYhpoq" Bounds="935,907,364,19" ShowValueBox="true" isIOBox="true" Value="Use BODY_XX_PARTS enum to select data of individual joins.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LEC418zJjpnMd1NC34scg0" Bounds="935,943,588,19" ShowValueBox="true" isIOBox="true" Value="Be avare, the enum you choose must corespond with 'Body Format' setting in the 'Bodies' node.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -433,6 +462,7 @@
         <Link Id="CChRXsS7e89Ng814hx9ljT" Ids="Cq4iixrsMvCPwy9bmQC1Xp,TmwPKNqvDj4My2mcEoMTiN" />
         <Link Id="AAjKuhI7g0iM6ftUmzUR6G" Ids="LQtn1do00SaPbkbccqN4RV,NdPaM8Yu0xCMOQ1D5UL1LL" />
         <Link Id="E69QnpyQgzoLkWYM0ib3zD" Ids="GGtooGtvWaJLmFbyW3bN9e,TMAskeA9J9GLF77kRjvSc7" />
+        <Link Id="Tuhy0hWrt0QLPhmJtlYKnC" Ids="UOnB0D5OAENOEeaUpeISPP,AF14GCPITMkN9xNyuzktgM,V7SL9pSVpriMk15X5QLHG7" />
       </Patch>
     </Node>
   </Patch>
