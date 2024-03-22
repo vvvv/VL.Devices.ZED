@@ -3,7 +3,7 @@
   <metadata>
     <id>VL.Devices.ZED</id>
     <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
-    <version>0.5.12-alpha</version>
+    <version>0.5.13-alpha</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv group, m-box</authors>
     <owners>vvvv group</owners>
