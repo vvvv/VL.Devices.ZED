@@ -15,9 +15,9 @@ jobs:
     - name: Git Checkout
       uses: actions/checkout@main
       with:
-          lfs: true
-      - name: Checkout LFS objects
-        run: git lfs checkout
+        lfs: true
+    - name: Checkout LFS objects
+      run: git lfs checkout
       
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
