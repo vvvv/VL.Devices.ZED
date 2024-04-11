@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EM0Z7zkFioUM1Lrtw85Ms0" LanguageVersion="2024.6.0-0117-ga8f363a563" Version="0.128">
-  <NugetDependency Id="Bd6sOtUJqLiLbvQ8lUkoBM" Location="VL.CoreLib" Version="2024.6.0-0117-ga8f363a563" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EM0Z7zkFioUM1Lrtw85Ms0" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="Bd6sOtUJqLiLbvQ8lUkoBM" Location="VL.CoreLib" Version="2024.6.0" />
   <Patch Id="L7mQ3Iu05N2OM3k6WWz3qA">
     <Canvas Id="RPa0xaHMwSUNbql5TPHfGU" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="Ig65plbrcN5LKokZkV7a48">
         <Canvas Id="C206fgVtkQqOHnSnTJAMAU" CanvasType="Group">
-          <Node Bounds="392,160,325,19" Id="MLgCgQgT6pCMAnFfGzY2Dq">
+          <Node Bounds="102,149,325,19" Id="MLgCgQgT6pCMAnFfGzY2Dq">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
@@ -48,12 +48,13 @@
             <Pin Id="A8z82H9PmPYLPsG9pF9cNv" Name="FOV" Kind="OutputPin" />
             <Pin Id="KeXhGdLlNl3OM7MSYQUgQq" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Node Bounds="392,480,69,19" Id="Kkv8HpiaEZ8MXI5e14HsUU">
+          <Node Bounds="102,469,69,19" Id="Kkv8HpiaEZ8MXI5e14HsUU">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
               <Choice Kind="ProcessAppFlag" Name="ColorImage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="PTMHkCoiAfWQQDiZGprXS8" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="IjGt6yr6dA5PFd8339OGDD" Name="Camera" Kind="InputPin" />
             <Pin Id="CDdGZflPqWTPxCtP5brqv8" Name="View" Kind="InputPin" />
@@ -61,17 +62,18 @@
             <Pin Id="QlqSkkrIEFUMke7JjEAw0r" Name="On Data" Kind="OutputPin" />
             <Pin Id="FsTdVGoDe3QOniHE0bweBh" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="T82BCYs8CR9PTivWAVPNuJ" Comment="View" Bounds="458,450,144,15" ShowValueBox="true" isIOBox="true" Value="LEFT">
+          <Pad Id="T82BCYs8CR9PTivWAVPNuJ" Comment="View" Bounds="168,439,144,15" ShowValueBox="true" isIOBox="true" Value="LEFT">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="VIEW" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Mh77WzySrzOPVT65u9kd8Y" Comment="Texture" Bounds="394,560,223,210" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="802,480,71,19" Id="Tn3JwwhH99wPpAmrKsx1Tx">
+          <Pad Id="Mh77WzySrzOPVT65u9kd8Y" Comment="Texture" Bounds="104,549,223,210" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="608,478,71,19" Id="Tn3JwwhH99wPpAmrKsx1Tx">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="B54409cMb6WM6G64RZI9N6" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="IjZJrFWqZ6iNq3em4l9NsJ" Name="Camera" Kind="InputPin" />
             <Pin Id="PR7dEUg24dXPbYviJVfNoN" Name="Measure" Kind="InputPin" />
@@ -79,13 +81,13 @@
             <Pin Id="Fsm2CHPF6cwMxY0lZHjMmU" Name="On Data" Kind="OutputPin" />
             <Pin Id="FGhaDEWW6vNNccyGTHOLt2" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="KO4Nks5tuWbMhRh0C1n3nf" Comment="Measure" Bounds="870,450,130,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
+          <Pad Id="KO4Nks5tuWbMhRh0C1n3nf" Comment="Measure" Bounds="676,448,130,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="MEASURE" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TKl5JiyPpjJPrioAXT3ATK" Comment="Texture" Bounds="804,560,211,195" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GAhYDSy9jIUMrtFug89aZG" Bounds="46,441,298,84" ShowValueBox="true" isIOBox="true" Value="ColorImage module provides an 8-bit texture which is good for preview only. If you want to work with presised data from sensore you shold use DepthImage node instead.">
+          <Pad Id="TKl5JiyPpjJPrioAXT3ATK" Comment="Texture" Bounds="610,558,211,195" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GAhYDSy9jIUMrtFug89aZG" Bounds="113,337,298,84" ShowValueBox="true" isIOBox="true" Value="The ColorImage node returns an 8-bit texture, intended mostly for previewing. To work with precise data from the sensor use the DepthImage node instead.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -94,7 +96,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CKiemVqxlbsO0qulC41Dqo" Bounds="800,175,362,89" ShowValueBox="true" isIOBox="true" Value="DepthImage returns a 32-bit texture with different kind of encoded data. These textures normaly are not previewable as it is, but you shouldn't convert them to not loose accurency of the incoming data.">
+          <Pad Id="CKiemVqxlbsO0qulC41Dqo" Bounds="606,173,376,207" ShowValueBox="true" isIOBox="true" Value="The DepthImage node returns a 32-bit texture with different kind of data encoded. These textures normaly are not previewable as is.&#xD;&#xA;&#xD;&#xA;e.g.: &#xD;&#xA;- Depth: returns a one channal depth map (R32_Float)&#xD;&#xA;- XYZRGBA: returns a 4-channal texture (R32G32B32A32_Float), the world map with color information encoded into the forth (alpha) channel&#xD;&#xA;&#xD;&#xA;More information on these formats can be found here:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -103,25 +105,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="E2bAGbAXLLFP1okJdRhmNX" Bounds="800,286,364,80" ShowValueBox="true" isIOBox="true" Value="e.g.: 'Depth' will return one channal depth map (R32_Float), and 'XYZRGBA' - 4-channal texture (R32G32B32A32_Float), the world map with color information encoded into forth (alpha) channal.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="N8BScHBrxn1L2rAaCjKg0x" Bounds="800,374,322,19" ShowValueBox="true" isIOBox="true" Value="More information to these formats you can find here:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="G0ic4MS0bDmNqfdNbSyntF" Bounds="800,394,319,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">
+          <Pad Id="G0ic4MS0bDmNqfdNbSyntF" Bounds="606,377,319,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/group__Depth__group.html#ga798a8eed10c573d759ef7e5a5bcd545d">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.0-0117-ga8f363a563" Version="0.128">
-  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.0-0117-ga8f363a563" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.0" />
   <Patch Id="Gp7agegJqjuO13S8huFRHR">
     <Canvas Id="RKGamdHA22KME8zdDZxxW1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -180,7 +180,7 @@
           <Overlay Id="PnTJeaSX6RVLDH1zXA1Px7" Name="Optional" Bounds="129,33,628,130">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Pad Id="Bmwhf6cfgpLO1mytsnWXXw" Bounds="280,82,462,20" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Default is 'USB'. Will be overwriten to 'SVO' if the *.svo file is provided.">
+          <Pad Id="Bmwhf6cfgpLO1mytsnWXXw" Bounds="280,82,462,20" ShowValueBox="true" isIOBox="true" Value="&lt; Default is 'USB'. Will be overwriten to 'SVO' if an *.svo file is provided">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -189,7 +189,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PD4YGWYlkKuLpdbBTD5qa1" Bounds="279,117,238,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Needed for multi camera setup.">
+          <Pad Id="PD4YGWYlkKuLpdbBTD5qa1" Bounds="279,117,238,19" ShowValueBox="true" isIOBox="true" Value="&lt; Needed for multi camera setup">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -198,7 +198,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NbFvVqidr9gPVM8iJVHIkF" Bounds="336,250,370,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Sets the resolution of the camera. Effects to FOV and FPS.">
+          <Pad Id="NbFvVqidr9gPVM8iJVHIkF" Bounds="336,250,370,19" ShowValueBox="true" isIOBox="true" Value="&lt; Sets the resolution of the camera. Affects FOV and FPS.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -207,7 +207,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NEKGVd62o17Nwqic5kNs0y" Bounds="400,294,371,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Level of ditails of depth. Directly effects the performance.">
+          <Pad Id="NEKGVd62o17Nwqic5kNs0y" Bounds="400,294,375,19" ShowValueBox="true" isIOBox="true" Value="&lt; Level of details of depth. Directly effects the performance.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -216,7 +216,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BUt1LmzRODrNXMledbnm31" Bounds="429,433,250,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Units the depth will be calculated in.">
+          <Pad Id="BUt1LmzRODrNXMledbnm31" Bounds="429,433,248,19" ShowValueBox="true" isIOBox="true" Value="&lt; Units the depth will be reportet in">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -225,7 +225,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NFccjRCbxXNMlFLGrj5mIJ" Bounds="582,468,336,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Coordinate System the depth will be calculated in.">
+          <Pad Id="NFccjRCbxXNMlFLGrj5mIJ" Bounds="582,468,336,19" ShowValueBox="true" isIOBox="true" Value="&lt; Coordinate System the depth will be reportet in">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -234,7 +234,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="K7B0BSEsZc0NnbsYSOuwZe" Bounds="475,502,336,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Flips the camera image upsidedown.">
+          <Pad Id="K7B0BSEsZc0NnbsYSOuwZe" Bounds="475,502,336,19" ShowValueBox="true" isIOBox="true" Value="&lt; Flips the camera image upsidedown">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -243,7 +243,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CtaSitVsy0TPvCXttDgEFA" Bounds="545,652,356,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Provide a *.svo video file to use sdk without camera.">
+          <Pad Id="CtaSitVsy0TPvCXttDgEFA" Bounds="545,652,356,19" ShowValueBox="true" isIOBox="true" Value="&lt; Provide an *.svo video file for playing back recordings">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -252,7 +252,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="522,880,239,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Enables depth recognition module.">
+          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="522,880,239,19" ShowValueBox="true" isIOBox="true" Value="&lt; Enables depth recognition module">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -261,7 +261,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QrCLBMnZTQ6P253IAxd9th" Bounds="660,1052,295,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Whether to fill the holes in depth map or not.">
+          <Pad Id="QrCLBMnZTQ6P253IAxd9th" Bounds="660,1052,295,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether to fill the holes in depth map or not">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -270,7 +270,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="713,1224,309,91" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
+          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="713,1224,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -284,7 +284,7 @@
           <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="364,1416,35,28" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="438,1384,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="510,1356,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="712,1153,229,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Turns on and off the camera.">
+          <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="712,1153,229,19" ShowValueBox="true" isIOBox="true" Value="&lt; Turn camera on or off">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -293,7 +293,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="D45Rn5DgC9pQUnaxR4QcHB" Bounds="406,335,371,19" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Defines whether the depth needs to be stabilized.">
+          <Pad Id="D45Rn5DgC9pQUnaxR4QcHB" Bounds="406,335,371,19" ShowValueBox="true" isIOBox="true" Value="&lt; Defines whether the depth needs to be stabilized">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -302,7 +302,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="T3q7IA4mYMqOXPVOLHBIH0" Bounds="423,386,460,21" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Enable the Enhanced Contrast Technology, to improve image quality.">
+          <Pad Id="T3q7IA4mYMqOXPVOLHBIH0" Bounds="423,386,426,19" ShowValueBox="true" isIOBox="true" Value="&lt; Enable the Enhanced Contrast Technology, to improve image quality">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -311,7 +311,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VPb3uemhhhtPTePtw2W69C" Bounds="536,695,393,22" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Defines if camera object return the frame in real time mode.">
+          <Pad Id="VPb3uemhhhtPTePtw2W69C" Bounds="536,695,344,38" ShowValueBox="true" isIOBox="true" Value="&lt; Defines whether a recording will be played in realtime or as fast as possible">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -320,7 +320,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B4oZceM21jnOiaS2XMy9to" Bounds="1004,230,227,19" ShowValueBox="true" isIOBox="true" Value="More information can be found here:">
+          <Pad Id="B4oZceM21jnOiaS2XMy9to" Bounds="1004,230,227,19" ShowValueBox="true" isIOBox="true" Value="More info:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -338,7 +338,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IQU13Hc3FcELATnuJuB0tU" Bounds="636,914,294,37" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Threshold to reject depth values based on their confidence.">
+          <Pad Id="IQU13Hc3FcELATnuJuB0tU" Bounds="636,914,294,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their confidence">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -347,7 +347,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LEPtnb4ZcZzQZOo2PZ4wmO" Bounds="670,988,285,37" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Threshold to reject depth values based on their texture confidence.">
+          <Pad Id="LEPtnb4ZcZzQZOo2PZ4wmO" Bounds="670,988,285,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their texture confidence">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -365,7 +365,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UhEv5XaapIIQHUJHoZkesb" Bounds="1014,832,140,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/classsl_1_1RuntimeParameters.html">
+          <Pad Id="UhEv5XaapIIQHUJHoZkesb" Bounds="1014,832,215,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/classsl_1_1RuntimeParameters.html">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -374,7 +374,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="597,836,303,35" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
+          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="597,836,303,35" ShowValueBox="true" isIOBox="true" Value="&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

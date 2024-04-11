@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.0-0117-ga8f363a563" Version="0.128">
-  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.0-0117-ga8f363a563" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.0" Version="0.128">
+  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.0" />
   <Patch Id="TrMr5Ih04d4PbP24GCmHM0">
     <Canvas Id="PV3L9SVePlwOZngqOr5LBs" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="NARW0JEaoqoNQ0JXY52BYa">
         <Canvas Id="EKQBvTOJxEZNCMa5nFk93u" CanvasType="Group">
-          <Node Bounds="276,255,325,19" Id="QYTPdJ6xj99Nk0sXVRxcfM">
+          <Node Bounds="111,254,325,19" Id="QYTPdJ6xj99Nk0sXVRxcfM">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
@@ -48,12 +48,7 @@
             <Pin Id="QNMOQJQ1qOGOZK1QmEMdmc" Name="FOV" Kind="OutputPin" />
             <Pin Id="Jofb3vh5rckNDkinO6sVof" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="IJs385K59lsNvxjG2qtfJm" Comment="SVO Path" Bounds="418,162,320,15" ShowValueBox="true" isIOBox="true" Value="">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="KO7CqJsBg8pNiWSl9fhvBn" Bounds="404,79,322,64" ShowValueBox="true" isIOBox="true" Value="Provide a SVO file to the ZED node to play it back. The system will use it as the source to reconstruct depth and all other features.">
+          <Pad Id="KO7CqJsBg8pNiWSl9fhvBn" Bounds="50,127,322,64" ShowValueBox="true" isIOBox="true" Value="Provide an SVO file to the ZED node to play it back. The system will use it as the source to reconstruct depth and all other features.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -62,12 +57,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="276,545,180,19" Id="LOP3v4Z7SYwMYVkXURTBM7">
+          <Node Bounds="111,544,180,19" Id="LOP3v4Z7SYwMYVkXURTBM7">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZEDRecorder" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="JQjXYRVf9jkONSPtSiSa1t" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LPCD7OaUH0SMOjjmnqTdPK" Name="Input" Kind="InputPin" />
             <Pin Id="Ay40oEQ5Py5K9skAgJAzp6" Name="Path" Kind="InputPin" DefaultValue="..\test.svo" />
@@ -79,12 +75,7 @@
             <Pin Id="NOzzzyB8weUOatFPtPxlvL" Name="Stop Recording" Kind="InputPin" />
             <Pin Id="QzMZ6X7GI3vMk2pQ2INd33" Name="Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="HPL3t3p8YJiLF4CYxQPk7m" Comment="Path" Bounds="303,500,69,15" ShowValueBox="true" isIOBox="true" Value="..\test.svo">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="PUYvjlDXcX1NKdoVpOkN5V" Comment="Record" Bounds="428,500,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PUYvjlDXcX1NKdoVpOkN5V" Comment="Record" Bounds="263,484,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -93,8 +84,8 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BKA3Uve9xYgMHIzABhEUgu" Comment="Error" Bounds="278,597,257,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IJXRUhTDTWxL5s5rz60kDV" Comment="Stop Recording" Bounds="453,530,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BKA3Uve9xYgMHIzABhEUgu" Comment="Error" Bounds="113,596,257,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IJXRUhTDTWxL5s5rz60kDV" Comment="Stop Recording" Bounds="288,514,35,15" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
@@ -103,11 +94,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="704,435,196,19" Id="Avzxnq3SiDpNq61mYW4UdB">
+          <Node Bounds="539,434,196,19" Id="Avzxnq3SiDpNq61mYW4UdB">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SVOPlaybackControls" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="HaACYvSC5ZoMadfYjY7s8Z" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LBCN5Uos655M7ooqIHfZQB" Name="Input" Kind="InputPin" />
             <Pin Id="VuDQ5JTQEm4OiB5lpcr6EU" Name="Loop" Kind="InputPin" />
@@ -116,9 +108,9 @@
             <Pin Id="I3yJG7tURE9OODzzHEN8g0" Name="Number Of Frames" Kind="OutputPin" />
             <Pin Id="KzbYwwXY9TKMne2GRGaXnM" Name="Position" Kind="OutputPin" />
           </Node>
-          <Pad Id="H7Xjh7W5JArLLQWxOU3MBi" Comment="Number Of Frames" Bounds="706,478,46,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BsVeOi4zPHuPL27AbR5WOF" Comment="Position" Bounds="897,478,50,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="M8DwMVWensvL9jRKwVpKiZ" Comment="Loop" Bounds="769,340,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="H7Xjh7W5JArLLQWxOU3MBi" Comment="Number Of Frames" Bounds="541,477,46,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BsVeOi4zPHuPL27AbR5WOF" Comment="Position" Bounds="732,477,50,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="M8DwMVWensvL9jRKwVpKiZ" Comment="Loop" Bounds="604,339,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -126,12 +118,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JVkpuIfWlm5QEth7lYtfiH" Comment="Frame" Bounds="833,360,30,15" ShowValueBox="true" isIOBox="true" Value="273">
+          <Pad Id="JVkpuIfWlm5QEth7lYtfiH" Comment="Frame" Bounds="668,359,30,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="BeaF3qipg9wNJq8r6bzjqI" Comment="Jump To Frame" Bounds="897,379,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BeaF3qipg9wNJq8r6bzjqI" Comment="Jump To Frame" Bounds="732,378,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -139,7 +131,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KgKxWKzNkuJOBgtqIvuvCY" Bounds="678,263,275,44" ShowValueBox="true" isIOBox="true" Value="You can use SVOPlaybackControls node for editional control of the playback. ">
+          <Pad Id="KgKxWKzNkuJOBgtqIvuvCY" Bounds="513,262,275,44" ShowValueBox="true" isIOBox="true" Value="You can use SVOPlaybackControls node for editional control of the playback. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -148,13 +140,39 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LWKTnrTUbSUMutuzkKD1Nm" Bounds="284,421,246,54" ShowValueBox="true" isIOBox="true" Value="With this node you can record videos into SVO files from live camera source.">
+          <Pad Id="LWKTnrTUbSUMutuzkKD1Nm" Bounds="119,420,246,45" ShowValueBox="true" isIOBox="true" Value="With this node you can record videos into SVO files from live camera source.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IHUO4weNmqGPf7Nd63CqXN" Comment="Path" Bounds="50,201,140,15" ShowValueBox="true" isIOBox="true" Value="..\test.svo">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="537,559,69,19" Id="Q5ihZk9rtonN7JiQBnhNmC">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <Pin Id="FbBazrZD58ANgHYNhHgxdY" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JyGXGuowoWOMEB9eziEyf9" Name="Camera" Kind="InputPin" />
+            <Pin Id="KFWoLwbXngyMFrhs0Z00up" Name="View" Kind="InputPin" />
+            <Pin Id="ENW1afRYDwvOos18nRE2c7" Name="Texture" Kind="OutputPin" />
+            <Pin Id="V1GTVB6vwPlQHGVekOzU6q" Name="On Data" Kind="OutputPin" />
+            <Pin Id="Nz8nGQqVbDiP5sWzcDDEfd" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="JULJtXvnjRCPPhJlcmE5Yl" Comment="Texture" Bounds="539,630,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OecViim691vQOMvCZFWSse" Comment="SVO Realtime Mode" Bounds="273,206,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -164,8 +182,6 @@
           <Fragment Id="Nw0FZc7i7GKMKbteeIPzuy" Patch="HygUwaTTL0kPzvDjla9tAT" Enabled="true" />
           <Fragment Id="DrpGwrvugwFMtZirLjKc9D" Patch="H48IRfC6XJSQVDG3UgKzBJ" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="RgkuUAyyXN7MDOjqmoWKg6" Ids="IJs385K59lsNvxjG2qtfJm,Is9p1HkBkXUNgxsqgDSVOt" />
-        <Link Id="LsE5aSqwFJjOtV3jW9OGYz" Ids="HPL3t3p8YJiLF4CYxQPk7m,Ay40oEQ5Py5K9skAgJAzp6" />
         <Link Id="CXyUGknNWDnLmzPQzm2075" Ids="PUYvjlDXcX1NKdoVpOkN5V,HcqMIX8uA5FM6kYjsKHZQl" />
         <Link Id="F3nA7IbueLkMBUYFOr4GM2" Ids="QzMZ6X7GI3vMk2pQ2INd33,BKA3Uve9xYgMHIzABhEUgu" />
         <Link Id="M8DnfrGvKFkOIXCzHZdpea" Ids="IJXRUhTDTWxL5s5rz60kDV,NOzzzyB8weUOatFPtPxlvL" />
@@ -176,6 +192,11 @@
         <Link Id="J492eFKza9uMwRiPOAb0W6" Ids="JVkpuIfWlm5QEth7lYtfiH,Vz9yrKaI5znNnQcGHMrYKV" />
         <Link Id="UKB5TUSVDQrL9MBNMm9v6F" Ids="Oc1z8tuOk3VNgornHbsRG9,LBCN5Uos655M7ooqIHfZQB" />
         <Link Id="RuDITXf2xijLi5tr1s2Fje" Ids="Oc1z8tuOk3VNgornHbsRG9,LPCD7OaUH0SMOjjmnqTdPK" />
+        <Link Id="AoAcHJc48PXN2yeyvycyUG" Ids="IHUO4weNmqGPf7Nd63CqXN,Ay40oEQ5Py5K9skAgJAzp6" />
+        <Link Id="IU3bvjy2rNoLbeTqq3g0vf" Ids="IHUO4weNmqGPf7Nd63CqXN,Is9p1HkBkXUNgxsqgDSVOt" />
+        <Link Id="DyreDT0cfU6NaCpeJ3nQzG" Ids="Oc1z8tuOk3VNgornHbsRG9,JyGXGuowoWOMEB9eziEyf9" />
+        <Link Id="MQNZ7jyqtcXLLSpOG9GYk5" Ids="ENW1afRYDwvOos18nRE2c7,JULJtXvnjRCPPhJlcmE5Yl" />
+        <Link Id="Thk7XCr9VuGP3LhTpqjtCO" Ids="OecViim691vQOMvCZFWSse,NYHe8iOz7JpMGdb3pq0jvN" />
       </Patch>
     </Node>
   </Patch>
