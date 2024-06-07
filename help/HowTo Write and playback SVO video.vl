@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
+  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
   <Patch Id="TrMr5Ih04d4PbP24GCmHM0">
     <Canvas Id="PV3L9SVePlwOZngqOr5LBs" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -30,7 +30,7 @@
             <Pin Id="NlhgSAUFCfpNzYLFNRDmqu" Name="Units" Kind="InputPin" />
             <Pin Id="RSodn9cDSHELuDufS6C0ai" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="GrynbswRmKMOA5uAVnuadI" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="Is9p1HkBkXUNgxsqgDSVOt" Name="SVO Path" Kind="InputPin" />
+            <Pin Id="Is9p1HkBkXUNgxsqgDSVOt" Name="Filename" Kind="InputPin" />
             <Pin Id="NYHe8iOz7JpMGdb3pq0jvN" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="Nl3EgdA13C5PPtcIi03yaU" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="FXxi2pciUcmMWb9BuBB6hu" Name="Depth" Kind="InputPin" />
@@ -39,9 +39,8 @@
             <Pin Id="ASJ1ZiqSHrrNGVKM9JvuzP" Name="Remove Saturated Areas" Kind="InputPin" />
             <Pin Id="N291mD3QVN4LrlyRz5bOtn" Name="Enable Fill Mode" Kind="InputPin" />
             <Pin Id="O2UHEjPVeSMLLKYrHpXqJX" Name="Enabled" Kind="InputPin" />
-            <Pin Id="B6Y1QLEorziLmf0ro8tlyJ" Name="HardwareReset" Kind="ApplyPin" />
             <Pin Id="Oc1z8tuOk3VNgornHbsRG9" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="NuJiJW4s0w2PT1vOvHFfe2" Name="Openig Error Code" Kind="OutputPin" />
+            <Pin Id="Ag0TzYgbCcRLbdyNUukf61" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="DzG4aEegpXwPa7IUUkU9jA" Name="In Progress" Kind="OutputPin" />
             <Pin Id="OE1n7CWqnrtLgMxEoW8GKD" Name="Image Resolution" Kind="OutputPin" />
             <Pin Id="HbgfTHMUGLEPw5vdBdvq1O" Name="FPS" Kind="OutputPin" />
@@ -60,75 +59,52 @@
           <Node Bounds="111,544,180,19" Id="LOP3v4Z7SYwMYVkXURTBM7">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ZEDRecorder" />
+              <Choice Kind="ProcessAppFlag" Name="SVORecorder" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="JQjXYRVf9jkONSPtSiSa1t" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LPCD7OaUH0SMOjjmnqTdPK" Name="Input" Kind="InputPin" />
-            <Pin Id="Ay40oEQ5Py5K9skAgJAzp6" Name="Path" Kind="InputPin" DefaultValue="..\test.svo" />
+            <Pin Id="Ay40oEQ5Py5K9skAgJAzp6" Name="Filename" Kind="InputPin" DefaultValue="..\test.svo" />
             <Pin Id="UwK199HyLEnO5PfMS4BPKF" Name="Compression Mode" Kind="InputPin" />
             <Pin Id="ReLS7vEbH9jNmK1ai8Iyxn" Name="Bitrate" Kind="InputPin" />
             <Pin Id="SeB5RmZDquHLFZYbBl2Wem" Name="Target FPS" Kind="InputPin" />
             <Pin Id="GQRQO9OltUdOcL2RfdXxXn" Name="Transcode" Kind="InputPin" />
-            <Pin Id="HcqMIX8uA5FM6kYjsKHZQl" Name="Start Recording" Kind="InputPin" />
-            <Pin Id="NOzzzyB8weUOatFPtPxlvL" Name="Stop Recording" Kind="InputPin" />
+            <Pin Id="HcqMIX8uA5FM6kYjsKHZQl" Name="Record" Kind="InputPin" />
             <Pin Id="QzMZ6X7GI3vMk2pQ2INd33" Name="Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="PUYvjlDXcX1NKdoVpOkN5V" Comment="Record" Bounds="263,484,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="PUYvjlDXcX1NKdoVpOkN5V" Comment="Record" Bounds="288,485,38,33" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="BKA3Uve9xYgMHIzABhEUgu" Comment="Error" Bounds="113,596,257,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IJXRUhTDTWxL5s5rz60kDV" Comment="Stop Recording" Bounds="288,514,35,15" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-              <FullNameCategoryReference ID="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="539,434,196,19" Id="Avzxnq3SiDpNq61mYW4UdB">
-            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SVOPlaybackControls" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="HaACYvSC5ZoMadfYjY7s8Z" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LBCN5Uos655M7ooqIHfZQB" Name="Input" Kind="InputPin" />
-            <Pin Id="VuDQ5JTQEm4OiB5lpcr6EU" Name="Loop" Kind="InputPin" />
-            <Pin Id="Vz9yrKaI5znNnQcGHMrYKV" Name="Frame" Kind="InputPin" />
-            <Pin Id="UQGQsB8weoEMpNKGY6t7U6" Name="Jump To Frame" Kind="InputPin" />
-            <Pin Id="I3yJG7tURE9OODzzHEN8g0" Name="Number Of Frames" Kind="OutputPin" />
-            <Pin Id="KzbYwwXY9TKMne2GRGaXnM" Name="Position" Kind="OutputPin" />
-          </Node>
-          <Pad Id="H7Xjh7W5JArLLQWxOU3MBi" Comment="Number Of Frames" Bounds="541,477,46,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="BsVeOi4zPHuPL27AbR5WOF" Comment="Position" Bounds="732,477,50,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="M8DwMVWensvL9jRKwVpKiZ" Comment="Loop" Bounds="604,339,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JVkpuIfWlm5QEth7lYtfiH" Comment="Frame" Bounds="668,359,30,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="BeaF3qipg9wNJq8r6bzjqI" Comment="Jump To Frame" Bounds="732,378,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="BKA3Uve9xYgMHIzABhEUgu" Comment="Error" Bounds="113,596,257,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="539,434,196,19" Id="Avzxnq3SiDpNq61mYW4UdB">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SVOPlayer" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="HaACYvSC5ZoMadfYjY7s8Z" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LBCN5Uos655M7ooqIHfZQB" Name="Input" Kind="InputPin" />
+            <Pin Id="VuDQ5JTQEm4OiB5lpcr6EU" Name="Loop" Kind="InputPin" />
+            <Pin Id="Vz9yrKaI5znNnQcGHMrYKV" Name="Seek Frame" Kind="InputPin" />
+            <Pin Id="UQGQsB8weoEMpNKGY6t7U6" Name="Seek" Kind="InputPin" />
+            <Pin Id="I3yJG7tURE9OODzzHEN8g0" Name="Number Of Frames" Kind="OutputPin" />
+            <Pin Id="KzbYwwXY9TKMne2GRGaXnM" Name="Position" Kind="OutputPin" />
+          </Node>
+          <Pad Id="H7Xjh7W5JArLLQWxOU3MBi" Comment="Number Of Frames" Bounds="541,477,46,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BsVeOi4zPHuPL27AbR5WOF" Comment="Position" Bounds="732,477,50,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="M8DwMVWensvL9jRKwVpKiZ" Comment="Loop" Bounds="604,330,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="KgKxWKzNkuJOBgtqIvuvCY" Bounds="513,262,275,44" ShowValueBox="true" isIOBox="true" Value="You can use SVOPlaybackControls node for editional control of the playback. ">
@@ -167,12 +143,25 @@
             <Pin Id="Nz8nGQqVbDiP5sWzcDDEfd" Name="Last Error" Kind="OutputPin" />
           </Node>
           <Pad Id="JULJtXvnjRCPPhJlcmE5Yl" Comment="Texture" Bounds="539,630,190,132" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OecViim691vQOMvCZFWSse" Comment="SVO Realtime Mode" Bounds="273,206,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="OecViim691vQOMvCZFWSse" Comment="SVO Realtime Mode" Bounds="284,202,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EID50ZKxVGCMrKsvXMAKzY" Comment="Seek Frame" Bounds="669,353,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MfFtbgA3px2Lfz49aY3iKl" Comment="Seek" Bounds="732,392,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -182,21 +171,20 @@
           <Fragment Id="Nw0FZc7i7GKMKbteeIPzuy" Patch="HygUwaTTL0kPzvDjla9tAT" Enabled="true" />
           <Fragment Id="DrpGwrvugwFMtZirLjKc9D" Patch="H48IRfC6XJSQVDG3UgKzBJ" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="CXyUGknNWDnLmzPQzm2075" Ids="PUYvjlDXcX1NKdoVpOkN5V,HcqMIX8uA5FM6kYjsKHZQl" />
         <Link Id="F3nA7IbueLkMBUYFOr4GM2" Ids="QzMZ6X7GI3vMk2pQ2INd33,BKA3Uve9xYgMHIzABhEUgu" />
-        <Link Id="M8DnfrGvKFkOIXCzHZdpea" Ids="IJXRUhTDTWxL5s5rz60kDV,NOzzzyB8weUOatFPtPxlvL" />
         <Link Id="TRKCordy4GQPJhLEiKQPog" Ids="I3yJG7tURE9OODzzHEN8g0,H7Xjh7W5JArLLQWxOU3MBi" />
         <Link Id="TinJlJKlX9JL3uXuUwwvmL" Ids="KzbYwwXY9TKMne2GRGaXnM,BsVeOi4zPHuPL27AbR5WOF" />
         <Link Id="Mk590qU7Oq0LP3IDyhXp2R" Ids="M8DwMVWensvL9jRKwVpKiZ,VuDQ5JTQEm4OiB5lpcr6EU" />
-        <Link Id="Qga4QCVZ0I9OfHRfb5yJHx" Ids="BeaF3qipg9wNJq8r6bzjqI,UQGQsB8weoEMpNKGY6t7U6" />
-        <Link Id="J492eFKza9uMwRiPOAb0W6" Ids="JVkpuIfWlm5QEth7lYtfiH,Vz9yrKaI5znNnQcGHMrYKV" />
         <Link Id="UKB5TUSVDQrL9MBNMm9v6F" Ids="Oc1z8tuOk3VNgornHbsRG9,LBCN5Uos655M7ooqIHfZQB" />
         <Link Id="RuDITXf2xijLi5tr1s2Fje" Ids="Oc1z8tuOk3VNgornHbsRG9,LPCD7OaUH0SMOjjmnqTdPK" />
         <Link Id="AoAcHJc48PXN2yeyvycyUG" Ids="IHUO4weNmqGPf7Nd63CqXN,Ay40oEQ5Py5K9skAgJAzp6" />
         <Link Id="IU3bvjy2rNoLbeTqq3g0vf" Ids="IHUO4weNmqGPf7Nd63CqXN,Is9p1HkBkXUNgxsqgDSVOt" />
         <Link Id="DyreDT0cfU6NaCpeJ3nQzG" Ids="Oc1z8tuOk3VNgornHbsRG9,JyGXGuowoWOMEB9eziEyf9" />
         <Link Id="MQNZ7jyqtcXLLSpOG9GYk5" Ids="ENW1afRYDwvOos18nRE2c7,JULJtXvnjRCPPhJlcmE5Yl" />
-        <Link Id="Thk7XCr9VuGP3LhTpqjtCO" Ids="OecViim691vQOMvCZFWSse,NYHe8iOz7JpMGdb3pq0jvN" />
+        <Link Id="KAC7q0o1DosQGQS8db6hOj" Ids="EID50ZKxVGCMrKsvXMAKzY,Vz9yrKaI5znNnQcGHMrYKV" />
+        <Link Id="VIZuvl8vEPtPqq37vxZtws" Ids="MfFtbgA3px2Lfz49aY3iKl,UQGQsB8weoEMpNKGY6t7U6" />
+        <Link Id="AxLpqp48HsKMzi4r7uHNas" Ids="PUYvjlDXcX1NKdoVpOkN5V,HcqMIX8uA5FM6kYjsKHZQl" />
+        <Link Id="IPAHqCLYvs6N3Rng6W2UiH" Ids="OecViim691vQOMvCZFWSse,NYHe8iOz7JpMGdb3pq0jvN" />
       </Patch>
     </Node>
   </Patch>

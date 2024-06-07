@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -30,7 +30,7 @@
             <Pin Id="VYgxBiY1AtEOJJBWsxcayV" Name="Units" Kind="InputPin" />
             <Pin Id="F9ky8WjBx2APE40QWJgYbs" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="ANckwtfQNZ3NQsZ8nLPE3F" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="TtyZw0NSeCWOAAkw7afXX6" Name="SVO Path" Kind="InputPin" />
+            <Pin Id="TtyZw0NSeCWOAAkw7afXX6" Name="Filename" Kind="InputPin" />
             <Pin Id="DMZofzFFI0PL0PXENr8AZd" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="KzCKg4HbVzBMOqXk7cCls1" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="TSP1EibZxBhLIUXhbvRQQx" Name="Depth" Kind="InputPin" />
@@ -39,9 +39,8 @@
             <Pin Id="GSzXUngibR0PzTX65V8N8a" Name="Remove Saturated Areas" Kind="InputPin" />
             <Pin Id="F9KC74oZbenOVclf50QhcS" Name="Enable Fill Mode" Kind="InputPin" />
             <Pin Id="ET8uOTf1JPcN3PTeAnmyuj" Name="Enabled" Kind="InputPin" />
-            <Pin Id="PdZaSBstAfLMMmSsoIrujb" Name="HardwareReset" Kind="ApplyPin" />
             <Pin Id="VeGG2HfpJL1QKXHqi1X6yE" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="ExxOc2uRRBoOnfphfUp5sX" Name="Openig Error Code" Kind="OutputPin" />
+            <Pin Id="LIl9zNC62zlLM1wmMVcup0" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="KLr2X0NEY9vPMbDqLQvcHa" Name="In Progress" Kind="OutputPin" />
             <Pin Id="T891ZUzyV12PsFjmmVMgCs" Name="Image Resolution" Kind="OutputPin" />
             <Pin Id="LKfvOjsLRMQOcifJGfaCCa" Name="FPS" Kind="OutputPin" />
@@ -61,7 +60,7 @@
             <Pin Id="VaGNEnrKdw7Pac488Z8GIf" Name="Body Tracking Model" Kind="InputPin" />
             <Pin Id="A5RsIz2oHWeLdLBb6cM46z" Name="Body Tracking" Kind="InputPin" />
             <Pin Id="FwrKuCNHUEgN5Zb7iLI98w" Name="Body Fitting" Kind="InputPin" />
-            <Pin Id="CMSadQSwf1PLvHhh2guD0r" Name="Image Sync" Kind="InputPin" />
+            <Pin Id="TK4gWwj3vCXPj2r0Izac9j" Name="Body Selection" Kind="InputPin" />
             <Pin Id="MlDbg6epcAHN46riPzwQ93" Name="Max Depth" Kind="InputPin" />
             <Pin Id="UipOrZgy0BkN0oH8oagBfb" Name="Compute Mask" Kind="InputPin" IsHidden="true" />
             <Pin Id="MJBn34MHBKUOp9hwKTDbw4" Name="Prediction Timeout" Kind="InputPin" IsHidden="true" />
@@ -90,14 +89,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="G8yPFNVav9mPC0taVERCe1" Comment="Body Fitting" Bounds="333,342,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="B63Si4ax6b2NO7KXwRlWtv" Comment="Image Sync" Bounds="370,386,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -152,15 +143,6 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="IUvdgUGieOdMP209XxCxMX" Bounds="487,299,323,19" ShowValueBox="true" isIOBox="true" Value="&lt; Try to predict next position of the detected body">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="LQOusDpu2TWLjTj2jicPxZ" Bounds="490,386,289,39" ShowValueBox="true" isIOBox="true" Value="&lt; Whether body tracking is synchronized to the image or runs in a separate thread">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -433,6 +415,23 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Ju0OCAFk09IMhmlaqS7QEr" Comment="Body Selection" Bounds="374,398,81,29" ShowValueBox="true" isIOBox="true" Value="FULL">
+            <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="TypeFlag" Name="BODY_KEYPOINTS_SELECTION" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qzjvwx4FAnjNVnmjKMLPUL" Bounds="549,395,392,19" ShowValueBox="true" isIOBox="true" Value="&lt; Selection of keypoints to be outputted by the ZED SDK">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H1PEPtmGO41Oh7G6HLBIJT" Name="Create" />
         <Patch Id="AhniDDqBze6NaMnC0PqnqC" Name="Update" />
@@ -444,7 +443,6 @@
         <Link Id="U7Vt8vQGiqgNzcdPSOvg8p" Ids="J32iJGUadxNMuP1jxqj8jp,VaGNEnrKdw7Pac488Z8GIf" />
         <Link Id="UtMYwHpS82pMP4kxyxlVxD" Ids="S9PcN8BjpMIQJlAP846lAi,A5RsIz2oHWeLdLBb6cM46z" />
         <Link Id="IohXvolu6d6NTMg1Drtek6" Ids="G8yPFNVav9mPC0taVERCe1,FwrKuCNHUEgN5Zb7iLI98w" />
-        <Link Id="Iqs908VlrWnNAAhlQhg2M0" Ids="B63Si4ax6b2NO7KXwRlWtv,CMSadQSwf1PLvHhh2guD0r" />
         <Link Id="Ewi7UNJ52DNMG3cCw2X59N" Ids="LkmXxR5AQwxOtpalEtjpCd,MlDbg6epcAHN46riPzwQ93" />
         <Link Id="SyoQ5gqv89pOburnr0d5Hl" Ids="TKFscEIaAQwOQzMpf7KJdZ,M0KegK19hO0MIVmfFUSwrF" />
         <Link Id="Mp0mfY6lpBrMKjvgVdhLk7" Ids="J8eDNRi1k8TPPoBfK5y2xc,UdsvGAOBWdVNSeCeZbb7N7" />
@@ -457,6 +455,7 @@
         <Link Id="AAjKuhI7g0iM6ftUmzUR6G" Ids="LQtn1do00SaPbkbccqN4RV,NdPaM8Yu0xCMOQ1D5UL1LL" />
         <Link Id="E69QnpyQgzoLkWYM0ib3zD" Ids="GGtooGtvWaJLmFbyW3bN9e,TMAskeA9J9GLF77kRjvSc7" />
         <Link Id="Tuhy0hWrt0QLPhmJtlYKnC" Ids="UOnB0D5OAENOEeaUpeISPP,AF14GCPITMkN9xNyuzktgM,V7SL9pSVpriMk15X5QLHG7" />
+        <Link Id="L2CxRpohir8MOerSf7O4Rz" Ids="Ju0OCAFk09IMhmlaqS7QEr,TK4gWwj3vCXPj2r0Izac9j" />
       </Patch>
     </Node>
   </Patch>

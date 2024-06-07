@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="EM0Z7zkFioUM1Lrtw85Ms0" LanguageVersion="2024.6.0" Version="0.128">
-  <NugetDependency Id="Bd6sOtUJqLiLbvQ8lUkoBM" Location="VL.CoreLib" Version="2024.6.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="EM0Z7zkFioUM1Lrtw85Ms0" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
+  <NugetDependency Id="Bd6sOtUJqLiLbvQ8lUkoBM" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
   <Patch Id="L7mQ3Iu05N2OM3k6WWz3qA">
     <Canvas Id="RPa0xaHMwSUNbql5TPHfGU" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -30,7 +30,7 @@
             <Pin Id="NLDRRConHSOQaBLtIPK5Wj" Name="Units" Kind="InputPin" />
             <Pin Id="KvTPHFD43u5O5V2TPtRyRg" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="EhQM75F56d2LI5tyRvFcvs" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="LsRxJmtwL5EM5loHPc2haN" Name="SVO Path" Kind="InputPin" />
+            <Pin Id="LsRxJmtwL5EM5loHPc2haN" Name="Filename" Kind="InputPin" />
             <Pin Id="Bck6QHwGLhnL60GkYXYR6u" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="QudM7obr0mqMoII4JOZhgR" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="MpzYYOxtKZnMKjMUfStaON" Name="Depth" Kind="InputPin" />
@@ -39,9 +39,8 @@
             <Pin Id="MKcEqjBaKbvOlyHZ8uOJkY" Name="Remove Saturated Areas" Kind="InputPin" />
             <Pin Id="LK6hORRT3lZMTwiU7UojcZ" Name="Enable Fill Mode" Kind="InputPin" />
             <Pin Id="CeT1c4AVoT4OHULYMabMc9" Name="Enabled" Kind="InputPin" />
-            <Pin Id="DpN2irVkbnSM7fPnCHGb6K" Name="HardwareReset" Kind="ApplyPin" />
             <Pin Id="E8saX56Kg06L9fZgzvTXjR" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="Pp6ZmZuN1dYOHi6xxWSH1Q" Name="Openig Error Code" Kind="OutputPin" />
+            <Pin Id="TNNzCcC9DvbQVqh0oEe5zY" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="CGldvKhzOXGPJkp9h8Ht2V" Name="In Progress" Kind="OutputPin" />
             <Pin Id="RJ81IsA3WK4OSudNbht3gI" Name="Image Resolution" Kind="OutputPin" />
             <Pin Id="GvSal5767SBO2weq0ZtPfT" Name="FPS" Kind="OutputPin" />

@@ -670,7 +670,7 @@
         </member>
         <member name="M:sl.Camera.GetDeviceList(System.Int32@)">
              <summary>
-             List all the streaming devices with their associated information.
+             List all the connected devices with their associated information.
             
              This method lists all the cameras available and provides their serial number, models and other information.
              </summary>
@@ -678,7 +678,7 @@
         </member>
         <member name="M:sl.Camera.GetStreamingDeviceList(System.Int32@)">
              <summary>
-             List all the connected devices with their associated information.
+             List all the streaming devices with their associated information.
             
              This method lists all the cameras available and provides their serial number, models and other information.
              </summary>
@@ -813,6 +813,12 @@
             REFERENCE_FRAME.WORLD gives cumulative movements since tracking started.</param>
             <returns>The current \ref POSITIONAL_TRACKING_STATE "state" of the tracking process.</returns>
         </member>
+        <member name="M:sl.Camera.GetPositionalTrackingStatus">
+            <summary>
+            Returns the current status of positional tracking module.
+            </summary>
+            <returns> The current status of positional tracking module. </returns>
+        </member>
         <member name="M:sl.Camera.GetPosition(System.Numerics.Quaternion@,System.Numerics.Vector3@,System.Numerics.Quaternion@,System.Numerics.Vector3@,sl.REFERENCE_FRAME)">
             <summary>
             Gets the current position of the camera and state of the tracking, with an optional offset to the tracking frame.
@@ -874,25 +880,28 @@
             <param name="referenceTime">Defines the reference from which you want the data to be expressed. Default: REFERENCE_FRAME.WORLD.</param>
             <returns>An sl.ERROR_CODE status.</returns>
         </member>
-        <member name="M:sl.Camera.SetRegionOfInterest(sl.Mat)">
+        <member name="M:sl.Camera.SetRegionOfInterest(sl.Mat,System.Boolean[])">
             <summary>
             Defines a region of interest to focus on for all the SDK, discarding other parts.
             </summary>
-            <param name="roiMask">
+            <param name="roiMask"> The Mat defining the requested region of interest, pixels lower than 127 will be discarded from all modules: depth, positional tracking, etc.
+            If empty, set all pixels as valid. The mask can be either at lower or higher resolution than the current images.</param>
+            <param name="module"> Apply the ROI to a list of SDK module, all by default. Must of size sl.MODULE.LAST. 
             The Mat defining the requested region of interest, pixels lower than 127 will be discarded from all modules: depth, positional tracking, etc.
             If empty, set all pixels as valid. The mask can be either at lower or higher resolution than the current images.
             </param>
             <returns>An sl.ERROR_CODE if something went wrong.</returns>
         </member>
-        <member name="M:sl.Camera.GetRegionOfInterest(sl.Mat,sl.Resolution)">
+        <member name="M:sl.Camera.GetRegionOfInterest(sl.Mat,sl.Resolution,sl.MODULE)">
             <summary>
             Get the previously set or computed region of interest.
             </summary>
             <param name="roiMask">The \ref Mat returned</param>
             <param name="resolution">The optional size of the returned mask</param>
+            <param name="module"> Specifies the module from which the ROI is to be obtained. </param>
             <returns>An sl.ERROR_CODE if something went wrong.</returns>
         </member>
-        <member name="M:sl.Camera.StartRegionOfInterestAutoDetection(sl.RegionOfInterestParameters@)">
+        <member name="M:sl.Camera.StartRegionOfInterestAutoDetection(sl.RegionOfInterestParameters)">
             <summary>
             Start the auto detection of a region of interest to focus on for all the SDK, discarding other parts.
             This detection is based on the general motion of the camera combined with the motion in the scene.
@@ -1322,6 +1331,30 @@
             Disables the recording initiated by EnableRecording() and closes the generated file.
             </summary>
         </member>
+        <member name="M:sl.Camera.IngestDataIntoSVO(sl.SVOData@)">
+            <summary>
+            Ingest SVOData in a SVO file.
+            </summary>
+            <param name="data">Data to ingest in the SVO file..</param>
+            Note: The method works only if the camera is recording.
+            <returns></returns>
+        </member>
+        <member name="M:sl.Camera.RetrieveSVOData(System.String,System.Collections.Generic.List{sl.SVOData}@,System.UInt64,System.UInt64)">
+            <summary>
+            Retrieves SVO data from the SVO file at the given channel key and in the given timestamp range.
+            </summary>
+            <param name="key"> The key of the SVOData that is going to be retrieved.</param>
+            <param name="data"> The map to be filled with SVOData objects, with timestamps as keys.</param>
+            <param name="tsBegin"> The beginning of the range.</param>
+            <param name="tsEnd">The end of the range.</param>
+            <returns>sl.ERROR_CODE.SUCCESS in case of success, sl.ERROR_CODE.FAILURE otherwise.</returns>
+        </member>
+        <member name="M:sl.Camera.GetSVODataKeys">
+            <summary>
+             Gets the external channels that can be retrieved from the SVO file.
+            </summary>
+            <returns>List of available keys.</returns>
+        </member>
         <member name="M:sl.Camera.EnableStreaming(sl.STREAMING_CODEC,System.UInt32,System.UInt16,System.Int32,System.Boolean,System.Int32,System.Int32)">
             <summary>
             Creates an streaming pipeline.
@@ -1452,24 +1485,6 @@
              It corresponds to the structure given as argument to the EnableBodyTracking() method.
              </summary>
              <returns>sl.BodyTrackingParameters containing the parameters used for body tracking initialization.</returns>
-        </member>
-        <member name="M:sl.Camera.PauseObjectDetection(System.Boolean,System.UInt32)">
-             <summary>
-             Pause or resume the object detection.
-            
-             The RetrieveObjects() method will keep on returning the last objects detected while in pause.
-             </summary>
-             <param name="status">If true, object detection is paused. If false, object detection is resumed.</param>
-             <param name="instanceID">Id of the instance to pause/resume. Used when multiple instances of the object detection module are enabled at the same time.</param>
-        </member>
-        <member name="M:sl.Camera.PauseBodyTracking(System.Boolean,System.UInt32)">
-             <summary>
-             Pause or resume the body tracking.
-            
-             The RetrieveBodies() method will keep on returning the last bodies detected while in pause.
-             </summary>
-             <param name="status">If true, body tracking is paused. If false, body tracking is resumed.</param>
-             <param name="instanceID">Id of the instance to pause/resume. Used when multiple instances of the body tracking module are enabled at the same time.</param>
         </member>
         <member name="M:sl.Camera.IngestCustomBoxObjects(System.Collections.Generic.List{sl.CustomBoxObjectData})">
             <summary>
@@ -1815,6 +1830,11 @@
             The module needs a newer version of CUDA.
             </summary>
         </member>
+        <member name="F:sl.ERROR_CODE.SENSORS_DATA_REQUIRED">
+            <summary>
+            The input data does not contains the high frequency sensors data, this is usually because it requires newer SVO/Streaming. In order to work this modules needs inertial data present in it input.
+            </summary>
+        </member>
         <member name="F:sl.ERROR_CODE.ERROR_CODE_LAST">
             @cond SHOWHIDDEN 
         </member>
@@ -1822,7 +1842,7 @@
             \ingroup  Core_group
              <summary>
              Lists available coordinates systems for positional tracking and 3D measures.
-             \image html CoordinateSystem.png
+             \image html CoordinateSystem.webp
              </summary>
         </member>
         <member name="F:sl.COORDINATE_SYSTEM.IMAGE">
@@ -1861,8 +1881,43 @@
             \n Used in ROS (REP 103)
             </summary>
         </member>
+        <member name="T:sl.MODULE">
+            <summary>
+            Lists available modules.
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.ALL">
+            <summary>
+            All modules
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.DEPTH">
+            <summary>
+            Depth module
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.POSITIONAL_TRACKING">
+            <summary>
+            Positional tracking module
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.OBJECT_DETECTION">
+            <summary>
+            Object Detection module
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.BODY_TRACKING">
+            <summary>
+            Body Tracking module
+            </summary>
+        </member>
+        <member name="F:sl.MODULE.SPATIAL_MAPPING">
+            <summary>
+            Spatial mapping module
+            </summary>
+        </member>
         <member name="T:sl.CameraConfiguration">
-            \ingroup Core_groupCameraInformation
+            \ingroup Core_group
             <summary>
             Structure containing information about the camera sensor. 
             </summary>
@@ -1923,43 +1978,6 @@
         <member name="F:sl.CameraInformation.sensorsConfiguration">
             <summary>
             Sensors configuration parameters stored in a sl.SensorsConfiguration.
-            </summary>
-        </member>
-        <member name="T:sl.InputType">
-            \ingroup Video_group
-            <summary>
-            Structure defining the input type used in the ZED SDK.
-            </summary>
-            It can be used to select a specific camera with an id or serial number, or from a SVO file.
-        </member>
-        <member name="F:sl.InputType.inputType">
-            <summary>
-            Current input type.
-            </summary>
-        </member>
-        <member name="F:sl.InputType.serialNumber">
-            <summary>
-            Serial number of the camera.
-            </summary>
-        </member>
-        <member name="F:sl.InputType.id">
-            <summary>
-            Id of the camera.
-            </summary>
-        </member>
-        <member name="F:sl.InputType.svoInputFilename">
-            <summary>
-            Path to the SVO file.
-            </summary>
-        </member>
-        <member name="F:sl.InputType.streamInputIp">
-            <summary>
-            IP address of the streaming camera.
-            </summary>
-        </member>
-        <member name="F:sl.InputType.streamInputPort">
-            <summary>
-            Port of the streaming camera.
             </summary>
         </member>
         <member name="T:sl.PositionalTrackingParameters">
@@ -2117,30 +2135,9 @@
             Default is 0.5, corresponding to the lower half of the image.
             </summary>
         </member>
-        <member name="F:sl.RegionOfInterestParameters.autoApply">
+        <member name="F:sl.RegionOfInterestParameters.autoApplyModule">
             <summary>
             Once computed the ROI computed will be automatically applied.
-            </summary>
-        </member>
-        <member name="T:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE">
-            \ingroup PositionalTracking_group
-             <summary>
-             Lists the different states of region of interest auto detection.
-             </summary>
-        </member>
-        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.RUNNING">
-            <summary>
-            The region of interest auto detection is initializing.
-            </summary>
-        </member>
-        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.READY">
-            <summary>
-            The region of interest mask is ready, if auto_apply was enabled, the region of interest mask is being used.
-            </summary>
-        </member>
-        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.NOT_ENABLED">
-            <summary>
-             The region of interest auto detection is not enabled.
             </summary>
         </member>
         <member name="T:sl.POSITIONAL_TRACKING_STATE">
@@ -2151,7 +2148,7 @@
         </member>
         <member name="F:sl.POSITIONAL_TRACKING_STATE.SEARCHING">
             <summary>
-            The camera is searching for a previously known position to locate itself.
+            \warn DEPRECATED: This state is no longer in use.
             </summary>
         </member>
         <member name="F:sl.POSITIONAL_TRACKING_STATE.OK">
@@ -2176,57 +2173,94 @@
             The camera is searching for the floor plane to locate itself with respect to it.\n The sl.REFERENCE_FRAME.WORLD will be set afterward.
             </summary>
         </member>
+        <member name="F:sl.POSITIONAL_TRACKING_STATE.UNAVAILABLE">
+            <summary>
+            The tracking module was unable to perform tracking from the previous frame to the current frame.
+            </summary>
+        </member>
+        <member name="T:sl.ODOMETRY_STATUS">
+            \ingroup PositionalTracking_group
+             <summary>
+             Report the status of current odom tracking.
+             </summary>
+        </member>
+        <member name="F:sl.ODOMETRY_STATUS.OK">
+            <summary>
+            The positional tracking module successfully tracked from the previous frame to the current frame.
+            </summary>
+        </member>
+        <member name="F:sl.ODOMETRY_STATUS.UNAVAILABLE">
+            <summary>
+            The positional tracking module failed to track from the previous frame to the current frame.
+            </summary>
+        </member>
+        <member name="T:sl.SPATIAL_MEMORY_STATUS">
+            \ingroup PositionalTracking_group
+             <summary>
+             Report the status of current map tracking.
+             </summary>
+        </member>
+        <member name="F:sl.SPATIAL_MEMORY_STATUS.OK">
+            <summary>
+            The positional tracking module is operating normally.
+            </summary>
+        </member>
+        <member name="F:sl.SPATIAL_MEMORY_STATUS.LOOP_CLOSED">
+            <summary>
+            The positional tracking module detected a loop and corrected its position.
+            </summary>
+        </member>
+        <member name="F:sl.SPATIAL_MEMORY_STATUS.SEARCHING">
+            <summary>
+            The positional tracking module is searching for recognizable areas in the global map to relocate.
+            </summary>
+        </member>
+        <member name="F:sl.SPATIAL_MEMORY_STATUS.OFF">
+            <summary>
+            Spatial memory is disabled.
+            </summary>
+        </member>
+        <member name="T:sl.POSITIONAL_TRACKING_FUSION_STATUS">
+            \ingroup PositionalTracking_group
+             <summary>
+             Report the status of the positional tracking fusion.
+             </summary>
+        </member>
+        <member name="T:sl.PositionalTrackingStatus">
+            \ingroup PositionalTracking_group
+             <summary>
+             Lists the different status of positional tracking.
+             </summary>
+        </member>
+        <member name="F:sl.PositionalTrackingStatus.odometryStatus">
+            <summary>
+            Represents the current state of Visual-Inertial Odometry (VIO) tracking between the previous frame and the current frame.
+            </summary>
+        </member>
+        <member name="F:sl.PositionalTrackingStatus.spatialMemoryStatus">
+            <summary>
+            Represents the current state of camera tracking in the global map.
+            </summary>
+        </member>
+        <member name="F:sl.PositionalTrackingStatus.trackingFusionStatus">
+            <summary>
+            Represents the current state of positional tracking fusion.
+            </summary>
+        </member>
         <member name="T:sl.POSITIONAL_TRACKING_MODE">
             \ingroup PositionalTracking_group
              <summary>
              Lists the mode of positional tracking that can be used.
              </summary>
         </member>
-        <member name="F:sl.POSITIONAL_TRACKING_MODE.STANDARD">
+        <member name="F:sl.POSITIONAL_TRACKING_MODE.GEN_1">
             <summary>
             Default mode. Best compromise in performance and accuracy.
             </summary>
         </member>
-        <member name="F:sl.POSITIONAL_TRACKING_MODE.QUALITY">
+        <member name="F:sl.POSITIONAL_TRACKING_MODE.GEN_2">
             <summary>
-            Improve accuracy in more challenging scenes such as outdoor repetitive patterns like extensive fields.
-            \n Currently works best with sl.DEPTH_MODE.ULTRA and requires more compute power.
-            </summary>
-        </member>
-        <member name="T:sl.AREA_EXPORTING_STATE">
-            \ingroup SpatialMapping_group
-             <summary>
-             Lists the different states of spatial memory area export.
-             </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.SUCCESS">
-            <summary>
-            The spatial memory file has been successfully created.
-            </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.RUNNING">
-            <summary>
-            The spatial memory is currently being written.
-            </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.NOT_STARTED">
-            <summary>
-            The spatial memory file exportation has not been called.
-            </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.FILE_EMPTY">
-            <summary>
-            The spatial memory contains no data, the file is empty.
-            </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.FILE_ERROR">
-            <summary>
-            The spatial memory file has not been written because of a wrong file name.
-            </summary>
-        </member>
-        <member name="F:sl.AREA_EXPORTING_STATE.SPATIAL_MEMORY_DISABLED">
-            <summary>
-            The spatial memory learning is disabled. No file can be created.
+            Next generation of positional tracking, allow better accuracy.
             </summary>
         </member>
         <member name="T:sl.REFERENCE_FRAME">
@@ -2736,7 +2770,7 @@
             </summary>
             Each depth pixel has a corresponding confidence sl.MEASURE.CONFIDENCE in the range [1, 100].
             \n Decreasing this value will remove depth data from both objects edges and low textured areas, to keep only confident depth estimation data.
-            \n Default: 100 (no depth pixel will be rejected)
+            \n Default: 95
             \note Pixels with a value close to 100 are not to be trusted. Accurate depth pixels tends to be closer to lower values.
             \note It can be seen as a probability of error, scaled to 100.
         </member>
@@ -2855,6 +2889,35 @@
             Left to right camera translation, expressed in user coordinate system and unit (defined by sl.InitParameters.coordinateSystem).
             </summary>
         </member>
+        <member name="T:sl.SVOData">
+            \ingroup Depth_group
+             <summary>
+             Structure containing data that can be stored in and retrieved from SVOs.
+              That information will be ingested with sl.Camera.ingestDataIntoSVO and retrieved with sl.Camera.retrieveSVOData.
+             </summary>
+        </member>
+        <member name="F:sl.SVOData.key">
+            <summary>
+            Key used to retrieve the data stored into SVOData's content.
+            The key size must not exceed 128 characters.
+            </summary>
+        </member>
+        <member name="F:sl.SVOData.timestamp">
+            <summary>
+            Timestamp of the data (in nanoseconds).
+            </summary>
+        </member>
+        <member name="F:sl.SVOData.content">
+            <summary>
+            Content stored as SVOData
+            Allow any type of content, including raw data like compressed images of json.
+            </summary>
+        </member>
+        <member name="F:sl.SVOData.contentSize">
+            <summary>
+            Size of the content data.
+            </summary>
+        </member>
         <member name="T:sl.DEPTH_MODE">
             \ingroup Depth_group
              <summary>
@@ -2887,6 +2950,11 @@
         <member name="F:sl.DEPTH_MODE.NEURAL">
             <summary>
             End to End Neural disparity estimation.\n Requires AI module.
+            </summary>
+        </member>
+        <member name="F:sl.DEPTH_MODE.NEURAL_PLUS">
+            <summary>
+            More accurate Neural disparity estimation.\n Requires AI module.
             </summary>
         </member>
         <member name="T:sl.MEASURE">
@@ -3019,6 +3087,27 @@
             <summary>
             Depth map in millimeter for right sensor. Each pixel contains 1 unsigned short.
             \n Type: sl.MAT_TYPE.MAT_16U_C1.
+            </summary>
+        </member>
+        <member name="T:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE">
+            \ingroup Depth_group
+             <summary>
+             Lists the different states of region of interest auto detection.
+             </summary>
+        </member>
+        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.RUNNING">
+            <summary>
+            The region of interest auto detection is initializing.
+            </summary>
+        </member>
+        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.READY">
+            <summary>
+            The region of interest mask is ready, if auto_apply was enabled, the region of interest mask is being used.
+            </summary>
+        </member>
+        <member name="F:sl.REGION_OF_INTEREST_AUTO_DETECTION_STATE.NOT_ENABLED">
+            <summary>
+             The region of interest auto detection is not enabled.
             </summary>
         </member>
         <member name="T:sl.InitParameters">
@@ -3166,7 +3255,7 @@
         </member>
         <member name="F:sl.InitParameters.cameraDisableSelfCalib">
              <summary>
-             Defines if a flip of the images is needed.
+             Disables the self-calibration process at camera opening.
             
              At initialization, sl.Camera runs a self-calibration process that corrects small offsets from the device's factory calibration.
              \n A drawback is that calibration parameters will slightly change from one (live) run to another, which can be an issue for repeatability.
@@ -3658,6 +3747,12 @@
              \warning You can find the available resolutions for each camera in <a href="https://www.stereolabs.com/docs/video/camera-controls#selecting-a-resolution">our documentation</a>.
              </summary>
         </member>
+        <member name="F:sl.RESOLUTION.HD4K">
+            <summary>
+            3856x2180 for imx678 mono
+            \n Available FPS: 15
+            </summary>
+        </member>
         <member name="F:sl.RESOLUTION.HD2K">
             <summary>
             2208*1242 (x2)
@@ -3757,6 +3852,21 @@
         <member name="F:sl.MODEL.ZED_XM">
             <summary>
             ZED X Mini (ZED XM) camera model
+            </summary>
+        </member>
+        <member name="F:sl.MODEL.VIRTUAL_ZED_X">
+            <summary>
+            Virtual ZED-X generated from 2 ZED-XOne
+            </summary>
+        </member>
+        <member name="F:sl.MODEL.ZED_XONE_GS">
+            <summary>
+            ZED XOne with global shutter AR0234 sensor 
+            </summary>
+        </member>
+        <member name="F:sl.MODEL.ZED_XONE_UHD">
+            <summary>
+            ZED XOne with 4K rolling shutter IMX678 sensor
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "T:sl.VIEW" -->
@@ -4106,6 +4216,43 @@
             Left and right side.
             </summary>
         </member>
+        <member name="T:sl.InputType">
+            \ingroup Video_group
+            <summary>
+            Structure defining the input type used in the ZED SDK.
+            </summary>
+            It can be used to select a specific camera with an id or serial number, or from a SVO file.
+        </member>
+        <member name="F:sl.InputType.inputType">
+            <summary>
+            Current input type.
+            </summary>
+        </member>
+        <member name="F:sl.InputType.serialNumber">
+            <summary>
+            Serial number of the camera.
+            </summary>
+        </member>
+        <member name="F:sl.InputType.id">
+            <summary>
+            Id of the camera.
+            </summary>
+        </member>
+        <member name="F:sl.InputType.svoInputFilename">
+            <summary>
+            Path to the SVO file.
+            </summary>
+        </member>
+        <member name="F:sl.InputType.streamInputIp">
+            <summary>
+            IP address of the streaming camera.
+            </summary>
+        </member>
+        <member name="F:sl.InputType.streamInputPort">
+            <summary>
+            Port of the streaming camera.
+            </summary>
+        </member>
         <member name="T:sl.PlaneDetectionParameters">
             \ingroup SpatialMapping_group
              <summary>
@@ -4218,6 +4365,42 @@
             Sets the range to a sl.MAPPING_RANGE preset.
             </summary>
             <param name="mappingRange">The desired sl.MAPPING_RANGE. Default: sl.MAPPING_RANGE.MEDIUM</param>
+        </member>
+        <member name="T:sl.AREA_EXPORTING_STATE">
+            \ingroup SpatialMapping_group
+             <summary>
+             Lists the different states of spatial memory area export.
+             </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.SUCCESS">
+            <summary>
+            The spatial memory file has been successfully created.
+            </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.RUNNING">
+            <summary>
+            The spatial memory is currently being written.
+            </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.NOT_STARTED">
+            <summary>
+            The spatial memory file exportation has not been called.
+            </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.FILE_EMPTY">
+            <summary>
+            The spatial memory contains no data, the file is empty.
+            </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.FILE_ERROR">
+            <summary>
+            The spatial memory file has not been written because of a wrong file name.
+            </summary>
+        </member>
+        <member name="F:sl.AREA_EXPORTING_STATE.SPATIAL_MEMORY_DISABLED">
+            <summary>
+            The spatial memory learning is disabled. No file can be created.
+            </summary>
         </member>
         <member name="T:sl.MAPPING_RESOLUTION">
             \ingroup SpatialMapping_group
@@ -4684,14 +4867,6 @@
             </summary>
             This is used to identify which object detection module instance is used.
         </member>
-        <member name="F:sl.ObjectDetectionParameters.imageSync">
-            <summary>
-            Whether the object detection is synchronized to the image or runs in a separate thread.
-            </summary>
-            If set to true, the detection is run on every sl.Camera.Grab().
-            \n Otherwise, the thread runs at its own speed, which can lead to new detection once in a while.
-            \n Default: true
-        </member>
         <!-- Badly formed XML comment ignored for member "F:sl.ObjectDetectionParameters.enableObjectTracking" -->
         <member name="F:sl.ObjectDetectionParameters.enableSegmentation">
             <summary>
@@ -4808,14 +4983,6 @@
             </summary>
             This is used to identify which body tracking module instance is used.
         </member>
-        <member name="F:sl.BodyTrackingParameters.imageSync">
-            <summary>
-            Whether the body tracking is synchronized to the image or runs in a separate thread.
-            </summary>
-            If set to true, the detection is run on every sl.Camera.Grab().
-            \n Otherwise, the thread runs at its own speed, which can lead to new detection once in a while.
-            \n Default: true
-        </member>
         <!-- Badly formed XML comment ignored for member "F:sl.BodyTrackingParameters.enableObjectTracking" -->
         <member name="F:sl.BodyTrackingParameters.enableSegmentation">
             <summary>
@@ -4839,6 +5006,12 @@
             <summary>
             Body format to be outputted by the ZED SDK with sl.Camera.RetrieveBodies().
             </summary>
+        </member>
+        <member name="F:sl.BodyTrackingParameters.bodySelection">
+            <summary>
+            Selection of keypoints to be outputted by the ZED SDK with \ref sl_retrieve_bodies().
+            </summary>
+            Default: SL_BODY_KEYPOINTS_SELECTION_FULL
         </member>
         <member name="F:sl.BodyTrackingParameters.maxRange">
             <summary>
@@ -4960,7 +5133,8 @@
         </member>
         <member name="F:sl.ObjectData.mask">
             <summary>
-            Mask defining which pixels which belong to the object (in \ref boundingBox and set to 255) and those of the background (set to 0).
+            Pointer of the sl.Mat representing the mask defining which pixels which belong to the object (in \ref boundingBox and set to 255) and those of the background (set to 0).
+            To access the pixels values, create a new sl.Mat from that IntPtr. Ex: sl.Mat mat = new sl.Mat(mask);
             </summary>
             \warning The mask information is only available for tracked objects (sl.OBJECT_TRACKING_STATE.OK) that have a valid depth.
             \warning Otherwise, the mask will not be initialized.
@@ -5729,6 +5903,11 @@
             Related to sl.DEPTH_MODE.NEURAL
             </summary>
         </member>
+        <member name="F:sl.AI_MODELS.NEURAL_PLUS_DEPTH">
+            <summary>
+            Related to sl.DEPTH_MODE.NEURAL_PLUS
+            </summary>
+        </member>
         <member name="F:sl.AI_MODELS.LAST">
             @cond SHOWHIDDEN
         </member>
@@ -5976,18 +6155,23 @@
             Lists the types of error that can be raised by the Fusion.
             </summary>
         </member>
-        <member name="F:sl.FUSION_ERROR_CODE.WRONG_BODY_FORMAT">
+        <member name="F:sl.FUSION_ERROR_CODE.GNSS_DATA_COVARIANCE_MUST_VARY">
+            <summary>
+            Ingested covariance data must vary between ingest.
+            </summary>
+        </member>
+        <member name="F:sl.FUSION_ERROR_CODE.BODY_FORMAT_MISMATCH">
             <summary>
             The senders are using different body formats.
             \n Consider changing them.
             </summary>
         </member>
-        <member name="F:sl.FUSION_ERROR_CODE.NOT_ENABLE">
+        <member name="F:sl.FUSION_ERROR_CODE.MODULE_NOT_ENABLED">
             <summary>
             The following module was not enabled.
             </summary>
         </member>
-        <member name="F:sl.FUSION_ERROR_CODE.INPUT_FEED_MISMATCH">
+        <member name="F:sl.FUSION_ERROR_CODE.SOURCE_MISMATCH">
             <summary>
             Some sources are provided by SVO and others by LIVE stream.
             </summary>
@@ -6004,7 +6188,7 @@
             \n Multiple connections to the same data.
             </summary>
         </member>
-        <member name="F:sl.FUSION_ERROR_CODE.BAD_IP_ADDRESS">
+        <member name="F:sl.FUSION_ERROR_CODE.INVALID_IP_ADDRESS">
             <summary>
             The provided IP address format is incorrect.
             \n Please provide the IP in the format 'a.b.c.d', where (a, b, c, d) are numbers between 0 and 255.
@@ -6020,7 +6204,7 @@
             Standard code for successful behavior.
             </summary>
         </member>
-        <member name="F:sl.FUSION_ERROR_CODE.ERRATIC_FPS">
+        <member name="F:sl.FUSION_ERROR_CODE.FUSION_INCONSISTENT_FPS">
             <summary>
             Significant differences observed between sender's FPS.
             </summary>
@@ -6069,7 +6253,7 @@
             The sender encountered a grab error.
             </summary>
         </member>
-        <member name="F:sl.SENDER_ERROR_CODE.ERRATIC_FPS">
+        <member name="F:sl.SENDER_ERROR_CODE.INCONSISTENT_FPS">
             <summary>
             The sender does not run with a constant frame rate.
             </summary>
@@ -6259,26 +6443,31 @@
         <member name="F:sl.CameraMetrics.receivedLatency">
             <summary>
             Latency (in seconds) of the received data.
+            Timestamp difference between the time when the data are sent and the time they are received (mostly introduced when using the local network workflow).
             </summary>
         </member>
         <member name="F:sl.CameraMetrics.syncedLatency">
             <summary>
             Latency (in seconds) after Fusion synchronization.
+            Difference between the timestamp of the data received and the timestamp at the end of the Fusion synchronization.
             </summary>
         </member>
         <member name="F:sl.CameraMetrics.isPresent">
             <summary>
-            If no data present is set to false.
+            Is set to false if no data in this batch of metrics.
             </summary>
         </member>
         <member name="F:sl.CameraMetrics.ratioDetection">
             <summary>
-            Percent of detection par image during the last second in %, a low value means few detections occurs lately.
+            Skeleton detection percent during the last second.
+            Number of frames with at least one detection / number of frames, over the last second.
+            A low value means few detections occured lately for this sender.
             </summary>
         </member>
         <member name="F:sl.CameraMetrics.deltaTs">
             <summary>
-            Average time difference for the current fused data.
+            Average data acquisition timestamp difference.
+            Average standard deviation of sender's period since the start.
             </summary>
         </member>
         <member name="T:sl.FusionMetrics">
@@ -6302,27 +6491,120 @@
             Sender metrics.
             </summary>
         </member>
-        <member name="T:sl.GNSS_CALIBRATION_STATE">
+        <member name="T:sl.GNSS_FUSION_STATUS">
             \ingroup Fusion_group
             <summary>
-            Lists the different states of the GNSS calibration.
+            Lists the different states of the GNSS fusion.
             </summary>
         </member>
-        <member name="F:sl.GNSS_CALIBRATION_STATE.GNSS_CALIBRATION_STATE_NOT_CALIBRATED">
+        <member name="F:sl.GNSS_FUSION_STATUS.OK">
             <summary>
-            The GNSS/VIO calibration has not been completed yet.
-            \n Please continue moving the robot while ingesting GNSS data to perform the calibration.
+            The GNSS fusion module is calibrated and working successfully.
             </summary>
         </member>
-        <member name="F:sl.GNSS_CALIBRATION_STATE.GNSS_CALIBRATION_STATE_CALIBRATED">
+        <member name="F:sl.GNSS_FUSION_STATUS.OFF">
             <summary>
-            The GNSS/VIO calibration is completed.
+            The GNSS fusion module is not enabled.
             </summary>
         </member>
-        <member name="F:sl.GNSS_CALIBRATION_STATE.GNSS_CALIBRATION_STATE_RE_CALIBRATION_IN_PROGRESS">
+        <member name="F:sl.GNSS_FUSION_STATUS.CALIBRATION_IN_PROGRESS">
             <summary>
-            A GNSS/VIO re-calibration is in progress in the background.
-            \n Current geo-tracking services may not be accurate.
+            Calibration of the GNSS/VIO fusion module is in progress.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_FUSION_STATUS.RECALIBRATION_IN_PROGRESS">
+            <summary>
+            Re-alignment of GNSS/VIO data is in progress, leading to potentially inaccurate global position
+            </summary>
+        </member>
+        <member name="T:sl.FusedPositionalTrackingStatus">
+            <summary>
+            Class containing the overall position fusion status
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.odometryStatus">
+            <summary>
+            Represents the current state of Visual-Inertial Odometry (VIO) tracking between the previous frame and the current frame.
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.spatialMemoryStatus">
+            <summary>
+            Represents the current state of camera tracking in the global map.
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.gnssStatus">
+            <summary>
+            Represents the current state of GNSS.
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.gnssMode">
+            <summary>
+            Represents the current mode of GNSS.
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.gnssFusionStatus">
+            <summary>
+            Represents the current state of GNSS fusion for global localization.
+            </summary>
+        </member>
+        <member name="F:sl.FusedPositionalTrackingStatus.trackingFusionStatus">
+            <summary>
+            Represents the current state of positional tracking fusion.
+            </summary>
+        </member>
+        <member name="T:sl.GNSS_STATUS">
+                 \class GNSS_STATUS
+                 \ingroup Sensors_group
+                 \brief Class representing the fix quality of GNSS signal.
+        </member>
+        <member name="F:sl.GNSS_STATUS.UNKNOWN">
+            <summary>
+            No GNSS fix data is available.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_STATUS.SINGLE">
+            <summary>
+            Single Point Positioning.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_STATUS.DGNSS">
+            <summary>
+            Differential GNSS.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_STATUS.RTK_FIX">
+            <summary>
+            Real-Time Kinematic (RTK) GNSS fix in fixed mode.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_STATUS.RTK_FLOAT">
+            <summary>
+            Real-Time Kinematic (RTK) GNSS fix in float mode. 
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_STATUS.PPS">
+            <summary>
+            Precise Positioning Service.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_MODE.UNKNOWN">
+            <summary>
+             No GNSS fix data is available. 
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_MODE.NO_FIX">
+            <summary>
+            No GNSS fix is available.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_MODE.FIX_2D">
+            <summary>
+            2D GNSS fix, providing latitude and longitude coordinates but without altitude information.
+            </summary>
+        </member>
+        <member name="F:sl.GNSS_MODE.FIX_3D">
+            <summary>
+            3D GNSS fix, providing latitude, longitude, and altitude coordinates. 
             </summary>
         </member>
         <member name="T:sl.GNSSData">
@@ -6538,6 +6820,12 @@
             
               Default: true
              </summary>     
+        </member>
+        <member name="F:sl.GNSSCalibrationParameters.gnssAntennaPosition">
+            <summary>
+            Define a transform between the GNSS antenna and the camera system for the VIO / GNSS calibration.
+            Default value is [0,0,0], this position can be refined by the calibration if enabled
+            </summary>
         </member>
         <member name="T:sl.PositionalTrackingFusionParameters">
             \ingroup Fusion_group
@@ -7282,6 +7570,12 @@
             By default, it is set to true.
             </summary>     
         </member>
+        <member name="F:sl.Fusion.sl_GNSSCalibrationParameters.gnssAntennaPosition">
+            <summary>
+            Define a transform between the GNSS antenna and the camera system for the VIO / GNSS calibration.
+            Default value is [0,0,0], this position can be refined by the calibration if enabled
+            </summary>
+        </member>
         <member name="T:sl.Fusion.sl_PositionalTrackingFusionParameters">
             <summary>
             DLL-friendly version of PositionalTrackingFusionParameters (found in ZEDCommon.cs).
@@ -7424,6 +7718,12 @@
             <param name="uuid"></param>
             <param name="retrieveType"></param>
             <returns></returns>
+        </member>
+        <member name="M:sl.Fusion.GetFusedPositionalTrackingStatus">
+            <summary>
+            Gets the current status of fused position.
+            </summary>
+            <returns> The current status of the tracking process.</returns>
         </member>
         <member name="M:sl.Fusion.DisablePositionalTracking">
             <summary>

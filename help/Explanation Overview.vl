@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.0" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="VL.Devices.ZED" CanvasType="FullCategory" />
     <!--
@@ -21,8 +21,8 @@
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="PCdxzigwxlKN3wqZ2yXaTR" Name="Input Type" Kind="InputPin" />
-            <Pin Id="HnQUnV7iLvAQGe3C7yGwOA" Name="Device ID" Kind="InputPin" />
+            <Pin Id="NWUcC8N77u4PBjiUNkMaLn" Name="Input Type" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BIJ9zMfc4CjOAQVAUr6TwA" Name="Device ID" Kind="InputPin" IsHidden="true" />
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
             <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="F2b0Zy2tHVdOybJOmLg8rN" Name="Depth Stabilization" Kind="InputPin" />
@@ -30,7 +30,7 @@
             <Pin Id="AZwT994qsmVMCdF8TwEeXF" Name="Units" Kind="InputPin" />
             <Pin Id="LNFFXelfUQ6QU8T98LNuCf" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="H44i2iAHmPNLhNv8hJZiNv" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="UwY9TuqAGtiPWWiXuBXvzh" Name="SVO Path" Kind="InputPin" />
+            <Pin Id="UwY9TuqAGtiPWWiXuBXvzh" Name="Filename" Kind="InputPin" />
             <Pin Id="A0Gv1NxHtv1ODiwpBjssJ7" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="IzMOs6cg1IBNpiivicmW9A" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
@@ -39,7 +39,6 @@
             <Pin Id="TNbzIZDA01WP8Evwav80fx" Name="Remove Saturated Areas" Kind="InputPin" />
             <Pin Id="Is9ixVd9ETcP3y0uktjv0a" Name="Enable Fill Mode" Kind="InputPin" />
             <Pin Id="BiawRsIQD3rL9qmgi9HibW" Name="Enabled" Kind="InputPin" />
-            <Pin Id="HcelAj5unesPkQNKqeUIZT" Name="HardwareReset" Kind="InputPin" />
             <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="Th6NTqRDmwRLORh3nIGYwN" Name="In Progress" Kind="OutputPin" />
@@ -48,7 +47,7 @@
             <Pin Id="CMKOPVcMzc6NRDphr9xEDm" Name="FOV" Kind="OutputPin" />
             <Pin Id="ViXPERZV8AJPjK78ulsJTY" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Node Bounds="131,385,69,19" Id="BH4ggMswtP3PSbknFImGJd">
+          <Node Bounds="131,382,69,19" Id="BH4ggMswtP3PSbknFImGJd">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ColorImage" />
@@ -60,7 +59,7 @@
             <Pin Id="IPCjoy9raM7MuJjvhkvTFs" Name="On Data" Kind="OutputPin" />
             <Pin Id="K29EZu8Jxa7QQ76ERG61Ib" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="227,385,71,19" Id="KWgZZajtqy5NzRCPtSASOY">
+          <Node Bounds="227,382,71,19" Id="KWgZZajtqy5NzRCPtSASOY">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
@@ -72,7 +71,7 @@
             <Pin Id="U44dfoRmL1tM4gb4n9taLv" Name="On Data" Kind="OutputPin" />
             <Pin Id="OCN9R3woTu0O3TEznnCj8t" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="325,385,185,19" Id="UDxeetzHzGsPowIjZ8u5mk">
+          <Node Bounds="325,382,185,19" Id="UDxeetzHzGsPowIjZ8u5mk">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Bodies" />
@@ -83,7 +82,7 @@
             <Pin Id="DczlOQcabtKLcOBDmb4ySe" Name="Body Tracking Model" Kind="InputPin" />
             <Pin Id="M7WYUDcsSxkPKZ39P5UTIk" Name="Body Tracking" Kind="InputPin" />
             <Pin Id="O68GkS3AGlENZjCLRwrEhB" Name="Body Fitting" Kind="InputPin" />
-            <Pin Id="SLVtD1v6mMMMiILkd35Q73" Name="Image Sync" Kind="InputPin" />
+            <Pin Id="Oi8YRotKelaO9Y6CHzaBmu" Name="Body Selection" Kind="InputPin" />
             <Pin Id="KcOpZT0e4wRN3hewfX71Fn" Name="Max Depth" Kind="InputPin" />
             <Pin Id="RYSJjTuk4b7NbPiSnEEqR2" Name="Compute Mask" Kind="InputPin" IsHidden="true" />
             <Pin Id="AGWptvCxCoZON5gLChU4MO" Name="Prediction Timeout" Kind="InputPin" IsHidden="true" />
@@ -95,24 +94,23 @@
             <Pin Id="Fcv0eeRoL8CQFjvpcYfxgf" Name="On Data" Kind="OutputPin" />
             <Pin Id="B0ZRyuEpNLuMcn83wugyq2" Name="Error Code" Kind="OutputPin" />
           </Node>
-          <Node Bounds="537,385,145,19" Id="HQRtbtWITNRNqVxv2LwM5l">
+          <Node Bounds="537,382,145,19" Id="HQRtbtWITNRNqVxv2LwM5l">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ZEDRecorder" />
+              <Choice Kind="ProcessAppFlag" Name="SVORecorder" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="UBdBb5wYmBXNTuFLgI2VGt" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LloqkkDaetCOBlGwv0LDp9" Name="Input" Kind="InputPin" />
-            <Pin Id="COu7WUekVLQLRP4MzkBJYA" Name="Path" Kind="InputPin" />
+            <Pin Id="COu7WUekVLQLRP4MzkBJYA" Name="Filename" Kind="InputPin" />
             <Pin Id="IppkIC7n6NGOTR46OVZe18" Name="Compression Mode" Kind="InputPin" />
             <Pin Id="AmHDknUnRaUP7ESvQKLvHb" Name="Bitrate" Kind="InputPin" />
             <Pin Id="S1bkgahkbAxNxChspghPr8" Name="Target FPS" Kind="InputPin" />
             <Pin Id="UpbkHOomji0N9lU3qRgDx4" Name="Transcode" Kind="InputPin" />
-            <Pin Id="BAkWV9yG8wlOId33t4DsaW" Name="Start Recording" Kind="InputPin" />
-            <Pin Id="QAKWsKkK2b6OpKh37VQbuY" Name="Stop Recording" Kind="InputPin" />
+            <Pin Id="BAkWV9yG8wlOId33t4DsaW" Name="Record" Kind="InputPin" />
             <Pin Id="CB0LSEt1fpzMFJGTscOrNx" Name="Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="LJWQZ74SPmEM4ckgp0inam" Bounds="116,160,199,41" ShowValueBox="true" isIOBox="true" Value="Requirements: &#xD;&#xA;- ZED SDK 4.0.7">
+          <Pad Id="LJWQZ74SPmEM4ckgp0inam" Bounds="116,160,199,41" ShowValueBox="true" isIOBox="true" Value="Requirements: &#xD;&#xA;- ZED SDK 4.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -130,18 +128,30 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="709,385,113,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
+          <Node Bounds="709,382,113,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SVOPlaybackControls" />
+              <Choice Kind="ProcessAppFlag" Name="SVOPlayer" />
             </p:NodeReference>
             <Pin Id="LEjGd7iqwknMz1up9QNs3Q" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="C7OQYGBCChGQRFT6fgdfkq" Name="Input" Kind="InputPin" />
             <Pin Id="VHKT1UPBLIJQIhLuxAopnb" Name="Loop" Kind="InputPin" />
-            <Pin Id="As58ZMPuZPGNmI8qUCh25V" Name="Frame" Kind="InputPin" />
-            <Pin Id="AAMOTWA82uuNmCK8cozFIJ" Name="Jump To Frame" Kind="InputPin" />
+            <Pin Id="As58ZMPuZPGNmI8qUCh25V" Name="Seek Frame" Kind="InputPin" />
+            <Pin Id="AAMOTWA82uuNmCK8cozFIJ" Name="Seek" Kind="InputPin" />
             <Pin Id="UlIefcNgbwtLpQX9dMcJIx" Name="Number Of Frames" Kind="OutputPin" />
             <Pin Id="La5LsLEjVXSMjXj8PSdQVU" Name="Position" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="873,382,92,19" Id="LuqY6C4Pl3TLRW66iqdPQq">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Devices.ZED" />
+              <Choice Kind="ProcessAppFlag" Name="HardwareReboot" />
+            </p:NodeReference>
+            <Pin Id="SNHOBJyZAkVLfXekclSTAm" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BmE9AhCNrGQMfhlOGLIwBN" Name="Camera" Kind="InputPin" />
+            <Pin Id="D7qhmtiskKvPyreGxP0zY1" Name="Full Reboot" Kind="InputPin" />
+            <Pin Id="P0hY8vKiNm3N6dIZBqlIq4" Name="Reboot" Kind="InputPin" />
+            <Pin Id="P3BRkOT23RJOMiVoJsqf1o" Name="Result" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
@@ -155,10 +165,11 @@
         <Link Id="MtkiVWZ0VvhNCnQhhM6YRM" Ids="OCopLXplHzHNBSx7L7SAP2,J7pm92lVCdNLEZvHMS7q5K" />
         <Link Id="OAoCV0eNnKAQB0YKdtxfyP" Ids="OCopLXplHzHNBSx7L7SAP2,LloqkkDaetCOBlGwv0LDp9" />
         <Link Id="EknIVA7U7ZEMYQqBgzhQUT" Ids="OCopLXplHzHNBSx7L7SAP2,C7OQYGBCChGQRFT6fgdfkq" />
+        <Link Id="Txp9DxMh1TDLvHbHfjfjom" Ids="OCopLXplHzHNBSx7L7SAP2,BmE9AhCNrGQMfhlOGLIwBN" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.0" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.0" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.5-0027-gc8226ab3ea" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
