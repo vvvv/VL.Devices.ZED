@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -42,7 +42,7 @@
             <Pin Id="VeGG2HfpJL1QKXHqi1X6yE" Name="Output" Kind="StateOutputPin" />
             <Pin Id="LIl9zNC62zlLM1wmMVcup0" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="KLr2X0NEY9vPMbDqLQvcHa" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="T891ZUzyV12PsFjmmVMgCs" Name="Image Resolution" Kind="OutputPin" />
+            <Pin Id="HB1hp90PpoIOoQVsnhwr8b" Name="Resolution" Kind="OutputPin" />
             <Pin Id="LKfvOjsLRMQOcifJGfaCCa" Name="FPS" Kind="OutputPin" />
             <Pin Id="Vcv3cpI6qroNWDLi1MJHXp" Name="FOV" Kind="OutputPin" />
             <Pin Id="CPdMP7b9At0QF5Wk6FnXJO" Name="Is Open" Kind="OutputPin" />
@@ -133,7 +133,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UKcSDVTHj4YL9fu4vH9lMZ" Bounds="511,232,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Accurancy of the detection. Using a model for the first time requires its optimization - the application will freez during this process for up to a few minutes!">
+          <Pad Id="UKcSDVTHj4YL9fu4vH9lMZ" Bounds="511,232,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Accuracy of the detection. Using a model for the first time requires its optimization - the application will freeze during this process for up to a few minutes!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -160,7 +160,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VqXJY644bQCMulSgFjrqmH" Bounds="632,606,361,42" ShowValueBox="true" isIOBox="true" Value="&lt; Smoothes the skeleton data, but increases latency.&#xD;&#xA;It is ranged from 0 (low smoothing) to 1 (high smoothing).">
+          <Pad Id="VqXJY644bQCMulSgFjrqmH" Bounds="632,606,361,42" ShowValueBox="true" isIOBox="true" Value="&lt; Smoothes the skeleton data, but increases latency.&#xD;&#xA;Ranging from 0 (low smoothing) to 1 (high smoothing).">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -406,7 +406,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LEC418zJjpnMd1NC34scg0" Bounds="751,795,588,19" ShowValueBox="true" isIOBox="true" Value="Be avare, the enum you choose must corespond with 'Body Format' setting in the 'Bodies' node.">
+          <Pad Id="LEC418zJjpnMd1NC34scg0" Bounds="751,795,444,38" ShowValueBox="true" isIOBox="true" Value="NOTE: the enum you choose must corespond to the 'Body Format' setting on the 'Bodies' node.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -423,7 +423,7 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Qzjvwx4FAnjNVnmjKMLPUL" Bounds="549,395,392,19" ShowValueBox="true" isIOBox="true" Value="&lt; Selection of keypoints to be outputted by the ZED SDK">
+          <Pad Id="Qzjvwx4FAnjNVnmjKMLPUL" Bounds="549,395,392,19" ShowValueBox="true" isIOBox="true" Value="&lt; Selection of keypoints to be returned">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
-  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Ca1FWML8Y4NNnBwT8mp88l" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="LYkBaflR8WcM0PuhgLPFCu" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="TrMr5Ih04d4PbP24GCmHM0">
     <Canvas Id="PV3L9SVePlwOZngqOr5LBs" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -42,7 +42,7 @@
             <Pin Id="Oc1z8tuOk3VNgornHbsRG9" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Ag0TzYgbCcRLbdyNUukf61" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="DzG4aEegpXwPa7IUUkU9jA" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="OE1n7CWqnrtLgMxEoW8GKD" Name="Image Resolution" Kind="OutputPin" />
+            <Pin Id="IY2e4TEXaDCNY31NDSazev" Name="Resolution" Kind="OutputPin" />
             <Pin Id="HbgfTHMUGLEPw5vdBdvq1O" Name="FPS" Kind="OutputPin" />
             <Pin Id="QNMOQJQ1qOGOZK1QmEMdmc" Name="FOV" Kind="OutputPin" />
             <Pin Id="Jofb3vh5rckNDkinO6sVof" Name="Is Open" Kind="OutputPin" />
@@ -107,7 +107,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KgKxWKzNkuJOBgtqIvuvCY" Bounds="513,262,275,44" ShowValueBox="true" isIOBox="true" Value="You can use SVOPlaybackControls node for editional control of the playback. ">
+          <Pad Id="KgKxWKzNkuJOBgtqIvuvCY" Bounds="513,262,275,44" ShowValueBox="true" isIOBox="true" Value="You can use the SVOPlayer node for additional control of the playback. ">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -116,7 +116,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LWKTnrTUbSUMutuzkKD1Nm" Bounds="119,420,246,45" ShowValueBox="true" isIOBox="true" Value="With this node you can record videos into SVO files from live camera source.">
+          <Pad Id="LWKTnrTUbSUMutuzkKD1Nm" Bounds="119,420,246,45" ShowValueBox="true" isIOBox="true" Value="With this node you can record videos into SVO files.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

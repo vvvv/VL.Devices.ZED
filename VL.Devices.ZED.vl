@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.5" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
     <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
@@ -1121,20 +1121,20 @@
               </p:TypeAnnotation>
             </Pin>
           </Patch>
-          <Patch Id="GMGVjCDEHEfOaLLTL1wdX9" Name="GetFOV">
+          <Patch Id="GMGVjCDEHEfOaLLTL1wdX9" Name="FOV (Advanced)">
             <Pin Id="Ku2oMKFy65QPwNKP3EKoiW" Name="FOV" Kind="OutputPin" Bounds="79,805" />
           </Patch>
-          <Patch Id="JVpg80vaOSXQXtTPHgnc8i" Name="GetIsOpen">
+          <Patch Id="JVpg80vaOSXQXtTPHgnc8i" Name="IsOpen (Advanced)">
             <Pin Id="JFdzSOvuyDAQQSXbWA7PkH" Name="Is Open" Kind="OutputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
           </Patch>
-          <Patch Id="KVqL4LxfqagPAzKcNr1aEr" Name="GetResolution">
-            <Pin Id="HmwO9tVPc7PQNMYM943I7K" Name="Image Resolution" Kind="OutputPin" />
+          <Patch Id="KVqL4LxfqagPAzKcNr1aEr" Name="Resolution (Advanced)">
+            <Pin Id="HmwO9tVPc7PQNMYM943I7K" Name="Resolution" Kind="OutputPin" />
           </Patch>
-          <Patch Id="RTPBwQpdkXDOVPgRiE34PU" Name="GetCameraFPS">
+          <Patch Id="RTPBwQpdkXDOVPgRiE34PU" Name="FPS (Advanced)">
             <Pin Id="MbSTO3hkVDmMg8O7CaaFYT" Name="FPS" Kind="OutputPin" />
           </Patch>
           <Patch Id="QbUJxhekrmJNPEGt1kPPJu" Name="GetSVORealtimeMode (Internal)">
@@ -1264,11 +1264,11 @@
               <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="ZED" />
-                <Choice Kind="OperationCallFlag" Name="GetResolution" />
+                <Choice Kind="OperationCallFlag" Name="Resolution" />
               </p:NodeReference>
               <Pin Id="NTtlKMnDQqBOmyEsze1Jqk" Name="Input" Kind="StateInputPin" />
               <Pin Id="Gxt4lmIWrJlQZ2eFgn0dpL" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="L6CCklX3ibYNyzGxACl8Q2" Name="Image Resolution" Kind="OutputPin" />
+              <Pin Id="L6CCklX3ibYNyzGxACl8Q2" Name="Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="922,425,255,207" Id="GpZiaHIJ2fcL6t9XNNez9L">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -1972,11 +1972,11 @@
               <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="ZED" />
-                <Choice Kind="OperationCallFlag" Name="GetResolution" />
+                <Choice Kind="OperationCallFlag" Name="Resolution" />
               </p:NodeReference>
               <Pin Id="ECfnmtaNsQaN8rTw1W6XNP" Name="Input" Kind="StateInputPin" />
               <Pin Id="GYdHlleC9BePFjUx2gE43h" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="JklK9DYI8d4ONwlvzf0DYC" Name="Image Resolution" Kind="OutputPin" />
+              <Pin Id="JklK9DYI8d4ONwlvzf0DYC" Name="Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="623,1687,75,19" Id="RB5BJPvI7wxMwmWLdHfrBy">
               <p:NodeReference LastCategoryFullName="Primitive.Int2" LastDependency="VL.CoreLib.vl">
@@ -2286,11 +2286,11 @@
               <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="ZED" />
-                <Choice Kind="OperationCallFlag" Name="GetResolution" />
+                <Choice Kind="OperationCallFlag" Name="Resolution" />
               </p:NodeReference>
               <Pin Id="LmUusyeZj1ROZOAVwm6MgI" Name="Input" Kind="StateInputPin" />
               <Pin Id="HTuqgkPNHRKOu6DkeEPngO" Name="Output" Kind="StateOutputPin" />
-              <Pin Id="NERi50uIAo6NfTXsFemZBL" Name="Image Resolution" Kind="OutputPin" />
+              <Pin Id="NERi50uIAo6NfTXsFemZBL" Name="Resolution" Kind="OutputPin" />
             </Node>
             <Node Bounds="606,476,255,206" Id="F3Smgx9pezMNmVB0UQQk3p">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -4275,7 +4275,7 @@
               <p:NodeReference LastCategoryFullName="Devices.ZED.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="ZED" />
-                <Choice Kind="OperationCallFlag" Name="GetIsOpen" />
+                <Choice Kind="OperationCallFlag" Name="IsOpen" />
               </p:NodeReference>
               <Pin Id="A5VzuDLOhouNboHdpdNBGk" Name="Input" Kind="StateInputPin" />
               <Pin Id="DeyCcl2f4KwMYDAdq6f33C" Name="Output" Kind="StateOutputPin" />
@@ -5079,11 +5079,6 @@
             <ControlPoint Id="J0qP6XNXItLPn07DYvwDX3" Bounds="681,396" />
             <ControlPoint Id="T7EWaj0aAkHQBCv4nTSq6h" Bounds="757,406" />
             <ControlPoint Id="KOqMzFrMazYPnx9B29wLYl" Bounds="834,377" />
-            <Pad Id="VpcMAL340NAPEw2VFWIixK" Comment="" Bounds="567,501,257,15" ShowValueBox="true" isIOBox="true" Value="ERROR_CODE_LAST">
-              <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="Stereolabs.zed.dll">
-                <Choice Kind="TypeFlag" Name="ERROR_CODE" />
-              </p:TypeAnnotation>
-            </Pad>
             <Node Bounds="385,459,37,19" Id="KrijaHgfL9sO8cM2jfdfam">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5126,7 +5121,7 @@
               <Pin Id="SfVp44v11XdO3XOYvjq82E" Name="Input 2" Kind="InputPin" />
               <Pin Id="IXk5NgIZNjeNPQ1ZkNd9js" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="IbEp7L8zqjeP5L9AGgJwZC" Bounds="870,656" />
+            <ControlPoint Id="IbEp7L8zqjeP5L9AGgJwZC" Bounds="869,674" />
             <Node Bounds="1053,443,56,19" Id="LuKRlDtydJLN8Zg6Wo2YDs">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -5139,6 +5134,8 @@
               <Pin Id="SJuR3Bu0EovPQ8I79XbGf4" Name="Down Edge" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="PARTJy6GBmcO22I1NtZMcC" Bounds="1107,699" />
+            <Pad Id="NCJuDfS2ApCQdBd96Pq5DZ" SlotId="UnLXLRqCQmhOOSMJMIv22p" Bounds="611,494" />
+            <Pad Id="UfJJsy9rxwoPMNxb5YmOYE" SlotId="UnLXLRqCQmhOOSMJMIv22p" Bounds="871,637" />
           </Canvas>
           <ProcessDefinition Id="KEG3r2vjwVcNnpYcLJas5i">
             <Fragment Id="GE057fIZr35NW3f2Ybtk0u" Patch="LmW6ccyRk0NPpnxDmNutpW" Enabled="true" />
@@ -5162,7 +5159,6 @@
           <Link Id="Jet8mMYjpuaMcF9UtRMbU7" Ids="KOqMzFrMazYPnx9B29wLYl,DtGXrQDuHlyNm5ssAJwAEg" />
           <Link Id="JWy4uXJ4wAcLKMSonQ2Q0w" Ids="BNjd4MKQ9h0PmaQZuTwp7e,KOqMzFrMazYPnx9B29wLYl" IsHidden="true" />
           <Link Id="ISeu93S8wgtLf9s9MsMWcc" Ids="ETTEV3Y0XoCPUK5oMUy41L,Iitv7rB0fWgPaQ5Vinvhdg" IsFeedback="true" />
-          <Link Id="NrFku9IoT9YPtW6kP0nglC" Ids="VpcMAL340NAPEw2VFWIixK,ETTEV3Y0XoCPUK5oMUy41L" />
           <Link Id="FyyQQus6KQINUgqkxjBe9m" Ids="OyjuFMlLOJxNuxLgSIVhqN,SqZJH9OLjS8L2R7F2hXMeY" IsHidden="true" />
           <Link Id="OMi50hFo3lLN1iB9v1uJSQ" Ids="UwjBQrBRhVNNHGD7bEShwg,BWPlhzWn9TtPGwoy6SrB4F" />
           <Link Id="LnREwU9l1V8QaHqkQmZ5Ch" Ids="MHd2dBLlxcUMkVtmWO3aBl,H8X1YwRumvrMFbpqs16m0E" />
@@ -5171,7 +5167,7 @@
           <Link Id="A4fT21HVQw7PN0zqs4Wvaf" Ids="VPfvHtoJDvFO0P65wiQ2v5,MTtsPwDggwyNKCku1OvKEK" />
           <Link Id="FVuP4BQuPQ4PpPwMZcoAAJ" Ids="OMqKokOL3WRNQZ41QpyiTg,U30yaGhuTS6N8eHIejTGW4" />
           <Link Id="GspaeIXC97mQO7NRqSZN3z" Ids="FiXlxJdkODJLfsiIYSGi8z,Iitv7rB0fWgPaQ5Vinvhdg" />
-          <Link Id="O8hv9A76rYnL3PMuQ5K1Lh" Ids="Iitv7rB0fWgPaQ5Vinvhdg,IbEp7L8zqjeP5L9AGgJwZC" />
+          <Link Id="O8hv9A76rYnL3PMuQ5K1Lh" Ids="Iitv7rB0fWgPaQ5Vinvhdg,UfJJsy9rxwoPMNxb5YmOYE" />
           <Link Id="Q4zlSJUUuMlPmnMnMsRc3w" Ids="IbEp7L8zqjeP5L9AGgJwZC,J9R3Q5yWclXPnFlWW8jY8w" IsHidden="true" />
           <Patch Id="LmW6ccyRk0NPpnxDmNutpW" Name="Create" />
           <Patch Id="Q0QlyZcNoKCPmA9OLurp6J" Name="Update">
@@ -5194,6 +5190,9 @@
           <Link Id="RHnXmAoTsj9NGBiToqTMjr" Ids="C3rGSl90nKtOApGyubQgSq,VBWVHTdWuGfMEAb17wMRN5" />
           <Link Id="C9wAvyVSKQDNtFt8Rkrz4v" Ids="SJuR3Bu0EovPQ8I79XbGf4,PARTJy6GBmcO22I1NtZMcC,SfVp44v11XdO3XOYvjq82E" />
           <Link Id="KrXsGxE6n9aMlCQ7ZGNSmH" Ids="IXk5NgIZNjeNPQ1ZkNd9js,FbiDWDEa4R4MPNnA1RFy5v" />
+          <Slot Id="UnLXLRqCQmhOOSMJMIv22p" Name="Error" />
+          <Link Id="IUqUeXUyW4UOSBoK4l5IgM" Ids="NCJuDfS2ApCQdBd96Pq5DZ,ETTEV3Y0XoCPUK5oMUy41L" />
+          <Link Id="O4VK88swjMWO07wBsvTOjc" Ids="UfJJsy9rxwoPMNxb5YmOYE,IbEp7L8zqjeP5L9AGgJwZC" />
         </Patch>
       </Node>
       <!--
@@ -6030,11 +6029,11 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.5-0027-gc8226ab3ea" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.5" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.5" />
   <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
-  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.5-0027-gc8226ab3ea" />
+  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.5" />
   <PlatformDependency Id="KC86hcCJjyKLPPvdLwHEq4" Location="./lib/net6.0/Stereolabs.zed.dll" />
 </Document>

@@ -2,18 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.ZED</id>
-    <!-- For more about versions see: https://thegraybook.vvvv.org/reference/extending/publishing.html#version -->
-    <version>0.6.0-alpha</version>
+    <version>0.7.0-alpha</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv group, m-box</authors>
     <owners>vvvv group</owners>
     <projectUrl>https://github.com/vvvv/VL.Devices.ZED</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>This library provides access to Stereolabs ZED cameras in VL</summary>
-    <description>This library provides access to Stereolabs ZED cameras in VL</description>
-    <tags>nuget</tags>
+    <description>Support for using ZED stereo cameras by Stereolabs with vvvv</description>
+    <tags>VL, camera, capture, video, depth, skeleton, body, tracking</tags>
 	<license type="expression">MIT</license>
 	<icon>icon\nugeticon.png</icon>
+	<readme>docs\README.md</readme>
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
@@ -22,5 +21,6 @@
     <file src="..\runtimes\**" target="runtimes\" exclude="" />
     <file src="..\lib\**" target="lib\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
+	<file src="..\README.md" target="docs\" />
   </files>
 </package>

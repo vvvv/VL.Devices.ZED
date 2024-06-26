@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.5-0027-gc8226ab3ea" Version="0.128">
-  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.5-0027-gc8226ab3ea" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.5" Version="0.128">
+  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.5" />
   <Patch Id="Gp7agegJqjuO13S8huFRHR">
     <Canvas Id="RKGamdHA22KME8zdDZxxW1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,6 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="AEiYXWlFOccLctBho3rcuG" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="P5FskIIZIvLNTdrIMRgQps" Name="Input Type" Kind="InputPin" />
             <Pin Id="AwBt9zDSr8SLodjQtvFzZZ" Name="Device ID" Kind="InputPin" />
@@ -42,7 +43,7 @@
             <Pin Id="UkEhZMPk1zPLrn1kaohdXC" Name="Output" Kind="StateOutputPin" />
             <Pin Id="MrClE6bAzrpOjJzq6c51hC" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="KG06puL6hiiMVSZmebFn33" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="EvRffPmT9hvPzk07itRYVU" Name="Image Resolution" Kind="OutputPin" />
+            <Pin Id="AueLjEG9kOXNK6z4qgfxal" Name="Resolution" Kind="OutputPin" />
             <Pin Id="B1XJtr4f8F2LWmzIDiHaUz" Name="FPS" Kind="OutputPin" />
             <Pin Id="OSI2WU2Rt8vLSQpkKO7bNa" Name="FOV" Kind="OutputPin" />
             <Pin Id="MA1aiDR6Pn1Mpjyi7A6Eau" Name="Is Open" Kind="OutputPin" />
@@ -98,7 +99,7 @@
           <Overlay Id="IibpVjJySryMNf5F7SDyUP" Name="Runtime Parameters" Bounds="403,784,570,316">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Pad Id="VAqRONolbAqPnvvhf12Mkl" Comment="SVO Realtime Mode" Bounds="391,686,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="VAqRONolbAqPnvvhf12Mkl" Comment="SVO Realtime Mode" Bounds="391,686,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -198,7 +199,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NEKGVd62o17Nwqic5kNs0y" Bounds="400,294,375,19" ShowValueBox="true" isIOBox="true" Value="&lt; Level of details of depth. Directly effects the performance.">
+          <Pad Id="NEKGVd62o17Nwqic5kNs0y" Bounds="400,294,375,19" ShowValueBox="true" isIOBox="true" Value="&lt; Level of details of depth. Directly affects the performance">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -243,7 +244,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="522,880,239,19" ShowValueBox="true" isIOBox="true" Value="&lt; Enables depth recognition module">
+          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="522,880,261,20" ShowValueBox="true" isIOBox="true" Value="&lt; Enables the depth recognition module">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -261,7 +262,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="713,1224,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
+          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="250,1562,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -270,10 +271,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="215,1497,252,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="285,1454,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="354,1416,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="422,1384,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="214,1497,252,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="283,1454,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="352,1416,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="421,1384,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="490,1356,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="712,1153,229,19" ShowValueBox="true" isIOBox="true" Value="&lt; Turn camera on or off">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -365,7 +366,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="597,836,303,35" ShowValueBox="true" isIOBox="true" Value="&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
+          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="597,836,293,40" ShowValueBox="true" isIOBox="true" Value="&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -374,6 +375,18 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="143,1553,92,19" Id="Kd11BNqjBXCOAIsqjgn6Lb">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HardwareReboot" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="GVKcMDpNO7DMxvF01CGlaF" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="V7lzf934c35PWBuM6nBoWr" Name="Camera" Kind="InputPin" />
+            <Pin Id="VeHhsCoOQbpMLVQDJ0nqPj" Name="Full Reboot" Kind="InputPin" />
+            <Pin Id="SFFSnBOcKe3QXXeHFDniA7" Name="Reboot" Kind="InputPin" />
+            <Pin Id="IXdJo7wdorALAVjazOfKTL" Name="Result" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="Szz4bCyMdS2NY5Hm5L94ry" Name="Create" />
         <Patch Id="OKVJFzrs6TYMURmY9oi92Q" Name="Update" />
@@ -400,11 +413,12 @@
         <Link Id="REyK7QKGjnTMUOYDjBqHkD" Ids="AkqDoKG6RJGK9vPnGBEJ1t,AwBt9zDSr8SLodjQtvFzZZ" />
         <Link Id="EDfFBOMKI0YPJCRQiARvCD" Ids="Q8hbmSdg1tBMqL3sjYCUyx,P5FskIIZIvLNTdrIMRgQps" />
         <Link Id="O742tBf1yAVPfcrjTHImMZ" Ids="KG06puL6hiiMVSZmebFn33,FExCSEa6xf5OT2fVVgFM7V" />
-        <Link Id="QOSTE3hOmOFPxUr8d1payu" Ids="EvRffPmT9hvPzk07itRYVU,EybvVjrTiJbLM6hSiTX61P" />
         <Link Id="TujH3tDYVL8OKtoKkbxB3U" Ids="B1XJtr4f8F2LWmzIDiHaUz,QC3cbcw2CsAPjLm4jRvdW4" />
         <Link Id="LgihFkMS9URQZBQMBQvcqz" Ids="OSI2WU2Rt8vLSQpkKO7bNa,QCjsI70yrZ7LhFsNsOvHUi" />
         <Link Id="GxHsWCcDINfQd7Ae9uzF4y" Ids="VAqRONolbAqPnvvhf12Mkl,ERpoZc9MLYcNpz7RhAnZ5S" />
         <Link Id="IJGmck4xZaZNuCAViVpQaq" Ids="MrClE6bAzrpOjJzq6c51hC,HItDglewWf0QVIF2YWFAii" />
+        <Link Id="OqAE7UAntjSPIHlIlQE1wD" Ids="UkEhZMPk1zPLrn1kaohdXC,V7lzf934c35PWBuM6nBoWr" />
+        <Link Id="JaeR5SVKqp1OOjgm7Oc59u" Ids="AueLjEG9kOXNK6z4qgfxal,EybvVjrTiJbLM6hSiTX61P" />
       </Patch>
     </Node>
   </Patch>
