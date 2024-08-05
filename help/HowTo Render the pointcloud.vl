@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.5" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.7-0066-gfed05e1f37" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -154,15 +154,14 @@
       </p:NodeReference>
       <Patch Id="TcdacUwtXonNGyPwpWjZTe">
         <Canvas Id="IpqJ0tMO8dfM7zR8vb0sUE" CanvasType="Group">
-          <Node Bounds="165,175,365,19" Id="S0aj9FVzSIxMDGgLFraZ0S">
+          <Node Bounds="166,175,365,19" Id="S0aj9FVzSIxMDGgLFraZ0S">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LEE5JxHJ0j2PGIMrViC9im" Name="Input Type" Kind="InputPin" IsHidden="true" />
-            <Pin Id="E8XzkPDBmDwODnwkjFBzvJ" Name="Device ID" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BXqc1NKS8TLMpX10okxyas" Name="Device" Kind="InputPin" />
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
             <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="F2b0Zy2tHVdOybJOmLg8rN" Name="Depth Stabilization" Kind="InputPin" />
@@ -170,8 +169,6 @@
             <Pin Id="AZwT994qsmVMCdF8TwEeXF" Name="Units" Kind="InputPin" />
             <Pin Id="LNFFXelfUQ6QU8T98LNuCf" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="H44i2iAHmPNLhNv8hJZiNv" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="UwY9TuqAGtiPWWiXuBXvzh" Name="Filename" Kind="InputPin" />
-            <Pin Id="A0Gv1NxHtv1ODiwpBjssJ7" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="IzMOs6cg1IBNpiivicmW9A" Name="Reference Frame" Kind="InputPin" DefaultValue="WORLD" />
             <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
             <Pin Id="C1LoBBNpSiiQIYlLn2Wv2V" Name="Confidence Threshold" Kind="InputPin" />
@@ -182,12 +179,12 @@
             <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="IVMp4Sfnc5ROLteUzfsMTm" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="Th6NTqRDmwRLORh3nIGYwN" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="CUwwMikanSaM68a5ppXaR1" Name="Resolution" Kind="OutputPin" />
             <Pin Id="Lr3631Mz5IqLZjXaEfB4So" Name="FPS" Kind="OutputPin" />
             <Pin Id="CMKOPVcMzc6NRDphr9xEDm" Name="FOV" Kind="OutputPin" />
+            <Pin Id="CUwwMikanSaM68a5ppXaR1" Name="Resolution" Kind="OutputPin" />
             <Pin Id="ViXPERZV8AJPjK78ulsJTY" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Node Bounds="165,283,77,19" Id="KWgZZajtqy5NzRCPtSASOY">
+          <Node Bounds="166,343,77,19" Id="KWgZZajtqy5NzRCPtSASOY">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DepthImage" />
@@ -199,8 +196,8 @@
             <Pin Id="U44dfoRmL1tM4gb4n9taLv" Name="On Data" Kind="OutputPin" />
             <Pin Id="OCN9R3woTu0O3TEznnCj8t" Name="Last Error" Kind="OutputPin" />
           </Node>
-          <Pad Id="S36nWG251fWLxYsutYyOK3" Comment="Last Error" Bounds="239,337,252,15" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="165,392,75,19" Id="IpdD4F8aTRPNcII73t0SiS">
+          <Pad Id="S36nWG251fWLxYsutYyOK3" Comment="Last Error" Bounds="240,397,252,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="166,452,75,19" Id="IpdD4F8aTRPNcII73t0SiS">
             <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="Explanation Render the pointcloud.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="CameraMesh" />
@@ -210,12 +207,12 @@
             <Pin Id="IdXogaC0p3RLD03hP9sDSI" Name="Resolution" Kind="InputPin" />
             <Pin Id="KngjqQBMVFGMzVTRxZw86X" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="BokOoTTyRwiOLMdAqim60v" Comment="Measure" Bounds="239,248,130,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
+          <Pad Id="BokOoTTyRwiOLMdAqim60v" Comment="Measure" Bounds="240,308,130,15" ShowValueBox="true" isIOBox="true" Value="XYZRGBA">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="MEASURE" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="165,496,105,19" Id="I2kZOgI7bA6LZqFfSfrzkA">
+          <Node Bounds="166,556,105,19" Id="I2kZOgI7bA6LZqFfSfrzkA">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
@@ -231,7 +228,7 @@
             <Pin Id="FHlny6KXU3DNSVCAIJZtCx" Name="Enabled" Kind="InputPin" />
             <Pin Id="PRL2HL8jDyXQVGK4NGZriT" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="185,465,185,19" Id="MiFQj0XafgrPDHwUKpEtKd">
+          <Node Bounds="186,525,185,19" Id="MiFQj0XafgrPDHwUKpEtKd">
             <p:NodeReference LastCategoryFullName="Stride.Lights" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DirectionalLight" />
@@ -250,14 +247,14 @@
             <Pin Id="PrWpVtnTCVrNEdnVS6aa4t" Name="Show Helper" Kind="InputPin" IsHidden="true" />
             <Pin Id="Rv3vi56qaLHPTV7TNFgxyD" Name="Entity" Kind="OutputPin" />
           </Node>
-          <Node Bounds="125,598,245,19" Id="Rb7UlBN38AmNXnA5ZcYzli">
+          <Node Bounds="126,658,245,19" Id="Rb7UlBN38AmNXnA5ZcYzli">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="Jk54kot96KLOG6ehj7iqJz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1000, 40, 786, 432">
+            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1641, 85, 786, 432">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -299,9 +296,24 @@
             <Pin Id="LeejVHSqhlZQL4QcKreoGe" Name="Back Buffer" Kind="OutputPin" />
             <Pin Id="JNGeV3YjtcBMbljI9EBTx6" Name="Depth Buffer" Kind="OutputPin" />
           </Node>
-          <Pad Id="I7PDzR9FipQMp8gaI2DsVo" Comment="Clear Color" Bounds="248,574,136,15" ShowValueBox="true" isIOBox="true" Value="0.535294, 0.535294, 0.535294, 1">
+          <Pad Id="I7PDzR9FipQMp8gaI2DsVo" Comment="Clear Color" Bounds="248,633,136,15" ShowValueBox="true" isIOBox="true" Value="0.535294, 0.535294, 0.535294, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="T7ij84zGAXvLF3HugHoHGy" Comment="Is Open" Bounds="527,219,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FeS0pFfveLUNmhTAjudSYl" Comment="In Progress" Bounds="287,236,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="KTp9F8FigZ2LguSWj3eQbA" Comment="Enabled" Bounds="527,129,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Q4XT5fBeTxhLpVVPCSfz14" Comment="Device" Bounds="168,121,100,15" ShowValueBox="true" isIOBox="true" Value="Default">
+            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="TypeFlag" Name="ZEDDevice" />
             </p:TypeAnnotation>
           </Pad>
         </Canvas>
@@ -320,10 +332,14 @@
         <Link Id="B5QsI9fYQOOP1g7xJjL9UO" Ids="I7PDzR9FipQMp8gaI2DsVo,NsaUgBwsspvLCM8kidMgd6" />
         <Link Id="LYaoKAI1aCNObdETCY3nwU" Ids="KngjqQBMVFGMzVTRxZw86X,Eqp6ZVtp17HM2ub6H7rr02" />
         <Link Id="LuIUIvT1gprQK3LtO6RhIx" Ids="Rv3vi56qaLHPTV7TNFgxyD,OhnaWMhHj1TLJpDK3VC2mj" />
+        <Link Id="VHaslZZUj8fPOWuXJXT3tN" Ids="ViXPERZV8AJPjK78ulsJTY,T7ij84zGAXvLF3HugHoHGy" />
+        <Link Id="NFwNCjmLBXHPib7mZLIN77" Ids="Th6NTqRDmwRLORh3nIGYwN,FeS0pFfveLUNmhTAjudSYl" />
+        <Link Id="LUpt7kV5Tj6LuJIymCijOL" Ids="KTp9F8FigZ2LguSWj3eQbA,BiawRsIQD3rL9qmgi9HibW" />
+        <Link Id="C7ICnrOxb6VO8UMpjnIYtq" Ids="Q4XT5fBeTxhLpVVPCSfz14,BXqc1NKS8TLMpX10okxyas" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.5" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.5" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0066-gfed05e1f37" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0066-gfed05e1f37" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
