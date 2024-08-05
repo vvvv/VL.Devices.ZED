@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.5" Version="0.128">
-  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.5" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.7-0066-gfed05e1f37" Version="0.128">
+  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.7-0066-gfed05e1f37" />
   <Patch Id="Gp7agegJqjuO13S8huFRHR">
     <Canvas Id="RKGamdHA22KME8zdDZxxW1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="AkSgZJmgpNAPxGFkkELyHo">
         <Canvas Id="Ku6aXzwNN2JM0VQlCfLMST" CanvasType="Group">
-          <Node Bounds="143,1281,419,19" Id="CAlSHjtXKwFPNhodiPU8sA">
+          <Node Bounds="143,1011,355,19" Id="CAlSHjtXKwFPNhodiPU8sA">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
@@ -31,8 +31,6 @@
             <Pin Id="QOLgyi0jwyHOhK3OIGZdUd" Name="Units" Kind="InputPin" />
             <Pin Id="Kn29Qs1NJmCLhtBeSLP06z" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="UpKZTwTuRUxQKSwzU1RRgS" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="TvgssY6iVu7MICA4tOpqp8" Name="Filename" Kind="InputPin" />
-            <Pin Id="ERpoZc9MLYcNpz7RhAnZ5S" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="OtaWKsqXBq2N3ChqkBImSv" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="VwNJNqVy66SMZp2WUNooKR" Name="Depth" Kind="InputPin" />
             <Pin Id="S5dXrSQ93FhQVKSjKIfoEt" Name="Confidence Threshold" Kind="InputPin" />
@@ -43,13 +41,13 @@
             <Pin Id="UkEhZMPk1zPLrn1kaohdXC" Name="Output" Kind="StateOutputPin" />
             <Pin Id="MrClE6bAzrpOjJzq6c51hC" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="KG06puL6hiiMVSZmebFn33" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="AueLjEG9kOXNK6z4qgfxal" Name="Resolution" Kind="OutputPin" />
             <Pin Id="B1XJtr4f8F2LWmzIDiHaUz" Name="FPS" Kind="OutputPin" />
             <Pin Id="OSI2WU2Rt8vLSQpkKO7bNa" Name="FOV" Kind="OutputPin" />
+            <Pin Id="AueLjEG9kOXNK6z4qgfxal" Name="Resolution" Kind="OutputPin" />
             <Pin Id="MA1aiDR6Pn1Mpjyi7A6Eau" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="GZsa6dr5XM3OYlXZYqy6tT" Comment="Is Open" Bounds="559,1322,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="CRtUJBOEvn8QalV5GhfTEl" Comment="Enabled" Bounds="559,1148,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GZsa6dr5XM3OYlXZYqy6tT" Comment="Is Open" Bounds="495,1054,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CRtUJBOEvn8QalV5GhfTEl" Comment="Enabled" Bounds="497,924,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -57,12 +55,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ryzzu1qCjDVLeM6wjxjacn" Comment="Reference Frame" Bounds="415,846,62,15" ShowValueBox="true" isIOBox="true" Value="WORLD">
+          <Pad Id="Ryzzu1qCjDVLeM6wjxjacn" Comment="Reference Frame" Bounds="358,628,62,15" ShowValueBox="true" isIOBox="true" Value="WORLD">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="REFERENCE_FRAME" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="HMLSL6EiHnEOQ8MCIJaIuJ" Comment="Depth" Bounds="438,878,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="HMLSL6EiHnEOQ8MCIJaIuJ" Comment="Depth" Bounds="381,660,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -70,17 +68,17 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="PIXBOr9pGdGNevhpfaIjtn" Comment="Confidence Threshold" Bounds="462,926,35,15" ShowValueBox="true" isIOBox="true" Value="100">
+          <Pad Id="PIXBOr9pGdGNevhpfaIjtn" Comment="Confidence Threshold" Bounds="405,708,35,15" ShowValueBox="true" isIOBox="true" Value="100">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Q9o8aEaCB8vMN6bh3cGPUl" Comment="Texture Confidence Threshold" Bounds="488,959,35,15" ShowValueBox="true" isIOBox="true" Value="100">
+          <Pad Id="Q9o8aEaCB8vMN6bh3cGPUl" Comment="Texture Confidence Threshold" Bounds="431,741,35,15" ShowValueBox="true" isIOBox="true" Value="100">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="ExDuZe965UQMDXumuRQ3uu" Comment="Remove Saturated Areas" Bounds="510,996,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="ExDuZe965UQMDXumuRQ3uu" Comment="Remove Saturated Areas" Bounds="453,778,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -88,7 +86,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Iuup70yjPugQamaRefzkMT" Comment="Enable Fill Mode" Bounds="536,1041,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="Iuup70yjPugQamaRefzkMT" Comment="Enable Fill Mode" Bounds="474,828,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -96,10 +94,10 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="IibpVjJySryMNf5F7SDyUP" Name="Runtime Parameters" Bounds="403,784,570,316">
+          <Overlay Id="IibpVjJySryMNf5F7SDyUP" Name="Runtime Parameters" Bounds="346,566,570,316">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
-          <Pad Id="VAqRONolbAqPnvvhf12Mkl" Comment="SVO Realtime Mode" Bounds="391,686,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="VAqRONolbAqPnvvhf12Mkl" Comment="SVO Realtime Mode" Bounds="903,1003,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -107,12 +105,12 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Coc5XuIAYxQL07Xfbv0O8y" Comment="Filename" Bounds="366,656,97,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="Coc5XuIAYxQL07Xfbv0O8y" Comment="Filename" Bounds="878,973,97,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="U5bev5pPncuNPYlnObeNkf" Name="Video Mode" Bounds="359,587,616,156">
+          <Overlay Id="U5bev5pPncuNPYlnObeNkf" Name="Video Mode" Bounds="842,908,586,211">
             <p:ColorIndex p:Type="Int32">11</p:ColorIndex>
           </Overlay>
           <Pad Id="L8lRE8U315lPMrgqkHnc6x" Comment="Image Flip" Bounds="337,506,50,15" ShowValueBox="true" isIOBox="true" Value="AUTO">
@@ -235,7 +233,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CtaSitVsy0TPvCXttDgEFA" Bounds="545,652,356,19" ShowValueBox="true" isIOBox="true" Value="&lt; Provide an *.svo video file for playing back recordings">
+          <Pad Id="CtaSitVsy0TPvCXttDgEFA" Bounds="1057,969,356,19" ShowValueBox="true" isIOBox="true" Value="&lt; Provide an *.svo video file for playing back recordings">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -244,7 +242,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="522,880,261,20" ShowValueBox="true" isIOBox="true" Value="&lt; Enables the depth recognition module">
+          <Pad Id="N9xuvepNZ8wPVICiwM7yHL" Bounds="465,662,261,20" ShowValueBox="true" isIOBox="true" Value="&lt; Enables the depth recognition module">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -253,7 +251,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QrCLBMnZTQ6P253IAxd9th" Bounds="660,1052,295,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether to fill the holes in depth map or not">
+          <Pad Id="QrCLBMnZTQ6P253IAxd9th" Bounds="603,834,295,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether to fill the holes in depth map or not">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -262,7 +260,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="250,1562,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
+          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="250,1352,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -271,12 +269,12 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="214,1497,252,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="283,1454,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="352,1416,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="421,1384,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="490,1356,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="712,1153,229,19" ShowValueBox="true" isIOBox="true" Value="&lt; Turn camera on or off">
+          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="201,1258,252,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="262,1211,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="436,1108,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="319,1177,38,16" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="379,1151,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="605,930,229,19" ShowValueBox="true" isIOBox="true" Value="&lt; Turn camera on or off">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -303,7 +301,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VPb3uemhhhtPTePtw2W69C" Bounds="536,695,344,38" ShowValueBox="true" isIOBox="true" Value="&lt; Defines whether a recording will be played in realtime or as fast as possible">
+          <Pad Id="VPb3uemhhhtPTePtw2W69C" Bounds="1048,1012,344,38" ShowValueBox="true" isIOBox="true" Value="&lt; Defines whether a recording will be played in realtime or as fast as possible">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -330,7 +328,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IQU13Hc3FcELATnuJuB0tU" Bounds="636,914,294,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their confidence">
+          <Pad Id="IQU13Hc3FcELATnuJuB0tU" Bounds="579,696,294,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their confidence">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -339,7 +337,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LEPtnb4ZcZzQZOo2PZ4wmO" Bounds="670,988,285,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their texture confidence">
+          <Pad Id="LEPtnb4ZcZzQZOo2PZ4wmO" Bounds="613,770,285,37" ShowValueBox="true" isIOBox="true" Value="&lt; Threshold to reject depth values based on their texture confidence">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -348,7 +346,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BlBKRA6f5KMPvWtYhkUjnN" Bounds="1012,807,72,19" ShowValueBox="true" isIOBox="true" Value="More info:">
+          <Pad Id="BlBKRA6f5KMPvWtYhkUjnN" Bounds="1012,582,72,19" ShowValueBox="true" isIOBox="true" Value="More info:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -357,7 +355,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UhEv5XaapIIQHUJHoZkesb" Bounds="1014,832,215,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/classsl_1_1RuntimeParameters.html">
+          <Pad Id="UhEv5XaapIIQHUJHoZkesb" Bounds="1014,607,215,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/classsl_1_1RuntimeParameters.html">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -366,7 +364,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="597,836,293,40" ShowValueBox="true" isIOBox="true" Value="&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
+          <Pad Id="F8FNMlT0XOTNdLLUsa2q3Q" Bounds="540,618,293,40" ShowValueBox="true" isIOBox="true" Value="&lt; Reference frame in which to provides the 3D measures (point cloud, normals, etc.).">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -375,7 +373,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="143,1553,92,19" Id="Kd11BNqjBXCOAIsqjgn6Lb">
+          <Node Bounds="143,1343,92,19" Id="Kd11BNqjBXCOAIsqjgn6Lb">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HardwareReboot" />
@@ -387,6 +385,53 @@
             <Pin Id="SFFSnBOcKe3QXXeHFDniA7" Name="Reboot" Kind="InputPin" />
             <Pin Id="IXdJo7wdorALAVjazOfKTL" Name="Result" Kind="OutputPin" />
           </Node>
+          <Node Bounds="875,1080,355,19" Id="LjcSBUOCbFZPQG9yj3DaDT">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ZEDPlayer" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="LvmWlM9fXicLwEQcS6bXuy" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JsyHyhdKSwHMSylHS8gOIo" Name="Device ID" Kind="InputPin" IsHidden="true" />
+            <Pin Id="UcOYD3qbhAaLO0TQEEaLhS" Name="Filename" Kind="InputPin" />
+            <Pin Id="MA0WLXo7d24LdFuWFY6wcE" Name="SVO Realtime Mode" Kind="InputPin" />
+            <Pin Id="IIgjgMNHlRCLIIqJJVzbqs" Name="Depth Mode" Kind="InputPin" />
+            <Pin Id="GWvGERzgqW1QAos0XVOvfR" Name="Depth Stabilization" Kind="InputPin" />
+            <Pin Id="F66cvTCU3nSPhPcmgxLOtt" Name="Image Enhancement" Kind="InputPin" />
+            <Pin Id="Jwj0Lqge6cNMf1heFjyHGQ" Name="Units" Kind="InputPin" />
+            <Pin Id="EKrSN02WazUMnFbCbMMBH7" Name="Coordinate System" Kind="InputPin" />
+            <Pin Id="NTQTNzALWo0MFe4JjjlP7d" Name="Image Flip" Kind="InputPin" />
+            <Pin Id="G2tSOK0BKfeNpn0oYDnkeA" Name="Reference Frame" Kind="InputPin" />
+            <Pin Id="V0Sk3UEavDfP453DlA5JWz" Name="Depth" Kind="InputPin" />
+            <Pin Id="S7BMZMsBJTSQN6HlitQD96" Name="Confidence Threshold" Kind="InputPin" />
+            <Pin Id="TuUk7BkziWfLf0wD9ai64s" Name="Texture Confidence Threshold" Kind="InputPin" />
+            <Pin Id="DbwAhnQQnHfPg8itj94v6M" Name="Remove Saturated Areas" Kind="InputPin" />
+            <Pin Id="B8m2V57R5dZQciqXX3udD4" Name="Enable Fill Mode" Kind="InputPin" />
+            <Pin Id="CzoXCDHpc6FMLxhEWKEKEK" Name="Enabled" Kind="InputPin" />
+            <Pin Id="CpBs19ggLa0LgM6fW7OfJN" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="KberSAZlbeoPUT4OEKKnTp" Name="Opening Error Code" Kind="OutputPin" />
+            <Pin Id="SKmH1MYbZc0QJr8SJUVBXi" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="OuPpiIUQ8z7MjYHPdIKTG6" Name="FPS" Kind="OutputPin" />
+            <Pin Id="PUnDCqoEYT0QagcYuG4RiJ" Name="FOV" Kind="OutputPin" />
+            <Pin Id="DLaNNydD2RXN7Q3fEDoHSG" Name="Resolution" Kind="OutputPin" />
+            <Pin Id="Sylya3t4K3YOcBQvoZikRV" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Pad Id="K6YkqPNFcW7Oev0SAYR2ny" Comment="Enabled" Bounds="1227,1061,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JQlAjhprrXuOAe8GbEylq1" Comment="Reboot" Bounds="232,1302,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="Szz4bCyMdS2NY5Hm5L94ry" Name="Create" />
         <Patch Id="OKVJFzrs6TYMURmY9oi92Q" Name="Update" />
@@ -402,7 +447,6 @@
         <Link Id="BZGwJB4zyKKNaVWH0UFgOE" Ids="Q9o8aEaCB8vMN6bh3cGPUl,TuZBEPoZNkKLQqV1IUtur1" />
         <Link Id="IRkwEOEzur5Oe9UvICHzoX" Ids="ExDuZe965UQMDXumuRQ3uu,JDkcSJw9k2vNFvYqwDwy9s" />
         <Link Id="UF96G6RU5jyMFE8Z9FhZ8y" Ids="Iuup70yjPugQamaRefzkMT,VNpdQgectpkQTN2GOfoFl0" />
-        <Link Id="FDJ7tSj0nfSP4vB9Wl1SXk" Ids="Coc5XuIAYxQL07Xfbv0O8y,TvgssY6iVu7MICA4tOpqp8" />
         <Link Id="Nseaj45MVUoOnkopQOlhyY" Ids="L8lRE8U315lPMrgqkHnc6x,UpKZTwTuRUxQKSwzU1RRgS" />
         <Link Id="OVpuyrYvbbnLOZuHUWZj6q" Ids="QmekTep83saLGSDFDQQSPi,Kn29Qs1NJmCLhtBeSLP06z" />
         <Link Id="IazFsGwg2CtP9MU9oINdPP" Ids="IwllGKxV5A7MywHI4xs5m3,QOLgyi0jwyHOhK3OIGZdUd" />
@@ -415,10 +459,13 @@
         <Link Id="O742tBf1yAVPfcrjTHImMZ" Ids="KG06puL6hiiMVSZmebFn33,FExCSEa6xf5OT2fVVgFM7V" />
         <Link Id="TujH3tDYVL8OKtoKkbxB3U" Ids="B1XJtr4f8F2LWmzIDiHaUz,QC3cbcw2CsAPjLm4jRvdW4" />
         <Link Id="LgihFkMS9URQZBQMBQvcqz" Ids="OSI2WU2Rt8vLSQpkKO7bNa,QCjsI70yrZ7LhFsNsOvHUi" />
-        <Link Id="GxHsWCcDINfQd7Ae9uzF4y" Ids="VAqRONolbAqPnvvhf12Mkl,ERpoZc9MLYcNpz7RhAnZ5S" />
         <Link Id="IJGmck4xZaZNuCAViVpQaq" Ids="MrClE6bAzrpOjJzq6c51hC,HItDglewWf0QVIF2YWFAii" />
         <Link Id="OqAE7UAntjSPIHlIlQE1wD" Ids="UkEhZMPk1zPLrn1kaohdXC,V7lzf934c35PWBuM6nBoWr" />
         <Link Id="JaeR5SVKqp1OOjgm7Oc59u" Ids="AueLjEG9kOXNK6z4qgfxal,EybvVjrTiJbLM6hSiTX61P" />
+        <Link Id="FHEJmKM8SFtMCaciVkqden" Ids="Coc5XuIAYxQL07Xfbv0O8y,UcOYD3qbhAaLO0TQEEaLhS" />
+        <Link Id="EoEhl94dykVOdUf2m1AMoJ" Ids="VAqRONolbAqPnvvhf12Mkl,MA0WLXo7d24LdFuWFY6wcE" />
+        <Link Id="NEDckPRIPIlNO89kpqEZps" Ids="K6YkqPNFcW7Oev0SAYR2ny,CzoXCDHpc6FMLxhEWKEKEK" />
+        <Link Id="V4pabVwaPHRNRhpCDhMj7E" Ids="JQlAjhprrXuOAe8GbEylq1,SFFSnBOcKe3QXXeHFDniA7" />
       </Patch>
     </Node>
   </Patch>

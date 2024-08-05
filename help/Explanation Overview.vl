@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.5" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.7-0066-gfed05e1f37" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -30,8 +30,6 @@
             <Pin Id="AZwT994qsmVMCdF8TwEeXF" Name="Units" Kind="InputPin" />
             <Pin Id="LNFFXelfUQ6QU8T98LNuCf" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="H44i2iAHmPNLhNv8hJZiNv" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="UwY9TuqAGtiPWWiXuBXvzh" Name="Filename" Kind="InputPin" />
-            <Pin Id="A0Gv1NxHtv1ODiwpBjssJ7" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="IzMOs6cg1IBNpiivicmW9A" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
             <Pin Id="C1LoBBNpSiiQIYlLn2Wv2V" Name="Confidence Threshold" Kind="InputPin" />
@@ -42,9 +40,9 @@
             <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
             <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="Th6NTqRDmwRLORh3nIGYwN" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="BKxbiklRLLpP5eOCqstySZ" Name="Resolution" Kind="OutputPin" />
             <Pin Id="Lr3631Mz5IqLZjXaEfB4So" Name="FPS" Kind="OutputPin" />
             <Pin Id="CMKOPVcMzc6NRDphr9xEDm" Name="FOV" Kind="OutputPin" />
+            <Pin Id="BKxbiklRLLpP5eOCqstySZ" Name="Resolution" Kind="OutputPin" />
             <Pin Id="ViXPERZV8AJPjK78ulsJTY" Name="Is Open" Kind="OutputPin" />
           </Node>
           <Node Bounds="131,382,69,19" Id="BH4ggMswtP3PSbknFImGJd">
@@ -128,7 +126,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="725,382,113,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
+          <Node Bounds="861,382,113,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SVOPlayer" />
@@ -141,7 +139,7 @@
             <Pin Id="UlIefcNgbwtLpQX9dMcJIx" Name="Number Of Frames" Kind="OutputPin" />
             <Pin Id="La5LsLEjVXSMjXj8PSdQVU" Name="Position" Kind="OutputPin" />
           </Node>
-          <Node Bounds="869,382,92,19" Id="LuqY6C4Pl3TLRW66iqdPQq">
+          <Node Bounds="721,382,92,19" Id="LuqY6C4Pl3TLRW66iqdPQq">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
@@ -152,6 +150,37 @@
             <Pin Id="D7qhmtiskKvPyreGxP0zY1" Name="Full Reboot" Kind="InputPin" />
             <Pin Id="P0hY8vKiNm3N6dIZBqlIq4" Name="Reboot" Kind="InputPin" />
             <Pin Id="P3BRkOT23RJOMiVoJsqf1o" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="861,273,305,19" Id="LCmjdZgge6dNwPq3wpsd3n">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="ZEDPlayer" />
+            </p:NodeReference>
+            <Pin Id="CP73a8MeMkMLwk6eaYRYwz" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RlEsSxt9dfCOksDG84D51z" Name="Device ID" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HGWR8aSC9UuPZO5YS9sPTH" Name="Filename" Kind="InputPin" />
+            <Pin Id="BWSSgfj9EsoNeGuk5jxF3C" Name="SVO Realtime Mode" Kind="InputPin" />
+            <Pin Id="QO7QrbINzAGNgcJx6rXIfG" Name="Depth Mode" Kind="InputPin" />
+            <Pin Id="JEbqBt4fRw3PhsoJkbN5lU" Name="Depth Stabilization" Kind="InputPin" />
+            <Pin Id="OizwkroAV9TP7xNmdzxiZG" Name="Image Enhancement" Kind="InputPin" />
+            <Pin Id="DncxKAD9djONTWPOnHt8Gp" Name="Units" Kind="InputPin" />
+            <Pin Id="S4VP79pEyKENllgoVDTDAO" Name="Coordinate System" Kind="InputPin" />
+            <Pin Id="N6AzfUpJHp1MDtBdWJdYuT" Name="Image Flip" Kind="InputPin" />
+            <Pin Id="Ie4pKtyMXPvNSflf1bMGT8" Name="Reference Frame" Kind="InputPin" />
+            <Pin Id="U7aqegA59XGQcBGK4m7Zfc" Name="Depth" Kind="InputPin" />
+            <Pin Id="SwOH7siXYoWK9hCGlz3IYx" Name="Confidence Threshold" Kind="InputPin" />
+            <Pin Id="MeaiM7maK5aPZPqOiJyKEy" Name="Texture Confidence Threshold" Kind="InputPin" />
+            <Pin Id="Opcnyeu6Yv2Pn40kST9k9M" Name="Remove Saturated Areas" Kind="InputPin" />
+            <Pin Id="BhazKInD91qNaO2SxkeYgj" Name="Enable Fill Mode" Kind="InputPin" />
+            <Pin Id="LDm8UEOTx4pPhV8Jmopjpu" Name="Enabled" Kind="InputPin" />
+            <Pin Id="JVfTRCX4EUsNWKrojgUxCH" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="J7l7WRfxLslNTLWxkjbPJR" Name="Opening Error Code" Kind="OutputPin" />
+            <Pin Id="MphOTe3K9huPPuWvpdy79t" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="Uf4TQErh84iP6jetY83nMl" Name="FPS" Kind="OutputPin" />
+            <Pin Id="Lmv0SIiRe0nNnAurmSv54k" Name="FOV" Kind="OutputPin" />
+            <Pin Id="Sf4LapIHrvVM6hyZEcaJRD" Name="Resolution" Kind="OutputPin" />
+            <Pin Id="A4KDGt0rxJHPuhWf2QowqP" Name="Is Open" Kind="OutputPin" />
           </Node>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
@@ -164,12 +193,12 @@
         <Link Id="M8Ficsf3XAwMoctktX1aIg" Ids="OCopLXplHzHNBSx7L7SAP2,Sq6pu4FnMQaON5eOL8APrD" />
         <Link Id="MtkiVWZ0VvhNCnQhhM6YRM" Ids="OCopLXplHzHNBSx7L7SAP2,J7pm92lVCdNLEZvHMS7q5K" />
         <Link Id="OAoCV0eNnKAQB0YKdtxfyP" Ids="OCopLXplHzHNBSx7L7SAP2,LloqkkDaetCOBlGwv0LDp9" />
-        <Link Id="EknIVA7U7ZEMYQqBgzhQUT" Ids="OCopLXplHzHNBSx7L7SAP2,C7OQYGBCChGQRFT6fgdfkq" />
         <Link Id="Txp9DxMh1TDLvHbHfjfjom" Ids="OCopLXplHzHNBSx7L7SAP2,BmE9AhCNrGQMfhlOGLIwBN" />
+        <Link Id="Tvh7WVI19Q6NdGgNPheqTt" Ids="JVfTRCX4EUsNWKrojgUxCH,C7OQYGBCChGQRFT6fgdfkq" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.5" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.5" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0066-gfed05e1f37" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0066-gfed05e1f37" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
