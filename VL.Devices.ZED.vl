@@ -1157,7 +1157,7 @@
           <Patch Id="HaDokwDGqnmQCwCLcwnhUY" Name="Create (Internal)" ParticipatingElements="AWqp2w9bB2zNsVRz3DjJYh" />
           <Patch Id="T74cQUQVBeiPENDiP6aZKd" Name="Dispose (Internal)" ParticipatingElements="Ll70HUV0mHRMZv7RmOHPdZ" />
           <Patch Id="IB7jXHE3Pt9OWUSr16lGu4" Name="Update (Internal)" ParticipatingElements="Sq9USFTdaDFNpoHlEABwMl" ManuallySortedPins="true">
-            <Pin Id="HXyCqh7I6KfMBdHFQE4ovl" Name="SDK GPU id" Kind="InputPin" DefaultValue="0" Visibility="Optional" Summary="By default the SDK will use the most powerful NVIDIA graphics card found. However, when running several applications, or using several cameras at the same time, splitting the load over available GPUs can be useful. Note: A non-positive value will search for all CUDA capable devices and select the most powerful." />
+            <Pin Id="HXyCqh7I6KfMBdHFQE4ovl" Name="SDK GPU id" Kind="InputPin" DefaultValue="-1" Visibility="Optional" Summary="By default the SDK will use the most powerful NVIDIA graphics card found. However, when running several applications, or using several cameras at the same time, splitting the load over available GPUs can be useful. Note: A non-positive value will search for all CUDA capable devices and select the most powerful." />
             <Pin Id="PMtAU00tpqdL4vpEKuRcv4" Name="Device" Kind="InputPin" DefaultValue="Default">
               <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                 <Choice Kind="TypeFlag" Name="ZEDDevice" />
