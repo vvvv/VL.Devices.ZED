@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.5" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.5" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.7-0113-ga9b832a275" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.7-0113-ga9b832a275" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -21,8 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="ZED" />
             </p:NodeReference>
             <Pin Id="OVVzXwN6OssOhTxu5Joz1P" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="R2b4fxbn4mYPwWXZmpOQsm" Name="Input Type" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BuKf5ZEtgqmMDQzPAkSjVA" Name="Device ID" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PTTxiSRwfnIMMUmcpxI6pS" Name="Device" Kind="InputPin" />
             <Pin Id="Iun79RxKOwMQXyau0bEwJk" Name="Resolution" Kind="InputPin" />
             <Pin Id="AaDI4PEXr1cMXaCLrmwKow" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="OcnvfdDfnX7MvUIeKFlB70" Name="Depth Stabilization" Kind="InputPin" />
@@ -30,8 +29,6 @@
             <Pin Id="VYgxBiY1AtEOJJBWsxcayV" Name="Units" Kind="InputPin" />
             <Pin Id="F9ky8WjBx2APE40QWJgYbs" Name="Coordinate System" Kind="InputPin" />
             <Pin Id="ANckwtfQNZ3NQsZ8nLPE3F" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="TtyZw0NSeCWOAAkw7afXX6" Name="Filename" Kind="InputPin" />
-            <Pin Id="DMZofzFFI0PL0PXENr8AZd" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="KzCKg4HbVzBMOqXk7cCls1" Name="Reference Frame" Kind="InputPin" />
             <Pin Id="TSP1EibZxBhLIUXhbvRQQx" Name="Depth" Kind="InputPin" />
             <Pin Id="DjNLSBlxwUCQTABlLOH5Qd" Name="Confidence Threshold" Kind="InputPin" />
@@ -42,9 +39,9 @@
             <Pin Id="VeGG2HfpJL1QKXHqi1X6yE" Name="Output" Kind="StateOutputPin" />
             <Pin Id="LIl9zNC62zlLM1wmMVcup0" Name="Opening Error Code" Kind="OutputPin" />
             <Pin Id="KLr2X0NEY9vPMbDqLQvcHa" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="HB1hp90PpoIOoQVsnhwr8b" Name="Resolution" Kind="OutputPin" />
             <Pin Id="LKfvOjsLRMQOcifJGfaCCa" Name="FPS" Kind="OutputPin" />
             <Pin Id="Vcv3cpI6qroNWDLi1MJHXp" Name="FOV" Kind="OutputPin" />
+            <Pin Id="HB1hp90PpoIOoQVsnhwr8b" Name="Resolution" Kind="OutputPin" />
             <Pin Id="CPdMP7b9At0QF5Wk6FnXJO" Name="Is Open" Kind="OutputPin" />
           </Node>
           <Node Bounds="179,686,347,19" Id="MTW5TOtyiQhLpbkhaSfXQU">
@@ -432,6 +429,20 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="-231,468,69,19" Id="QvqWVG6taVLMeONf2NNw0b">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Devices.ZED" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <Pin Id="PNwcfNzAkrCLtztL0qgqum" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CLOXGampNymLgkPEO2hJiB" Name="Camera" Kind="InputPin" />
+            <Pin Id="Qx4K7wEKKnBOtBT3PlUuyC" Name="View" Kind="InputPin" />
+            <Pin Id="HkQAISrbpIfMo27dd4yZpz" Name="Texture" Kind="OutputPin" />
+            <Pin Id="IabVZZUdRxzN0qNnUWN182" Name="On Data" Kind="OutputPin" />
+            <Pin Id="U9Tc9dMkI9pNhene39vM6i" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Aja3VFoSSQULEbzsWC11Y0" Comment="Texture" Bounds="-234,539,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="H1PEPtmGO41Oh7G6HLBIJT" Name="Create" />
         <Patch Id="AhniDDqBze6NaMnC0PqnqC" Name="Update" />
@@ -456,6 +467,8 @@
         <Link Id="E69QnpyQgzoLkWYM0ib3zD" Ids="GGtooGtvWaJLmFbyW3bN9e,TMAskeA9J9GLF77kRjvSc7" />
         <Link Id="Tuhy0hWrt0QLPhmJtlYKnC" Ids="UOnB0D5OAENOEeaUpeISPP,AF14GCPITMkN9xNyuzktgM,V7SL9pSVpriMk15X5QLHG7" />
         <Link Id="L2CxRpohir8MOerSf7O4Rz" Ids="Ju0OCAFk09IMhmlaqS7QEr,TK4gWwj3vCXPj2r0Izac9j" />
+        <Link Id="Dyv8Xt6dKBON5CHX2v53D3" Ids="VeGG2HfpJL1QKXHqi1X6yE,CLOXGampNymLgkPEO2hJiB" />
+        <Link Id="AHvMALCZRtpQAeSw7wBC3J" Ids="HkQAISrbpIfMo27dd4yZpz,Aja3VFoSSQULEbzsWC11Y0" />
       </Patch>
     </Node>
   </Patch>
