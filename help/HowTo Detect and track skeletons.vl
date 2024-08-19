@@ -69,7 +69,7 @@
             <Pin Id="GGQmaCssgdkMxXlUes6eXK" Name="On Data" Kind="OutputPin" />
             <Pin Id="INbHbokVhQNLdQqXxjFbef" Name="Error Code" Kind="OutputPin" />
           </Node>
-          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="258,235,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_FAST">
+          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="258,235,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_ACCURATE">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_TRACKING_MODEL" />
             </p:TypeAnnotation>
@@ -113,7 +113,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="219,170,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_18">
+          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="219,170,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_38">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
             </p:TypeAnnotation>
@@ -429,20 +429,6 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="-231,468,69,19" Id="QvqWVG6taVLMeONf2NNw0b">
-            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <FullNameCategoryReference ID="Devices.ZED" />
-              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
-            </p:NodeReference>
-            <Pin Id="PNwcfNzAkrCLtztL0qgqum" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CLOXGampNymLgkPEO2hJiB" Name="Camera" Kind="InputPin" />
-            <Pin Id="Qx4K7wEKKnBOtBT3PlUuyC" Name="View" Kind="InputPin" />
-            <Pin Id="HkQAISrbpIfMo27dd4yZpz" Name="Texture" Kind="OutputPin" />
-            <Pin Id="IabVZZUdRxzN0qNnUWN182" Name="On Data" Kind="OutputPin" />
-            <Pin Id="U9Tc9dMkI9pNhene39vM6i" Name="Last Error" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Aja3VFoSSQULEbzsWC11Y0" Comment="Texture" Bounds="-234,539,190,132" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="H1PEPtmGO41Oh7G6HLBIJT" Name="Create" />
         <Patch Id="AhniDDqBze6NaMnC0PqnqC" Name="Update" />
@@ -467,8 +453,6 @@
         <Link Id="E69QnpyQgzoLkWYM0ib3zD" Ids="GGtooGtvWaJLmFbyW3bN9e,TMAskeA9J9GLF77kRjvSc7" />
         <Link Id="Tuhy0hWrt0QLPhmJtlYKnC" Ids="UOnB0D5OAENOEeaUpeISPP,AF14GCPITMkN9xNyuzktgM,V7SL9pSVpriMk15X5QLHG7" />
         <Link Id="L2CxRpohir8MOerSf7O4Rz" Ids="Ju0OCAFk09IMhmlaqS7QEr,TK4gWwj3vCXPj2r0Izac9j" />
-        <Link Id="Dyv8Xt6dKBON5CHX2v53D3" Ids="VeGG2HfpJL1QKXHqi1X6yE,CLOXGampNymLgkPEO2hJiB" />
-        <Link Id="AHvMALCZRtpQAeSw7wBC3J" Ids="HkQAISrbpIfMo27dd4yZpz,Aja3VFoSSQULEbzsWC11Y0" />
       </Patch>
     </Node>
   </Patch>
