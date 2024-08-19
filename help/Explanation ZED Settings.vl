@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.7-0089-gba3d4276ea" Version="0.128">
-  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.7-0089-gba3d4276ea" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.7-0113-ga9b832a275" Version="0.128">
+  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.7-0113-ga9b832a275" />
   <Patch Id="Gp7agegJqjuO13S8huFRHR">
     <Canvas Id="RKGamdHA22KME8zdDZxxW1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,13 +15,14 @@
       </p:NodeReference>
       <Patch Id="AkSgZJmgpNAPxGFkkELyHo">
         <Canvas Id="Ku6aXzwNN2JM0VQlCfLMST" CanvasType="Group">
-          <Node Bounds="169,1011,355,19" Id="CAlSHjtXKwFPNhodiPU8sA">
+          <Node Bounds="145,1010,374,19" Id="CAlSHjtXKwFPNhodiPU8sA">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ZED" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="AEiYXWlFOccLctBho3rcuG" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DP80uwHXtJtPsAkUKralvw" Name="SDK GPU id" Kind="InputPin" />
             <Pin Id="E7AoMYi66MlM6SC9vavlyv" Name="Device" Kind="InputPin" />
             <Pin Id="VrztUYwQx3qLf2uc2r1zKM" Name="Resolution" Kind="InputPin" />
             <Pin Id="DDPt4VtSVT4OwDxKKyfOWi" Name="Depth Mode" Kind="InputPin" />
@@ -45,7 +46,7 @@
             <Pin Id="AueLjEG9kOXNK6z4qgfxal" Name="Resolution" Kind="OutputPin" />
             <Pin Id="MA1aiDR6Pn1Mpjyi7A6Eau" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="GZsa6dr5XM3OYlXZYqy6tT" Comment="Is Open" Bounds="521,1054,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GZsa6dr5XM3OYlXZYqy6tT" Comment="Is Open" Bounds="497,1053,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="CRtUJBOEvn8QalV5GhfTEl" Comment="Enabled" Bounds="523,924,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
@@ -228,7 +229,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="276,1352,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
+          <Pad Id="B4MiCAsrU11ODgIWBOdTkY" Bounds="252,1351,309,91" ShowValueBox="true" isIOBox="true" Value="&lt; Makes a hardware reset off connected camera. Call it when you had erros and camera not opens any more.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -237,11 +238,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="227,1258,252,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="288,1211,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="462,1108,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="345,1177,38,16" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="405,1151,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HItDglewWf0QVIF2YWFAii" Comment="Openig Error Code" Bounds="203,1257,252,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FExCSEa6xf5OT2fVVgFM7V" Comment="In Progress" Bounds="264,1210,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EybvVjrTiJbLM6hSiTX61P" Comment="Image Resolution" Bounds="438,1107,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QC3cbcw2CsAPjLm4jRvdW4" Comment="FPS" Bounds="321,1176,38,16" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QCjsI70yrZ7LhFsNsOvHUi" Comment="FOV" Bounds="381,1150,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Sv2qQeFQDNMMi5iN7MYl0X" Bounds="631,930,229,19" ShowValueBox="true" isIOBox="true" Value="&lt; Turn camera on or off">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -341,7 +342,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="169,1343,92,19" Id="Kd11BNqjBXCOAIsqjgn6Lb">
+          <Node Bounds="145,1342,92,19" Id="Kd11BNqjBXCOAIsqjgn6Lb">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HardwareReboot" />
@@ -360,6 +361,7 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="LvmWlM9fXicLwEQcS6bXuy" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GuRFB1zdNbfLEeoSCSgKOc" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
             <Pin Id="UcOYD3qbhAaLO0TQEEaLhS" Name="Filename" Kind="InputPin" />
             <Pin Id="MA0WLXo7d24LdFuWFY6wcE" Name="SVO Realtime Mode" Kind="InputPin" />
             <Pin Id="IIgjgMNHlRCLIIqJJVzbqs" Name="Depth Mode" Kind="InputPin" />
@@ -391,7 +393,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JQlAjhprrXuOAe8GbEylq1" Comment="Reboot" Bounds="258,1302,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="JQlAjhprrXuOAe8GbEylq1" Comment="Reboot" Bounds="234,1301,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -399,12 +401,35 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VlASMOMiZxRNLgBSC36zbB" Comment="Device" Bounds="171,144,100,15" ShowValueBox="true" isIOBox="true" Value="Default">
+          <Pad Id="VlASMOMiZxRNLgBSC36zbB" Comment="Device" Bounds="171,174,100,15" ShowValueBox="true" isIOBox="true" Value="Default">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="ZEDDevice" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="D4WmC9YKEVOQBPdPryHF8K" Bounds="360,142,339,19" ShowValueBox="true" isIOBox="true" Value="&lt; Select the Camera. &quot;Default&quot; is the first detected one">
+          <Pad Id="D4WmC9YKEVOQBPdPryHF8K" Bounds="360,172,339,19" ShowValueBox="true" isIOBox="true" Value="&lt; Select the Camera. &quot;Default&quot; is the first detected one">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SwEb1Jl0b31NJfsX0MSfah" Comment="SDK GPU id" Bounds="150,113,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="N26bxlKnppyO3FCAckO8EX" Bounds="256,111,70,19" ShowValueBox="true" isIOBox="true" Value="(Optional)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="HHcYmGmX5cvNqzbJu73okP" Bounds="331,34,403,99" ShowValueBox="true" isIOBox="true" Value="By default the SDK will use the most powerful NVIDIA graphics card found. However, when running several applications, or using several cameras at the same time, splitting the load over available GPUs can be useful. Note: A non-positive value will search for all CUDA capable devices and select the most powerful.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -446,6 +471,7 @@
         <Link Id="NEDckPRIPIlNO89kpqEZps" Ids="K6YkqPNFcW7Oev0SAYR2ny,CzoXCDHpc6FMLxhEWKEKEK" />
         <Link Id="V4pabVwaPHRNRhpCDhMj7E" Ids="JQlAjhprrXuOAe8GbEylq1,SFFSnBOcKe3QXXeHFDniA7" />
         <Link Id="CjZt0BFnj2xLAS5wDrmNjo" Ids="VlASMOMiZxRNLgBSC36zbB,E7AoMYi66MlM6SC9vavlyv" />
+        <Link Id="HKNKEkS1RtlMcudWmt0iTi" Ids="SwEb1Jl0b31NJfsX0MSfah,DP80uwHXtJtPsAkUKralvw" />
       </Patch>
     </Node>
   </Patch>

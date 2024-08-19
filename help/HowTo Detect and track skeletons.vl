@@ -21,6 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="ZED" />
             </p:NodeReference>
             <Pin Id="OVVzXwN6OssOhTxu5Joz1P" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="GLfg7uzQWd7Lb5pK04gBZI" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
             <Pin Id="PTTxiSRwfnIMMUmcpxI6pS" Name="Device" Kind="InputPin" />
             <Pin Id="Iun79RxKOwMQXyau0bEwJk" Name="Resolution" Kind="InputPin" />
             <Pin Id="AaDI4PEXr1cMXaCLrmwKow" Name="Depth Mode" Kind="InputPin" />
@@ -69,7 +70,7 @@
             <Pin Id="GGQmaCssgdkMxXlUes6eXK" Name="On Data" Kind="OutputPin" />
             <Pin Id="INbHbokVhQNLdQqXxjFbef" Name="Error Code" Kind="OutputPin" />
           </Node>
-          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="258,235,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_ACCURATE">
+          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="258,235,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_FAST">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_TRACKING_MODEL" />
             </p:TypeAnnotation>
@@ -113,7 +114,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="219,170,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_38">
+          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="219,170,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_18">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
             </p:TypeAnnotation>
