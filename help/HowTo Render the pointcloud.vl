@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.7-0066-gfed05e1f37" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.7-0113-ga9b832a275" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -161,6 +161,7 @@
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KbjWKQQAbR2MBnbBPvRlA5" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
             <Pin Id="BXqc1NKS8TLMpX10okxyas" Name="Device" Kind="InputPin" />
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
             <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
@@ -254,7 +255,7 @@
               <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="Jk54kot96KLOG6ehj7iqJz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1641, 85, 786, 432">
+            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1550, 108, 786, 432">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -303,19 +304,6 @@
           </Pad>
           <Pad Id="T7ij84zGAXvLF3HugHoHGy" Comment="Is Open" Bounds="527,219,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="FeS0pFfveLUNmhTAjudSYl" Comment="In Progress" Bounds="287,236,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="KTp9F8FigZ2LguSWj3eQbA" Comment="Enabled" Bounds="527,129,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Q4XT5fBeTxhLpVVPCSfz14" Comment="Device" Bounds="168,121,100,15" ShowValueBox="true" isIOBox="true" Value="Default">
-            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="ZEDDevice" />
-            </p:TypeAnnotation>
-          </Pad>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -334,12 +322,10 @@
         <Link Id="LuIUIvT1gprQK3LtO6RhIx" Ids="Rv3vi56qaLHPTV7TNFgxyD,OhnaWMhHj1TLJpDK3VC2mj" />
         <Link Id="VHaslZZUj8fPOWuXJXT3tN" Ids="ViXPERZV8AJPjK78ulsJTY,T7ij84zGAXvLF3HugHoHGy" />
         <Link Id="NFwNCjmLBXHPib7mZLIN77" Ids="Th6NTqRDmwRLORh3nIGYwN,FeS0pFfveLUNmhTAjudSYl" />
-        <Link Id="LUpt7kV5Tj6LuJIymCijOL" Ids="KTp9F8FigZ2LguSWj3eQbA,BiawRsIQD3rL9qmgi9HibW" />
-        <Link Id="C7ICnrOxb6VO8UMpjnIYtq" Ids="Q4XT5fBeTxhLpVVPCSfz14,BXqc1NKS8TLMpX10okxyas" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0066-gfed05e1f37" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0066-gfed05e1f37" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0113-ga9b832a275" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0113-ga9b832a275" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
