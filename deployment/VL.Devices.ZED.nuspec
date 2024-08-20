@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.ZED</id>
-    <version>0.7.0-alpha</version>
+    <version>0.8.0-alpha</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv group, m-box</authors>
     <owners>vvvv group</owners>
