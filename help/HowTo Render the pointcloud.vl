@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.7-0113-ga9b832a275" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="M8dYQ3tytRaLJWwS4sdwJE" LanguageVersion="2024.6.6" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -255,7 +255,7 @@
               <CategoryReference Kind="Category" Name="Stride" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="Jk54kot96KLOG6ehj7iqJz" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1550, 108, 786, 432">
+            <Pin Id="OldGq9z1kBUOMlFUzP7sLp" Name="Bounds" Kind="InputPin" DefaultValue="1158, 93, 665, 415">
               <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -325,7 +325,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0113-ga9b832a275" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0113-ga9b832a275" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.6" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.6" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
