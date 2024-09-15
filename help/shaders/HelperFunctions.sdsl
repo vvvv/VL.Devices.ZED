@@ -1,0 +1,13 @@
+shader HelperFunctions 
+{
+    float4 FloatToColor(float f)
+    {
+        uint  c = asuint(f);
+	    float r = ((c & 0x000000FF )       )/256.0f ;
+	    float g = ((c & 0x0000FF00 ) >> 8  )/256.0f ;
+	    float b = ((c & 0x00FF0000 ) >> 16 )/256.0f ;
+	    float a = ((c & 0xFF000000 ) >> 24 )/256.0f ;
+        
+        return float4(r,g,b,a);
+    }
+};
