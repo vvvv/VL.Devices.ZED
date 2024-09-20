@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="BpiiPrsPlEZOE4n2BsFWqO" LanguageVersion="2024.6.7-0136-ga34ff89f71" Version="0.128">
-  <NugetDependency Id="J4lQsS3MgtMQaJfB35p0Y7" Location="VL.CoreLib" Version="2024.6.7-0136-ga34ff89f71" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="BpiiPrsPlEZOE4n2BsFWqO" LanguageVersion="2024.6.7-0157-ge9fa055671" Version="0.128">
+  <NugetDependency Id="J4lQsS3MgtMQaJfB35p0Y7" Location="VL.CoreLib" Version="2024.6.7-0157-ge9fa055671" />
   <Patch Id="SI2kXiTpIXmPLPLPJgpd1q">
     <Canvas Id="Du0qCxuV6kIMDjdSLEVHhU" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -586,56 +586,6 @@
             <Pin Id="Lf7p2Zy5S9JPE6zz7zyP1u" Name="Resource Format" Kind="OutputPin" />
             <Pin Id="PYSstJvvLa9NasbZmF7doo" Name="Exists" Kind="OutputPin" />
           </Node>
-          <Node Bounds="254,280,325,19" Id="DtKNIkopSPiLHc7Ep8Jsut">
-            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ZEDPlayer" />
-            </p:NodeReference>
-            <Pin Id="AXa9CwQUTTBM3IYqfiVxzy" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BntJgcusCf7NjvRca68sKP" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BwPXR9juE3NM6eIJUbL7Ma" Name="Filename" Kind="InputPin" />
-            <Pin Id="Cvlilak8OPJQT0MHNbIkty" Name="SVO Realtime Mode" Kind="InputPin" />
-            <Pin Id="EA53R3ApBbnOMW535IBHst" Name="Depth Mode" Kind="InputPin" />
-            <Pin Id="Bt3SG9BIuP4L6qy3mMlLS7" Name="Depth Stabilization" Kind="InputPin" />
-            <Pin Id="FYN4nMziGoiN6OF3mZjxRr" Name="Image Enhancement" Kind="InputPin" />
-            <Pin Id="OLIq0reqzmSNK68KifovOg" Name="Units" Kind="InputPin" />
-            <Pin Id="RcrWkpvZLpnOONvcSYJlqh" Name="Coordinate System" Kind="InputPin" />
-            <Pin Id="HMg9AHqvtLmPJNjMCJuBT2" Name="Image Flip" Kind="InputPin" />
-            <Pin Id="VThIfnc4N6gMp44jYTtsYY" Name="Reference Frame" Kind="InputPin" />
-            <Pin Id="BRV0DDP4hh9Nr2j4a1h7fl" Name="Depth" Kind="InputPin" />
-            <Pin Id="VLIFOwu84ilPnBpLFCrQ8v" Name="Confidence Threshold" Kind="InputPin" />
-            <Pin Id="J5wA7m3FtypLatqolAXmYT" Name="Texture Confidence Threshold" Kind="InputPin" />
-            <Pin Id="RvfRoE72lwQQP2m9d8XEmZ" Name="Remove Saturated Areas" Kind="InputPin" DefaultValue="False" />
-            <Pin Id="RZYcCOKUNqpO28hj2sOf9r" Name="Enable Fill Mode" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="N2kBHyVFtvRMJcwuwjHfDn" Name="Enabled" Kind="InputPin" />
-            <Pin Id="PledgfOnyhzPNeKYaKKpRJ" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="EFZkkOSQtXaMv5GiwhlnsC" Name="Opening Error Code" Kind="OutputPin" />
-            <Pin Id="MgvszI5xQiDNgEWsGKlikM" Name="In Progress" Kind="OutputPin" />
-            <Pin Id="CylSbCbkknuObk5bp0nIgR" Name="FPS" Kind="OutputPin" />
-            <Pin Id="RQoa2hl5fkvQV226suuoNU" Name="FOV" Kind="OutputPin" />
-            <Pin Id="IaApASvcsiMMFOZlI5goTu" Name="Resolution" Kind="OutputPin" />
-            <Pin Id="EUGkFW3urdQP9nLeM13SG7" Name="Is Open" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Rp5jRVPNfIyOX62u8uxLMb" Comment="Device" Bounds="262,147,100,15" ShowValueBox="true" isIOBox="true" Value="Default">
-            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="ZEDDevice" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="QF5zmObJQaVMIZ34ictjzg" Comment="Reference Frame" Bounds="436,247,62,15" ShowValueBox="true" isIOBox="true" Value="CAMERA">
-            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="REFERENCE_FRAME" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Fe8lnYxupsbMhBEvPSrQZ3" Comment="Depth Mode" Bounds="302,210,91,15" ShowValueBox="true" isIOBox="true" Value="NEURAL_PLUS">
-            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="TypeFlag" Name="DEPTH_MODE" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="MmF2BcXrfxPMN3QHEiOVTE" Comment="Filename" Bounds="177,86,478,15" ShowValueBox="true" isIOBox="true" Value="videos\shot_012.svo2">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
           <Node Bounds="391,1949,63,19" Id="Gen45QR11kULiynxW8NjgN">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -695,20 +645,6 @@
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="264,465,65,19" Id="IQco5U1YkBpPktIZJTUN0u">
-            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <FullNameCategoryReference ID="Devices.ZED" />
-              <Choice Kind="ProcessAppFlag" Name="SVOPlayer" />
-            </p:NodeReference>
-            <Pin Id="TQCQBr2osneMrcJdVPdYsn" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="AGfe0vXBbV9PtjqoUFayEK" Name="Input" Kind="InputPin" />
-            <Pin Id="QqhjFhvLga9NCpEjoDqIVi" Name="Loop" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="Hantm9IQ0lhNYZmVEhXZun" Name="Seek Frame" Kind="InputPin" DefaultValue="135" />
-            <Pin Id="GC3LQblkUn2QK5WSQsGBaB" Name="Seek" Kind="InputPin" />
-            <Pin Id="AxcjOzijA8WMR0AFqsnvBi" Name="Number Of Frames" Kind="OutputPin" />
-            <Pin Id="K4E1O9CrI1tPPtL66zoaIa" Name="Position" Kind="OutputPin" />
-          </Node>
           <Node Bounds="429,1844,205,19" Id="GP0EOI0uHw1MUH6f8fJLMZ">
             <p:NodeReference LastCategoryFullName="Stride.Lights" LastDependency="VL.Stride.Runtime.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -802,19 +738,15 @@
         <Link Id="NviFcyDdvxjO5gekgJ7JSl" Ids="RboCK1kt24kMT4DMZpsX0h,AT3AQHIaR2cOwHhyoJsFqT" />
         <Link Id="TfAEokDUqjbP2sMOBARASF" Ids="FWtjBYaGQkYPjNm6uyOATb,M2mMq3dILs9LDmhpTLxjwy" />
         <Link Id="CpsiVeIdHpsLeabA4zH4e7" Ids="FWtjBYaGQkYPjNm6uyOATb,KdE8a7jUdAdNihHD2ADdE9" />
-        <Link Id="EalP6g6ATSEMZohnhPaAtU" Ids="QF5zmObJQaVMIZ34ictjzg,VThIfnc4N6gMp44jYTtsYY" />
-        <Link Id="CoRVw4ULQr9QYIothUbpie" Ids="Fe8lnYxupsbMhBEvPSrQZ3,EA53R3ApBbnOMW535IBHst" />
-        <Link Id="HKATuPWFA9lOMH0fHalV6d" Ids="MmF2BcXrfxPMN3QHEiOVTE,BwPXR9juE3NM6eIJUbL7Ma" />
-        <Link Id="PF6q8AsbG2yMiHP8SfWBkt" Ids="PledgfOnyhzPNeKYaKKpRJ,SkMK9vlHcR8MCS7X5AvtCA" />
         <Link Id="AQOKnXSdfLEOZKI6RHpwUV" Ids="STMtCZlwGnNPzwDRhToWsz,DLJwGwgaAv9Lzue2LPsewb" />
         <Link Id="R0HuvwdDVfAPpd89yXFvQf" Ids="AmMBgpI8X5cLjv8M7jkxF5,Rqs3x1eNRakLQ8VVvACDMJ" />
         <Link Id="HMt3ftkl2DBNvW55v8zeM5" Ids="EWOfW9ZUsmSM8UUZggKSCk,UnzQKGrgO8SNfnan4T1Sui" />
-        <Link Id="KTfD9ne3XcjMHcjcqT9hfk" Ids="PledgfOnyhzPNeKYaKKpRJ,AGfe0vXBbV9PtjqoUFayEK" />
         <Link Id="Am399730QYBQPJtmH04F2J" Ids="CVoEpM5cZesP6BHgY6jh08,Rys6fw69JK9OALIbAIhmoH" />
+        <Link Id="BmHogcTP5yTPiCjw1rr4Ti" Ids="U3q1uC3AsSGNu52OquHefO,SkMK9vlHcR8MCS7X5AvtCA" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="At3uuz1vz3zNaiZyEgZKDC" Location="VL.Devices.ZED" Version="0.0.0" />
-  <NugetDependency Id="Kez695BU5gNLTmwjcmIzC0" Location="VL.Stride.Runtime" Version="2024.6.7-0136-ga34ff89f71" />
+  <NugetDependency Id="Kez695BU5gNLTmwjcmIzC0" Location="VL.Stride.Runtime" Version="2024.6.7-0157-ge9fa055671" />
   <NugetDependency Id="JIwSFMGQDbKPbEUm33N8tG" Location="VL.Fuse" Version="1.0.3-beta03" />
 </Document>

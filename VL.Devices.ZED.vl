@@ -2271,6 +2271,17 @@
                 <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="347,166,50,26" Id="Sqtis1e7SS2NyBdMsZX5j4">
+              <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="AssemblyCategory" Name="BodyData" NeedsToBeDirectParent="true" />
+                <Choice Kind="OperationCallFlag" Name="id" />
+              </p:NodeReference>
+              <Pin Id="ILZT01kBOlAQHeSAOWthh2" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QF8yxUoQxkIO3BQUhYN2aB" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="OemTA7LrQ8EPXoDYzkmk9v" Name="Id" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LHNJKKrBUKiOX7zl7EkGgM" Bounds="401,221" />
           </Canvas>
           <ProcessDefinition Id="HCH1ImEqAfWNpeNcRbkBSr">
             <Fragment Id="OLHjQi6tMfgPl0yZz70KZO" Patch="NcT3EzXqSLOOwkQx5FDzCP" Enabled="true" />
@@ -2311,13 +2322,13 @@
           <Patch Id="NcT3EzXqSLOOwkQx5FDzCP" Name="Create" />
           <Patch Id="QMjxA7F9hqULjl3rPmqRX6" Name="Update">
             <Pin Id="GL9IIqrIBZMNZH2xIORT4t" Name="BodyData" Kind="InputPin" Bounds="371,97" />
+            <Pin Id="M1UZanWmkJ4NIQoOPhkhsx" Name="Id" Kind="OutputPin" Bounds="1662,386" Summary="Only available if 'Body Tracking' == true." />
             <Pin Id="FqW8uux6ABJPFf31WcnlFW" Name="Confidence" Kind="OutputPin" Bounds="434,263" />
             <Pin Id="ViCKdsorc1cN5eNtj29EJj" Name="Skeleton Joint Position 2D" Kind="OutputPin" Bounds="658,261" Summary="In pixels, depends on camera resolution mode." />
             <Pin Id="UTwGYScyRZHMJGy2EpNlC4" Name="Keypoint Confidence" Kind="OutputPin" Bounds="906,382" />
             <Pin Id="UYJ34MWrewrM6Gvm7wJud1" Name="Image Bounding Box" Kind="OutputPin" Bounds="1181,365" />
           </Patch>
           <Link Id="ML3jh1UMr8OOf5SB7lbPm5" Ids="LmmEX8GUpTCLctx9OAj1Dg,H2UB6bax2DEM2O8m1AoJK4" />
-          <Link Id="ECHOuO00DxEO7ymedgZReQ" Ids="HRhgeRibAGvMqqbpUZFX3a,MmNHgZeV4LkNxgsWYKGtnF" />
           <Link Id="GhI2lmHGKedPr2d863DVL3" Ids="Al0bJYqFSXxPQrFnFAc2VL,UkLihLlOkMKNJjqogLOAA0" />
           <Link Id="BYakjY9iMCaL5dt533KoQc" Ids="Uxpsw34IfWVMu4m3k6VHGI,Cj2hHuZbsJtLSkjuCrXFF1" />
           <Link Id="Hgojx8LWueOLWUWlkbdSIs" Ids="Ev6OqR4IoU3PxGUcvqmvOy,J5zGUSLO1WdNZzlgS887T8" />
@@ -2333,6 +2344,10 @@
           <Link Id="LU6SWIOXHjQO5FXdoRAVHy" Ids="V6dbOrCqZSVQWxrIyeBSAD,TQYVPsBRNsiP4rQKVYlmFY" />
           <Link Id="Sz9Z3gPjrnTMi2RnonFHEe" Ids="BC8xWuG82jvPOuPoWk7GUR,RpdTMZ1Gv6FM9Y8OID4a5H" />
           <Link Id="AeWcZ8ddNvGMhuPQy3OlTx" Ids="MwDKgnb8CNnMYTFnvBrHj2,OTUOj5sN6vJMz82CY9axTZ" />
+          <Link Id="UxbDMpYukFTPiBS7oaaUeF" Ids="OemTA7LrQ8EPXoDYzkmk9v,LHNJKKrBUKiOX7zl7EkGgM" />
+          <Link Id="EANnjxXDT8CPecTqAINH5y" Ids="LHNJKKrBUKiOX7zl7EkGgM,M1UZanWmkJ4NIQoOPhkhsx" IsHidden="true" />
+          <Link Id="FMMO05nF9ArOU933IhUI0Q" Ids="HRhgeRibAGvMqqbpUZFX3a,ILZT01kBOlAQHeSAOWthh2" />
+          <Link Id="OBRRO4Wv9rHLEUkbTRHaM7" Ids="QF8yxUoQxkIO3BQUhYN2aB,MmNHgZeV4LkNxgsWYKGtnF" />
         </Patch>
       </Node>
       <!--

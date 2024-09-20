@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.6" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2024.6.7-0157-ge9fa055671" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -210,6 +210,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="KKTieo1RYfcLL3kLsa0Tdn" Bounds="279,212,267,19" ShowValueBox="true" isIOBox="true" Value="https://support.stereolabs.com/hc/en-us/articles/9747407795223-How-can-I-optimize-the-ZED-SDK-AI-models-manually">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -226,7 +235,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.6" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.6" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2024.6.7-0157-ge9fa055671" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2024.6.7-0157-ge9fa055671" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
