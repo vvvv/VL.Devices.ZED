@@ -138,3 +138,5 @@ perfmonitor/temlate.xml
 perfmonitor/TKBL-SRV_20170913-000008/DataCollector01.blg
 example_rest_api.txt
 desktop.ini
+
+/lib/net6.0/VL.Devices.ZED.*

@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.ZED</id>
-    <version>0.10.0-alpha</version>
+    <version>1.0.0</version>
     <title>VL.Devices.ZED</title>
-    <authors>Alexander Shaliapin, vvvv group, m-box</authors>
-    <owners>vvvv group</owners>
-    <projectUrl>https://github.com/vvvv/VL.Devices.ZED</projectUrl>
+    <authors>Alexander Shaliapin, vvvv, m-box</authors>
+    <owners>vvvv</owners>
+    <repository type="git" url="https://github.com/vvvv/VL.Devices.ZED" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Support for using ZED stereo cameras by Stereolabs with vvvv</description>
     <tags>VL, camera, capture, video, depth, skeleton, body, tracking</tags>

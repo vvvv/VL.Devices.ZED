@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.7-0157-ge9fa055671" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.7-0157-ge9fa055671" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.6" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.6" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -708,7 +708,7 @@
                 <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               </p:NodeReference>
               <Pin Id="LTmg9t0GOJzNQTu3CJB5bp" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Fbb7K5LYjYiNEMR64waJzK" Name="Bounds" Kind="InputPin" DefaultValue="1366, 91, 618, 578" IsHidden="true" />
+              <Pin Id="Fbb7K5LYjYiNEMR64waJzK" Name="Bounds" Kind="InputPin" DefaultValue="1174, 99, 618, 578" IsHidden="true" />
               <Pin Id="NXkX3eYnS6xPEb7xm0evj8" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="HNOj0DBtkctLfhwmxo0I8K" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="C5PRwc6krQ1O4SVCbQvWjH" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
@@ -1007,16 +1007,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="UKcSDVTHj4YL9fu4vH9lMZ" Bounds="511,232,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Accuracy of the detection. Using a model for the first time requires its optimization - the application will freeze during this process for up to a few minutes!">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="IUvdgUGieOdMP209XxCxMX" Bounds="487,299,323,19" ShowValueBox="true" isIOBox="true" Value="&lt; Try to predict next position of the detected body">
+          <Pad Id="IUvdgUGieOdMP209XxCxMX" Bounds="442,299,323,19" ShowValueBox="true" isIOBox="true" Value="&lt; Try to predict next position of the detected body">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1043,7 +1034,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TNe0FkzIOieOBnjpwBWzQq" Bounds="487,342,271,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether or not to apply body fitting">
+          <Pad Id="TNe0FkzIOieOBnjpwBWzQq" Bounds="442,342,271,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether or not to apply body fitting">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1088,7 +1079,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="117,1012,497,185" Id="Pt0rUmCc0WlNclBlxw68hr">
+          <Node Bounds="106,1012,508,185" Id="Pt0rUmCc0WlNclBlxw68hr">
             <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
               <FullNameCategoryReference ID="Primitive" />
@@ -1372,6 +1363,33 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="LhqwbUNz7LyOckeplF7HKb" Bounds="498,231,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Using a model for the first time requires its optimization - the application will freeze during this process for up to a few minutes!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LRHoElLZgSjP9CTtNBu72g" Bounds="798,295,267,19" ShowValueBox="true" isIOBox="true" Value="https://support.stereolabs.com/hc/en-us/articles/9747407795223-How-can-I-optimize-the-ZED-SDK-AI-models-manually">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OaJ1ex1ajBaMDJ4HVC5Exo" Bounds="798,276,323,19" ShowValueBox="true" isIOBox="true" Value="How can I optimize the ZED SDK AI models manually?">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H1PEPtmGO41Oh7G6HLBIJT" Name="Create" />
         <Patch Id="AhniDDqBze6NaMnC0PqnqC" Name="Update" />
@@ -1403,8 +1421,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="EXCa1JSHJyGOzKOcwZ8mXk" Location="VL.Devices.ZED" Version="0.0.0" />
-  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2024.6.7-0157-ge9fa055671" />
-  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2024.6.7-0157-ge9fa055671" />
-  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2024.6.7-0157-ge9fa055671" />
-  <NugetDependency Id="MrgIBSE9IPzQcneTow8u7d" Location="VL.Fuse" Version="1.0.3-beta03" />
+  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2024.6.6" />
+  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2024.6.6" />
+  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2024.6.6" />
 </Document>
