@@ -8,7 +8,7 @@ Implements:
 * [Depth Sensing](https://www.stereolabs.com/docs/depth-sensing)
 * [Body Tracking](https://www.stereolabs.com/docs/body-tracking)
 
-Not yet implemented:
+To be implemented on demand:
 * [Positional Tracking](https://www.stereolabs.com/docs/positional-tracking)
 * [Global Localization](https://www.stereolabs.com/docs/global-localization)
 * [Spatial Mapping](https://www.stereolabs.com/docs/spatial-mapping)
