@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.7-0233-g2086759bc8" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2024.6.7-0236-g33a4a9999e" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
     <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
@@ -3324,7 +3324,7 @@
                     <Choice Kind="OperationCallFlag" Name="RetrieveBodies" />
                   </p:NodeReference>
                   <Pin Id="DHgPcVtcrcJPVQQaTzgz6g" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="Bx8YvYCHcl2LKHsW9kzWrG" Name="Objs" Kind="InputPin" />
+                  <Pin Id="Sis4BsE6p7kLalR9ZcIeoe" Name="Bodies" Kind="InputPin" />
                   <Pin Id="O0L1WH84zR3QLVwNepa9tf" Name="Bt_params" Kind="InputPin" />
                   <Pin Id="JF883wBT4l2Ptjq65EUaGp" Name="Instance ID" Kind="InputPin" />
                   <Pin Id="BNLcLIvtGozLldjC4G3iYN" Name="Output" Kind="StateOutputPin" />
@@ -4232,7 +4232,7 @@
               <Pin Id="P1U8CMC2XKPP7RiobdqsgG" Name="Output" Kind="StateOutputPin" />
               <Pin Id="DvpAeAQgmp8LXahdBC8E0O" Name="Node Context" Kind="InputPin" IsHidden="true" />
             </Node>
-            <Node Bounds="1608,881,69,19" Id="OBOx92aINTXQFfPyqXWL9a">
+            <Node Bounds="1715,934,69,19" Id="OBOx92aINTXQFfPyqXWL9a">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <FullNameCategoryReference ID="Control" />
@@ -4243,7 +4243,7 @@
               <Pin Id="NCsOh6kEtnHOo85sPJqmjh" Name="Value" Kind="InputPin" />
               <Pin Id="R4xZh8caBx0LRwgaeWwA3P" Name="Value" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1440,810,69,19" Id="OrLDgpPtDquO7mgJt2tDXC">
+            <Node Bounds="1441,910,69,19" Id="OrLDgpPtDquO7mgJt2tDXC">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <FullNameCategoryReference ID="Control" />
@@ -4343,7 +4343,6 @@
           <Link Id="JmiG11zRTC1Oq4USAOrIL4" Ids="TKezrxmmW0ILZoQ83ssnug,NxaFDRKN1EgNGu1bCjTrUz" />
           <Link Id="E5KTkgQaKWfO6eXW7YCP3O" Ids="PDsmu3oKFaXNdJpULGnEIs,Isux5IuzwGNMxRHR9ZzWXJ" />
           <Link Id="HL5JFgI8FoeMTB1yLZloem" Ids="CeDQUPNjWEhMdGdnOtp3pA,OgEUbJ1rwcmNBpNNwSLFXE" />
-          <Link Id="CnvYQjqxUqNPpEiay8d2sN" Ids="IF4zGT7dxdcOzgcswxH0aV,Bx8YvYCHcl2LKHsW9kzWrG" />
           <Link Id="Mz161werBrWP3BWttLgu64" Ids="T7ZKqwI5aCpOZOTPVQMDO5,AkatxQxdq4uMfgqgWauqD8" />
           <Link Id="U24oBuhQc9HOpzw1u1CZhT" Ids="H5dymERtwtAOTMeyauO7sq,Fmn4SwwfEsPLREJcPZMhos" />
           <Link Id="JOOoolnl8XdM1XF4N13r7w" Ids="SLHAG6CDvuZM1GMa8EGnT9,QRHOUIr6Bq7QaGPJDcflOl" />
@@ -4577,6 +4576,7 @@
           <Link Id="SumoQMrTohKPGPTE6D9C7j" Ids="MUTs0JOvM9EP5tPBxw4CLe,VNBcEioJsnsOq91yns3uq8" />
           <Link Id="NnzpcIMJojwN31LUJJIjOk" Ids="FtQGgrctmXpQEgomgYCjsQ,Na6uAxhxITkNPoPzQfAT0v" />
           <Link Id="GgmNKMi4QAhNpyb0Ews5hF" Ids="FeMDPp1X44aN7Jzw4MZSuZ,FFQuKUewzpoPRZkx4bTHrk,SNSPAeEaFABQCl6JualOwg,TACiF2FB28ZM6LP3BtslyC,T0odE6F6t9PQNXK4tLxRNr" />
+          <Link Id="R9vRmFfmTgjMn3mEDD5wSP" Ids="IF4zGT7dxdcOzgcswxH0aV,Sis4BsE6p7kLalR9ZcIeoe" />
         </Patch>
       </Node>
       <!--
@@ -10406,12 +10406,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.7-0233-g2086759bc8" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.7-0233-g2086759bc8" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2024.6.7-0236-g33a4a9999e" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2024.6.7-0236-g33a4a9999e" />
   <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
-  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.7-0233-g2086759bc8" />
+  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2024.6.7-0236-g33a4a9999e" />
   <PlatformDependency Id="KC86hcCJjyKLPPvdLwHEq4" Location="./lib/net6.0/Stereolabs.zed.dll" />
   <PlatformDependency Id="NZov2Jir4PWPl37160okDB" Location="./lib/net6.0/VL.Devices.ZED.dll" />
 </Document>

@@ -400,7 +400,18 @@
              Once destroyed, you need to recreate a camera instance to restart again.
              </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:sl.Camera.Grab(sl.RuntimeParameters@)" -->
+        <member name="M:sl.Camera.Grab(sl.RuntimeParameters@)">
+             <summary>
+             This method will grab the latest images from the camera, rectify them, and compute the
+             \ref retrieveMeasure() "measurements" based on the \ref RuntimeParameters provided (depth, point cloud, tracking, etc.).
+            
+             The grabbing method is typically called in the main loop in a separate thread.
+             \note For more info, read about the SDK method it calls:
+             <a href="https://www.stereolabs.com/docs/api/classsl_1_1Camera.html#afa3678a18dd574e162977e97d7cbf67b">grab</a>.
+             </summary>
+             <param name="runtimeParameters">A structure containing all the runtime parameters. Default: a preset of RuntimeParameters.</param>
+             <returns>false if no problem was encountered, true otherwise.</returns>
+        </member>
         <member name="M:sl.Camera.StartPublishing(sl.CommunicationParameters@)">
             <summary>
             Set this camera as a data provider for the Fusion module.
@@ -1648,6 +1659,16 @@
              \note For more info, read about the ZED SDK C++ enum it mirrors:
              <a href="https://www.stereolabs.com/docs/api/group__Core__group.html#ga4db9ee29f2ff83c71567c12f6bfbf28c">ERROR_CODE</a>
         </member>
+        <member name="F:sl.ERROR_CODE.CONFIGURATION_FALLBACK">
+            <summary>
+            The operation could not proceed with the target configuration but did success with a fallback.
+            </summary>
+        </member>
+        <member name="F:sl.ERROR_CODE.SENSORS_DATA_REQUIRED">
+            <summary>
+            The input data does not contains the high frequency sensors data, this is usually because it requires newer SVO/Streaming. In order to work this modules needs inertial data present in it input.
+            </summary>
+        </member>
         <member name="F:sl.ERROR_CODE.CORRUPTED_FRAME">
             <summary>
              The image could be corrupted, Enabled with the parameter InitParameters.enable_image_validity_check
@@ -1828,11 +1849,6 @@
         <member name="F:sl.ERROR_CODE.MODULE_NOT_COMPATIBLE_WITH_CUDA_VERSION">
             <summary>
             The module needs a newer version of CUDA.
-            </summary>
-        </member>
-        <member name="F:sl.ERROR_CODE.SENSORS_DATA_REQUIRED">
-            <summary>
-            The input data does not contains the high frequency sensors data, this is usually because it requires newer SVO/Streaming. In order to work this modules needs inertial data present in it input.
             </summary>
         </member>
         <member name="F:sl.ERROR_CODE.ERROR_CODE_LAST">
@@ -3318,7 +3334,21 @@
              \note Note that calling sl.Camera.EnablePositionalTracking() with your own parameters afterwards is still possible.
              </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.InitParameters.optionalSettingsPath" -->
+        <member name="F:sl.InitParameters.optionalSettingsPath">
+             <summary>
+             Optional path where the ZED SDK has to search for the settings file (SNXXXX.conf file).
+            
+             This file contains the calibration information of the camera.
+             \n Default: ""
+             
+             \note The settings file will be searched in the default directory: <ul>
+             <li><b>Linux</b>: <i>/usr/local/zed/settings/</i></li> 
+             <li><b>Windows</b>: <i>C:/ProgramData/stereolabs/settings</i></li></ul>
+             
+             \note If a path is specified and no file has been found, the ZED SDK will search the settings file in the default directory.
+             \note An automatic download of the settings file (through <b>ZED Explorer</b> or the installer) will still download the files on the default path.
+             </summary>
+        </member>
         <member name="F:sl.InitParameters.sensorsRequired">
              <summary>
              Requires the successful opening of the motion sensors before opening the camera.
@@ -3576,7 +3606,15 @@
             \note Available range: [1000 - 60000]
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.StreamingParameters.gopSize" -->
+        <member name="F:sl.StreamingParameters.gopSize">
+            <summary>
+            GOP size in number of frames.
+            
+            Default: -1 (the GOP size will last at maximum 2 seconds, depending on camera FPS)
+            \note The GOP size determines the maximum distance between IDR/I-frames. Very high GOP size will result in slightly more efficient compression, especially on static scenes. But latency will increase.
+            \note Maximum value: 256  
+            </summary>
+        </member>
         <member name="F:sl.StreamingParameters.adaptativeBitrate">
              <summary>
              Defines whether the adaptive bitrate is enable.
@@ -3753,6 +3791,11 @@
             \n Available FPS: 15
             </summary>
         </member>
+        <member name="F:sl.RESOLUTION.QHDPLUS">
+            <summary>
+            3800x1800
+            </summary>
+        </member>
         <member name="F:sl.RESOLUTION.HD2K">
             <summary>
             2208*1242 (x2)
@@ -3869,7 +3912,14 @@
             ZED XOne with 4K rolling shutter IMX678 sensor
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "T:sl.VIEW" -->
+        <member name="T:sl.VIEW">
+            \ingroup  Video_group
+             <summary>
+             Lists available views.
+             </summary>
+             \note For more info, read about the ZED SDK C++ enum it mirrors:
+             <a href="https://www.stereolabs.com/docs/api/group__Video__group.html#ga77fc7bfc159040a1e2ffb074a8ad248c">VIEW</a>
+        </member>
         <member name="F:sl.VIEW.LEFT">
              <summary>
              Left BGRA image. Each pixel contains 4 unsigned char (B, G, R, A).
@@ -4081,7 +4131,15 @@
             \note Replace \ref VIDEO_SETTINGS.GAIN "GAIN" settings.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.VIDEO_SETTINGS.AUTO_EXPOSURE_TIME_RANGE" -->
+        <member name="F:sl.VIDEO_SETTINGS.AUTO_EXPOSURE_TIME_RANGE">
+            <summary>
+            Range of exposure auto control in microseconds.
+            \n Used with \ref Camera.SetCameraSettings(VIDEO_SETTINGS,int,int) "SetCameraSettings()".
+            \n Min/max range between max range defined in DTS.
+            \n By default : [28000 - fps_time or 19000] us.
+            \note Only available for ZED X/X Mini cameras.
+            </summary>
+        </member>
         <member name="F:sl.VIDEO_SETTINGS.AUTO_ANALOG_GAIN_RANGE">
             <summary>
             Range of sensor gain in automatic control.
@@ -4252,6 +4310,12 @@
             <summary>
             Port of the streaming camera.
             </summary>
+        </member>
+        <member name="M:sl.InputType.GetType">
+            <summary>
+            Returns the current input type.
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:sl.PlaneDetectionParameters">
             \ingroup SpatialMapping_group
@@ -4867,7 +4931,12 @@
             </summary>
             This is used to identify which object detection module instance is used.
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.ObjectDetectionParameters.enableObjectTracking" -->
+        <member name="F:sl.ObjectDetectionParameters.enableObjectTracking">
+            <summary>
+            Whether the object detection system includes object tracking capabilities across a sequence of images.
+            </summary>
+            Default: true
+        </member>
         <member name="F:sl.ObjectDetectionParameters.enableSegmentation">
             <summary>
             Whether the object masks will be computed.
@@ -4983,7 +5052,12 @@
             </summary>
             This is used to identify which body tracking module instance is used.
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.BodyTrackingParameters.enableObjectTracking" -->
+        <member name="F:sl.BodyTrackingParameters.enableObjectTracking">
+            <summary>
+            Whether the body tracking system includes body/person tracking capabilities across a sequence of images.
+            </summary>
+            Default: true
+        </member>
         <member name="F:sl.BodyTrackingParameters.enableSegmentation">
             <summary>
             Whether the body/person masks will be computed.
@@ -5258,7 +5332,15 @@
              \note This parameter cannot be changed for a given object tracking id.
              \note It is advised to set it by labels to avoid issues.
         </member>
-        <!-- Badly formed XML comment ignored for member "T:sl.Objects" -->
+        <member name="T:sl.Objects">
+            \ingroup Object_group
+             <summary>
+             Structure containing the results of the object detection module.
+             It contains the number of object in the scene (\ref numObject) and the \ref objectData structure for each object.
+             \note Since the data is transmitted from C++ to C#, the size of the structure must be constant.
+             \note Therefore, there is a limitation of 75 (sl.Constant.MAX_OBJECTS) objects in the image.
+             </summary>
+        </member>
         <member name="F:sl.Objects.numObject">
             <summary>
             Number of detected objects.
@@ -5503,6 +5585,17 @@
             Whether both the body tracking and the world orientation has been setup.
             </summary>
         </member>
+        <member name="F:sl.Bodies.inferencePrecisionMode">
+            <summary>
+            Status of the actual inference precision mode used to detect the bodies/persons.
+            It depends on the GPU hardware support, the sl::BodyTrackingParameters.allowReducedPrecisionInference input parameter and the model support.
+            </summary>
+        </member>
+        <member name="F:sl.Bodies.bodyFormat">
+            <summary>
+            Body format used in sl::BodyTrackingParameters.body_format parameter.
+            </summary>
+        </member>
         <member name="F:sl.Bodies.bodiesList">
             <summary>
             Array of detected bodies/persons.
@@ -5532,7 +5625,6 @@
             <summary>
             38-keypoint model
             \n Including simplified face, hands and feet.
-            \note Early Access
             </summary>
         </member>
         <member name="T:sl.BODY_KEYPOINTS_SELECTION">
@@ -5931,114 +6023,38 @@
             The ZED SDK will remove objects that are in the same 3D position as an already tracked object of the same class id.
             </summary>
         </member>
+        <member name="T:sl.INFERENCE_PRECISION">
+            <summary>
+            Lists supported bounding box preprocessing.
+            </summary>
+        </member>
         <member name="T:sl.BODY_18_PARTS">
             \ingroup Body_group
              <summary>
              Semantic of human body parts and order of \ref sl.BodyData.keypoints for \ref sl.BODY_FORMAT.BODY_18.
              </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.NECK" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.RIGHT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LEFT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_18_PARTS.LAST" -->
+        <member name="F:sl.BODY_18_PARTS.LAST">
+            @cond SHOWHIDDEN
+        </member>
         <member name="T:sl.BODY_34_PARTS">
             \ingroup Body_group
              <summary>
              Semantic of human body parts and order of \ref sl.BodyData.keypoints for \ref sl.BODY_FORMAT.BODY_34.
              </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.NAVAL_SPINE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.CHEST_SPINE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.NECK" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_CLAVICLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_HAND" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_HANDTIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_THUMB" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_CLAVICLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_HAND" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_HANDTIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_THUMB" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_FOOT" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_FOOT" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.HEAD" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.NOSE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LEFT_HEEL" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.RIGHT_HEEL" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_34_PARTS.LAST" -->
+        <member name="F:sl.BODY_34_PARTS.LAST">
+            @cond SHOWHIDDEN
+        </member>
         <member name="T:sl.BODY_38_PARTS">
             \ingroup Body_group
              <summary>
              Semantic of human body parts and order of \ref sl.BodyData.keypoints for \ref sl.BODY_FORMAT.BODY_38.
              </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.SPINE_1" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.SPINE_2" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.SPINE_3" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.NECK" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.NOSE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_EYE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_EAR" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_CLAVICLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_CLAVICLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_SHOULDER" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_ELBOW" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_WRIST" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HIP" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_KNEE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_ANKLE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_BIG_TOE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_BIG_TOE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_SMALL_TOE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_SMALL_TOE" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HEEL" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HEEL" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HAND_THUMB_4" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HAND_THUMB_4" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HAND_INDEX_1" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HAND_INDEX_1" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HAND_MIDDLE_4" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HAND_MIDDLE_4" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LEFT_HAND_PINKY_1" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.RIGHT_HAND_PINKY_1" -->
-        <!-- Badly formed XML comment ignored for member "F:sl.BODY_38_PARTS.LAST" -->
+        <member name="F:sl.BODY_38_PARTS.LAST">
+            @cond SHOWHIDDEN
+        </member>
         <member name="T:sl.ObjectsBatch">
             \ingroup Object_group
              <summary>
@@ -6344,7 +6360,7 @@
             Stores the Fusion configuration, can be read from /write to a Json file.
             </summary>
         </member>
-        <member name="F:sl.FusionConfiguration.serialnumber">
+        <member name="F:sl.FusionConfiguration.serialNumber">
             <summary>
             The serial number of the used ZED camera.
             </summary>
@@ -6428,6 +6444,17 @@
             <summary>
             Serial Number of the camera.
             </summary>
+        </member>
+        <member name="M:sl.CameraIdentifier.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:sl.CameraIdentifier.#ctor(System.UInt64)">
+            <summary>
+            Constructor with serial number.
+            </summary>
+            <param name="_sn"></param>
         </member>
         <member name="T:sl.CameraMetrics">
             \ingroup Fusion_group
@@ -7596,14 +7623,23 @@
             Constructor
             </summary>
         </member>
-        <member name="M:sl.Fusion.ReadConfigurationFile(System.Text.StringBuilder,sl.COORDINATE_SYSTEM,sl.UNIT,sl.FusionConfiguration[]@,System.Int32@)">
+        <member name="M:sl.Fusion.ReadConfigurationFile(System.Text.StringBuilder,sl.COORDINATE_SYSTEM,sl.UNIT)">
             <summary>
             Read a Configuration JSON file to configure a fusion process.
             </summary>
             <param name="jsonConfigFileName">The name of the JSON file containing the configuration.</param>
             <param name="coordinateSystem">The COORDINATE_SYSTEM in which you want the World Pose to be in.</param>
             <param name="unit">The UNIT in which you want the World Pose to be in.</param>
-            <param name="configs"> An array of \ref FusionConfiguration for all the camera present in the file.</param>
+            <returns>A List of \ref FusionConfiguration for all the camera present in the file. </returns>
+        </member>
+        <member name="M:sl.Fusion.ReadFusionConfiguration(System.Text.StringBuilder,sl.COORDINATE_SYSTEM,sl.UNIT,sl.FusionConfiguration[]@,System.Int32@)">
+            <summary>
+            Read a Configuration JSON string to configure a fusion process.
+            </summary>
+            <param name="fusionConfiguration">The name of the JSON file containing the configuration.</param>
+            <param name="coordinateSystem">The COORDINATE_SYSTEM in which you want the World Pose to be in.</param>
+            <param name="unit">The UNIT in which you want the World Pose to be in.</param>
+            <param name="configs"> An array of \ref FusionConfiguration for all the camera present in the file of size Constant.MAX_FUSED_CAMERAS.</param>
             <param name="nbCameras">Number of cameras</param>
         </member>
         <member name="M:sl.Fusion.GetSenderState(sl.CameraIdentifier@)">
@@ -7626,14 +7662,14 @@
             </summary>
             <returns></returns>
         </member>
-        <member name="M:sl.Fusion.Subscribe(sl.CameraIdentifier@,System.String,System.Numerics.Vector3@,System.Numerics.Quaternion@)">
+        <member name="M:sl.Fusion.Subscribe(sl.CameraIdentifier@,sl.CommunicationParameters,System.Numerics.Vector3@,System.Numerics.Quaternion@)">
             <summary>
              adds a camera to the multi camera handler
             </summary>
-            <param name="uuid"></param>
-            <param name="jsonConfigFileName"></param>
-            <param name="poseTranslation"></param>
-            <param name="poseRotation"></param>
+            <param name="uuid">	The requested camera identifier.</param>
+            <param name="communicationParameters">The communication parameters to connect to the camera..</param>
+            <param name="poseTranslation">The World position of the camera, regarding the other camera of the setup.</param>
+            <param name="poseRotation">The World rotation of the camera, regarding the other camera of the setup.</param>
             <returns></returns>
         </member>
         <member name="M:sl.Fusion.Unsubscribe(sl.CameraIdentifier@)">
@@ -7647,9 +7683,9 @@
             <summary>
             updates the camera World pose
             </summary>
-            <param name="uuid"></param>
-            <param name="poseTranslation"></param>
-            <param name="poseRotation"></param>
+            <param name="uuid">The requested camera identifier.</param>
+            <param name="poseTranslation"> The World position of the camera, regarding the other camera of the setup.</param>
+            <param name="poseRotation">	The World rotation of the camera, regarding the other camera of the setup.</param>
             <returns></returns>
         </member>
         <member name="M:sl.Fusion.RetrieveImage(sl.Mat,sl.CameraIdentifier@,sl.Resolution)">
@@ -7707,7 +7743,7 @@
             <param name="ptfParams"></param>
             <returns></returns>
         </member>
-        <member name="M:sl.Fusion.GetPosition(sl.Pose@,sl.REFERENCE_FRAME,sl.UNIT,sl.CameraIdentifier@,sl.POSITION_TYPE)">
+        <member name="M:sl.Fusion.GetPosition(sl.Pose@,sl.REFERENCE_FRAME,sl.CameraIdentifier@,sl.POSITION_TYPE)">
             <summary>
             Gets the Fused Position of the camera system
             </summary>
