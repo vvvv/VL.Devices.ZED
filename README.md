@@ -16,7 +16,7 @@ To be implemented on demand:
 * [Fusion](https://www.stereolabs.com/docs/fusion/overview)
 
 ## Getting started
-- Install [ZED SDK 4.1.x](https://www.stereolabs.com/developers/release/) (CUDA 11 or 12 as you prefer)
+- Install [ZED SDK 4.2.x](https://www.stereolabs.com/developers/release/) (CUDA 11 or 12 as you prefer)
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
     `nuget install VL.Devices.ZED`
