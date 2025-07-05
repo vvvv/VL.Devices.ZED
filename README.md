@@ -1,7 +1,7 @@
 # VL.Devices.ZED
 A package for using ZED depth cameras by [Stereolabs](https://www.stereolabs.com/) in VL.
 
-For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 Implements:
 * [Recording and Playback](https://www.stereolabs.com/docs/video/recording)
@@ -16,7 +16,7 @@ To be implemented on demand:
 * [Fusion](https://www.stereolabs.com/docs/fusion/overview)
 
 ## Getting started
-- Install [ZED SDK 4.2.x](https://www.stereolabs.com/developers/release/) (CUDA 11 or 12 as you prefer)
+- Install [ZED SDK 5.0.x](https://www.stereolabs.com/developers/release/) (CUDA 11 or 12 as you prefer)
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
     `nuget install VL.Devices.ZED`
@@ -34,4 +34,5 @@ To be implemented on demand:
 - When making a pull-request, please make sure to read the general [guidelines on contributing to vvvv libraries](https://thegraybook.vvvv.org/reference/extending/contributing.html)
 
 ## Credits
-Initial development by [m box](https://github.com/m-box-de).
+- Based on [Stereolabs.zed](https://www.nuget.org/packages/Stereolabs.zed)
+- Initial development by [m box](https://github.com/m-box-de)

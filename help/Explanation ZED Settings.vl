@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.6" Version="0.128">
-  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TfwiDLnW8yUM5gRqp8msUO" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="Jvl7Yu1veZmP1xTuyGivTu" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="Gp7agegJqjuO13S8huFRHR">
     <Canvas Id="RKGamdHA22KME8zdDZxxW1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -133,7 +133,7 @@
               <Choice Kind="TypeFlag" Name="DEPTH_MODE" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MwQ1jyiNCzrNj3Npm7bZp1" Comment="Resolution" Bounds="148,303,62,15" ShowValueBox="true" isIOBox="true" Value="HD1080">
+          <Pad Id="MwQ1jyiNCzrNj3Npm7bZp1" Comment="Resolution" Bounds="148,303,66,15" ShowValueBox="true" isIOBox="true" Value="HD1080">
             <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="RESOLUTION" />
             </p:TypeAnnotation>

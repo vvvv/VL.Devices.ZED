@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.6" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -1421,7 +1421,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="EXCa1JSHJyGOzKOcwZ8mXk" Location="VL.Devices.ZED" Version="0.0.0" />
-  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2024.6.6" />
-  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2024.6.6" />
-  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2024.6.6" />
+  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2024.6.7" />
+  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2024.6.7" />
 </Document>
