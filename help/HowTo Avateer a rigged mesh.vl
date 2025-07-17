@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="UieY5kOVOtyOpTeHuR61b6" LanguageVersion="2025.7.0-0407-g8675153500" Version="0.128">
-  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.0-0407-g8675153500" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Pv2XFiPiWvxN6JDNOtGJ8v" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
+  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
   <Patch Id="KnTMpqqO0NkQKt1t7D1Xdz">
     <Canvas Id="GuU6CuCTviGMeN2GpWm5xa" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -113,7 +113,7 @@
               <Choice Kind="TypeFlag" Name="Path" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="S3ZGIA8AC7zMqLwhVRt1nF" Bounds="417,402,143,101" ShowValueBox="true" isIOBox="true" Value="&lt; Among the joints in the Model find the ones corresponding to those returned by ZED">
+          <Pad Id="S3ZGIA8AC7zMqLwhVRt1nF" Bounds="362,410,143,101" ShowValueBox="true" isIOBox="true" Value="&lt; Among the joints in the Model find the ones corresponding to those returned by ZED">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -359,7 +359,7 @@
             <Pin Id="SLLCRbw62icMoW2d2TzoRs" Name="Error Code" Kind="OutputPin" />
             <Pin Id="A7zPRZDQrNsOJhgY8feAH8" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="80,490,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
+          <Node Bounds="80,510,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Collections.Sequence" />
@@ -370,7 +370,7 @@
             <Pin Id="Aol9inuxbWRNRJdgb148HP" Name="Output" Kind="StateOutputPin" />
             <Pin Id="FcTs05Z140CMIkqhln39n4" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="80,533,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
+          <Node Bounds="80,553,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
@@ -491,61 +491,7 @@
               <Item>Spine2</Item>
             </p:Value>
           </Pad>
-          <Pad Id="Obj5t2rMlecNLYsE1IllqE" Comment="Mapping" Bounds="289,371,103,95" ShowValueBox="true" isIOBox="true">
-            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Spread" />
-              <p:TypeArguments>
-                <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="TypeFlag" Name="String" />
-                </TypeReference>
-              </p:TypeArguments>
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
-              <p:showentryindex p:Type="Boolean">true</p:showentryindex>
-            </p:ValueBoxSettings>
-            <p:Value>
-              <Item>Hips</Item>
-              <Item>Spine</Item>
-              <Item>Spine1</Item>
-              <Item>Spine2</Item>
-              <Item>Neck</Item>
-              <Item></Item>
-              <Item></Item>
-              <Item></Item>
-              <Item></Item>
-              <Item></Item>
-              <Item>LeftShoulder</Item>
-              <Item>LeftArm</Item>
-              <Item>LeftForeArm</Item>
-              <Item>LeftHand</Item>
-              <Item>LeftHandThumb4</Item>
-              <Item>LeftHandIndex1</Item>
-              <Item>LeftHandMiddle4</Item>
-              <Item>LeftHandPinky1</Item>
-              <Item>RightShoulder</Item>
-              <Item>RightArm</Item>
-              <Item>RightForeArm</Item>
-              <Item>RightHand</Item>
-              <Item>RightHandThumb4</Item>
-              <Item>RightHandIndex1</Item>
-              <Item>RightHandMiddle4</Item>
-              <Item>RightHandPinky1</Item>
-              <Item>LeftUpLeg</Item>
-              <Item>LeftLeg</Item>
-              <Item>LeftFoot</Item>
-              <Item>LeftToeBase</Item>
-              <Item></Item>
-              <Item></Item>
-              <Item>RightUpLeg</Item>
-              <Item>RightLeg</Item>
-              <Item>RightFoot</Item>
-              <Item>RightToeBase</Item>
-              <Item></Item>
-              <Item></Item>
-            </p:Value>
-          </Pad>
-          <Pad Id="RSunU6yjiWrN7QYeQFwwc5" Comment="Names" Bounds="142,367,89,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="RSunU6yjiWrN7QYeQFwwc5" Comment="Names" Bounds="142,370,89,95" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -589,6 +535,15 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="274,400,76,19" Id="Ba9JXJQPlUxOPELwFfcjVp">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Avateer a rigged mesh.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessNode" Name="ZED2Mixamo" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="T7tPhGxalarMLg4l1lk0nr" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OeskiSFSOdQPyOt9bDZrS1" Name="Output" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="AATcTcpprZHOW1yk32lDRs" Name="Create" />
         <Patch Id="EGGMvGuJOGGQNa4A6X5TZj" Name="Update" />
@@ -612,7 +567,6 @@
         <Link Id="HgbR1gJV19JPzVyTlvtNlX" Ids="FcTs05Z140CMIkqhln39n4,EQWfEGwU9yXL1gdgpJ2hvb" />
         <Link Id="HVDRAkamWrSLqpgSNhyXzM" Ids="VyclhjKoNqiOU0vvQ38ht5,S66xt2lNZxZMmpu9ULEpBM" />
         <Link Id="DxlEETlS4IUMpIHsVGvWYg" Ids="ISKSjKIEixBL8Vk5xMYWBe,M95IRdSI0UcNjGNy55cU7K" />
-        <Link Id="OWwLdxi1hsDMlv912hxCjd" Ids="Obj5t2rMlecNLYsE1IllqE,F0iGTNIM3yMN0ynFTM2o8l" />
         <Link Id="Tm5N6F2n3ksLVDx2RjEtl6" Ids="T6KqlJeLCbVMRPzx2rfBIL,M8JR9TuiIMQLdd76gXUAvm" />
         <Link Id="El0JGnyrZUcNuCsYMgb2GD" Ids="RszXrO6GJqCMqHgrhsISXz,TfPMwjjHiE1NZl5cswVPgW" />
         <Link Id="Itg0YjrjLQEO9qr9njr25M" Ids="U8PgwwoH32IOWKpAuIfR5q,Jkj434M6PWOPW69QjDlW9a" />
@@ -622,10 +576,11 @@
         <Link Id="Qn3lgrgt6CnObxZEkdj1sD" Ids="Gmr5AoUR7VOPLRWBasaWSZ,DI8cp8lH9vUMnLn6qJaQGb" />
         <Link Id="TXGxuYh8T88NG6ETFpCkRM" Ids="NRNNnrj87AvLE4VCd01GGk,RSunU6yjiWrN7QYeQFwwc5" />
         <Link Id="BBPy9MJOYxoQHbWLHQ0bfZ" Ids="LLbj8agyt9YOUCgovW9r8k,KhWzGBHihnKLcGBIaBTm3i" />
+        <Link Id="ICtmO3pkpXELClUcX0Y580" Ids="OeskiSFSOdQPyOt9bDZrS1,F0iGTNIM3yMN0ynFTM2o8l" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.0-0407-g8675153500" />
+  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.0-0411-g5864c70f83" />
   <PlatformDependency Id="CcMFAK8B1e9NEfP2z4Y5Kq" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
   <NugetDependency Id="Cf2aw2LnoYfPH19aYRk592" Location="VL.Devices.ZED" Version="0.0.0" />
   <NugetDependency Id="VmFXHMpeF5ELjyLDCDbZuS" Location="VL.Skeleton" Version="0.0.0" />

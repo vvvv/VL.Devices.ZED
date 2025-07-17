@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2025.7.0-0407-g8675153500" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
     <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
@@ -11405,7 +11405,6 @@
           <Link Id="KbWT0G7ZwUHM5o9K4OdwAW" Ids="VROxn3aKA0ALv7pkF8qT77,MdT9EZgsl4hMiYioCIW9CL" />
           <Link Id="LXIxXZX1aIKMx6WkbEsTOI" Ids="IICGS4wReoiOsiD0Mk3e3G,DSXHhEf8HgVNYSkrzvU7Wc" />
           <Link Id="HDYYHSiPsiyLJKRQdK5PCN" Ids="VrO8guhsZ5pPc0gGuXwatJ,IE6dwki9Q03LGwGAIs0K3b" />
-          <Link Id="KPY0ut5FQ89OJphNNgdhIi" Ids="K5s3lDZqjEcP5mnzLIQHR9,ESnzlOPQc3XPb9ro8N3ood" />
           <Link Id="Q2RUpbYhYz6P1BktQbRXGP" Ids="LxmRYrOxELWO95IFKk1lw7,J1WCWWAa9WLQNeb48AQR6n" />
           <Link Id="Er7GxFMrrOxOkZDUPm1RSS" Ids="LluO2FCv49XL651QtgwPpN,MD11SrL2CCpQWWcjKnaht7" />
           <Link Id="Mf3SrArj3hZMQdSLCfwo9F" Ids="MD11SrL2CCpQWWcjKnaht7,LNRFu8yml6yOywA5BTcwXc" />
@@ -11439,6 +11438,7 @@
           <Link Id="RiSeQ7ft7uXNNd2kuIXnbB" Ids="OIjhEPMKgTiMOu8Pe8GeXz,OJoRCCNKlrNMSHDekYOcth" IsHidden="true" />
           <Link Id="EXRJvCQbjXHLgA7CxP9lCK" Ids="MD11SrL2CCpQWWcjKnaht7,QqTWiWmoB3XOpU6AfyRl4x" />
           <Link Id="DG0NSmZwXwCN4IBeKRGTiL" Ids="QqTWiWmoB3XOpU6AfyRl4x,RMgcO6HCzT7PVACt6L5DEc" IsHidden="true" />
+          <Link Id="NtOuvSYWN44PvnFaFQVWvp" Ids="K5s3lDZqjEcP5mnzLIQHR9,ESnzlOPQc3XPb9ro8N3ood" />
         </Patch>
       </Node>
       <!--
@@ -12450,6 +12450,86 @@
           <ProcessDefinition Id="LqMaVK8yn3uOBvGh543bzr" IsHidden="true" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ ZED2Mixamo ************************
+
+-->
+      <Node Name="ZED2Mixamo" Bounds="470,130" Id="J8a2UAFPk1IMedEjeApvz8">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <Patch Id="KUTsbQkKBbHOiukdYSmHeM">
+          <Canvas Id="OGruWeGw0kjNjmwx2kzhR6" CanvasType="Group">
+            <Pad Id="AzBWYJ4myJlOlbmbAl3fmC" Comment="Mapping" Bounds="405,420,103,95" ShowValueBox="true" isIOBox="true">
+              <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="TypeFlag" Name="Spread" />
+                <p:TypeArguments>
+                  <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                    <Choice Kind="TypeFlag" Name="String" />
+                  </TypeReference>
+                </p:TypeArguments>
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
+                <p:showentryindex p:Type="Boolean">true</p:showentryindex>
+              </p:ValueBoxSettings>
+              <p:Value>
+                <Item>Hips</Item>
+                <Item>Spine</Item>
+                <Item>Spine1</Item>
+                <Item>Spine2</Item>
+                <Item>Neck</Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item>LeftShoulder</Item>
+                <Item>LeftArm</Item>
+                <Item>LeftForeArm</Item>
+                <Item>LeftHand</Item>
+                <Item>LeftHandThumb4</Item>
+                <Item>LeftHandIndex1</Item>
+                <Item>LeftHandMiddle4</Item>
+                <Item>LeftHandPinky1</Item>
+                <Item>RightShoulder</Item>
+                <Item>RightArm</Item>
+                <Item>RightForeArm</Item>
+                <Item>RightHand</Item>
+                <Item>RightHandThumb4</Item>
+                <Item>RightHandIndex1</Item>
+                <Item>RightHandMiddle4</Item>
+                <Item>RightHandPinky1</Item>
+                <Item>LeftUpLeg</Item>
+                <Item>LeftLeg</Item>
+                <Item>LeftFoot</Item>
+                <Item>LeftToeBase</Item>
+                <Item></Item>
+                <Item></Item>
+                <Item>RightUpLeg</Item>
+                <Item>RightLeg</Item>
+                <Item>RightFoot</Item>
+                <Item>RightToeBase</Item>
+                <Item></Item>
+                <Item></Item>
+              </p:Value>
+            </Pad>
+            <ControlPoint Id="VPlRLAI3CJPQMMX7PQ7VYT" Bounds="405,530" />
+          </Canvas>
+          <Patch Id="NPeiDIQWnGsNwmjOdWZpQY" Name="Create" />
+          <Patch Id="JZ5XLpLP4paM0mryyzQSyB" Name="Update">
+            <Pin Id="NDGXCMexywOMW46lv9c0t8" Name="Output" Kind="OutputPin" />
+          </Patch>
+          <ProcessDefinition Id="S1oUQVfPCabNo239CE5ogu">
+            <Fragment Id="NRVJMDC6kiQLIr5rAErLUb" Patch="NPeiDIQWnGsNwmjOdWZpQY" Enabled="true" />
+            <Fragment Id="Ihu0fSzYoHGMxs2Gf9ePM1" Patch="JZ5XLpLP4paM0mryyzQSyB" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="QFxuMkYDEWBMFqf52Gnhzb" Ids="AzBWYJ4myJlOlbmbAl3fmC,VPlRLAI3CJPQMMX7PQ7VYT" />
+          <Link Id="Hmgrc7pmo6XPnB1g4DDnms" Ids="VPlRLAI3CJPQMMX7PQ7VYT,NDGXCMexywOMW46lv9c0t8" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -12472,12 +12552,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2025.7.0-0407-g8675153500" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2025.7.0-0407-g8675153500" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2025.7.0-0411-g5864c70f83" />
   <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
-  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2025.7.0-0407-g8675153500" />
+  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2025.7.0-0411-g5864c70f83" />
   <PlatformDependency Id="NZov2Jir4PWPl37160okDB" Location="./lib/net6.0/VL.Devices.ZED.dll" />
   <NugetDependency Id="Bc2Ah8MXSJDL36WcqPTQ9w" Location="Stereolabs.zed" Version="5.0.1" />
   <NugetDependency Id="DPqYTBFLt1sNUCSMT5mxpb" Location="VL.Skeleton" Version="0.0.0" />
