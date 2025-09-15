@@ -23,7 +23,7 @@ To be implemented on demand:
 
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
-## Useful Sterelabs links
+## Useful Stereolabs links
 - [Help Center](https://support.stereolabs.com/hc/en-us)
 - [Documentation](https://www.stereolabs.com/docs)
 - [C# API](https://www.stereolabs.com/docs/api/csharp)
