@@ -6,7 +6,7 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 Implements:
 * [Recording and Playback](https://www.stereolabs.com/docs/video/recording)
 * [Depth Sensing](https://www.stereolabs.com/docs/depth-sensing)
-* [Body Tracking](https://www.stereolabs.com/docs/body-tracking)
+* [Body Tracking](https://www.stereolabs.com/docs/body-tracking) with example for Avateering
 
 To be implemented on demand:
 * [Positional Tracking](https://www.stereolabs.com/docs/positional-tracking)
@@ -16,7 +16,7 @@ To be implemented on demand:
 * [Fusion](https://www.stereolabs.com/docs/fusion/overview)
 
 ## Getting started
-- Install [ZED SDK 5.0.x](https://www.stereolabs.com/developers/release/) (CUDA 11 or 12 as you prefer)
+- Install [ZED SDK 5.1.x](https://www.stereolabs.com/developers/release/) (CUDA 11, 12 or 13 as you prefer)
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
     `nuget install VL.Devices.ZED`
