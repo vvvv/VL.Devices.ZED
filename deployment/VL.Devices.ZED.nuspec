@@ -14,6 +14,7 @@
     <license type="expression">MIT</license>
     <dependencies>
         <dependency id="Stereolabs.zed" version="5.1.0" />
+        <dependency id="VL.Skeleton" version="0.0.2-alpha" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
