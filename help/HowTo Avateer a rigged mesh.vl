@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Pv2XFiPiWvxN6JDNOtGJ8v" LanguageVersion="2025.7.0-0411-g5864c70f83" Version="0.128">
-  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.0-0411-g5864c70f83" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Pv2XFiPiWvxN6JDNOtGJ8v" LanguageVersion="2025.7.1-0076-g0d3a62e007" Version="0.128">
+  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.1-0076-g0d3a62e007" />
   <Patch Id="KnTMpqqO0NkQKt1t7D1Xdz">
     <Canvas Id="GuU6CuCTviGMeN2GpWm5xa" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -28,7 +28,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
             </p:NodeReference>
-            <Pin Id="TfJUM2L4i32LdYNpzPGjKo" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Gr4rI5zR57WPRy0F5VYIPJ" Name="Bounds" Kind="InputPin" DefaultValue="1186.6666, 86, 724.6667, 467.33334" IsHidden="true" />
             <Pin Id="O48Q68C6YjgNbc0oYLGDWW" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
             <Pin Id="FeLXm9CAzYnLJmznql8nCt" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
@@ -36,10 +35,14 @@
             <Pin Id="UV5dFvNuZCmMwj7EekvZNv" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="A0TNwbuSnNYPh4aO9y4rEB" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="T2skslnlDvvMopmKno5uRI" Name="Input Priority" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TfJUM2L4i32LdYNpzPGjKo" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="NzbmIL5JFiULVZpgtwZZQZ" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Dgv4TtiS60WNYp0HYCPV47" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="HYsXE2LdQawOLqV8fqAkLL" Name="Input" Kind="InputPin" />
             <Pin Id="O2c0Jt1yruUNw48jW5Sx9K" Name="Camera" Kind="InputPin" />
             <Pin Id="DtpPAYpgvatOFuD2XcPgtM" Name="Enable Default Camera" Kind="InputPin" />
             <Pin Id="RMyuYVnxcOoPLg0ktphMCn" Name="Title" Kind="InputPin" />
+            <Pin Id="TlgQMHyIOpcO7gOM2HRWk7" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
             <Pin Id="L6KGciYkAl4LG5pIX09fyG" Name="Clear Color" Kind="InputPin" />
             <Pin Id="VlglB30v8oBPbnjgPUVCeS" Name="Clear" Kind="InputPin" />
             <Pin Id="Cu5Bze0O4dSPJjnqVVrSJP" Name="Post Effects" Kind="InputPin" />
@@ -50,6 +53,7 @@
             <Pin Id="MYWrzLasnviOT2zm3yj1hA" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
             <Pin Id="OXIJgMoiOGuLquwEi852Cc" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
             <Pin Id="T8ydHBSc4MnP5cmWFMyCEj" Name="Enabled" Kind="InputPin" />
+            <Pin Id="LnpVvBnnGcIMrJUCk8P4Fr" Name="Input Source" Kind="InputPin" IsHidden="true" />
             <Pin Id="T4Z1PPfEOH0OenqF0GoBkx" Name="Present Interval" Kind="InputPin" />
             <Pin Id="GtAmC3M2ZmGNZ4uLQv0mg8" Name="Output" Kind="OutputPin" />
             <Pin Id="Ejgv8aqYkGiMbsKohg0CFE" Name="Client Bounds" Kind="OutputPin" />
@@ -64,6 +68,8 @@
             <Pin Id="DMVPrgRSmD6QAsv0fE6c96" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Qb0iam96CatM7Z25uBptPw" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="Ot4xjDaSOp4NQ0GmuJJhuV" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
+            <Pin Id="KjbU7CXFBi4N4MmPvYnzkY" Name="Output Color Space" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VbXaqNL23W7P4tKCvMV68Q" Name="Backbuffer Format" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="675,670,63,19" Id="SlxTenU9VOZL1tP6o3bFKJ">
             <p:NodeReference LastCategoryFullName="Stride" LastDependency="VL.Stride.vl">
@@ -359,7 +365,7 @@
             <Pin Id="SLLCRbw62icMoW2d2TzoRs" Name="Error Code" Kind="OutputPin" />
             <Pin Id="A7zPRZDQrNsOJhgY8feAH8" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="80,510,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
+          <Node Bounds="80,390,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Collections.Sequence" />
@@ -370,7 +376,7 @@
             <Pin Id="Aol9inuxbWRNRJdgb148HP" Name="Output" Kind="StateOutputPin" />
             <Pin Id="FcTs05Z140CMIkqhln39n4" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="80,553,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
+          <Node Bounds="80,450,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
@@ -382,6 +388,7 @@
             <Pin Id="GxXEVXR7PamLsOuwdISA6n" Name="Skeleton" Kind="OutputPin" />
             <Pin Id="RJalJe6nNfqOzqSdPpO1CM" Name="Transforms" Kind="OutputPin" />
             <Pin Id="L9yTRmN9xKuOtk5Xqjxw7Z" Name="BODY_FORMAT" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Oc4Uj4GtQiNNUnO7c4Qmzz" Name="Names" Kind="OutputPin" />
           </Node>
           <Node Bounds="80,625,81,19" Id="RIEGdB9F2G4Oy9DJ8Xqglk">
             <p:NodeReference LastCategoryFullName="Skeleton" LastDependency="VL.Skeleton.vl">
@@ -393,6 +400,7 @@
             <Pin Id="F0iGTNIM3yMN0ynFTM2o8l" Name="Model Joint Names" Kind="InputPin" />
             <Pin Id="CSn91zjq6RJP4JFqLVIvjx" Name="Rigged Model Entity" Kind="InputPin" />
             <Pin Id="S0Eczs3knVJLKhlRlf3A7o" Name="Update" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="IAbNCyEQl2nNlQRY8GcbBe" Name="Joint Transformations" Kind="OutputPin" />
           </Node>
           <Node Bounds="472,630,69,19" Id="NWtpiv1ZndDOP8vMSw0284">
             <p:NodeReference LastCategoryFullName="Skeleton" LastDependency="VL.Skeleton.vl">
@@ -491,7 +499,7 @@
               <Item>Spine2</Item>
             </p:Value>
           </Pad>
-          <Pad Id="RSunU6yjiWrN7QYeQFwwc5" Comment="Names" Bounds="142,370,89,95" ShowValueBox="true" isIOBox="true">
+          <Pad Id="RSunU6yjiWrN7QYeQFwwc5" Comment="Names" Bounds="142,271,89,95" ShowValueBox="true" isIOBox="true">
             <p:ValueBoxSettings>
               <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
             </p:ValueBoxSettings>
@@ -544,6 +552,16 @@
             <Pin Id="T7tPhGxalarMLg4l1lk0nr" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OeskiSFSOdQPyOt9bDZrS1" Name="Output" Kind="OutputPin" />
           </Node>
+          <Pad Id="GdCEYkNoJhaPzHsmyC5VM0" Bounds="235,504,180,108" ShowValueBox="true" isIOBox="true" Value="&lt;&lt; these are the actual names from skeleton, not those you recive from the Bodies.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QoM6NZqrRjpLjl1n5JQsTv" Comment="Names" Bounds="132,490,55,48" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="AATcTcpprZHOW1yk32lDRs" Name="Create" />
         <Patch Id="EGGMvGuJOGGQNa4A6X5TZj" Name="Update" />
@@ -577,10 +595,11 @@
         <Link Id="TXGxuYh8T88NG6ETFpCkRM" Ids="NRNNnrj87AvLE4VCd01GGk,RSunU6yjiWrN7QYeQFwwc5" />
         <Link Id="BBPy9MJOYxoQHbWLHQ0bfZ" Ids="LLbj8agyt9YOUCgovW9r8k,KhWzGBHihnKLcGBIaBTm3i" />
         <Link Id="ICtmO3pkpXELClUcX0Y580" Ids="OeskiSFSOdQPyOt9bDZrS1,F0iGTNIM3yMN0ynFTM2o8l" />
+        <Link Id="OJ8asNidvMMMNg6q1jIS9i" Ids="Oc4Uj4GtQiNNUnO7c4Qmzz,QoM6NZqrRjpLjl1n5JQsTv" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.0-0411-g5864c70f83" />
+  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.1-0076-g0d3a62e007" />
   <PlatformDependency Id="CcMFAK8B1e9NEfP2z4Y5Kq" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
   <NugetDependency Id="Cf2aw2LnoYfPH19aYRk592" Location="VL.Devices.ZED" Version="0.0.0" />
   <NugetDependency Id="VmFXHMpeF5ELjyLDCDbZuS" Location="VL.Skeleton" Version="0.0.0" />

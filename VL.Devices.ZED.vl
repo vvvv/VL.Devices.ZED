@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2025.7.0" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HvqWq7PystyPhAxRjttADi" LanguageVersion="2025.7.1-0076-g0d3a62e007" Version="0.128">
   <Patch Id="KL6QdhZD90kO5lsxAY0WyG">
     <Canvas Id="CM4f7koDuvILpvnJRNruVA" DefaultCategory="Devices.ZED" CanvasType="FullCategory">
       <!--
@@ -5846,7 +5846,7 @@
                 <Pin Id="VVtOQyEQa7RP4p6nUiNFoR" Name="Output" Kind="StateOutputPin" />
               </Node>
               <ControlPoint Id="CosuL5MbthKOBWXbVonZbz" Bounds="1118,1201" />
-              <Pad Id="KofGyxAT8OqODV2wZeiL74" Comment="Body Parts 38" Bounds="1178,780,133,15" ShowValueBox="true" isIOBox="true" Value="SPINE_1">
+              <Pad Id="KofGyxAT8OqODV2wZeiL74" Comment="Body Parts 38" Bounds="1178,780,140,15" ShowValueBox="true" isIOBox="true" Value="SPINE_1">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5854,7 +5854,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="ENVmegvyxPHLpC2B9AWNf0" Comment="Body Parts 38" Bounds="1178,661,133,15" ShowValueBox="true" isIOBox="true" Value="SPINE_2">
+              <Pad Id="ENVmegvyxPHLpC2B9AWNf0" Comment="Body Parts 38" Bounds="1178,661,140,15" ShowValueBox="true" isIOBox="true" Value="SPINE_2">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5862,7 +5862,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="S2Ng1bAMTB6LYZ3Pftbr99" Comment="Body Parts 38" Bounds="1178,571,133,15" ShowValueBox="true" isIOBox="true" Value="SPINE_3">
+              <Pad Id="S2Ng1bAMTB6LYZ3Pftbr99" Comment="Body Parts 38" Bounds="1178,571,140,15" ShowValueBox="true" isIOBox="true" Value="SPINE_3">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5870,7 +5870,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="GQudajNyQI7PYPqr3V6Bkr" Comment="Body Parts 38" Bounds="1197,342,133,15" ShowValueBox="true" isIOBox="true" Value="NECK">
+              <Pad Id="GQudajNyQI7PYPqr3V6Bkr" Comment="Body Parts 38" Bounds="1197,342,140,15" ShowValueBox="true" isIOBox="true" Value="NECK">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5878,7 +5878,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="TKzqcZKvaDcO94nvLaf7xL" Comment="Body Parts 38" Bounds="1191,242,133,15" ShowValueBox="true" isIOBox="true" Value="NOSE">
+              <Pad Id="TKzqcZKvaDcO94nvLaf7xL" Comment="Body Parts 38" Bounds="1191,242,140,15" ShowValueBox="true" isIOBox="true" Value="NOSE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5886,7 +5886,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="PuBaMbFRmNcP4W9o6RhgiB" Comment="Body Parts 38" Bounds="1350,370,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_CLAVICLE">
+              <Pad Id="PuBaMbFRmNcP4W9o6RhgiB" Comment="Body Parts 38" Bounds="1350,370,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_CLAVICLE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5894,7 +5894,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="FjLDFCmkehULKYBfKymBfs" Comment="Body Parts 38" Bounds="1455,392,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_SHOULDER">
+              <Pad Id="FjLDFCmkehULKYBfKymBfs" Comment="Body Parts 38" Bounds="1455,392,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_SHOULDER">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5902,7 +5902,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="SluQGLcG9wLQLcKBtdrsXc" Comment="Body Parts 38" Bounds="1571,420,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_ELBOW">
+              <Pad Id="SluQGLcG9wLQLcKBtdrsXc" Comment="Body Parts 38" Bounds="1571,420,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_ELBOW">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5910,7 +5910,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="P0wh0AzxO9nMcURo94bdfj" Comment="Body Parts 38" Bounds="1683,441,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_WRIST">
+              <Pad Id="P0wh0AzxO9nMcURo94bdfj" Comment="Body Parts 38" Bounds="1683,441,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_WRIST">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5918,7 +5918,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="B0aTzcFQYqrQFDtY3OusH6" Comment="Body Parts 38" Bounds="2054,360,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_PINKY_1">
+              <Pad Id="B0aTzcFQYqrQFDtY3OusH6" Comment="Body Parts 38" Bounds="2054,360,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_PINKY_1">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5926,7 +5926,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="QGlwtJp09Z3Psb9nZ4CWXw" Comment="Body Parts 38" Bounds="2034,260,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_MIDDLE_4">
+              <Pad Id="QGlwtJp09Z3Psb9nZ4CWXw" Comment="Body Parts 38" Bounds="2034,260,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_MIDDLE_4">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5934,7 +5934,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="Qr9aDcHVKprMGrEvASAhQB" Comment="Body Parts 38" Bounds="2014,160,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_INDEX_1">
+              <Pad Id="Qr9aDcHVKprMGrEvASAhQB" Comment="Body Parts 38" Bounds="2014,160,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_INDEX_1">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5942,7 +5942,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="U9aCRMZxHu5O3mGd6FsyTL" Comment="Body Parts 38" Bounds="1994,55,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_THUMB_4">
+              <Pad Id="U9aCRMZxHu5O3mGd6FsyTL" Comment="Body Parts 38" Bounds="1994,55,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HAND_THUMB_4">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5950,7 +5950,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="UWdqhQlekx0P2rGmTnvIlF" Comment="Body Parts 38" Bounds="945,480,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_CLAVICLE">
+              <Pad Id="UWdqhQlekx0P2rGmTnvIlF" Comment="Body Parts 38" Bounds="945,480,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_CLAVICLE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5958,7 +5958,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="Rj804qqEc0EPZchYmCVqTN" Comment="Body Parts 38" Bounds="846,450,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_SHOULDER">
+              <Pad Id="Rj804qqEc0EPZchYmCVqTN" Comment="Body Parts 38" Bounds="846,450,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_SHOULDER">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5966,7 +5966,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="P3DreFWXxexQFpQzmlSJJC" Comment="Body Parts 38" Bounds="742,420,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_ELBOW">
+              <Pad Id="P3DreFWXxexQFpQzmlSJJC" Comment="Body Parts 38" Bounds="742,420,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_ELBOW">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5974,7 +5974,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="R0xm4kamC3APX2a5QmCCcA" Comment="Body Parts 38" Bounds="638,393,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_WRIST">
+              <Pad Id="R0xm4kamC3APX2a5QmCCcA" Comment="Body Parts 38" Bounds="638,393,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_WRIST">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5982,7 +5982,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="LCgCSmpGZDNMVPxRQmWFSd" Comment="Body Parts 38" Bounds="326,435,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_PINKY_1">
+              <Pad Id="LCgCSmpGZDNMVPxRQmWFSd" Comment="Body Parts 38" Bounds="326,435,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_PINKY_1">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5990,7 +5990,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="P3z5yWpcXUpNlbapQcsapK" Comment="Body Parts 38" Bounds="299,310,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_MIDDLE_4">
+              <Pad Id="P3z5yWpcXUpNlbapQcsapK" Comment="Body Parts 38" Bounds="299,310,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_MIDDLE_4">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -5998,7 +5998,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="EGk2oPjLcceOsMEbju3fLF" Comment="Body Parts 38" Bounds="273,200,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_INDEX_1">
+              <Pad Id="EGk2oPjLcceOsMEbju3fLF" Comment="Body Parts 38" Bounds="273,200,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_INDEX_1">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6006,7 +6006,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="QjWCG6OHvCvPAdmBO043r1" Comment="Body Parts 38" Bounds="246,70,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_THUMB_4">
+              <Pad Id="QjWCG6OHvCvPAdmBO043r1" Comment="Body Parts 38" Bounds="246,70,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HAND_THUMB_4">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6014,7 +6014,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="Jk8U8l247aXOoYsWeImSSu" Comment="Body Parts 38" Bounds="1497,810,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HIP">
+              <Pad Id="Jk8U8l247aXOoYsWeImSSu" Comment="Body Parts 38" Bounds="1497,810,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HIP">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6022,7 +6022,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="EAwXv0e0FJENxIGSwOJ0FI" Comment="Body Parts 38" Bounds="1497,937,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_KNEE">
+              <Pad Id="EAwXv0e0FJENxIGSwOJ0FI" Comment="Body Parts 38" Bounds="1497,937,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_KNEE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6030,7 +6030,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="BIFCK0hLYNQLGFSBGdDUAA" Comment="Body Parts 38" Bounds="1499,1127,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_ANKLE">
+              <Pad Id="BIFCK0hLYNQLGFSBGdDUAA" Comment="Body Parts 38" Bounds="1499,1127,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_ANKLE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6038,7 +6038,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="PAS5e3dN1tAL8Nn7x9U6PF" Comment="Body Parts 38" Bounds="1499,1277,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_BIG_TOE">
+              <Pad Id="PAS5e3dN1tAL8Nn7x9U6PF" Comment="Body Parts 38" Bounds="1499,1277,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_BIG_TOE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6046,7 +6046,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="Oeop57sJ6znNX64dkFhtjc" Comment="Body Parts 38" Bounds="759,1250,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_BIG_TOE">
+              <Pad Id="Oeop57sJ6znNX64dkFhtjc" Comment="Body Parts 38" Bounds="759,1250,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_BIG_TOE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6054,7 +6054,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="Ih4140coLjiODlYT4RlRBm" Comment="Body Parts 38" Bounds="759,1080,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_ANKLE">
+              <Pad Id="Ih4140coLjiODlYT4RlRBm" Comment="Body Parts 38" Bounds="759,1080,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_ANKLE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6062,7 +6062,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="UkiPrSqWUtfNnpl89yUahK" Comment="Body Parts 38" Bounds="759,931,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_KNEE">
+              <Pad Id="UkiPrSqWUtfNnpl89yUahK" Comment="Body Parts 38" Bounds="759,931,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_KNEE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6070,7 +6070,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="UdoMEWq73iqOowPqghXkfX" Comment="Body Parts 38" Bounds="759,810,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HIP">
+              <Pad Id="UdoMEWq73iqOowPqghXkfX" Comment="Body Parts 38" Bounds="759,810,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HIP">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6078,7 +6078,7 @@
                   <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">DropDown</p:selectionmode>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="OR4XUlAc6inNeWrNcftrlV" Comment="Body Parts 38" Bounds="1118,970,133,17" ShowValueBox="true" isIOBox="true" Value="PELVIS">
+              <Pad Id="OR4XUlAc6inNeWrNcftrlV" Comment="Body Parts 38" Bounds="1118,970,140,17" ShowValueBox="true" isIOBox="true" Value="PELVIS">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6357,7 +6357,7 @@
                 <Pin Id="QoNwcbZ71AeOwpUEjX98bK" Name="Children" Kind="InputPin" />
                 <Pin Id="LECukEeDSsMLAAH9y88LM4" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="SfzYQZEJCm0N1FblMlqPRf" Comment="Body Parts 38" Bounds="1601,1307,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_SMALL_TOE">
+              <Pad Id="SfzYQZEJCm0N1FblMlqPRf" Comment="Body Parts 38" Bounds="1601,1307,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_SMALL_TOE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6384,7 +6384,7 @@
                 <Pin Id="KDR32mrXmSbMaz1zOXYki3" Name="Children" Kind="InputPin" />
                 <Pin Id="CWLSjlKYgPePe9NwI8x8lU" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="DQgLuumKGkhNdjE37kY8vg" Comment="Body Parts 38" Bounds="1702,1337,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HEEL">
+              <Pad Id="DQgLuumKGkhNdjE37kY8vg" Comment="Body Parts 38" Bounds="1702,1337,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_HEEL">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6422,7 +6422,7 @@
                 <Pin Id="DBtvXdu13naN2XbJ2aFSCi" Name="Children" Kind="InputPin" />
                 <Pin Id="BN7pGlSz63iOdG5JkIEeJc" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="LZ5uxZCKooFN4jS2Ja61OP" Comment="Body Parts 38" Bounds="861,1287,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_SMALL_TOE">
+              <Pad Id="LZ5uxZCKooFN4jS2Ja61OP" Comment="Body Parts 38" Bounds="861,1287,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_SMALL_TOE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6449,7 +6449,7 @@
                 <Pin Id="SVQNV9q5Hh0Mu8tVWV2lPk" Name="Children" Kind="InputPin" />
                 <Pin Id="UcWRQ9SjTdMQLcYTCH8Dnq" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="TVNJrq9iVI9LpIHZWxROzd" Comment="Body Parts 38" Bounds="962,1317,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HEEL">
+              <Pad Id="TVNJrq9iVI9LpIHZWxROzd" Comment="Body Parts 38" Bounds="962,1317,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_HEEL">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6486,7 +6486,7 @@
                 <Pin Id="CGMaSCCMOQ2OSVhRAugSAM" Name="Children" Kind="InputPin" />
                 <Pin Id="KJvIas7zwewOLCf9zON0tw" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="GlgJs1RmrcNPqNSujCqQvo" Comment="Body Parts 38" Bounds="1047,92,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_EYE">
+              <Pad Id="GlgJs1RmrcNPqNSujCqQvo" Comment="Body Parts 38" Bounds="1047,92,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_EYE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6513,7 +6513,7 @@
                 <Pin Id="ExKiWuAapG8PW9RFNKK6Zw" Name="Children" Kind="InputPin" />
                 <Pin Id="RGmKCW5ahJcP4FiW5FgLUV" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="NsYEbrxetx8LIcW6vY2xG8" Comment="Body Parts 38" Bounds="1291,92,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_EYE">
+              <Pad Id="NsYEbrxetx8LIcW6vY2xG8" Comment="Body Parts 38" Bounds="1291,92,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_EYE">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6540,7 +6540,7 @@
                 <Pin Id="Ei3Ry2PQl93NPsO4InxwHt" Name="Children" Kind="InputPin" />
                 <Pin Id="MeepMRDkfR3PILbb5nqiyu" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="H2OvMfsu6vKOniDqjtgVq4" Comment="Body Parts 38" Bounds="1528,82,133,15" ShowValueBox="true" isIOBox="true" Value="LEFT_EAR">
+              <Pad Id="H2OvMfsu6vKOniDqjtgVq4" Comment="Body Parts 38" Bounds="1528,82,140,15" ShowValueBox="true" isIOBox="true" Value="LEFT_EAR">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6567,7 +6567,7 @@
                 <Pin Id="VjcQiAGFcEsMZUwO33OW6p" Name="Children" Kind="InputPin" />
                 <Pin Id="B3vHk3reJgIPdg5hVDkD71" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Pad Id="QW2AauxbGdqLIzoSzj4K5Y" Comment="Body Parts 38" Bounds="808,92,133,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_EAR">
+              <Pad Id="QW2AauxbGdqLIzoSzj4K5Y" Comment="Body Parts 38" Bounds="808,92,140,15" ShowValueBox="true" isIOBox="true" Value="RIGHT_EAR">
                 <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                   <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                 </p:TypeAnnotation>
@@ -6760,7 +6760,7 @@
     ************************ SetTransformsByName (Internal) ************************
 
 -->
-        <Node Name="SetTransformsByName (Internal)" Bounds="1085,283,453,664" Id="G9CRRAoPJ3RORQOJd3qrOm">
+        <Node Name="SetTransformsByName (Internal)" Bounds="1085,283,460,664" Id="G9CRRAoPJ3RORQOJd3qrOm">
           <p:NodeReference>
             <Choice Kind="OperationDefinition" />
           </p:NodeReference>
@@ -6786,7 +6786,7 @@
                 </p:TypeArguments>
               </p:TypeAnnotation>
             </Pin>
-            <Node Bounds="1140,383,386,513" Id="AzuM4HxTfRQLbb1fYNFr0l">
+            <Node Bounds="1140,383,393,513" Id="AzuM4HxTfRQLbb1fYNFr0l">
               <p:NodeReference LastCategoryFullName="Collections.Trees.IReadOnlyTreeNode" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
                 <CategoryReference Kind="MutableInterfaceType" Name="IReadOnlyTreeNode" NeedsToBeDirectParent="true" />
@@ -6907,7 +6907,7 @@
                   <ControlPoint Id="NdskymxIrhTMCzr4NIspRW" Bounds="1250,723" Alignment="Top" />
                   <ControlPoint Id="AsWxID6mmhkMFzlQaQDaFr" Bounds="1250,813" Alignment="Bottom" />
                 </Node>
-                <Pad Id="SmxwHifrlKrNf3N55eSIkI" Comment="Body Parts 38" Bounds="1297,550,133,15" ShowValueBox="true" isIOBox="true" Value="PELVIS">
+                <Pad Id="SmxwHifrlKrNf3N55eSIkI" Comment="Body Parts 38" Bounds="1297,550,140,15" ShowValueBox="true" isIOBox="true" Value="PELVIS">
                   <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
                     <Choice Kind="TypeFlag" Name="BODY_38_PARTS" />
                   </p:TypeAnnotation>
@@ -11159,7 +11159,7 @@
               <Pin Id="Pig99tjLoLMMkNJ1lpBAQu" Name="Input" Kind="StateInputPin" />
               <Pin Id="AwLXxIWUey4PoHv3h3GLEk" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="674,865,205,102" Id="QwFvpsFvDp2LY22HZE08M2">
+            <Node Bounds="674,865,169,142" Id="QwFvpsFvDp2LY22HZE08M2">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -11180,7 +11180,7 @@
                   <Pin Id="FWWi1oz7k6SL3N609olOZX" Name="Result" Kind="OutputPin" />
                   <Pin Id="EUBnKDctKE0OFiyLMCNDF2" Name="Success" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="686,915,179,26" Id="JfrMQO2Bkp3NqqvumGIBLR">
+                <Node Bounds="686,960,87,26" Id="JfrMQO2Bkp3NqqvumGIBLR">
                   <p:NodeReference LastCategoryFullName="Skeleton.ISkeletonTreeNode" LastDependency="VL.Skeleton.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <FullNameCategoryReference ID="Skeleton.ISkeletonTreeNode" />
@@ -11190,9 +11190,20 @@
                   <Pin Id="RFRcN5dwnubQRwYnk4GKm2" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="R07OY6a51UELZCjVXmiPri" Name="Transform" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="686,920,143,26" Id="UWiZxkQW4UCO4Eub6QPZnn">
+                  <p:NodeReference LastCategoryFullName="Skeleton.ISkeletonTreeNode" LastDependency="VL.Skeleton.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <FullNameCategoryReference ID="Skeleton.ISkeletonTreeNode" />
+                    <Choice Kind="OperationCallFlag" Name="Name" />
+                  </p:NodeReference>
+                  <Pin Id="QGHxvpAIj1DQFBipnf20Sn" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="AgBE4wwbNUWNvSgWwWU4al" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="UkcpZOjWeeELjeytQcVhAK" Name="Name" Kind="OutputPin" />
+                </Node>
               </Patch>
               <ControlPoint Id="JBklrBsknguQDNnrYbd3UD" Bounds="688,871" Alignment="Top" />
-              <ControlPoint Id="MsQ8U9LbreZN0gXI3FL8uM" Bounds="862,961" Alignment="Bottom" />
+              <ControlPoint Id="MsQ8U9LbreZN0gXI3FL8uM" Bounds="707,1001" Alignment="Bottom" />
+              <ControlPoint Id="D1JiBfINiJgOspIZlCuuqx" Bounds="826,1001" Alignment="Bottom" />
             </Node>
             <Node Bounds="334,460,84,19" Id="EzxT3JbCVVaLsPmrxKax1Y">
               <p:NodeReference LastCategoryFullName="Devices.Dollars.DollarsMoCap" LastDependency="VL.DollarsMoCap.vl">
@@ -11313,7 +11324,7 @@
               <Pin Id="TTswl6tqjmLM263iCWmIrK" Name="Output" Kind="StateOutputPin" />
               <Pin Id="OQK2zmqWFiFMz9LUrmctzS" Name="Id" Kind="OutputPin" />
             </Node>
-            <Pad Id="JHAZylgHBt4PRCyjxSgNKG" Comment="Id" Bounds="655,140,35,15" ShowValueBox="true" isIOBox="true" />
+            <Pad Id="JHAZylgHBt4PRCyjxSgNKG" Comment="Id" Bounds="646,150,35,15" ShowValueBox="true" isIOBox="true" />
             <Node Bounds="1032,170,65,19" Id="OlBj6iFjiDLOQylD8IwW2a">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -11342,7 +11353,7 @@
               </p:TypeAnnotation>
             </Pad>
             <ControlPoint Id="Smiuc548NvtPRv9iT2g8w2" Bounds="1031,51" />
-            <ControlPoint Id="OIjhEPMKgTiMOu8Pe8GeXz" Bounds="862,991" />
+            <ControlPoint Id="OIjhEPMKgTiMOu8Pe8GeXz" Bounds="707,1040" />
             <ControlPoint Id="QqTWiWmoB3XOpU6AfyRl4x" Bounds="336,660" />
             <Node Bounds="579,210,97,26" Id="FXmWnEx0AjcM2eGbsa7W9J">
               <p:NodeReference LastCategoryFullName="sl.BodyData" LastDependency="Stereolabs.zed.dll">
@@ -11389,6 +11400,7 @@
               <Pin Id="MbtVSkTNdfHPaWDzSv4iWe" Name="Result" Kind="OutputPin" />
               <Pin Id="Hq4tv1MzKBaPhAizcU9m6h" Name="Not Assigned" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="Iur4YCal52YPyylQCRYlV4" Bounds="826,1040" />
           </Canvas>
           <Patch Id="F1izHJI7DOVOIQI7rvBves" Name="Create" ParticipatingElements="Er7GxFMrrOxOkZDUPm1RSS" />
           <Patch Id="HDyssvUVBvjMTDBao96272" Name="Update">
@@ -11404,6 +11416,7 @@
             </Pin>
             <Pin Id="RMgcO6HCzT7PVACt6L5DEc" Name="Skeleton" Kind="OutputPin" />
             <Pin Id="OJoRCCNKlrNMSHDekYOcth" Name="Transforms" Kind="OutputPin" />
+            <Pin Id="IMoItmjvzmULGHV9DtgeMb" Name="Names" Kind="OutputPin" />
           </Patch>
           <ProcessDefinition Id="VjA5aU1lNnAPpHQMR0nfun">
             <Fragment Id="CfXai9E4n25LcumJDxAUtO" Patch="F1izHJI7DOVOIQI7rvBves" Enabled="true" />
@@ -11413,7 +11426,6 @@
           <Link Id="OcVfA0ejZRBORsy8VSKKbb" Ids="KsS3avFlu68OxGAA8Q9Xc7,DPG2pz5Of0zOG98crdI7oX" />
           <Link Id="R0koYhlAiCTPb8gd8m4xOx" Ids="CU5MTP70AePPZU0YHXrX1z,Pig99tjLoLMMkNJ1lpBAQu" />
           <Link Id="MF1rtpupja5PgrupDHFjlz" Ids="JBklrBsknguQDNnrYbd3UD,CW8HTic94jRPeGGoLEfbXg" />
-          <Link Id="H64mbjwzoowPFNbc8pfT8Q" Ids="FWWi1oz7k6SL3N609olOZX,LfIbJNcrXWWMa7t6r6ByP0" />
           <Link Id="H3VsiInBYENP7YKQTTdH4g" Ids="R07OY6a51UELZCjVXmiPri,MsQ8U9LbreZN0gXI3FL8uM" />
           <Link Id="Nl8HXxmOyzULOLl09yL8fQ" Ids="AwLXxIWUey4PoHv3h3GLEk,JBklrBsknguQDNnrYbd3UD" />
           <Link Id="HDYYHSiPsiyLJKRQdK5PCN" Ids="VrO8guhsZ5pPc0gGuXwatJ,IE6dwki9Q03LGwGAIs0K3b" />
@@ -11455,6 +11467,11 @@
           <Link Id="NeWW3DFjs91Lsc3YBp044Y" Ids="A3kGd6H1UyON9zDbirV6WQ,Mw1URxROL3LP3Q9FrJ6qix" />
           <Link Id="TVlJXHHsUOiQZ4nmBBTzCI" Ids="PGBD56LnBiNL66QFQOmXME,OKKWy6gmuWuMHjfC5HLofZ" />
           <Link Id="G9dlnsIRlc4NDAk7UAMF5K" Ids="JYOc8W8fxGGMPVAB9PRfEc,L5za7SqbX4bPckP3XSRbvB" />
+          <Link Id="CX4cJbqQZUMNWLV3gTsDf8" Ids="FWWi1oz7k6SL3N609olOZX,QGHxvpAIj1DQFBipnf20Sn" />
+          <Link Id="J3Pljp8FNzCOmTsTDhlsM1" Ids="AgBE4wwbNUWNvSgWwWU4al,LfIbJNcrXWWMa7t6r6ByP0" />
+          <Link Id="RDnKZEUsPm4OchOeet8Tu3" Ids="UkcpZOjWeeELjeytQcVhAK,D1JiBfINiJgOspIZlCuuqx" />
+          <Link Id="PauWcI1Ls8YLDS8F9dTFt2" Ids="D1JiBfINiJgOspIZlCuuqx,Iur4YCal52YPyylQCRYlV4" />
+          <Link Id="Oz2jqkjZGFOQDrmem40A0V" Ids="Iur4YCal52YPyylQCRYlV4,IMoItmjvzmULGHV9DtgeMb" IsHidden="true" />
         </Patch>
       </Node>
       <!--
@@ -12568,12 +12585,12 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2025.7.0" />
-  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2025.7.0" />
+  <NugetDependency Id="DblDDaxObRXMxd4SBU5ZXg" Location="VL.CoreLib" Version="2025.7.1-0076-g0d3a62e007" />
+  <NugetDependency Id="VCQE70cHjpILLKDiQjxNzY" Location="VL.Stride" Version="2025.7.1-0076-g0d3a62e007" />
   <PlatformDependency Id="JDrl878N8YWPvdkAGmv47i" Location="System.Numerics.Vectors" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.Graphics.dll" />
   <PlatformDependency Id="Gaz8czwLQkDOCRlJpkjm8k" Location="Stride.dll" />
-  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2025.7.0" />
+  <NugetDependency Id="QryVusKv484Mxip3vfx4w7" Location="VL.Stride.TextureFX" Version="2025.7.1-0076-g0d3a62e007" />
   <PlatformDependency Id="NZov2Jir4PWPl37160okDB" Location="./lib/net6.0/VL.Devices.ZED.dll" />
   <NugetDependency Id="DPqYTBFLt1sNUCSMT5mxpb" Location="VL.Skeleton" Version="0.0.0" />
   <NugetDependency Id="TNmUblWlzNFPXyL7oLjbBE" Location="Stereolabs.zed" Version="5.1.0" />
