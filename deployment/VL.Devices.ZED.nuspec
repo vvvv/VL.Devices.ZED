@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.ZED</id>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv, m-box</authors>
     <owners>vvvv</owners>
@@ -14,7 +14,7 @@
     <license type="expression">MIT</license>
     <dependencies>
         <dependency id="Stereolabs.zed" version="5.1.0" />
-        <dependency id="VL.Skeleton" version="0.0.2-alpha" />
+        <dependency id="VL.Skeleton" version="0.0.3-alpha" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
     <readme>docs\README.md</readme>
