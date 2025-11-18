@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Pv2XFiPiWvxN6JDNOtGJ8v" LanguageVersion="2025.7.1-0087-gf5f4c7a83b" Version="0.128">
-  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.1-0087-gf5f4c7a83b" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Pv2XFiPiWvxN6JDNOtGJ8v" LanguageVersion="2025.7.1-0103-gf49d596041" Version="0.128">
+  <NugetDependency Id="ABooPaCvtWbOnf9FZnVp8e" Location="VL.CoreLib" Version="2025.7.1-0103-gf49d596041" />
   <Patch Id="KnTMpqqO0NkQKt1t7D1Xdz">
     <Canvas Id="GuU6CuCTviGMeN2GpWm5xa" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -342,7 +342,7 @@
             <Pin Id="SLLCRbw62icMoW2d2TzoRs" Name="Error Code" Kind="OutputPin" />
             <Pin Id="A7zPRZDQrNsOJhgY8feAH8" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Node Bounds="472,410,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
+          <Node Bounds="472,320,80,19" Id="LNJJ1J5ZqhyQPS75593K7p">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Collections.Sequence" />
@@ -353,7 +353,7 @@
             <Pin Id="Aol9inuxbWRNRJdgb148HP" Name="Output" Kind="StateOutputPin" />
             <Pin Id="FcTs05Z140CMIkqhln39n4" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="472,470,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
+          <Node Bounds="472,410,55,19" Id="FNJnHiooEg6M5gOpiPrHzo">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
@@ -365,7 +365,6 @@
             <Pin Id="GxXEVXR7PamLsOuwdISA6n" Name="Skeleton" Kind="OutputPin" />
             <Pin Id="RJalJe6nNfqOzqSdPpO1CM" Name="Transforms" Kind="OutputPin" />
             <Pin Id="L9yTRmN9xKuOtk5Xqjxw7Z" Name="BODY_FORMAT" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Oc4Uj4GtQiNNUnO7c4Qmzz" Name="Names" Kind="OutputPin" />
           </Node>
           <Node Bounds="472,645,81,19" Id="RIEGdB9F2G4Oy9DJ8Xqglk">
             <p:NodeReference LastCategoryFullName="Skeleton" LastDependency="VL.Skeleton.vl">
@@ -476,11 +475,6 @@
               <Item>Spine2</Item>
             </p:Value>
           </Pad>
-          <Pad Id="RSunU6yjiWrN7QYeQFwwc5" Comment="Names" Bounds="527,291,77,95" ShowValueBox="true" isIOBox="true">
-            <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">5</p:maxvisibleentries>
-            </p:ValueBoxSettings>
-          </Pad>
           <Node Bounds="403,290,44,19" Id="DwvvAupsnTaMckcvrTSy0W">
             <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -504,7 +498,7 @@
             <Pin Id="T5lxnV8XBjbOEqs4TOQ8ZS" Name="Last Error" Kind="OutputPin" />
           </Node>
           <Pad Id="NJ7mQWP4NCuOQeJdolyjUF" Comment="Texture" Bounds="50,179,308,182" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="666,420,76,19" Id="Ba9JXJQPlUxOPELwFfcjVp">
+          <Node Bounds="658,420,76,19" Id="Ba9JXJQPlUxOPELwFfcjVp">
             <p:NodeReference LastCategoryFullName="Main" LastDependency="HowTo Avateer a rigged mesh.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessNode" Name="ZED2Mixamo" />
@@ -513,7 +507,7 @@
             <Pin Id="T7tPhGxalarMLg4l1lk0nr" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="OeskiSFSOdQPyOt9bDZrS1" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="GdCEYkNoJhaPzHsmyC5VM0" Bounds="627,524,169,80" ShowValueBox="true" isIOBox="true" Value="&lt;These are the actual names from skeleton, not those you recive from the Bodies.">
+          <Pad Id="GdCEYkNoJhaPzHsmyC5VM0" Bounds="666,524,169,80" ShowValueBox="true" isIOBox="true" Value="&lt;These are the actual names from skeleton, not those you recive from the Bodies.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -522,7 +516,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QoM6NZqrRjpLjl1n5JQsTv" Comment="Names" Bounds="524,510,93,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="QoM6NZqrRjpLjl1n5JQsTv" Comment="Names" Bounds="563,510,93,95" ShowValueBox="true" isIOBox="true" />
           <Pad Id="L1Ny2ZInTFaPxO8CFPM3iX" Bounds="1475,327,328,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/xrtlab/Validated-Avatar-Library-for-Inclusion-and-Diversity---VALID/">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -581,6 +575,14 @@
             <Pin Id="J1oVwQwqML3MsD5kF9cAKw" Name="Entity" Kind="OutputPin" />
             <Pin Id="EggWsNWsnywPJkNt1wGS65" Name="Show Helper" Kind="InputPin" IsHidden="true" />
           </Node>
+          <Node Bounds="561,420,86,19" Id="QPLlLwRat2HNjqGLmXimrr">
+            <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ZEDJointNames" />
+            </p:NodeReference>
+            <Pin Id="DAHQQhZ0wTXOBcJfdyGmsn" Name="Names" Kind="OutputPin" />
+            <Pin Id="KE71hrqgU1fOBgeO62I3pt" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
         </Canvas>
         <Patch Id="AATcTcpprZHOW1yk32lDRs" Name="Create" />
         <Patch Id="EGGMvGuJOGGQNa4A6X5TZj" Name="Update" />
@@ -608,16 +610,15 @@
         <Link Id="El0JGnyrZUcNuCsYMgb2GD" Ids="RszXrO6GJqCMqHgrhsISXz,TfPMwjjHiE1NZl5cswVPgW" />
         <Link Id="DXgWDUDw2vdQchim4FXXAu" Ids="KMvc7Mycxc8MSHBWdWvKH7,CJO1sHsj7ttQDEy3g4F175" />
         <Link Id="THz5pVkgSrwOTxI3FfI6qa" Ids="Ko8PVw7BJ0ePwk0MDMq4UK,NJ7mQWP4NCuOQeJdolyjUF" />
-        <Link Id="TXGxuYh8T88NG6ETFpCkRM" Ids="NRNNnrj87AvLE4VCd01GGk,RSunU6yjiWrN7QYeQFwwc5" />
         <Link Id="ICtmO3pkpXELClUcX0Y580" Ids="OeskiSFSOdQPyOt9bDZrS1,F0iGTNIM3yMN0ynFTM2o8l" />
-        <Link Id="OJ8asNidvMMMNg6q1jIS9i" Ids="Oc4Uj4GtQiNNUnO7c4Qmzz,QoM6NZqrRjpLjl1n5JQsTv" />
         <Link Id="UlwtQCwO3jcObjhLNmaCwp" Ids="PD5m3wGlao4LJMgNCd4arj,UuGgG60tBZkOuiMpxFhd3c" />
         <Link Id="OVQaLQHmTYoPlEH8DHn73b" Ids="VyclhjKoNqiOU0vvQ38ht5,Jkj434M6PWOPW69QjDlW9a" />
         <Link Id="NDOBQRZlcU8QAzsamSWKG1" Ids="J1oVwQwqML3MsD5kF9cAKw,VkW2cUyK8ISLwfyfDJGAcb" />
+        <Link Id="Op8iToBraOENJ9pluExzDi" Ids="DAHQQhZ0wTXOBcJfdyGmsn,QoM6NZqrRjpLjl1n5JQsTv" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.1-0087-gf5f4c7a83b" />
+  <NugetDependency Id="IebNBearTwVNzsKVksBBJ9" Location="VL.Stride" Version="2025.7.1-0103-gf49d596041" />
   <PlatformDependency Id="CcMFAK8B1e9NEfP2z4Y5Kq" Location="C:/Program Files/vvvv/vvvv_gamma_2021.4.11-1154-g6d671f7ef2/lib/Stride.Rendering.dll" />
   <NugetDependency Id="Cf2aw2LnoYfPH19aYRk592" Location="VL.Devices.ZED" Version="0.0.0" />
   <NugetDependency Id="VmFXHMpeF5ELjyLDCDbZuS" Location="VL.Skeleton" Version="0.0.0" />
