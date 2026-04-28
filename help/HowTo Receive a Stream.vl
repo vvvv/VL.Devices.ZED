@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2025.7.1" Version="0.128">
+  <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
+    <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="OlbrpIuULEpOyIctHdVyGf">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TcdacUwtXonNGyPwpWjZTe">
+        <Canvas Id="IpqJ0tMO8dfM7zR8vb0sUE" CanvasType="Group">
+          <Node Bounds="149,340,305,19" Id="S0aj9FVzSIxMDGgLFraZ0S">
+            <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ZED" />
+              <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ub02ODI4XY8PpcxQJcKrjt" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Cr9EY7ERMweMEI3dCK1Wq8" Name="Streaming Sources" Kind="InputPin" />
+            <Pin Id="CgDGQEwC3EJLVLblmhgCVR" Name="Device" Kind="InputPin" />
+            <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
+            <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
+            <Pin Id="F2b0Zy2tHVdOybJOmLg8rN" Name="Depth Stabilization" Kind="InputPin" />
+            <Pin Id="KnMEMhEsRd2LkR1B2keui8" Name="Image Enhancement" Kind="InputPin" />
+            <Pin Id="AZwT994qsmVMCdF8TwEeXF" Name="Units" Kind="InputPin" />
+            <Pin Id="LNFFXelfUQ6QU8T98LNuCf" Name="Coordinate System" Kind="InputPin" />
+            <Pin Id="H44i2iAHmPNLhNv8hJZiNv" Name="Image Flip" Kind="InputPin" />
+            <Pin Id="IzMOs6cg1IBNpiivicmW9A" Name="Reference Frame" Kind="InputPin" />
+            <Pin Id="AZSsHFyRB34MtpurU2NUtj" Name="Depth" Kind="InputPin" />
+            <Pin Id="C1LoBBNpSiiQIYlLn2Wv2V" Name="Confidence Threshold" Kind="InputPin" />
+            <Pin Id="Mlla1b8XY5qMr9qZ3X4QAO" Name="Texture Confidence Threshold" Kind="InputPin" />
+            <Pin Id="TNbzIZDA01WP8Evwav80fx" Name="Remove Saturated Areas" Kind="InputPin" />
+            <Pin Id="Is9ixVd9ETcP3y0uktjv0a" Name="Enable Fill Mode" Kind="InputPin" />
+            <Pin Id="BiawRsIQD3rL9qmgi9HibW" Name="Enabled" Kind="InputPin" />
+            <Pin Id="OCopLXplHzHNBSx7L7SAP2" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="SwXuvQ3bpFcMN3pNPF9CKf" Name="Opening Error Code" Kind="OutputPin" />
+            <Pin Id="Th6NTqRDmwRLORh3nIGYwN" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="Lr3631Mz5IqLZjXaEfB4So" Name="FPS" Kind="OutputPin" />
+            <Pin Id="CMKOPVcMzc6NRDphr9xEDm" Name="FOV" Kind="OutputPin" />
+            <Pin Id="BKxbiklRLLpP5eOCqstySZ" Name="Resolution" Kind="OutputPin" />
+            <Pin Id="ViXPERZV8AJPjK78ulsJTY" Name="Is Open" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="149,397,69,19" Id="BH4ggMswtP3PSbknFImGJd">
+            <p:NodeReference LastCategoryFullName="VL.Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ColorImage" />
+            </p:NodeReference>
+            <Pin Id="TUpix7mj6qNQEICJfPLcKk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E05AepawYefPKGPibaqz96" Name="Camera" Kind="InputPin" />
+            <Pin Id="OMXBLPPeMj8OomtldpNi5Y" Name="View" Kind="InputPin" />
+            <Pin Id="PXpDAjvwshNMeYMK8DDh8p" Name="Texture" Kind="OutputPin" />
+            <Pin Id="IPCjoy9raM7MuJjvhkvTFs" Name="On Data" Kind="OutputPin" />
+            <Pin Id="K29EZu8Jxa7QQ76ERG61Ib" Name="Last Error" Kind="OutputPin" />
+          </Node>
+          <Pad Id="UhSjp0USjHhMm4cjEXFafN" Comment="Streaming Sources" Bounds="151,141,111,34" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+            <p:Value>
+              <Item>192.168.2.70:30000</Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="DBni0ZDZ7U9Ocj6YX2cgM3" Bounds="371,141,291,117" ShowValueBox="true" isIOBox="true" Value="&lt; Enable this optional pin (Rightclick -&gt; Configure on the ZED node)&#xD;&#xA;&#xD;&#xA;Specify IP:Port of the streaming source.&#xD;&#xA;&#xD;&#xA;Then choose that entry from the Device enum.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KWMltYFZEH2MQpVRJNzbfM" Comment="Device" Bounds="171,290,118,15" ShowValueBox="true" isIOBox="true" Value="192.168.2.70:30000">
+            <p:TypeAnnotation LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
+              <Choice Kind="TypeFlag" Name="ZEDDevice" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SzQHESybC4mOfk7WdKuPFI" Comment="Is Open" Bounds="451,390,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Ui1CuDBkLtiMT5jBooLdai" Comment="Texture" Bounds="150,460,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HmXNp3qzFJgMGePa0zwU9H" Comment="Enabled" Bounds="451,301,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
+        <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
+        <ProcessDefinition Id="AEncDOJB0UYQPbVyyK7muK">
+          <Fragment Id="CVNyvxz2BdkOeqNI7Enq1P" Patch="H2cbU4Kptj7OH6q1NrcwYL" Enabled="true" />
+          <Fragment Id="JLLGwQTtZ6JPrWL5bJAyxj" Patch="ArnguBeYaipOFcqabD0uBX" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Uej9WMJC0KNMc1hJbUsWRT" Ids="OCopLXplHzHNBSx7L7SAP2,E05AepawYefPKGPibaqz96" />
+        <Link Id="KBnDd7Fh3sjOh6veOMqooh" Ids="UhSjp0USjHhMm4cjEXFafN,Cr9EY7ERMweMEI3dCK1Wq8" />
+        <Link Id="MrnOruWTNFSNDLfdQFhJ6U" Ids="KWMltYFZEH2MQpVRJNzbfM,CgDGQEwC3EJLVLblmhgCVR" />
+        <Link Id="CE7dErUlX0hMcUBx9JO3si" Ids="ViXPERZV8AJPjK78ulsJTY,SzQHESybC4mOfk7WdKuPFI" />
+        <Link Id="KEA41UVYPoSN7QrDdKMWdd" Ids="PXpDAjvwshNMeYMK8DDh8p,Ui1CuDBkLtiMT5jBooLdai" />
+        <Link Id="TOMnVVYn6YkPLYZtFL7Ubv" Ids="HmXNp3qzFJgMGePa0zwU9H,BiawRsIQD3rL9qmgi9HibW" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2025.7.1" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2025.7.1" />
+  <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
+</Document>

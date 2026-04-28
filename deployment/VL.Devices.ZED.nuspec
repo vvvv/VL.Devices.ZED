@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.Devices.ZED</id>
-    <version>1.5.1</version>
+    <version>1.6.0</version>
     <title>VL.Devices.ZED</title>
     <authors>Alexander Shaliapin, vvvv, m-box</authors>
     <owners>vvvv</owners>
@@ -13,7 +13,7 @@
     <tags>VL, camera, capture, video, depth, skeleton, body, tracking, avateering</tags>
     <license type="expression">MIT</license>
     <dependencies>
-        <dependency id="Stereolabs.zed" version="5.1.0" />
+        <dependency id="Stereolabs.zed" version="5.2.1" />
         <dependency id="VL.Skeleton" version="0.0.5" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
