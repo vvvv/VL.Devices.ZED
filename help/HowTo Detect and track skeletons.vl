@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2025.7.0-0407-g8675153500" Version="0.128">
-  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2025.7.0-0407-g8675153500" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RueN3DYGefgNiiMcea7IN4" LanguageVersion="2025.7.4" Version="0.128">
+  <NugetDependency Id="UGSdUHSPG5TOWuucB3lox1" Location="VL.CoreLib" Version="2025.7.4" />
   <Patch Id="CXtYEFtw188PluKPVgxWop">
     <Canvas Id="RrpV6VgUyHRMM64tF4j0xA" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -241,9 +241,12 @@
               </p:NodeReference>
               <Pin Id="FF1F6xB21qLQNTsIFx3s8b" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="EAxlX7TBtvvPRNRGZBbFJu" Name="Bounds" Kind="InputPin" DefaultValue="187, 394, 1920, 1080" IsHidden="true" />
+              <Pin Id="SYIV1EDHxV2OGiu5gv75gC" Name="Is Borderless" Kind="InputPin" IsHidden="true" />
               <Pin Id="RF3gh5etqERLm4eb5Y6JEI" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="VDaEaWLcxxbN6onJbxGu3o" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="EP5jAra0gGxN91jQgB7MtE" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
+              <Pin Id="JamHv5uPETYM8pkxXtV6xp" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+              <Pin Id="QRuVdEiRicmMKx8EbPJfCH" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
               <Pin Id="QxxXjL610CnOeSxPM6s9qx" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="LoPFnh6fUAwMzNWyFEOzif" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="P1RFLCJHkFsNDrdkvnBFaA" Name="Multisample Count" Kind="InputPin" IsHidden="true" />
@@ -251,6 +254,7 @@
               <Pin Id="UvOmeErdpUKOqrYpbv1VC1" Name="Input" Kind="InputPin" />
               <Pin Id="R8QrsOfAlIZPsk5wnb0hS5" Name="Render View" Kind="InputPin" />
               <Pin Id="DahGDywGMPgLw0JtTw3bog" Name="Title" Kind="InputPin" />
+              <Pin Id="TZSAVTgnyUCPj51ITtx5iY" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
               <Pin Id="OrSHW9Q0r1GLi6fimF9u0F" Name="Clear Flags" Kind="InputPin" IsHidden="true" />
               <Pin Id="MXpW6aBJtvjNOScCM5DSOE" Name="Clear Color" Kind="InputPin" />
               <Pin Id="KffprRnz4m1ObrcbsagRtH" Name="Clear Depth" Kind="InputPin" IsHidden="true" />
@@ -267,6 +271,8 @@
               <Pin Id="Pa4HxdrQSwSNr9eKakC1g1" Name="Back Buffer" Kind="OutputPin" />
               <Pin Id="H2VOfkuJmgbOKSynGmQMXZ" Name="Depth Buffer" Kind="OutputPin" />
               <Pin Id="UO58aG4VsEPNczIh4Os8WF" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
+              <Pin Id="MULxrkCrJbQMnQalr1aap0" Name="Output Color Space" Kind="InputPin" IsHidden="true" />
+              <Pin Id="SAsuBa1BvNXLwKIauGYqcg" Name="Backbuffer Format" Kind="InputPin" IsHidden="true" />
             </Node>
             <Node Bounds="204,1093,145,19" Id="QgYCg35gg2DQR9ZCkVSxT8">
               <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
@@ -294,6 +300,7 @@
               <Pin Id="AlGQDsBma0jMwlyr0l221Y" Name="Input" Kind="InputPin" />
               <Pin Id="V5p3XtxK26IOrM4pKhSQE8" Name="Input 2" Kind="InputPin" />
               <Pin Id="RBsov75iQEsLkFd19KpRhc" Name="Output" Kind="OutputPin" />
+              <Pin Id="QXPpoMJtH56MdG15p6S1Gr" Name="Enabled" Kind="InputPin" />
             </Node>
             <Node Bounds="372,935,76,19" Id="IMsZezHeh8jMO2PkY9D0FB">
               <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.vl">
@@ -651,6 +658,7 @@
                       <Pin Id="ONnUc1NhZPhQImEdQkOtaL" Name="Rasterizer State" Kind="InputPin" />
                       <Pin Id="FD98jwQ9ZZBLKjhDw2PN9R" Name="Depth Stencil State" Kind="InputPin" />
                       <Pin Id="RRuAQZvplqAM6Ay4Y2xx3U" Name="Output" Kind="OutputPin" />
+                      <Pin Id="VraO14uBHEWNZ61FnJjoOV" Name="Enabled" Kind="InputPin" />
                     </Node>
                   </Patch>
                   <ControlPoint Id="M1Bor2jZiaKPFPwp1RL3A6" Bounds="336,350" Alignment="Top" />
@@ -667,6 +675,7 @@
                   <Pin Id="MmTA6qiqAhzLD9OsBHxPA7" Name="Node Context" Kind="InputPin" IsHidden="true" />
                   <Pin Id="FXELrxdp7PVOOXiGBFqx78" Name="Input" Kind="InputPin" />
                   <Pin Id="OtHmliWpOczQYsCk87mdxT" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="DawL6L6e6QwOVVJTOlJcVx" Name="Enabled" Kind="InputPin" />
                 </Node>
               </Patch>
               <ControlPoint Id="URU6cWM7yR9PPhRe3Ftxjc" Bounds="285,703" Alignment="Bottom" />
@@ -715,18 +724,22 @@
                 <FullNameCategoryReference ID="Stride" />
                 <Choice Kind="ProcessAppFlag" Name="SceneWindow" />
               </p:NodeReference>
-              <Pin Id="LTmg9t0GOJzNQTu3CJB5bp" Name="Node Context" Kind="InputPin" IsHidden="true" />
-              <Pin Id="Fbb7K5LYjYiNEMR64waJzK" Name="Bounds" Kind="InputPin" DefaultValue="1174, 98.666664, 618, 578" IsHidden="true" />
+              <Pin Id="Fbb7K5LYjYiNEMR64waJzK" Name="Bounds" Kind="InputPin" DefaultValue="1174, 98, 618, 578" IsHidden="true" />
               <Pin Id="NXkX3eYnS6xPEb7xm0evj8" Name="Bound to Document" Kind="InputPin" IsHidden="true" />
               <Pin Id="HNOj0DBtkctLfhwmxo0I8K" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
               <Pin Id="C5PRwc6krQ1O4SVCbQvWjH" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
               <Pin Id="P6J7xnAYXgQNPjv5MjgMcS" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="GVFnh3K9X3BPoKqgOMrr08" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
               <Pin Id="EIlSSBIJOauMIW8fA5b0LV" Name="Input Priority" Kind="InputPin" IsHidden="true" />
+              <Pin Id="LTmg9t0GOJzNQTu3CJB5bp" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="MiOAT0qTiB5Nqf06kSopRk" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+              <Pin Id="MrGWruDJvXXMqVga2kiKds" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
+              <Pin Id="CMUhsyFNqGDQH7MJh9SDPd" Name="Is Borderless" Kind="InputPin" IsHidden="true" />
               <Pin Id="AUyYTc69RdFOprflMmlwVu" Name="Input" Kind="InputPin" />
               <Pin Id="Cw4DblzVtJ2QGi4fFEBKzE" Name="Camera" Kind="InputPin" />
               <Pin Id="V7URXoazAc3PNylIaVoL08" Name="Enable Default Camera" Kind="InputPin" />
               <Pin Id="P0wMXOvWMHoQT9u2wh61Lg" Name="Title" Kind="InputPin" DefaultValue="qwer" />
+              <Pin Id="EO3cHhmXEctQArDMFTikMU" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
               <Pin Id="TaW72mAcJ89QLjkpBdrPg6" Name="Clear Color" Kind="InputPin" />
               <Pin Id="InaUSuVkq4dOurCy0EEd2b" Name="Clear" Kind="InputPin" />
               <Pin Id="GWzDKWVH2loOeUFNiqI1U7" Name="Post Effects" Kind="InputPin" />
@@ -737,6 +750,7 @@
               <Pin Id="PaD5dWZII5OOyjSCU4h6Xo" Name="Model Effect Name" Kind="InputPin" IsHidden="true" />
               <Pin Id="FFgCrMHz2WDLM3AhKPj45f" Name="Additional Scene Renderers" Kind="InputPin" IsHidden="true" />
               <Pin Id="SYHS4hayaDyM2ZLAOYys4u" Name="Enabled" Kind="InputPin" />
+              <Pin Id="GQI1yNb4E1UNa2preN04Kv" Name="Input Source" Kind="InputPin" IsHidden="true" />
               <Pin Id="RwOZXmM5M8WPENfiEZQxev" Name="Present Interval" Kind="InputPin" />
               <Pin Id="VDbMEpIh1AZLviHcLGtrAs" Name="Output" Kind="OutputPin" />
               <Pin Id="EuA62cJkavLQNnJRjAI4zc" Name="Client Bounds" Kind="OutputPin" />
@@ -751,6 +765,8 @@
               <Pin Id="RY4dDJFpeTSLNpOgGOtoTf" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
               <Pin Id="OoGzs6CQEFnM2hDJLl6nd0" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
               <Pin Id="QYI4so53EFlN4RYE2XCcJs" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
+              <Pin Id="GuOK6uMILcQP2xEoXl5RXw" Name="Output Color Space" Kind="InputPin" IsHidden="true" />
+              <Pin Id="NUwcGQ8n5zINqATeoReVkv" Name="Backbuffer Format" Kind="InputPin" IsHidden="true" />
             </Node>
             <Pad Id="ITwVZ06ZRtMP3l0MIfNXKo" Comment="Clear Color" Bounds="347,978,136,15" ShowValueBox="true" isIOBox="true" Value="0.535294, 0.535294, 0.535294, 1">
               <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
@@ -770,6 +786,7 @@
               <Pin Id="V2279WIi6MOLdNWkYoW8cd" Name="Grid Color" Kind="InputPin" />
               <Pin Id="Qsr1Dn2QFxPLHqPW8TLAFi" Name="Radius" Kind="InputPin" />
               <Pin Id="PQZ4b4SbSlBP5DMJ8IeAfJ" Name="Output" Kind="OutputPin" />
+              <Pin Id="Howa63EMA0tOoysrcGKXuj" Name="Enabled" Kind="InputPin" />
             </Node>
             <Node Bounds="284,806,70,19" Id="GV68SABjCkSPjF7veUhUAQ">
               <p:NodeReference LastCategoryFullName="Stride.Rendering" LastDependency="VL.Stride.Runtime.vl">
@@ -782,6 +799,7 @@
               <Pin Id="HtZkADUcvGeOPqq7O3P1vU" Name="Input 2" Kind="InputPin" />
               <Pin Id="IAIkgruV4OuOgSObu81PkV" Name="Output" Kind="OutputPin" />
               <Pin Id="QKFt9RGBZ9gOjapAG7EZ89" Name="Input 3" Kind="InputPin" />
+              <Pin Id="HRIjaPCmIyCPRh3wZ2D7Gm" Name="Enabled" Kind="InputPin" />
             </Node>
             <Pad Id="KgUEti2GCQ1NPLLOybgpkA" Comment="Title" Bounds="327,940,97,15" ShowValueBox="true" isIOBox="true" Value="Skeletons 3D">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -813,6 +831,7 @@
               <Pin Id="AQZQ04gDJA0MTp19f9YJRO" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Etnl19v6D90LMyQRQt4n6O" Name="Input" Kind="InputPin" />
               <Pin Id="Oz8Kp2Hpah2LcIzjUbLaRP" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="FH8qniQUk5FM4Ww7KeoU61" Name="Enabled" Kind="InputPin" />
             </Node>
           </Canvas>
           <Patch Id="Vr73dQczSIqOoUAG6ptulE" Name="Create" />
@@ -908,6 +927,7 @@
             </p:NodeReference>
             <Pin Id="OVVzXwN6OssOhTxu5Joz1P" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="GLfg7uzQWd7Lb5pK04gBZI" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
+            <Pin Id="B4tis45TVpRMD1NpOI6CV7" Name="Streaming Sources" Kind="InputPin" IsHidden="true" />
             <Pin Id="O8jL8JF3ofpLb0xbuwFqL3" Name="Device" Kind="InputPin" />
             <Pin Id="QOfrDwuPKKHPPkALhtky6O" Name="Resolution" Kind="InputPin" />
             <Pin Id="AaDI4PEXr1cMXaCLrmwKow" Name="Depth Mode" Kind="InputPin" />
@@ -931,7 +951,7 @@
             <Pin Id="HB1hp90PpoIOoQVsnhwr8b" Name="Resolution" Kind="OutputPin" />
             <Pin Id="CPdMP7b9At0QF5Wk6FnXJO" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Node Bounds="65,696,347,19" Id="MTW5TOtyiQhLpbkhaSfXQU">
+          <Node Bounds="65,696,205,19" Id="MTW5TOtyiQhLpbkhaSfXQU">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <FullNameCategoryReference ID="Devices.ZED" />
@@ -940,16 +960,15 @@
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="CavLAjDmVokOfEcB6fp3Fe" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FmSNQoNpHdaMxLy1ZTk9DK" Name="Camera" Kind="InputPin" />
+            <Pin Id="MgVyDRF31JSOSGdDYlMrKi" Name="Model Generation" Kind="InputPin" />
             <Pin Id="KkUaoolpfoaMRyjXZAPVHN" Name="Body Format" Kind="InputPin" />
             <Pin Id="VaGNEnrKdw7Pac488Z8GIf" Name="Body Tracking Model" Kind="InputPin" />
-            <Pin Id="A5RsIz2oHWeLdLBb6cM46z" Name="Body Tracking" Kind="InputPin" />
-            <Pin Id="FwrKuCNHUEgN5Zb7iLI98w" Name="Body Fitting" Kind="InputPin" />
             <Pin Id="TK4gWwj3vCXPj2r0Izac9j" Name="Body Selection" Kind="InputPin" />
             <Pin Id="MlDbg6epcAHN46riPzwQ93" Name="Max Depth" Kind="InputPin" />
             <Pin Id="UipOrZgy0BkN0oH8oagBfb" Name="Compute Mask" Kind="InputPin" IsHidden="true" />
-            <Pin Id="MJBn34MHBKUOp9hwKTDbw4" Name="Prediction Timeout" Kind="InputPin" IsHidden="true" />
+            <Pin Id="MJBn34MHBKUOp9hwKTDbw4" Name="Prediction Timeout" Kind="InputPin" />
             <Pin Id="EynAqfYRc6yPogqb1fnAi9" Name="Allow Reduced Precision Inference" Kind="InputPin" IsHidden="true" />
-            <Pin Id="M0KegK19hO0MIVmfFUSwrF" Name="Cofidence Threshold" Kind="InputPin" />
+            <Pin Id="Vg30vHjV0ZILxXMj8oZLdL" Name="Confidence Threshold" Kind="InputPin" />
             <Pin Id="UdsvGAOBWdVNSeCeZbb7N7" Name="Skeleton Smoothing" Kind="InputPin" />
             <Pin Id="U9z0efj1PUPNBJhrN7ciRg" Name="Minimum Keypoints Threshold" Kind="InputPin" />
             <Pin Id="GGtooGtvWaJLmFbyW3bN9e" Name="Detected Bodies" Kind="OutputPin" />
@@ -957,7 +976,7 @@
             <Pin Id="INbHbokVhQNLdQqXxjFbef" Name="Error Code" Kind="OutputPin" />
             <Pin Id="GGQmaCssgdkMxXlUes6eXK" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="144,245,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_FAST">
+          <Pad Id="J32iJGUadxNMuP1jxqj8jp" Comment="Body Tracking Model" Bounds="140,250,127,44" ShowValueBox="true" isIOBox="true" Value="HUMAN_BODY_FAST">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_TRACKING_MODEL" />
             </p:TypeAnnotation>
@@ -965,43 +984,22 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="S9PcN8BjpMIQJlAP846lAi" Comment="Body Tracking" Bounds="182,309,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="G8yPFNVav9mPC0taVERCe1" Comment="Body Fitting" Bounds="219,352,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="LkmXxR5AQwxOtpalEtjpCd" Comment="Max Depth" Bounds="294,449,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
+          <Pad Id="LkmXxR5AQwxOtpalEtjpCd" Comment="Max Depth" Bounds="181,371,35,15" ShowValueBox="true" isIOBox="true" Value="-1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TKFscEIaAQwOQzMpf7KJdZ" Comment="Cofidence Threshold" Bounds="332,566,35,15" ShowValueBox="true" isIOBox="true" Value="60">
+          <Pad Id="J8eDNRi1k8TPPoBfK5y2xc" Comment="Skeleton Smoothing" Bounds="247,591,35,15" ShowValueBox="true" isIOBox="true" Value="0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="J8eDNRi1k8TPPoBfK5y2xc" Comment="Skeleton Smoothing" Bounds="371,616,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="Dos2UT78LsJOJQ44k6mbG6" Comment="Minimum Keypoints Threshold" Bounds="409,667,35,15" ShowValueBox="true" isIOBox="true" Value="1">
+          <Pad Id="Dos2UT78LsJOJQ44k6mbG6" Comment="Minimum Keypoints Threshold" Bounds="267,650,35,15" ShowValueBox="true" isIOBox="true" Value="1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="105,180,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_38">
+          <Pad Id="JMhTMR7LsxGM9Zu4dCAl67" Comment="Body Format" Bounds="111,190,51,44" ShowValueBox="true" isIOBox="true" Value="BODY_38">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
             </p:TypeAnnotation>
@@ -1018,7 +1016,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="IUvdgUGieOdMP209XxCxMX" Bounds="328,309,323,19" ShowValueBox="true" isIOBox="true" Value="&lt; Try to predict next position of the detected body">
+          <Pad Id="DhTPYacj4zoLqduz46WSX2" Bounds="296,371,389,38" ShowValueBox="true" isIOBox="true" Value="&lt; Sets a depth limit where bodies should be detected. Specify the value in 'Units' as set on the main ZED node. -1 == infinite">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1027,7 +1025,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DhTPYacj4zoLqduz46WSX2" Bounds="409,449,389,38" ShowValueBox="true" isIOBox="true" Value="&lt; Sets a depth limit where bodies should be detected. Specify the value in 'Units' as set on the main ZED node. -1 == infinite">
+          <Pad Id="VqXJY644bQCMulSgFjrqmH" Bounds="394,591,361,42" ShowValueBox="true" isIOBox="true" Value="&lt; Smoothes the skeleton data, but increases latency.&#xD;&#xA;Ranging from 0 (low smoothing) to 1 (high smoothing).">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1036,7 +1034,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="VqXJY644bQCMulSgFjrqmH" Bounds="518,616,361,42" ShowValueBox="true" isIOBox="true" Value="&lt; Smoothes the skeleton data, but increases latency.&#xD;&#xA;Ranging from 0 (low smoothing) to 1 (high smoothing).">
+          <Pad Id="BFDU3CjmdibQDHK86tBAxT" Bounds="218,418,72,19" ShowValueBox="true" isIOBox="true" Value="More info:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1045,25 +1043,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="TNe0FkzIOieOBnjpwBWzQq" Bounds="328,352,271,19" ShowValueBox="true" isIOBox="true" Value="&lt; Whether or not to apply body fitting">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="BFDU3CjmdibQDHK86tBAxT" Bounds="331,496,72,19" ShowValueBox="true" isIOBox="true" Value="More info:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Jiu1BFsWgrwMWXHoDuNbY9" Bounds="406,496,271,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/structsl_1_1BodyTrackingParameters.html">
+          <Pad Id="Jiu1BFsWgrwMWXHoDuNbY9" Bounds="293,418,271,19" ShowValueBox="true" isIOBox="true" Value="https://www.stereolabs.com/docs/api/csharp/structsl_1_1BodyTrackingParameters.html">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1072,7 +1052,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="GsSdLC5wD6iO5EdvFgfsJQ" Bounds="607,667,295,19" ShowValueBox="true" isIOBox="true" Value="&lt; Minimum threshold for the keypoints (joints)">
+          <Pad Id="GsSdLC5wD6iO5EdvFgfsJQ" Bounds="465,650,295,19" ShowValueBox="true" isIOBox="true" Value="&lt; Minimum threshold for the keypoints (joints)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1081,7 +1061,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="SD7nECIxsBnNLGakmHB7Yh" Bounds="486,566,387,45" ShowValueBox="true" isIOBox="true" Value="&lt; From 1 to 100, with 1 meaning a low threshold, more uncertain objects and 99 very few but very precise objects">
+          <Pad Id="SD7nECIxsBnNLGakmHB7Yh" Bounds="386,505,387,45" ShowValueBox="true" isIOBox="true" Value="&lt; From 1 to 100, with 1 meaning a low threshold, more uncertain objects and 99 very few but very precise objects">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1223,7 +1203,7 @@
               <Item>PELVIS</Item>
             </p:Value>
           </Pad>
-          <Pad Id="MV54GoW8bolLq1brcmWvkz" Comment="Body Parts 38" Bounds="1062,1122,133,34" ShowValueBox="true" isIOBox="true">
+          <Pad Id="MV54GoW8bolLq1brcmWvkz" Comment="Body Parts 38" Bounds="1062,1122,140,34" ShowValueBox="true" isIOBox="true">
             <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Spread" />
               <p:TypeArguments>
@@ -1296,7 +1276,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Ju0OCAFk09IMhmlaqS7QEr" Comment="Body Selection" Bounds="260,408,81,29" ShowValueBox="true" isIOBox="true" Value="FULL">
+          <Pad Id="Ju0OCAFk09IMhmlaqS7QEr" Comment="Body Selection" Bounds="156,330,81,29" ShowValueBox="true" isIOBox="true" Value="FULL">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_KEYPOINTS_SELECTION" />
             </p:TypeAnnotation>
@@ -1304,7 +1284,7 @@
               <p:selectionmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.SelectionModeEnum">VerticalList</p:selectionmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Qzjvwx4FAnjNVnmjKMLPUL" Bounds="435,405,392,19" ShowValueBox="true" isIOBox="true" Value="&lt; Selection of keypoints to be returned">
+          <Pad Id="Qzjvwx4FAnjNVnmjKMLPUL" Bounds="322,327,392,19" ShowValueBox="true" isIOBox="true" Value="&lt; Selection of keypoints to be returned">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1371,7 +1351,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="LhqwbUNz7LyOckeplF7HKb" Bounds="384,241,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Using a model for the first time requires its optimization - the application will freeze during this process for up to a few minutes!">
+          <Pad Id="LhqwbUNz7LyOckeplF7HKb" Bounds="367,246,370,60" ShowValueBox="true" isIOBox="true" Value="&lt; Using a model for the first time requires its optimization - the application will freeze during this process for up to a few minutes!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1407,9 +1387,19 @@
             <Pin Id="M2PrXIcYrN2QY4KVRN09pz" Name="Output" Kind="OutputPin" />
             <Pin Id="PdPWmmeHCsrOGFxMk0Z5lP" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="PZbx0EveDufNnKRjL2ei6B" Comment="Body Format" Bounds="485,970,65,15" ShowValueBox="true" isIOBox="true" Value="BODY_38">
+          <Pad Id="PZbx0EveDufNnKRjL2ei6B" Comment="Body Format" Bounds="485,970,72,15" ShowValueBox="true" isIOBox="true" Value="BODY_38">
             <p:TypeAnnotation LastCategoryFullName="sl" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="TypeFlag" Name="BODY_FORMAT" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KNd9AODVQ0nL44b8t5sy5Q" Comment="Prediction Timeout" Bounds="198,480,35,15" ShowValueBox="true" isIOBox="true" Value="0.2">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="LV425Q43r8EOZfwf1cLYku" Comment="Confidence Threshold" Bounds="223,510,35,15" ShowValueBox="true" isIOBox="true" Value="40">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
         </Canvas>
@@ -1421,10 +1411,7 @@
         </ProcessDefinition>
         <Link Id="HuMfN0tMv9dLsBdtApt4nv" Ids="VeGG2HfpJL1QKXHqi1X6yE,FmSNQoNpHdaMxLy1ZTk9DK" />
         <Link Id="U7Vt8vQGiqgNzcdPSOvg8p" Ids="J32iJGUadxNMuP1jxqj8jp,VaGNEnrKdw7Pac488Z8GIf" />
-        <Link Id="UtMYwHpS82pMP4kxyxlVxD" Ids="S9PcN8BjpMIQJlAP846lAi,A5RsIz2oHWeLdLBb6cM46z" />
-        <Link Id="IohXvolu6d6NTMg1Drtek6" Ids="G8yPFNVav9mPC0taVERCe1,FwrKuCNHUEgN5Zb7iLI98w" />
         <Link Id="Ewi7UNJ52DNMG3cCw2X59N" Ids="LkmXxR5AQwxOtpalEtjpCd,MlDbg6epcAHN46riPzwQ93" />
-        <Link Id="SyoQ5gqv89pOburnr0d5Hl" Ids="TKFscEIaAQwOQzMpf7KJdZ,M0KegK19hO0MIVmfFUSwrF" />
         <Link Id="Mp0mfY6lpBrMKjvgVdhLk7" Ids="J8eDNRi1k8TPPoBfK5y2xc,UdsvGAOBWdVNSeCeZbb7N7" />
         <Link Id="SdlznKI2eIQO4NKl2WsVps" Ids="Dos2UT78LsJOJQ44k6mbG6,U9z0efj1PUPNBJhrN7ciRg" />
         <Link Id="EjPEXWBtrYrO9kxZ6dj1Ve" Ids="JMhTMR7LsxGM9Zu4dCAl67,KkUaoolpfoaMRyjXZAPVHN" />
@@ -1442,11 +1429,13 @@
         <Link Id="BCzctnBz04TOkoWH6BCCHn" Ids="QTc1cHRdFzXMkS7KSOhKuE,AFuYtE9Re0yPZls9DeMrSt" />
         <Link Id="LGNuphtHqchP3FaqGZMgKZ" Ids="PZbx0EveDufNnKRjL2ei6B,AC010Avsj0VLT5ba76dqfU" />
         <Link Id="QTQf510ejRuPvj1uVswAQk" Ids="PZbx0EveDufNnKRjL2ei6B,VToyIcupJtgLeGMEMLjwOh" />
+        <Link Id="QNU3YAWlOy8PVSMDXJ73q9" Ids="KNd9AODVQ0nL44b8t5sy5Q,MJBn34MHBKUOp9hwKTDbw4" />
+        <Link Id="RL4M2u79B4wOHXo2XzE8qs" Ids="LV425Q43r8EOZfwf1cLYku,Vg30vHjV0ZILxXMj8oZLdL" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="EXCa1JSHJyGOzKOcwZ8mXk" Location="VL.Devices.ZED" Version="0.0.0" />
-  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2025.7.0-0407-g8675153500" />
-  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2025.7.0-0407-g8675153500" />
-  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2025.7.0-0407-g8675153500" />
+  <NugetDependency Id="EVosIenL9g4OfYRHzHrZox" Location="VL.Skia" Version="2025.7.4" />
+  <NugetDependency Id="LwdxfiPafn2OfV5PAivNMZ" Location="VL.Stride" Version="2025.7.4" />
+  <NugetDependency Id="O0j9LFt2DB3LrZysvpWWME" Location="VL.Stride.Runtime" Version="2025.7.4" />
 </Document>

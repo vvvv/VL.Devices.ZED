@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="SzKhi7f7PBQL4dLJkyHuqU" LanguageVersion="2025.7.1" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="H1Q6Dz49Sc7P2zOEUkNcXh" LanguageVersion="2025.7.4" Version="0.128">
   <Patch Id="KGEhufBXeFjLrlBfRgNhOx">
     <Canvas Id="HX7uQRwtmRULdiMv6q9FqP" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -23,7 +23,7 @@
             <Pin Id="JlOvL3LoMBGMmb9CuF36B5" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Ub02ODI4XY8PpcxQJcKrjt" Name="SDK GPU id" Kind="InputPin" IsHidden="true" />
             <Pin Id="Cr9EY7ERMweMEI3dCK1Wq8" Name="Streaming Sources" Kind="InputPin" IsHidden="true" />
-            <Pin Id="CgDGQEwC3EJLVLblmhgCVR" Name="Device" Kind="InputPin" />
+            <Pin Id="CgDGQEwC3EJLVLblmhgCVR" Name="Device" Kind="InputPin" DefaultValue="Default" />
             <Pin Id="R37A4WjhHkNLkI4YjlYjWw" Name="Resolution" Kind="InputPin" DefaultValue="HD1080" />
             <Pin Id="Upr74hB74stNHkZB8vp2pf" Name="Depth Mode" Kind="InputPin" />
             <Pin Id="F2b0Zy2tHVdOybJOmLg8rN" Name="Depth Stabilization" Kind="InputPin" />
@@ -77,6 +77,7 @@
             </p:NodeReference>
             <Pin Id="GNPyceSSb12Og3n4Tgea8B" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="J7pm92lVCdNLEZvHMS7q5K" Name="Camera" Kind="InputPin" />
+            <Pin Id="OJuyL60lfAsPKu4HlJRSqy" Name="Model Generation" Kind="InputPin" />
             <Pin Id="O274KOCgQExO2WsmWv65Hh" Name="Body Format" Kind="InputPin" />
             <Pin Id="DczlOQcabtKLcOBDmb4ySe" Name="Body Tracking Model" Kind="InputPin" />
             <Pin Id="Oi8YRotKelaO9Y6CHzaBmu" Name="Body Selection" Kind="InputPin" />
@@ -108,7 +109,7 @@
             <Pin Id="BAkWV9yG8wlOId33t4DsaW" Name="Record" Kind="InputPin" />
             <Pin Id="CB0LSEt1fpzMFJGTscOrNx" Name="Error" Kind="OutputPin" />
           </Node>
-          <Node Bounds="148,580,65,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
+          <Node Bounds="149,699,65,19" Id="CM82VamZTSHLu0g7Eq1Jaa">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SVOPlayer" />
@@ -134,7 +135,7 @@
             <Pin Id="P0hY8vKiNm3N6dIZBqlIq4" Name="Reboot" Kind="InputPin" />
             <Pin Id="P3BRkOT23RJOMiVoJsqf1o" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="148,531,285,19" Id="LCmjdZgge6dNwPq3wpsd3n">
+          <Node Bounds="149,650,285,19" Id="LCmjdZgge6dNwPq3wpsd3n">
             <p:NodeReference LastCategoryFullName="Devices.ZED" LastDependency="VL.Devices.ZED.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="ZED" NeedsToBeDirectParent="true" />
@@ -165,7 +166,7 @@
             <Pin Id="Sf4LapIHrvVM6hyZEcaJRD" Name="Resolution" Kind="OutputPin" />
             <Pin Id="A4KDGt0rxJHPuhWf2QowqP" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="KptnlGdMydQLtuy2DTlofC" Bounds="138,504,251,19" ShowValueBox="true" isIOBox="true" Value="For Recording and playing back .svo files">
+          <Pad Id="KptnlGdMydQLtuy2DTlofC" Bounds="139,623,251,19" ShowValueBox="true" isIOBox="true" Value="For Recording and playing back .svo files">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -210,6 +211,35 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="Dzs36Ge9XsKMOuggUVKWOR" Comment="Texture" Bounds="151,451,190,132" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="AWIKiJKdnKlP1ov9y1JXoj" Comment="Detected Bodies" Bounds="408,451,128,65" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IrFNkTswR4ROA3drzKXQ6n" Bounds="133,173,59,52" ShowValueBox="true" isIOBox="true" Value="⚠">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">25</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="EEGjmgylOIsOR4fDuJoLAO" Bounds="193,180,417,38" ShowValueBox="true" isIOBox="true" Value="The first time individual features/models are used you'll experience freezes as the SDK downloads required data. For details, see:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KvqtugDetqrL67bPUPRyXc" Bounds="193,222,400,19" ShowValueBox="true" isIOBox="true" Value="https://docs.stereolabs.com/docs/development/zed-sdk/offline-deployment#what-the-zed-sdk-downloads-at-runtime">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="H2cbU4Kptj7OH6q1NrcwYL" Name="Create" />
         <Patch Id="ArnguBeYaipOFcqabD0uBX" Name="Update" />
@@ -223,10 +253,12 @@
         <Link Id="OAoCV0eNnKAQB0YKdtxfyP" Ids="OCopLXplHzHNBSx7L7SAP2,LloqkkDaetCOBlGwv0LDp9" />
         <Link Id="Txp9DxMh1TDLvHbHfjfjom" Ids="OCopLXplHzHNBSx7L7SAP2,BmE9AhCNrGQMfhlOGLIwBN" />
         <Link Id="Tvh7WVI19Q6NdGgNPheqTt" Ids="JVfTRCX4EUsNWKrojgUxCH,C7OQYGBCChGQRFT6fgdfkq" />
+        <Link Id="G0xoBcNaEe5MSDNkPKfspj" Ids="PXpDAjvwshNMeYMK8DDh8p,Dzs36Ge9XsKMOuggUVKWOR" />
+        <Link Id="KzICXZAFAwtOA0M2tqOsIx" Ids="D1wZOtPHsWoNNviA7FRl98,AWIKiJKdnKlP1ov9y1JXoj" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2025.7.1" />
-  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2025.7.1" />
+  <NugetDependency Id="KGvMCjqSyiUQWfyIuZjAss" Location="VL.CoreLib" Version="2025.7.4" />
+  <NugetDependency Id="NxJTplEI3VyNroTwBbXooo" Location="VL.Stride" Version="2025.7.4" />
   <NugetDependency Id="KEj5ktot9eRMqDkFwlTohJ" Location="VL.Devices.ZED" Version="0.0.0" />
 </Document>
